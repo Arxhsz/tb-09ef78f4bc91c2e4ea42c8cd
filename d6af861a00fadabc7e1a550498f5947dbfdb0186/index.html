@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>pumpdesk6 · Command Center (PAPER)</title>
+<meta name="robots" content="noindex,nofollow,noarchive"><meta name="googlebot" content="noindex,nofollow,noarchive"><meta name="referrer" content="no-referrer">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo">◆</span><div><h1>pumpdesk6 <small>six-agent command center</small></h1><div class="sub" id="gen">loading…</div></div></div>
+  <div class="badges"><span class="badge paper">PAPER MODE</span><span class="badge" id="live-badge">live trading: OFF</span><span class="badge" id="fresh-badge">—</span></div>
+</header>
+<nav class="tabs" id="tabs">
+  <button data-tab="cc" class="on">Command Center</button><button data-tab="cand">Candidates</button><button data-tab="trades">Trades &amp; Journal</button><button data-tab="strat">Strategy &amp; Costs</button><button data-tab="legacy" class="legacy-tab">Legacy · Real money</button>
+</nav>
+<div id="paused" class="banner hidden"></div>
+<main>
+<section data-pane="cc" class="pane on">
+  <div class="grid agents" id="agents"></div>
+  <div class="grid two">
+    <div class="card"><h2>Paper balances <span class="tag paper">PAPER · simulated</span></h2><div id="books" class="books"></div><div id="equity-chart" class="chart"></div></div>
+    <div class="card"><h2>Data feeds</h2><div id="feeds"></div><h3>Counts</h3><div id="counts" class="kv"></div></div>
+  </div>
+  <div class="grid two">
+    <div class="card"><h2>Bonding curves <small>(live, pre-graduation)</small></h2><div id="curves" class="scroll"></div></div>
+    <div class="card"><h2>Graduations → PumpSwap</h2><div id="grads" class="scroll"></div></div>
+  </div>
+  <div class="grid two">
+    <div class="card"><h2>Discovery feed</h2><div id="disc" class="scroll"></div></div>
+    <div class="card"><h2>Whale activity <small>(on-chain-proven wallets only)</small></h2><div id="whales" class="scroll"></div></div>
+  </div>
+  <div class="card"><h2>Open simulated positions</h2><div id="open"></div></div>
+</section>
+<section data-pane="cand" class="pane">
+  <div class="card"><h2>Independent opportunities <small id="opp-sub"></small></h2><div class="filters"><input id="opp-q" placeholder="filter by symbol / mint / reason"><select id="opp-d"><option value="">all dispositions</option><option>FILLED</option><option>NO_FILL</option><option>ORDER_PENDING</option><option>PASSED_NOT_ORDERED</option><option>VETOED</option></select></div><div id="opps" class="scroll tall"></div></div>
+  <div class="grid two"><div class="card"><h2>Veto reasons</h2><div id="vetoes"></div></div><div class="card"><h2>EXEC decisions <small>(fills / no-fills)</small></h2><div id="decisions" class="scroll"></div></div></div>
+</section>
+<section data-pane="trades" class="pane">
+  <div class="card"><h2>Simulated closed trades <span class="tag paper">PAPER</span></h2><div id="trades" class="scroll tall"></div></div>
+  <div class="card"><h2>Full journal</h2><div class="filters"><select id="j-agent"><option value="">all agents</option><option>DESK</option><option>SNIPER</option><option>EXEC</option><option>EXIT</option></select></div><div id="journal" class="scroll tall"></div></div>
+</section>
+<section data-pane="strat" class="pane">
+  <div class="card"><h2>Strategy comparison <small id="val"></small></h2><div id="perf"></div></div>
+  <div class="grid two"><div class="card"><h2>Execution-cost analysis <small>(ROUTER quotes at real size)</small></h2><div id="cost-chart" class="chart"></div><div id="costs" class="scroll"></div></div><div class="card"><h2>Cost model &amp; risk limits</h2><div id="model" class="kv"></div></div></div>
+</section>
+<section data-pane="legacy" class="pane">
+  <div class="banner legacy">REAL-MONEY HISTORY · read-only · retired Smart Money Hunter V1/V2 (Nov 10–11, 2026). Never mixed with the PAPER results above.</div>
+  <div class="grid two"><div class="card"><h2>Totals (real wallet, historical)</h2><div id="lg-tot" class="kv"></div></div><div class="card"><h2>Previous strategy performance</h2><div id="lg-strat"></div></div></div>
+  <div class="card"><h2>Completed real trades</h2><div id="lg-trades" class="scroll tall"></div></div>
+  <div class="card"><h2>All on-chain transaction signatures</h2><div id="lg-sigs" class="scroll"></div></div>
+  <p class="foot">Original dashboard preserved at <a href="legacy/dashboard-v1/index.html">legacy/dashboard-v1/</a> · raw journals in <code>legacy/journals/</code></p>
+</section>
+</main>
+<div id="modal" class="modal hidden"><div class="modal-card"><button class="x" id="mx">×</button><div id="mbody"></div></div></div>
+<footer class="foot">PAPER research desk — simulated balances, fills and P&amp;L. Not financial advice; paper results do not prove future profitability. Data: <code>data/desk.json</code> (schema pumpdesk6.desk-export v1).</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>
