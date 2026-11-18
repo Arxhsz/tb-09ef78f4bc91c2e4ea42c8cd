@@ -1,6 +1,6 @@
 # pumpdesk6 ↔ dashboard data interface
 
-**Schema id:** `pumpdesk6.desk-export` · **version:** `1.0.0` (semver) · **file:** `schema/desk-export.v1.schema.json` (JSON Schema draft 2020-12 subset)
+**Schema id:** `pumpdesk6.desk-export` · **version:** `1.1.0` (semver; `1.0.0` exports still validate) · **file:** `schema/desk-export.v1.schema.json` (JSON Schema draft 2020-12 subset)
 **Producer:** `pumpdesk6/src/export.mjs` (every 5 s while the desk runs) · **Consumer:** `trade-bot-dashboard/<dashboard-dir>/index.html` + `assets/app.js`
 **Published file:** `<dashboard-dir>/data/desk.json` in the dashboard repo. This is the only file the publisher may commit. `<dashboard-dir>` is the unlisted random-hex directory. Its name is stored only in `pumpdesk6/.dashboard_path`, which is gitignored and mode 600, and it is never hard-coded or logged. The running desk also refreshes that file every 5 s in the local checkout.
 
@@ -45,3 +45,18 @@ An agent is `fresh` when `age_s ≤ freshness_limit_s` (GRAD/WHALES/SNIPER 15 s,
 ## Tools
 - Validate: `node scripts/validate_export.mjs [file]` in pumpdesk6, or `node tools/validate-desk.mjs [file]` inside `<dashboard-dir>`.
 - Publish: `node scripts/publish.mjs [--no-push] [--branch command-center]` in pumpdesk6. It writes `<dashboard-dir>/data/desk.json`, commits only that file, and pushes non-force. Pages serves `main`, so fast-forward `main` to `command-center` after verifying.
+
+## v1.1.0 (2026-11-17): reference-replication lane and side-by-side comparison
+
+v1.1.0 is a minor version, so both new fields are optional. A v1.0 consumer ignores them.
+
+| field | type | meaning |
+|---|---|---|
+| `reference_lane` | object | The second PAPER lane (docs/REFERENCE_REPLICATION.md). It contains:<br>• `lane="reference"`, `version`, `mode="PAPER"`, `started_ms`, `paused_reason`, `sources`;<br>• `params` (the REF config with source tags in code comments);<br>• `agents.{GRAD,WHALES,SNIPER,ROUTER,EXEC,EXIT}` (`role, state, last_activity_ms, age_s, fresh, summary`);<br>• `book` (its own hypothetical 1 SOL PAPER book, same shape as `books.*`);<br>• `counts`, `whale_events[]` (trades ≥ 10 SOL), `grad_flags[]` (≥ 90% / graduated);<br>• `opportunities[]` (`t, mint, setup ∈ {R_curve,R_post}, features, vetoes, not_applied_vetoes, disposition, reason, current_view`);<br>• `open[]`, `pending_orders[]`, `decisions[]`, `trades[]`, `router_recent[]`. |
+| `comparison` | object | The two lanes measured over the same window (from `window_start_ms`, when the reference lane started). It contains:<br>• `lanes.{current,reference}`: `independent_opportunities, vetoed, passed, not_ordered, no_fills, entries, exits, open_now, wins, losses, win_rate, net_pnl_sol` (after all modeled costs), `avg_pnl_pct, fees_sol, failed_tx_fees_sol`. Current = its 1 SOL research book, primary exit policy;<br>• `current_all_time_research_book`;<br>• `diff[]`: one row per mint episode, pairing opportunities on the same mint within ±20 min. Fields: `t, mint, symbol, current{decision,setup,reason}, reference{decision,setup,reason,current_lane_vetoes_not_applied}, same_decision, why_different`. `decision` is `NO_SIGNAL` when that lane did not trigger; its `reason` is then that lane's view of the mint at that moment;<br>• `diff_counts`, `sample_warning`. |
+
+Storage (desk SQLite):
+- the tables `ref_opportunities`, `ref_positions` and `lane_compare`;
+- `kv.ref_started`;
+- `kv.state.ref`: the reference book, open positions, per-mint cooldowns and pending orders. Pending orders are cancelled on restart and never re-sent;
+- `kv.state.episodes`: the current lane's per-mint episode cooldowns, persisted since v1.1.

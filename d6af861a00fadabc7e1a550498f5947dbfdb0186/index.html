@@ -13,7 +13,7 @@
   <div class="badges"><span class="badge paper">PAPER MODE</span><span class="badge" id="live-badge">live trading: OFF</span><span class="badge" id="fresh-badge">—</span></div>
 </header>
 <nav class="tabs" id="tabs">
-  <button data-tab="cc" class="on">Command Center</button><button data-tab="cand">Candidates</button><button data-tab="trades">Trades &amp; Journal</button><button data-tab="strat">Strategy &amp; Costs</button><button data-tab="legacy" class="legacy-tab">Legacy · Real money</button>
+  <button data-tab="cc" class="on">Command Center</button><button data-tab="cand">Candidates</button><button data-tab="trades">Trades &amp; Journal</button><button data-tab="strat">Strategy &amp; Costs</button><button data-tab="ref">Reference vs Current</button><button data-tab="legacy" class="legacy-tab">Legacy · Real money</button>
 </nav>
 <div id="paused" class="banner hidden"></div>
 <main>
@@ -45,6 +45,15 @@
   <div class="card"><h2>Strategy comparison <small id="val"></small></h2><div id="perf"></div></div>
   <div class="grid two"><div class="card"><h2>Execution-cost analysis <small>(ROUTER quotes at real size)</small></h2><div id="cost-chart" class="chart"></div><div id="costs" class="scroll"></div></div><div class="card"><h2>Cost model &amp; risk limits</h2><div id="model" class="kv"></div></div></div>
 </section>
+<section data-pane="ref" class="pane">
+  <div class="banner">Reference-replication lane: closest available PAPER reproduction of the 0xNevsky six-agent setup (GRAD → WHALES → SNIPER → ROUTER → EXEC → EXIT), running beside the current strategy on the same feeds and the same cost model. Thresholds tagged OUR-DECISION are ours, not the author's. The author's claimed profits are not used anywhere.</div>
+  <div class="card"><h2>Side by side <small id="cmp-win"></small></h2><div id="cmp-lanes"></div><p class="foot" id="cmp-warn"></p></div>
+  <div class="grid agents" id="ref-agents"></div>
+  <div class="card"><h2>Same mint, different decision <small id="cmp-dc"></small></h2><div id="cmp-diff" class="scroll tall"></div></div>
+  <div class="grid two"><div class="card"><h2>Reference opportunities</h2><div id="ref-opps" class="scroll"></div></div><div class="card"><h2>Reference closed trades <span class="tag paper">PAPER</span></h2><div id="ref-trades" class="scroll"></div></div></div>
+  <div class="grid two"><div class="card"><h2>WHALES · trades ≥ 10 SOL</h2><div id="ref-whales" class="scroll"></div></div><div class="card"><h2>GRAD · graduating (≥90%) &amp; graduated</h2><div id="ref-grad" class="scroll"></div></div></div>
+  <div class="card"><h2>Rule sources</h2><div id="ref-rules" class="kv"></div></div>
+</section>
 <section data-pane="legacy" class="pane">
   <div class="banner legacy">REAL-MONEY HISTORY · read-only · retired Smart Money Hunter V1/V2 (Nov 10–11, 2026). Never mixed with the PAPER results above.</div>
   <div class="grid two"><div class="card"><h2>Totals (real wallet, historical)</h2><div id="lg-tot" class="kv"></div></div><div class="card"><h2>Previous strategy performance</h2><div id="lg-strat"></div></div></div>
@@ -54,7 +63,7 @@
 </section>
 </main>
 <div id="modal" class="modal hidden"><div class="modal-card"><button class="x" id="mx">×</button><div id="mbody"></div></div></div>
-<footer class="foot">PAPER research desk — simulated balances, fills and P&amp;L. Not financial advice; paper results do not prove future profitability. Data: <code>data/desk.json</code> (schema pumpdesk6.desk-export v1).</footer>
+<footer class="foot">PAPER research desk — simulated balances, fills and P&amp;L. Not financial advice; paper results do not prove future profitability. Data: <code>data/desk.json</code> (schema pumpdesk6.desk-export v1.x).</footer>
 <script src="assets/app.js"></script>
 </body>
 </html>

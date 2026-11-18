@@ -78,11 +78,32 @@ function tokenModal(m) {
     (tr.length ? '<h3>Simulated trades</h3>' + table([['policy', (r) => r.policy], ['net %', (r) => pct(r.pnl_pct), 'num'], ['exit', (r) => esc(r.exit_reason)]], tr) : '');
   $('#modal').classList.remove('hidden');
 }
+function renderRef() {
+  const C = D.comparison, R = D.reference_lane; if (!C || !R) { $('#cmp-lanes').innerHTML = '<div class="empty">reference lane not in this export (schema 1.0)</div>'; return; }
+  $('#cmp-win').textContent = `since ${dET(C.window_start_ms)}`; $('#cmp-warn').textContent = C.sample_warning;
+  const rows = [['Independent opportunities', 'independent_opportunities'], ['Vetoed', 'vetoed'], ['Passed, not ordered', 'not_ordered'], ['No-fills', 'no_fills'], ['Entries (fills)', 'entries'], ['Exits (closed)', 'exits'], ['Open now', 'open_now'], ['Wins / losses', null], ['Win rate', 'win_rate'], ['Net P&L after costs (SOL)', 'net_pnl_sol'], ['Avg P&L per closed trade', 'avg_pnl_pct'], ['Fees + network (SOL)', 'fees_sol']];
+  const cell = (L, k, lab) => { if (!k) return `${L.wins} / ${L.losses}`; const v = L[k]; if (k === 'win_rate') return v == null ? '—' : (v * 100).toFixed(1) + '%'; if (k === 'net_pnl_sol') return sol(v, 6); if (k === 'avg_pnl_pct') return pct(v); if (k === 'fees_sol') return f(v, 6); return v ?? '—'; };
+  $('#cmp-lanes').innerHTML = `<table><thead><tr><th></th><th>${esc(C.lanes.current.label)}</th><th>${esc(C.lanes.reference.label)}</th></tr></thead><tbody>${rows.map(([lab, k]) => `<tr><td>${lab}</td><td>${cell(C.lanes.current, k)}</td><td>${cell(C.lanes.reference, k)}</td></tr>`).join('')}</tbody></table>`;
+  $('#ref-agents').innerHTML = Object.values(R.agents).map((a) => `<div class="agent"><div class="nm">REF · ${a.name}</div><div class="rl">${esc(a.role)}</div><div class="st"><span class="dot ${a.state === 'paused' ? 'warn' : a.fresh ? 'ok' : a.last_activity_ms || a.name === 'ROUTER' ? 'warn' : 'bad'}"></span>${a.name === 'ROUTER' && !a.last_activity_ms ? 'idle · quotes only when SNIPER passes a coin' : a.state}</div><div class="sm">${esc(a.summary)}</div><div class="age">last activity ${a.age_s == null ? 'never' : a.age_s + ' s ago'}</div></div>`).join('');
+  $('#cmp-dc').textContent = `${C.diff_counts.rows} episodes · ${C.diff_counts.same} same · ${C.diff_counts.only_reference_signal} reference-only · ${C.diff_counts.only_current_signal} current-only`;
+  const dc = (x) => `<b>${esc(x.decision)}</b>${x.setup ? ' · ' + esc(x.setup) : ''}<div class="sm">${esc(x.reason)}</div>`;
+  $('#cmp-diff').innerHTML = table([['time', (r) => tET(r.t)], ['token', (r) => mint(r.mint, r.symbol)], ['current strategy', (r) => dc(r.current)], ['reference replication', (r) => dc(r.reference) + (r.reference.current_lane_vetoes_not_applied?.length ? `<div class="sm">current-lane vetoes not applied: ${esc(r.reference.current_lane_vetoes_not_applied.join('; '))}</div>` : '')]], C.diff);
+  $('#ref-opps').innerHTML = table([['time', (o) => tET(o.t)], ['token', (o) => mint(o.mint, o.symbol)], ['setup', (o) => esc(o.setup)], ['progress', (o) => o.features?.pumpkit_progress_pct == null ? '—' : o.features.pumpkit_progress_pct + '%'], ['whale', (o) => o.features?.whale ? `${o.features.whale.sol} SOL · ${o.features.whale.ago_s}s` : '—'], ['decision', (o) => `<b>${esc(o.disposition)}</b><div class="sm">${esc(o.reason)}</div>`]], R.opportunities);
+  $('#ref-trades').innerHTML = table([['exit', (t) => tET(t.exit_t)], ['token', (t) => mint(t.mint, t.symbol)], ['venue', (t) => esc(t.venue)], ['size', (t) => f(t.size_sol, 5)], ['P&L', (t) => sol(t.pnl_sol, 6) + ' ' + pct(t.pnl_pct)], ['reason', (t) => esc(t.exit_reason)]], R.trades);
+  $('#ref-whales').innerHTML = table([['time', (w) => tET(w.t)], ['token', (w) => mint(w.mint, w.symbol)], ['side', (w) => esc(w.side)], ['SOL', (w) => w.sol], ['venue', (w) => esc(w.venue)], ['progress', (w) => w.progress_pct == null ? '—' : w.progress_pct + '%']], R.whale_events);
+  $('#ref-grad').innerHTML = table([['time', (g) => tET(g.t)], ['token', (g) => mint(g.mint, g.symbol)], ['stage', (g) => esc(g.stage)], ['progress', (g) => g.progress_pct + '%']], R.grad_flags);
+  const P = R.params; $('#ref-rules').innerHTML = [
+    ['GRAD progress', `realSol / ${P.grad.graduationSolThreshold} SOL, flag at ≥ ${P.grad.graduatingPct}% — VERIFIED-CODE (PumpKit); combination OUR-DECISION`], ['WHALES', `single trade ≥ ${P.whales.minSol} SOL, SOL-quoted — VERIFIED-CODE (PumpKit default)`],
+    ['SNIPER', `GRAD flag + whale buy within ${P.sniper.whaleWindowS}s; post-graduation window ${P.sniper.postGradWindowS / 60} min; ${P.sniper.cooldownS / 60}-min cooldown — OUR-DECISION (Trainer source unrecoverable)`],
+    ['ROUTER', `${esc(P.router.autoRoute)}; slippage ${P.router.slippageBps} bps — VERIFIED-CODE (OpenPump docs), executed locally`], ['EXEC', `target ${P.exec.targetSizeSol} SOL — X-POST; capped by 5% position / 0.5% modeled loss — OUR-DECISION`],
+    ['EXIT', `TP +${P.exit.R1_tp_sl.tp}% — X-POST example; SL ${P.exit.R1_tp_sl.stop}% and ${P.exit.R1_tp_sl.maxHoldS / 60}-min limit — OUR-DECISION`], ['Book', `${esc(R.book.label)} · equity ${f(R.book.equity_sol, 6)} SOL · ${R.book.paused_reason ? 'paused: ' + esc(R.book.paused_reason) : 'active'}`]]
+    .map(([k, v]) => `<div>${k}</div><div>${v}</div>`).join('');
+}
 function render() {
   if (!D) return; const age = (Date.now() - D.generated_at_ms) / 1000; $('#gen').textContent = `data ${D.generated_at_et} · schema ${D.schema} v${D.schema_version} · params ${D.params_version}`;
   const fb = $('#fresh-badge'); fb.textContent = age < 30 ? `fresh · ${Math.round(age)}s` : `STALE · ${Math.round(age / 60)} min old`; fb.className = 'badge ' + (age < 30 ? 'ok' : 'bad');
   $('#live-badge').textContent = D.live_trading_enabled ? 'LIVE ?!' : 'live trading: OFF'; const pb = $('#paused'); pb.classList.toggle('hidden', !D.paused_reason); pb.textContent = D.paused_reason ? `Agents paused: ${D.paused_reason}` : '';
-  renderAgents(); renderBooks(); renderFeeds(); renderMarket(); renderOpps(); renderTrades(); renderStrat();
+  renderAgents(); renderBooks(); renderFeeds(); renderMarket(); renderOpps(); renderTrades(); renderStrat(); renderRef();
 }
 async function load() { try { const r = await fetch('data/desk.json?ts=' + Date.now(), { cache: 'no-store' }); D = await r.json(); render(); } catch (e) { $('#gen').textContent = 'data/desk.json unavailable: ' + e.message; } }
 async function loadLegacy() { try { L = await (await fetch('legacy/legacy.json', { cache: 'no-store' })).json(); } catch { L = null; } renderLegacy(); }
