@@ -13,7 +13,7 @@
   <div class="badges"><span class="badge paper">PAPER MODE</span><span class="badge" id="live-badge">live trading: OFF</span><span class="badge" id="fresh-badge">—</span></div>
 </header>
 <nav class="tabs" id="tabs">
-  <button data-tab="cc" class="on">Command Center</button><button data-tab="cand">Candidates</button><button data-tab="trades">Trades &amp; Journal</button><button data-tab="strat">Strategy &amp; Costs</button><button data-tab="ref">Reference vs Current</button><button data-tab="legacy" class="legacy-tab">Legacy · Real money</button>
+  <button data-tab="cc" class="on">Command Center</button><button data-tab="cand">Candidates</button><button data-tab="trades">Trades &amp; Journal</button><button data-tab="strat">Strategy &amp; Costs</button><button data-tab="ref">Reference vs Current</button><button data-tab="prof">Profitability Research</button><button data-tab="legacy" class="legacy-tab">Legacy · Real money</button>
 </nav>
 <div id="paused" class="banner hidden"></div>
 <main>
@@ -54,6 +54,7 @@
   <div class="grid two"><div class="card"><h2>WHALES · trades ≥ 10 SOL</h2><div id="ref-whales" class="scroll"></div></div><div class="card"><h2>GRAD · graduating (≥90%) &amp; graduated</h2><div id="ref-grad" class="scroll"></div></div></div>
   <div class="card"><h2>Rule sources</h2><div id="ref-rules" class="kv"></div></div>
 </section>
+<section data-pane="prof" class="pane"><div id="prof"><div class="banner">Loading Profitability Research (PAPER · SHADOW)…</div></div></section>
 <section data-pane="legacy" class="pane">
   <div class="banner legacy">REAL-MONEY HISTORY · read-only · retired Smart Money Hunter V1/V2 (Nov 10–11, 2026). Never mixed with the PAPER results above.</div>
   <div class="grid two"><div class="card"><h2>Totals (real wallet, historical)</h2><div id="lg-tot" class="kv"></div></div><div class="card"><h2>Previous strategy performance</h2><div id="lg-strat"></div></div></div>
@@ -65,5 +66,6 @@
 <div id="modal" class="modal hidden"><div class="modal-card"><button class="x" id="mx">×</button><div id="mbody"></div></div></div>
 <footer class="foot">PAPER research desk — simulated balances, fills and P&amp;L. Not financial advice; paper results do not prove future profitability. Data: <code>data/desk.json</code> (schema pumpdesk6.desk-export v1.x).</footer>
 <script src="assets/app.js?v=20261118-15m"></script>
+<script src="assets/research.js?v=20261118-r1"></script>
 </body>
 </html>

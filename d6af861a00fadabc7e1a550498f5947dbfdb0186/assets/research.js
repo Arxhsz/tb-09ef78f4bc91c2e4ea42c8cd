@@ -1,0 +1,47 @@
+// Profitability Research view. Reads data/research.json (offline research, SHADOW observations) and data/desk.json (live PAPER fills).
+// Labels: SHADOW = counterfactual replay, never an order · PAPER FILL = simulated desk fill · REAL MONEY = legacy tab only (never mixed here).
+(() => {
+const $ = (s) => document.querySelector(s); const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const n = (x, d = 2) => (x == null || x === '' ? '—' : typeof x === 'number' ? x.toFixed(d) : esc(x)); const sol = (x) => (x == null ? '—' : `<span class="${x > 0 ? 'pos' : x < 0 ? 'neg' : ''}">${x.toFixed(6)}</span>`);
+const pct = (x) => (x == null ? '—' : `<span class="${x > 0 ? 'pos' : x < 0 ? 'neg' : ''}">${x.toFixed(2)}%</span>`); const sh = (x) => (x == null ? '—' : (x * 100).toFixed(0) + '%');
+const tET = (ms) => (ms ? new Date(ms).toLocaleString('en-US', { timeZone: 'America/New_York', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + ' ET' : '—');
+const T = (cols, rows) => rows.length ? `<table><thead><tr>${cols.map((c) => `<th>${c[0]}</th>`).join('')}</tr></thead><tbody>${rows.map((r) => `<tr>${cols.map((c) => `<td>${c[1](r)}</td>`).join('')}</tr>`).join('')}</tbody></table>` : '<div class="empty">no rows yet</div>';
+const L = { shadow: '<span class="tag" style="border-color:#7b5cff;color:#b9a6ff">SHADOW · counterfactual, not an order</span>', paper: '<span class="tag paper">PAPER FILL · simulated</span>' };
+const st = (s) => s && s.n ? `${s.n} · WR ${sh(s.win_rate)} · ${sol(s.net_sol)} · E ${pct(s.expectancy_pct)} · PF ${n(s.profit_factor)}` : '<span class="mut">n=0</span>';
+let R = null, D = null;
+function render() {
+  if (!R) return; const box = $('#prof'); if (!box) return;
+  const live = D?.comparison?.lanes || {}; const ch = D?.challenger_lane;
+  const laneRows = [
+    { name: 'Current strategy (v0, research book)', kind: L.paper, s: live.current, src: 'live desk since the reference lane started' },
+    { name: '0xNevsky reference replication', kind: L.paper, s: live.reference, src: 'live desk, same window' },
+    { name: 'MOMENTUM-CHALLENGER', kind: L.paper, s: ch?.stats, src: ch ? `forward test since ${tET(ch.forward_test_start_ms)} (params ${esc(ch.version)})` : 'not running yet' },
+  ];
+  const hist = R.shadow_lanes || {};
+  box.innerHTML = `
+  <div class="banner">Research only, all PAPER. ${L.shadow} rows come from an offline replay of the recorded feed (every opportunity, including vetoed ones, followed with executable SDK quotes, latency, slippage and every fee). ${L.paper} rows are the desk's own simulated fills. Real-money history is only in the Legacy tab and is never mixed in here. Small samples prove nothing: 30 closed trades is the first diagnostic milestone, 100+ the evaluation sample.</div>
+  <div class="card"><h2>Baseline vs reference vs challenger <small>net P&amp;L after every modeled cost</small></h2>
+   ${T([['lane', (r) => esc(r.name)], ['label', (r) => r.kind], ['opportunities', (r) => n(r.s?.independent_opportunities, 0)], ['entries', (r) => n(r.s?.entries, 0)], ['exits', (r) => n(r.s?.exits, 0)], ['no-fills', (r) => n(r.s?.no_fills, 0)], ['win rate', (r) => sh(r.s?.win_rate)], ['net SOL', (r) => sol(r.s?.net_pnl_sol)], ['fees SOL', (r) => n(r.s?.fees_sol, 6)], ['source', (r) => `<span class="sm">${r.src}</span>`]], laneRows)}
+   <h3>Historical replay of each lane's own entries ${L.shadow}</h3>
+   ${T([['lane / exit', (r) => esc(r[0])], ['opps', (r) => n(r[1].opportunities, 0)], ['passed', (r) => n(r[1].passed, 0)], ['conversion', (r) => sh(r[1].conversion)], ['fills', (r) => n(r[1].fills, 0)], ['closed', (r) => st(r[1].closed)], ['max DD SOL', (r) => n(r[1].closed?.max_dd_sol, 6)], ['avg hold s', (r) => n(r[1].closed?.avg_hold_s, 0)], ['rejected later profitable', (r) => `${sh(r[1].rejected_later_profitable_share)} of ${r[1].rejected_with_outcome}`]], Object.entries(hist))}</div>
+  <div class="card"><h2>Exit-policy results ${L.shadow} <small>identical entries · ${esc(R.exit_note || '')}</small></h2>
+   ${T([['policy', (r) => `<b>${esc(r.policy)}</b> <span class="sm mut">${esc(r.tag)}</span>`], ['all', (r) => st(r.all)], ['development', (r) => st(r.dev)], ['holdout', (r) => st(r.holdout)], ['gap-free only', (r) => st(r.gap_free)], ['avg MAE', (r) => pct(r.all?.avg_mae_pct)], ['worst', (r) => pct(r.all?.worst_pnl_pct)], ['max DD SOL', (r) => n(r.all?.max_dd_sol, 6)], ['beyond stop+5', (r) => n(r.all?.beyond_stop_plus5, 0)]], R.exit_policies || [])}</div>
+  <div class="grid two"><div class="card"><h2>Entry-filter effectiveness ${L.shadow}</h2><p class="sm mut">Counterfactual outcome (X3_time exit) of opportunities each veto rejected. "Sole" = the only reason it was rejected. Hard safety vetoes are never relaxed.</p>
+   ${T([['veto', (r) => `${esc(r.reason)} ${r.hard ? '<span class="chip VETOED">HARD</span>' : ''}`], ['n', (r) => n(r.n_any, 0)], ['profitable', (r) => sh(r.any?.profitable_share)], ['avg P&L', (r) => pct(r.any?.avg_pnl_pct)], ['sole n', (r) => n(r.n_sole, 0)], ['sole net SOL', (r) => sol(r.sole?.net_sol)]], R.vetoes || [])}
+   <h3>One-at-a-time trigger relaxations</h3>${T([['change', (r) => esc(r.name)], ['new episodes', (r) => n(r.new_episodes, 0)], ['no market veto', (r) => n(r.no_market_veto, 0)], ['X3 outcome', (r) => st(r.X3_time)], ['dev', (r) => st(r.X3_time?.dev)], ['holdout', (r) => st(r.X3_time?.holdout)]], R.relaxed || [])}</div>
+   <div class="card"><h2>Missed profitable opportunities ${L.shadow}</h2><p class="sm mut">Rejected opportunities whose shadow trade closed positive. Not executable orders; hindsight list for review only.</p>
+   <div class="scroll tall">${T([['time', (r) => tET(r.t)], ['token', (r) => `<a href="https://solscan.io/token/${esc(r.mint)}" target="_blank" rel="noopener">${esc(r.symbol || r.mint.slice(0, 6))}</a>`], ['source', (r) => esc(r.src)], ['rejected by', (r) => `<span class="sm">${esc(r.reason)}</span>`], ['X3 P&L', (r) => pct(r.pnl_pct)]], R.missed || [])}</div></div></div>
+  <div class="card"><h2>Execution-cost breakdown</h2>
+   <div class="kv">${(R.cost_facts || []).map(([k, v]) => `<div>${esc(k)}</div><div>${esc(v)}</div>`).join('')}</div>
+   <h3>Priority-fee policies ${L.shadow}</h3>${T([['policy', (r) => `<b>${esc(r.name)}</b><div class="sm mut">${esc(r.basis)}</div>`], ['lamports/tx', (r) => n(r.priorityLamports, 0)], ['latency', (r) => r.latencyMs + ' ms'], ['miss', (r) => r.missPct + '%'], ['filled / not landed / no fill', (r) => `${r.filled} / ${r.not_landed} / ${r.no_fill}`], ['X3_time', (r) => st(r.by_policy?.X3_time)], ['X2_trail', (r) => st(r.by_policy?.X2_trail)]], R.fee_tracks || [])}
+   <h3>Break-even price rise, round trip <small>break-even % (round-trip cost %) by priority-fee policy · official SDK quotes</small></h3>${T([['size', (r) => `${esc(r.size_name)}<div class="sm mut">${n(r.size_sol, 6)} SOL</div>`], ['venue / state', (r) => `${esc(r.venue)}<div class="sm mut">${esc(r.state)} · ${n(r.bps, 0)} bps/side</div>`], ...(R.breakeven_pivot?.policies || []).map((pp) => [esc(pp), (r) => (r.by[pp] ? `<b>${n(r.by[pp].be)}%</b> <span class="sm mut">(${n(r.by[pp].rt)}%)</span>` : '—')])], R.breakeven_pivot?.rows || [])}</div>
+  <div class="card"><h2>Untouched forward test <small>${R.forward?.start_et ? 'parameters frozen ' + esc(R.forward.frozen_at_et) + ' · forward data from ' + esc(R.forward.start_et) : ''}</small></h2>
+   <p class="sm">${esc(R.forward?.note || '')}</p>
+   ${ch ? T([['policy', (r) => esc(r.policy)], ['role', (r) => esc(r.role)], ['closed', (r) => n(r.closed, 0)], ['wins', (r) => n(r.wins, 0)], ['net SOL', (r) => sol(r.net_sol)]], ch.exit_policies || []) + `<p class="foot">${L.paper} challenger book: ${ch.books?.chal_research ? `cash ${n(ch.books.chal_research.cash_sol, 6)} SOL · ${ch.books.chal_research.trades} trades · ${ch.books.chal_research.paused_reason ? 'paused: ' + esc(ch.books.chal_research.paused_reason) : 'eligible'}` : ''}</p>` : '<div class="empty">challenger lane not in the live export yet</div>'}
+   ${R.forward?.shadow ? `<h3>Forward shadow replay ${L.shadow}</h3>${T([['policy', (r) => esc(r[0])], ['forward', (r) => st(r[1])]], Object.entries(R.forward.shadow))}` : ''}
+   <h3>Challenger parameters (frozen)</h3>${T([['parameter', (r) => `<code>${esc(r.param)}</code>`], ['from → to', (r) => `${esc(r.from)} → <b>${esc(r.to)}</b>`], ['tag', (r) => esc(r.tag)], ['evidence', (r) => `<span class="sm">${esc(r.evidence)}</span>`]], R.challenger_changes || [])}</div>
+  <p class="foot">Research generated ${esc(R.generated_at_et)} · historical window ${tET(R.window?.start_ms)} → ${tET(R.window?.end_ms)} · dev/holdout split ${tET(R.window?.split_ms)} · feed gaps ${n(R.window?.gap_min, 0)} of ${n(R.window?.window_min, 0)} min · full report: docs/PROFITABILITY_RESEARCH.md in pumpdesk6.</p>`;
+}
+async function load() { try { R = await (await fetch('data/research.json?ts=' + Date.now(), { cache: 'no-store' })).json(); } catch { R = null; } try { D = await (await fetch('data/desk.json?ts=' + Date.now(), { cache: 'no-store' })).json(); } catch {} render(); if (!R && $('#prof')) $('#prof').innerHTML = '<div class="empty">data/research.json not published yet</div>'; }
+load(); setInterval(load, 60000);
+})();
