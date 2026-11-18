@@ -1,47 +1,47 @@
 {
  "schema": "pumpdesk6.desk-export",
  "schema_version": "1.1.0",
- "generated_at_ms": 1794976508684,
- "generated_at_et": "11/17/2026, 11:35:08 PM ET",
+ "generated_at_ms": 1795003781202,
+ "generated_at_et": "11/18/2026, 7:09:41 AM ET",
  "mode": "PAPER",
  "live_trading_enabled": false,
  "params_version": "v0-2026-11-17",
- "desk_started_ms": 1794976403723,
+ "desk_started_ms": 1795003561177,
  "notice": "PAPER research desk. All balances, fills and P&L in this file are SIMULATED. Real-money history lives only in legacy/ and is never mixed with these numbers.",
  "feeds": {
   "solana_ws": {
    "name": "solana_ws",
-   "msgs": 76396,
-   "connects": 1,
-   "reconnects": 0,
-   "errors": 0,
-   "last_error": null,
-   "last_msg_ms": 1794976508684,
-   "age_s": 0.059,
+   "msgs": 198411,
+   "connects": 10,
+   "reconnects": 9,
+   "errors": 9,
+   "last_error": "closed by peer",
+   "last_msg_ms": 1795003781202,
+   "age_s": 0,
    "fresh": true
   },
   "pumpportal_ws": {
    "name": "pumpportal_ws",
-   "msgs": 11,
+   "msgs": 36,
    "connects": 1,
    "reconnects": 0,
    "errors": 0,
    "last_error": null,
-   "last_msg_ms": 1794976506520,
-   "age_s": 2.223,
+   "last_msg_ms": 1795003777083,
+   "age_s": 4.119,
    "fresh": true
   },
   "helius_http": {
    "ok": 0,
-   "err": 0,
+   "err": 2,
    "last_ok": null,
-   "last_err": null
+   "last_err": "HTTP 429"
   },
   "public_rpc": {
-   "ok": 0,
-   "err": 0,
-   "last_ok": null,
-   "last_err": null
+   "ok": 1,
+   "err": 1,
+   "last_ok": 1795003659046,
+   "last_err": "HTTP 429"
   }
  },
  "agents": {
@@ -49,31 +49,31 @@
    "name": "GRAD",
    "role": "bonding-curve & graduation intelligence",
    "state": "running",
-   "last_activity_ms": 1794976508684,
-   "last_activity_et": "11/17/2026, 11:35:08 PM ET",
+   "last_activity_ms": 1795003781202,
+   "last_activity_et": "11/18/2026, 7:09:41 AM ET",
    "age_s": 0,
    "fresh": true,
    "freshness_limit_s": 15,
-   "summary": "136 mints tracked · 2 graduations · 4 pools"
+   "summary": "258 mints tracked · 0 graduations · 0 pools"
   },
   "WHALES": {
    "name": "WHALES",
    "role": "smart-wallet & capital-flow tracking",
    "state": "running",
-   "last_activity_ms": 1794976508554,
-   "last_activity_et": "11/17/2026, 11:35:08 PM ET",
-   "age_s": 0.1,
+   "last_activity_ms": 1795003781176,
+   "last_activity_et": "11/18/2026, 7:09:41 AM ET",
+   "age_s": 0,
    "fresh": true,
    "freshness_limit_s": 15,
-   "summary": "520 wallets · 0 proven · 402 closed round trips observed"
+   "summary": "1080 wallets · 0 proven · 603 closed round trips observed"
   },
   "SNIPER": {
    "name": "SNIPER",
    "role": "entry selection & token safety",
    "state": "running",
-   "last_activity_ms": 1794976508554,
-   "last_activity_et": "11/17/2026, 11:35:08 PM ET",
-   "age_s": 0.1,
+   "last_activity_ms": 1795003781176,
+   "last_activity_et": "11/18/2026, 7:09:41 AM ET",
+   "age_s": 0,
    "fresh": true,
    "freshness_limit_s": 15,
    "summary": "0 independent opportunities · 0 passed · 0 vetoed"
@@ -82,20 +82,20 @@
    "name": "ROUTER",
    "role": "venue & execution-quote optimization",
    "state": "running",
-   "last_activity_ms": 1794976493739,
-   "last_activity_et": "11/17/2026, 11:34:53 PM ET",
-   "age_s": 14.9,
+   "last_activity_ms": 1795003771196,
+   "last_activity_et": "11/18/2026, 7:09:31 AM ET",
+   "age_s": 10,
    "fresh": true,
    "freshness_limit_s": 90,
-   "summary": "3 quotes · 0 errors"
+   "summary": "7 quotes · 0 errors"
   },
   "EXEC": {
    "name": "EXEC",
    "role": "position sizing & simulated execution (PAPER)",
    "state": "running",
-   "last_activity_ms": 1794976508554,
-   "last_activity_et": "11/17/2026, 11:35:08 PM ET",
-   "age_s": 0.1,
+   "last_activity_ms": 1795003781176,
+   "last_activity_et": "11/18/2026, 7:09:41 AM ET",
+   "age_s": 0,
    "fresh": true,
    "freshness_limit_s": 10,
    "summary": "0 fills · 0 no-fills · 0 sizing rejections"
@@ -104,9 +104,9 @@
    "name": "EXIT",
    "role": "position monitoring & exits",
    "state": "running",
-   "last_activity_ms": 1794976508554,
-   "last_activity_et": "11/17/2026, 11:35:08 PM ET",
-   "age_s": 0.1,
+   "last_activity_ms": 1795003781176,
+   "last_activity_et": "11/18/2026, 7:09:41 AM ET",
+   "age_s": 0,
    "fresh": true,
    "freshness_limit_s": 10,
    "summary": "0 open simulated positions"
@@ -121,7 +121,7 @@
    "start_sol": 0.021644109,
    "cash_sol": 0.021644109,
    "realized_sol": 0,
-   "day": "2026-11-17",
+   "day": "2026-11-18",
    "day_start_sol": 0.021644109,
    "day_pnl_sol": 0,
    "consecutive_losses": 0,
@@ -150,13 +150,13 @@
    "label": "Hypothetical 1 SOL PAPER research book",
    "mode": "PAPER",
    "start_sol": 1,
-   "cash_sol": 0.994572273,
+   "cash_sol": 0.994367273,
    "realized_sol": -0.005222727,
-   "day": "2026-11-17",
-   "day_start_sol": 1,
-   "day_pnl_sol": -0.005427727,
-   "consecutive_losses": 2,
-   "paused_reason": "2 consecutive losses; new entries paused until next ET day",
+   "day": "2026-11-18",
+   "day_start_sol": 0.994572273,
+   "day_pnl_sol": -0.000205,
+   "consecutive_losses": 0,
+   "paused_reason": null,
    "trades": 2,
    "wins": 0,
    "losses": 2,
@@ -164,7 +164,7 @@
    "fees_sol": {
     "venue": 0.0010621435600212238,
     "network": 0.00082,
-    "failed_tx": 0.000205
+    "failed_tx": 0.00041
    },
    "equity_curve": [
     [
@@ -181,98 +181,83 @@
     ]
    ],
    "open_value_sol": 0,
-   "equity_sol": 0.994572273,
-   "return_pct": -0.5428
+   "equity_sol": 0.994367273,
+   "return_pct": -0.5633
   }
  },
  "grad": {
   "counts": {
-   "creates": 27,
-   "trades": 2568,
-   "completes": 2,
-   "migrations": 4,
-   "pools": 4,
-   "amm_trades": 394,
-   "amm_unmapped": 22379,
-   "pumpportal_new": 6,
-   "pumpportal_migrations": 3
+   "creates": 43,
+   "trades": 5222,
+   "completes": 0,
+   "migrations": 0,
+   "pools": 0,
+   "amm_trades": 0,
+   "amm_unmapped": 32471,
+   "pumpportal_new": 33,
+   "pumpportal_migrations": 1
   },
-  "tracked_mints": 136,
-  "tracked_pools": 2,
+  "tracked_mints": 258,
+  "tracked_pools": 0,
   "phases": {
-   "PRE": 134,
+   "PRE": 258,
    "TRANSITION": 0,
-   "POST": 2
+   "POST": 0
   },
   "curves": [
    {
-    "mint": "7uzHUfXSUG5FeoiBH9kCJduYG6ymTfekXPXAu182wDWQ",
-    "symbol": null,
-    "completion_pct": 90.53,
-    "liq_sol": 60.674,
-    "price_sol": 2.5541310735808077e-7,
-    "age_s": null,
-    "trades": 2,
+    "mint": "6rdQXFpELVn3nWTWmP9zoPDQTaj2qGqR3Vy4XfXmpump",
+    "symbol": "AFTER",
+    "completion_pct": 97.81,
+    "liq_sol": 78.281,
+    "price_sol": 3.642393753249163e-7,
+    "age_s": 172,
+    "trades": 396,
     "flow60": {
-     "net_sol": 0.036,
-     "unique_buyers": 1,
-     "buy_share": 1
+     "net_sol": 0,
+     "unique_buyers": 0,
+     "buy_share": 0
     },
-    "seen_from_create": false
-   },
-   {
-    "mint": "DMzLvUDpYmGH6Xyc4xoifGtAZNjJpzH8f3KwLwGkpump",
-    "symbol": null,
-    "completion_pct": 89.09,
-    "liq_sol": 57.853,
-    "price_sol": 2.3976820728161404e-7,
-    "age_s": null,
-    "trades": 1,
-    "flow60": {
-     "net_sol": 0.721,
-     "unique_buyers": 1,
-     "buy_share": 1
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "6z9zZnrS5EwpiZfJPKqzhQhd9hkiQuyy9EW9ZcfBpump",
-    "symbol": null,
-    "completion_pct": 87.61,
-    "liq_sol": 55.127,
-    "price_sol": 2.2511750681697469e-7,
-    "age_s": null,
-    "trades": 24,
-    "flow60": {
-     "net_sol": 6.108,
-     "unique_buyers": 13,
-     "buy_share": 1
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "57i7wM8EtiCwhgrumd7MHyUmcjNQmNtMdifBHL8Npump",
-    "symbol": null,
-    "completion_pct": 86.23,
-    "liq_sol": 52.726,
-    "price_sol": 2.1260003263124203e-7,
-    "age_s": null,
-    "trades": 123,
-    "flow60": {
-     "net_sol": -0.33,
-     "unique_buyers": 32,
-     "buy_share": 0.49
-    },
-    "seen_from_create": false
+    "seen_from_create": true
    },
    {
     "mint": "HyLnt315TPdhXL3BSdBqWXXxfwzNMa9Q2FkxcLpApump",
     "symbol": null,
-    "completion_pct": 79.07,
-    "liq_sol": 42.192,
-    "price_sol": 1.619023485604974e-7,
+    "completion_pct": 94.78,
+    "liq_sol": 70.189,
+    "price_sol": 3.118325486162874e-7,
     "age_s": null,
-    "trades": 8,
+    "trades": 1,
+    "flow60": {
+     "net_sol": 0,
+     "unique_buyers": 0,
+     "buy_share": 0
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "g8hEazg3metRF9pdLVGWu3mN6nKf27Gg7xCMYArpump",
+    "symbol": null,
+    "completion_pct": 91.86,
+    "liq_sol": 63.454,
+    "price_sol": 2.7131583918431486e-7,
+    "age_s": null,
+    "trades": 1,
+    "flow60": {
+     "net_sol": 0.208,
+     "unique_buyers": 1,
+     "buy_share": 1
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "NMX3DEvN4XrsKJoWKBPyK9X5AwfwvtcGYxrwzLfpump",
+    "symbol": null,
+    "completion_pct": 86.02,
+    "liq_sol": 52.375,
+    "price_sol": 2.1080200373217742e-7,
+    "age_s": null,
+    "trades": 3,
     "flow60": {
      "net_sol": 0,
      "unique_buyers": 0,
@@ -283,56 +268,101 @@
    {
     "mint": "8rjgC1GsBo4fwuXjq7Hy12SAFxgFxbtSJJSFBYkVpump",
     "symbol": null,
-    "completion_pct": 77.78,
-    "liq_sol": 40.571,
-    "price_sol": 1.547147471645482e-7,
+    "completion_pct": 84.89,
+    "liq_sol": 50.522,
+    "price_sol": 2.014226311506551e-7,
     "age_s": null,
-    "trades": 15,
+    "trades": 1,
     "flow60": {
-     "net_sol": -0.649,
+     "net_sol": -0.078,
      "unique_buyers": 0,
      "buy_share": 0
     },
     "seen_from_create": false
    },
    {
-    "mint": "NMX3DEvN4XrsKJoWKBPyK9X5AwfwvtcGYxrwzLfpump",
+    "mint": "6z9zZnrS5EwpiZfJPKqzhQhd9hkiQuyy9EW9ZcfBpump",
     "symbol": null,
-    "completion_pct": 77.44,
-    "liq_sol": 40.161,
-    "price_sol": 1.529222549162552e-7,
+    "completion_pct": 83.95,
+    "liq_sol": 49.049,
+    "price_sol": 1.9412227422929482e-7,
     "age_s": null,
-    "trades": 21,
+    "trades": 5,
     "flow60": {
-     "net_sol": 0.341,
-     "unique_buyers": 6,
-     "buy_share": 0.62
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "328EtxiMXdBzbC8fMA56ZJFEuFA7hGaZo7TPxdbvpump",
-    "symbol": null,
-    "completion_pct": 70.6,
-    "liq_sol": 32.74,
-    "price_sol": 1.2228427297137878e-7,
-    "age_s": null,
-    "trades": 3,
-    "flow60": {
-     "net_sol": 1.325,
-     "unique_buyers": 2,
+     "net_sol": 3.433,
+     "unique_buyers": 4,
      "buy_share": 1
     },
     "seen_from_create": false
    },
    {
-    "mint": "FFX4A793iYsb8CVENR6eyn4pTxyEJDADyW2zbDyipump",
+    "mint": "ALLg8mq9JdB8nimmz1VmyQhVL3DyadBF1G8ZDT7Tpump",
     "symbol": null,
-    "completion_pct": 69.81,
-    "liq_sol": 31.986,
-    "price_sol": 1.1936141274422426e-7,
+    "completion_pct": 80.78,
+    "liq_sol": 0.017,
+    "price_sol": 4.93767203814554e-10,
+    "age_s": null,
+    "trades": 145,
+    "flow60": {
+     "net_sol": -0.068,
+     "unique_buyers": 8,
+     "buy_share": 0.42
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "ExvnUqMPnmZZ79SR4vbic1PxMWouSs4Eph4px2bdpump",
+    "symbol": null,
+    "completion_pct": 77.69,
+    "liq_sol": 40.459,
+    "price_sol": 1.5422441239996846e-7,
+    "age_s": null,
+    "trades": 8,
+    "flow60": {
+     "net_sol": 0.349,
+     "unique_buyers": 3,
+     "buy_share": 1
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "efo75jisqQsV8jghoXuseQRGwJyE5ee8AwY4z5opump",
+    "symbol": null,
+    "completion_pct": 77.67,
+    "liq_sol": 40.436,
+    "price_sol": 1.5412435430238602e-7,
     "age_s": null,
     "trades": 1,
+    "flow60": {
+     "net_sol": 2.963,
+     "unique_buyers": 1,
+     "buy_share": 1
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "Ger3rC7zqthgvpCdA5VvMX1YHosQHkvU1iNHR8b5pump",
+    "symbol": null,
+    "completion_pct": 77.13,
+    "liq_sol": 39.784,
+    "price_sol": 1.5128191557285519e-7,
+    "age_s": null,
+    "trades": 6,
+    "flow60": {
+     "net_sol": 1.44,
+     "unique_buyers": 5,
+     "buy_share": 1
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "9UKo9XNm5bF2AUb1jpjw2GoeiPFUng9HKczmVyZ9Ny5s",
+    "symbol": null,
+    "completion_pct": 75.82,
+    "liq_sol": 38.248,
+    "price_sol": 1.446984094360858e-7,
+    "age_s": null,
+    "trades": 4,
     "flow60": {
      "net_sol": 0,
      "unique_buyers": 0,
@@ -341,60 +371,105 @@
     "seen_from_create": false
    },
    {
-    "mint": "9hXn2svbVdJTtiYxhfqmvH53xKtPFienVFuCLb6apump",
+    "mint": "2FSgBQeCwXMti2Xg5dozqm5TKEF5svTuvsHqk5jcpump",
     "symbol": null,
-    "completion_pct": 64.13,
-    "liq_sol": 27.036,
-    "price_sol": 1.010606971109745e-7,
+    "completion_pct": 74.1,
+    "liq_sol": 36.327,
+    "price_sol": 1.3666556615394263e-7,
     "age_s": null,
-    "trades": 1,
+    "trades": 29,
     "flow60": {
-     "net_sol": -0.272,
+     "net_sol": 3.965,
+     "unique_buyers": 11,
+     "buy_share": 0.74
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "Hsjw2z1TS4YGp3ELikbNm1eqFMCoGMF18swmPsr4pump",
+    "symbol": null,
+    "completion_pct": 74.04,
+    "liq_sol": 36.264,
+    "price_sol": 1.3640445511497301e-7,
+    "age_s": null,
+    "trades": 17,
+    "flow60": {
+     "net_sol": -0.726,
      "unique_buyers": 0,
      "buy_share": 0
     },
     "seen_from_create": false
    },
    {
-    "mint": "Zit65o7buR1QkvDu5JRq1DJBp1sU8pefRb4NHrNpump",
+    "mint": "7XTMmvQSadkDE32CUW6n3rxXQf1274MZME12aZ1Dpump",
     "symbol": null,
-    "completion_pct": 63.33,
-    "liq_sol": 26.4,
-    "price_sol": 9.881711017424787e-8,
+    "completion_pct": 71.43,
+    "liq_sol": 33.553,
+    "price_sol": 1.2547164494558585e-7,
     "age_s": null,
-    "trades": 50,
+    "trades": 2,
     "flow60": {
-     "net_sol": -9.615,
-     "unique_buyers": 10,
-     "buy_share": 0.35
+     "net_sol": 0.025,
+     "unique_buyers": 1,
+     "buy_share": 1
     },
     "seen_from_create": false
    },
    {
-    "mint": "2KKexXZXqTk9E6ALyXzx6jXuJzK386JgydpW2gyfpump",
+    "mint": "5PA2EpcsXLzFWDBqy6d4daH2w3LYCwtxkem1RPEzpump",
     "symbol": null,
-    "completion_pct": 62.05,
-    "liq_sol": 25.415,
-    "price_sol": 9.539716957955892e-8,
+    "completion_pct": 68.03,
+    "liq_sol": 30.344,
+    "price_sol": 1.1312188051881747e-7,
     "age_s": null,
-    "trades": 1,
+    "trades": 295,
     "flow60": {
-     "net_sol": -0.111,
+     "net_sol": -2.78,
+     "unique_buyers": 34,
+     "buy_share": 0.34
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "EJVSG5Xmk6xhtiUWiWaogXNL4UwrhBpQReQ7yGqFpump",
+    "symbol": null,
+    "completion_pct": 66.15,
+    "liq_sol": 0.023,
+    "price_sol": 1.397167156838715e-10,
+    "age_s": null,
+    "trades": 207,
+    "flow60": {
+     "net_sol": -0.112,
+     "unique_buyers": 11,
+     "buy_share": 0.45
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "2btaGztG6RntqAavYmCyFbifcNxeURKYoDtNYDu3pump",
+    "symbol": null,
+    "completion_pct": 66.14,
+    "liq_sol": 0.66,
+    "price_sol": 2.4776515559073717e-9,
+    "age_s": null,
+    "trades": 2,
+    "flow60": {
+     "net_sol": 0,
      "unique_buyers": 0,
      "buy_share": 0
     },
     "seen_from_create": false
    },
    {
-    "mint": "DrCp53xpQANiF2Aimb4bXWVkdDWPEvWktG6y8AjNpump",
+    "mint": "C84B31RfBYc5jtZAasdgN9AMpLt2uUdL2b5DUwEpump",
     "symbol": null,
-    "completion_pct": 59.74,
-    "liq_sol": 23.72,
-    "price_sol": 8.965160874153291e-8,
+    "completion_pct": 60.8,
+    "liq_sol": 24.486,
+    "price_sol": 9.222528260856899e-8,
     "age_s": null,
     "trades": 1,
     "flow60": {
-     "net_sol": 0.008,
+     "net_sol": 0.004,
      "unique_buyers": 1,
      "buy_share": 1
     },
@@ -403,39 +478,129 @@
    {
     "mint": "CnMw618DCiTVFx8vE1h7Deedrkb1GcYERy9r4rCzpump",
     "symbol": null,
-    "completion_pct": 57.41,
-    "liq_sol": 22.113,
-    "price_sol": 8.436548750711473e-8,
+    "completion_pct": 60.22,
+    "liq_sol": 24.065,
+    "price_sol": 9.080622384121171e-8,
     "age_s": null,
-    "trades": 1,
+    "trades": 2,
     "flow60": {
-     "net_sol": -0.15,
+     "net_sol": 0,
      "unique_buyers": 0,
      "buy_share": 0
     },
     "seen_from_create": false
    },
    {
-    "mint": "D7mrjeM7UWctprBv2vxJEEMra1zjnd7tW2sv1a9npump",
-    "symbol": "GTAVI",
-    "completion_pct": 57.27,
-    "liq_sol": 22.022,
-    "price_sol": 8.407267720217927e-8,
-    "age_s": 22,
-    "trades": 108,
+    "mint": "BjdSgHiKnfEg6GJdWHHdpHtJzqmVbxy5b1256NDxpump",
+    "symbol": "DacityCoin",
+    "completion_pct": 59.17,
+    "liq_sol": 23.319,
+    "price_sol": 8.831817510249063e-8,
+    "age_s": 188,
+    "trades": 93,
     "flow60": {
-     "net_sol": 22.121,
-     "unique_buyers": 62,
-     "buy_share": 0.74
+     "net_sol": -0.577,
+     "unique_buyers": 5,
+     "buy_share": 0.37
     },
     "seen_from_create": true
    },
    {
-    "mint": "87Ba5GKnfpUc9TbE3EstUuACfnLzSMwfYKEEFv6dpump",
+    "mint": "9VFnFMJChvMQ9fKCK9hT38aDf86xSFMkEj4rvzVvpump",
+    "symbol": null,
+    "completion_pct": 59.17,
+    "liq_sol": 23.32,
+    "price_sol": 8.83202879817931e-8,
+    "age_s": null,
+    "trades": 1,
+    "flow60": {
+     "net_sol": 0.094,
+     "unique_buyers": 1,
+     "buy_share": 1
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "CyND16Ef1CofrnN6PUYYV8j6DrdLVj9DTEhr6D3cpump",
+    "symbol": null,
+    "completion_pct": 58.19,
+    "liq_sol": 22.638,
+    "price_sol": 8.607612953315717e-8,
+    "age_s": null,
+    "trades": 3,
+    "flow60": {
+     "net_sol": -0.265,
+     "unique_buyers": 0,
+     "buy_share": 0
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump",
+    "symbol": null,
+    "completion_pct": 55.03,
+    "liq_sol": 20.57,
+    "price_sol": 7.944478482401434e-8,
+    "age_s": null,
+    "trades": 2,
+    "flow60": {
+     "net_sol": 0,
+     "unique_buyers": 0,
+     "buy_share": 0
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "2KKexXZXqTk9E6ALyXzx6jXuJzK386JgydpW2gyfpump",
+    "symbol": null,
+    "completion_pct": 54.71,
+    "liq_sol": 20.37,
+    "price_sol": 7.881797616918422e-8,
+    "age_s": null,
+    "trades": 2,
+    "flow60": {
+     "net_sol": 0,
+     "unique_buyers": 0,
+     "buy_share": 0
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "6FtXmkrLJwXHtyb2uiCEBPPFBCDZugf6CLZM8orwpump",
     "symbol": null,
     "completion_pct": 54.62,
     "liq_sol": 20.31,
-    "price_sol": 7.863067322507888e-8,
+    "price_sol": 7.86283925826759e-8,
+    "age_s": null,
+    "trades": 2,
+    "flow60": {
+     "net_sol": -2.156,
+     "unique_buyers": 0,
+     "buy_share": 0
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "89ZAJMVYEuRBFZDTpXs86AUW5Jr8NHu1rbZVN6Fdpump",
+    "symbol": null,
+    "completion_pct": 54.58,
+    "liq_sol": 20.287,
+    "price_sol": 7.855678644899107e-8,
+    "age_s": null,
+    "trades": 5,
+    "flow60": {
+     "net_sol": 0,
+     "unique_buyers": 0,
+     "buy_share": 0
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "3LxAanRx5DLwLTNuAsquANu3wp4Ck2tjbdqGjdgTpump",
+    "symbol": null,
+    "completion_pct": 53.42,
+    "liq_sol": 19.576,
+    "price_sol": 7.635212412421315e-8,
     "age_s": null,
     "trades": 1,
     "flow60": {
@@ -446,26 +611,11 @@
     "seen_from_create": false
    },
    {
-    "mint": "H7NCRto1aYnY2AHaq3SSocJkxWSAy6xbJVjUXaXBpump",
-    "symbol": null,
-    "completion_pct": 53.72,
-    "liq_sol": 19.76,
-    "price_sol": 7.691919709155796e-8,
-    "age_s": null,
-    "trades": 1,
-    "flow60": {
-     "net_sol": 0.002,
-     "unique_buyers": 1,
-     "buy_share": 1
-    },
-    "seen_from_create": false
-   },
-   {
     "mint": "7ooHmShEsKYhjijDr5AqcNH5eZ83VbFLzs2Xhi1Dpump",
     "symbol": null,
-    "completion_pct": 53.49,
-    "liq_sol": 19.617,
-    "price_sol": 7.647881363363617e-8,
+    "completion_pct": 53.25,
+    "liq_sol": 19.469,
+    "price_sol": 7.602413563621822e-8,
     "age_s": null,
     "trades": 1,
     "flow60": {
@@ -478,9 +628,9 @@
    {
     "mint": "9qrTGGXDpyMRGdo6Ny8s5wi4SMbrtTi9zL3swgVjpump",
     "symbol": null,
-    "completion_pct": 53.36,
-    "liq_sol": 19.536,
-    "price_sol": 7.622879781451316e-8,
+    "completion_pct": 53.13,
+    "liq_sol": 19.398,
+    "price_sol": 7.580557950248719e-8,
     "age_s": null,
     "trades": 1,
     "flow60": {
@@ -491,666 +641,568 @@
     "seen_from_create": false
    },
    {
-    "mint": "7XTMmvQSadkDE32CUW6n3rxXQf1274MZME12aZ1Dpump",
+    "mint": "9DyW1KVi34DVdgFBvb3XUaMFJf3QH6aH1vDo2YTnpump",
     "symbol": null,
-    "completion_pct": 49.95,
-    "liq_sol": 17.557,
-    "price_sol": 7.026090602292688e-8,
+    "completion_pct": 52.28,
+    "liq_sol": 18.896,
+    "price_sol": 7.427086068936663e-8,
     "age_s": null,
-    "trades": 1,
+    "trades": 5,
     "flow60": {
-     "net_sol": -0.819,
-     "unique_buyers": 0,
-     "buy_share": 0
+     "net_sol": 0.092,
+     "unique_buyers": 1,
+     "buy_share": 1
     },
     "seen_from_create": false
    },
    {
-    "mint": "BvU8yQXj5sJg5yJjokC69LwxkeoUX1epbmuB3c5rpump",
-    "symbol": "jorkin",
-    "completion_pct": 48.25,
-    "liq_sol": 16.63,
-    "price_sol": 6.754767971312088e-8,
-    "age_s": 6,
-    "trades": 86,
-    "flow60": {
-     "net_sol": 6.868,
-     "unique_buyers": 52,
-     "buy_share": 0.55
-    },
-    "seen_from_create": true
-   },
-   {
-    "mint": "7e4tiB9FvQQcVHhwwkS7jsey6D6my6QfLAWWFQgepump",
+    "mint": "2UEj445sY1GxbgPoXWALAoFRN8RiNMTNPdya7Bo9pump",
     "symbol": null,
-    "completion_pct": 47.87,
-    "liq_sol": 16.427,
-    "price_sol": 6.696208501638602e-8,
+    "completion_pct": 49.05,
+    "liq_sol": 17.062,
+    "price_sol": 6.880432775436818e-8,
     "age_s": null,
-    "trades": 1,
+    "trades": 29,
     "flow60": {
-     "net_sol": -0.126,
-     "unique_buyers": 0,
-     "buy_share": 0
+     "net_sol": 7.594,
+     "unique_buyers": 16,
+     "buy_share": 0.77
     },
     "seen_from_create": false
    },
    {
-    "mint": "efo75jisqQsV8jghoXuseQRGwJyE5ee8AwY4z5opump",
+    "mint": "5BUNBteG5hijhj4k36ALKnj8KjEHJBMvcBxe77Cypump",
     "symbol": null,
-    "completion_pct": 45.62,
-    "liq_sol": 15.262,
-    "price_sol": 6.364169428721966e-8,
+    "completion_pct": 46.94,
+    "liq_sol": 1.212,
+    "price_sol": 2.62180084220861e-8,
     "age_s": null,
-    "trades": 1,
+    "trades": 17,
     "flow60": {
-     "net_sol": -1.042,
-     "unique_buyers": 0,
-     "buy_share": 0
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump",
-    "symbol": null,
-    "completion_pct": 41.48,
-    "liq_sol": 13.263,
-    "price_sol": 5.814461995117646e-8,
-    "age_s": null,
-    "trades": 1,
-    "flow60": {
-     "net_sol": -0.672,
-     "unique_buyers": 0,
-     "buy_share": 0
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "4SRNMAaqbESnyc1EDHC4UGnCr1R4PtiiGSo1XVhkpump",
-    "symbol": null,
-    "completion_pct": 34.15,
-    "liq_sol": 10.131,
-    "price_sol": 5.002974090008175e-8,
-    "age_s": null,
-    "trades": 1,
-    "flow60": {
-     "net_sol": 0,
-     "unique_buyers": 0,
-     "buy_share": 0
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "74cJ7kQLNSwYy1LSjSYJtiEwKxZSRWCrfju9rw7Rpump",
-    "symbol": null,
-    "completion_pct": 34.11,
-    "liq_sol": 10.114,
-    "price_sol": 4.99887019630071e-8,
-    "age_s": null,
-    "trades": 2,
-    "flow60": {
-     "net_sol": -0.921,
-     "unique_buyers": 0,
-     "buy_share": 0
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "8nPPVyq3QapQZoQAtoqeGQ48c9zQgkP82cBEsFadFPUR",
-    "symbol": null,
-    "completion_pct": 33.74,
-    "liq_sol": 12.436,
-    "price_sol": 5.7552271548742455e-8,
-    "age_s": null,
-    "trades": 1,
-    "flow60": {
-     "net_sol": 0,
-     "unique_buyers": 0,
-     "buy_share": 0
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "Dw6foBDY2ZtmvAR2oMceBvnDT4vxJKFdP5Se2iogpump",
-    "symbol": null,
-    "completion_pct": 33.08,
-    "liq_sol": 9.711,
-    "price_sol": 4.8988233099695745e-8,
-    "age_s": null,
-    "trades": 1,
-    "flow60": {
-     "net_sol": -1.148,
-     "unique_buyers": 0,
-     "buy_share": 0
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "EjiDe4N2P73dRWXSyiYB9WBuUNivkUChFex2twdkpump",
-    "symbol": null,
-    "completion_pct": 30.52,
-    "liq_sol": 8.739,
-    "price_sol": 4.662052836157506e-8,
-    "age_s": null,
-    "trades": 1,
-    "flow60": {
-     "net_sol": -0.108,
-     "unique_buyers": 0,
-     "buy_share": 0
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "6gU4VnvxQUwatxeYsu7aApTN57iPHBfBVvcXiX8Jpump",
-    "symbol": null,
-    "completion_pct": 30.18,
-    "liq_sol": 0.021,
-    "price_sol": 1.091926219511811e-9,
-    "age_s": null,
-    "trades": 201,
-    "flow60": {
-     "net_sol": -1.424,
-     "unique_buyers": 8,
-     "buy_share": 0.44
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "2LgzgQue5RUN7st2zAGYfojQZZ229gkcFxVc7V52pump",
-    "symbol": null,
-    "completion_pct": 29.51,
-    "liq_sol": 8.37,
-    "price_sol": 4.573652050820853e-8,
-    "age_s": null,
-    "trades": 4,
-    "flow60": {
-     "net_sol": -0.552,
-     "unique_buyers": 0,
-     "buy_share": 0
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "3xZrVdCEtpb1yK93JywX86kpyoMQyKcZcEPDXxq5pump",
-    "symbol": null,
-    "completion_pct": 29.19,
-    "liq_sol": 8.253,
-    "price_sol": 4.54577293085585e-8,
-    "age_s": null,
-    "trades": 2,
-    "flow60": {
-     "net_sol": -0.702,
-     "unique_buyers": 0,
-     "buy_share": 0
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "8PnqE3xHs98yt3nEKZvziEbJx5dYo33CqKX4td8cez1B",
-    "symbol": null,
-    "completion_pct": 27.85,
-    "liq_sol": 7.777,
-    "price_sol": 4.433314835480101e-8,
-    "age_s": null,
-    "trades": 2,
-    "flow60": {
-     "net_sol": 0,
-     "unique_buyers": 0,
-     "buy_share": 0
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "4EKkgDvCPzTVNjcGtF64sDLz3PEcTw3Ni19qK3rtpump",
-    "symbol": null,
-    "completion_pct": 27.23,
-    "liq_sol": 7.559,
-    "price_sol": 4.38228073949603e-8,
-    "age_s": null,
-    "trades": 1,
-    "flow60": {
-     "net_sol": -0.006,
-     "unique_buyers": 0,
-     "buy_share": 0
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "hzJpKn2PWRGTbx29FpF3zosMZysY3ziYtfWZgoYpump",
-    "symbol": null,
-    "completion_pct": 24.37,
-    "liq_sol": 6.59,
-    "price_sol": 4.159050808160389e-8,
-    "age_s": null,
-    "trades": 1,
-    "flow60": {
-     "net_sol": 0,
-     "unique_buyers": 0,
-     "buy_share": 0
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "Bha6DmhWfN5qMY4XoV8xJUVXm2596ZeXwNnyZ3fVpump",
-    "symbol": null,
-    "completion_pct": 23.62,
-    "liq_sol": 6.345,
-    "price_sol": 4.103533981011222e-8,
-    "age_s": null,
-    "trades": 1,
-    "flow60": {
-     "net_sol": 0,
-     "unique_buyers": 0,
-     "buy_share": 0
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "HWCtEXGr4fx4nS4hGRv6VVx2DhvDjkSbXtRCzyzepump",
-    "symbol": "BOBO",
-    "completion_pct": 22.83,
-    "liq_sol": 6.09,
-    "price_sol": 4.046356823852158e-8,
-    "age_s": 20,
-    "trades": 41,
-    "flow60": {
-     "net_sol": 6.09,
-     "unique_buyers": 25,
-     "buy_share": 0.67
-    },
-    "seen_from_create": true
-   },
-   {
-    "mint": "53gmpqZ8tcWRmWXvLNkJ1sY2rXqXRJXQwQBXKrutpump",
-    "symbol": null,
-    "completion_pct": 19.08,
-    "liq_sol": 4.925,
-    "price_sol": 3.789284867095885e-8,
-    "age_s": null,
-    "trades": 10,
-    "flow60": {
-     "net_sol": -6.007,
-     "unique_buyers": 2,
-     "buy_share": 0.16
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "FotiVw1HhPA9bwtVhv4YrrC74XuhAYEz3XfmFrapump",
-    "symbol": null,
-    "completion_pct": 18.25,
-    "liq_sol": 4.678,
-    "price_sol": 3.7357443645739194e-8,
-    "age_s": null,
-    "trades": 23,
-    "flow60": {
-     "net_sol": 1.827,
-     "unique_buyers": 11,
+     "net_sol": 0.508,
+     "unique_buyers": 1,
      "buy_share": 0.69
     },
     "seen_from_create": false
    },
    {
-    "mint": "BDJfdC6GfVdPMumuqg297D1FmzkHRz3FTH32UqZmpump",
+    "mint": "5KURs34aNYYUj4sbXhkW6uYEPShYV3NjiUyubZbppump",
     "symbol": null,
-    "completion_pct": 17.32,
-    "liq_sol": 4.406,
-    "price_sol": 3.6774084585901176e-8,
+    "completion_pct": 46.86,
+    "liq_sol": 15.894,
+    "price_sol": 6.543331457500326e-8,
+    "age_s": null,
+    "trades": 81,
+    "flow60": {
+     "net_sol": -2.182,
+     "unique_buyers": 5,
+     "buy_share": 0.25
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "9C8TYYSgde4geTcLKXoxZmUQHLGN2CZWm4L5pit2pump",
+    "symbol": null,
+    "completion_pct": 43.05,
+    "liq_sol": 14.002,
+    "price_sol": 6.014779834796009e-8,
+    "age_s": null,
+    "trades": 2,
+    "flow60": {
+     "net_sol": 0,
+     "unique_buyers": 0,
+     "buy_share": 0
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "9RtVwVD35U23oVXC8bkK2HGdzKcLrs2mETBMCQRMpump",
+    "symbol": null,
+    "completion_pct": 42.71,
+    "liq_sol": 13.841,
+    "price_sol": 5.971005072362028e-8,
+    "age_s": null,
+    "trades": 3,
+    "flow60": {
+     "net_sol": 0,
+     "unique_buyers": 0,
+     "buy_share": 0
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "97uJ3BfwfokPuE4dM54ZMBu83weJoKQFP54Rb1Mhpump",
+    "symbol": null,
+    "completion_pct": 40.9,
+    "liq_sol": 0.67,
+    "price_sol": 2.1130303676374728e-9,
+    "age_s": null,
+    "trades": 2,
+    "flow60": {
+     "net_sol": 0,
+     "unique_buyers": 0,
+     "buy_share": 0
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "B4Uxasj9vQ2zcg2FAtdv4wdjcydAbVvzBXCkhrcQpump",
+    "symbol": null,
+    "completion_pct": 38.99,
+    "liq_sol": 12.146,
+    "price_sol": 5.5182458201451366e-8,
     "age_s": null,
     "trades": 1,
     "flow60": {
-     "net_sol": -0.141,
+     "net_sol": 0,
+     "unique_buyers": 0,
+     "buy_share": 0
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "AdxkCJaikvb6BBwJv9f3rR67hd2ZK5bRi4R87F9Jpump",
+    "symbol": null,
+    "completion_pct": 36.96,
+    "liq_sol": 11.278,
+    "price_sol": 5.293146902757282e-8,
+    "age_s": null,
+    "trades": 1,
+    "flow60": {
+     "net_sol": 0,
+     "unique_buyers": 0,
+     "buy_share": 0
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "8HcR3n2ME1LCPpoGJApuk2N46qxjMxx61uuih5Rhpump",
+    "symbol": "MWGA",
+    "completion_pct": 31.91,
+    "liq_sol": 0.201,
+    "price_sol": 9.223911765237094e-10,
+    "age_s": 128,
+    "trades": 136,
+    "flow60": {
+     "net_sol": 0.122,
+     "unique_buyers": 3,
+     "buy_share": 0.53
+    },
+    "seen_from_create": true
+   },
+   {
+    "mint": "551rVzDMJ5U7rM3QETzwUVXKxWfD15K9m4UFDX9upump",
+    "symbol": null,
+    "completion_pct": 31.12,
+    "liq_sol": 0.043,
+    "price_sol": 1.474469095361054e-10,
+    "age_s": null,
+    "trades": 3,
+    "flow60": {
+     "net_sol": 0,
      "unique_buyers": 0,
      "buy_share": 0
     },
     "seen_from_create": false
    }
   ],
-  "graduated": [
-   {
-    "mint": "9mRm74z6KgCNQoGkrXYGJfAeFMS5UBFzyC9zKXXBpump",
-    "symbol": null,
-    "phase": "POST",
-    "pool": "GcDPZn8x4DJYJokfPzCcSq41eRtkY4uibxibUcgzqip2",
-    "liq_at_complete_sol": 2.200174209,
-    "liq_at_pool_sol": 2.185174208,
-    "liq_now_sol": 0.339,
-    "amm_trades": 244,
-    "complete_t": 1794976409022,
-    "pool_t": 1794976410351,
-    "tradable_t": 1794976410436,
-    "price_sol": 1.5434892935153817e-10
-   },
-   {
-    "mint": "GFZZxRUdLoi3ditypHkn62cNQuWwwGzwHEB85T1jpump",
-    "symbol": null,
-    "phase": "POST",
-    "pool": "6UMrpirxGiSW3xaK3XqN1y1prxYwounDzJy3L1TrouJ",
-    "liq_at_complete_sol": 0.149310212,
-    "liq_at_pool_sol": 0.134310211,
-    "liq_now_sol": 0.026,
-    "amm_trades": 150,
-    "complete_t": 1794976409019,
-    "pool_t": 1794976409349,
-    "tradable_t": 1794976409310,
-    "price_sol": 1.0772974754683012e-11
-   }
-  ],
-  "graduation_events": [
-   {
-    "t": 1794976410436,
-    "mint": "9mRm74z6KgCNQoGkrXYGJfAeFMS5UBFzyC9zKXXBpump",
-    "symbol": null,
-    "stage": "tradable",
-    "pool": "GcDPZn8x4DJYJokfPzCcSq41eRtkY4uibxibUcgzqip2",
-    "liq_sol": 2.185234208
-   },
-   {
-    "t": 1794976410351,
-    "mint": "9mRm74z6KgCNQoGkrXYGJfAeFMS5UBFzyC9zKXXBpump",
-    "symbol": null,
-    "stage": "pool_created",
-    "pool": "GcDPZn8x4DJYJokfPzCcSq41eRtkY4uibxibUcgzqip2",
-    "liq_sol": 2.185174208
-   },
-   {
-    "t": 1794976410316,
-    "mint": "9mRm74z6KgCNQoGkrXYGJfAeFMS5UBFzyC9zKXXBpump",
-    "symbol": null,
-    "stage": "pool_created",
-    "pool": "GcDPZn8x4DJYJokfPzCcSq41eRtkY4uibxibUcgzqip2",
-    "liq_sol": 2.185174208
-   },
-   {
-    "t": 1794976409349,
-    "mint": "GFZZxRUdLoi3ditypHkn62cNQuWwwGzwHEB85T1jpump",
-    "symbol": null,
-    "stage": "pool_created",
-    "pool": "6UMrpirxGiSW3xaK3XqN1y1prxYwounDzJy3L1TrouJ",
-    "liq_sol": 0.134310211
-   },
-   {
-    "t": 1794976409310,
-    "mint": "GFZZxRUdLoi3ditypHkn62cNQuWwwGzwHEB85T1jpump",
-    "symbol": null,
-    "stage": "tradable",
-    "pool": "6UMrpirxGiSW3xaK3XqN1y1prxYwounDzJy3L1TrouJ",
-    "liq_sol": 0.139310211
-   },
-   {
-    "t": 1794976409309,
-    "mint": "GFZZxRUdLoi3ditypHkn62cNQuWwwGzwHEB85T1jpump",
-    "symbol": null,
-    "stage": "pool_created",
-    "pool": "6UMrpirxGiSW3xaK3XqN1y1prxYwounDzJy3L1TrouJ",
-    "liq_sol": 0.134310211
-   },
-   {
-    "t": 1794976409022,
-    "mint": "9mRm74z6KgCNQoGkrXYGJfAeFMS5UBFzyC9zKXXBpump",
-    "symbol": null,
-    "stage": "complete",
-    "liq_sol": 2.200174209
-   },
-   {
-    "t": 1794976409019,
-    "mint": "GFZZxRUdLoi3ditypHkn62cNQuWwwGzwHEB85T1jpump",
-    "symbol": null,
-    "stage": "complete",
-    "liq_sol": 0.149310212
-   }
-  ],
+  "graduated": [],
+  "graduation_events": [],
   "discoveries": [
    {
-    "t": 1794976504286,
-    "mint": "33ZiHhRB8ehxk6SBLDTYgj43xB96SGZGko7o4ugapump",
-    "symbol": "dogbaton",
-    "name": "dogbaton",
-    "creator": "7yfCDmEYkB1EEpSsWJcSvjCVMKD6WpjRfesY52kWEP3p",
-    "mayhem": true,
-    "source": "chain"
-   },
-   {
-    "t": 1794976503075,
-    "mint": "27yViSg1W9GVdeJLRyP7dWH8youwmHKyVPGfeeUjpump",
-    "symbol": "XBOX",
-    "name": "XBOX Coin",
-    "creator": "Hbp83KGGGAtjRi5g6m5Uw4DqFmqUoyQTisoiDTFDDqcq",
-    "mayhem": true,
-    "source": "chain"
-   },
-   {
-    "t": 1794976502316,
-    "mint": "BvU8yQXj5sJg5yJjokC69LwxkeoUX1epbmuB3c5rpump",
-    "symbol": "jorkin",
-    "name": "jorkin",
-    "creator": "4TC62iMh6fKF31tXgPimvJxz3u9qHKytifwaJw5hzJA4",
+    "t": 1795003777580,
+    "mint": "7ALSER4AnN7Se8RNdq8pNs9WMY6CSFFmqpUnqiEQpump",
+    "symbol": "Voyager 1",
+    "name": "Voyager 1",
+    "creator": "519PjwVBiDdN9fuLm1vX9iWPBy57jLo7EJeQPbjMCaUp",
     "mayhem": false,
     "source": "chain"
    },
    {
-    "t": 1794976495717,
-    "mint": "DRSccKkGpfC9aTk2AJc9cNbyd7UXSWdWkTcfqyyZpump",
-    "symbol": "$BAG",
-    "name": "BAG",
-    "creator": "Dh3ohhNXmhDiDTwmXVY4oDCpY4ZDGL8n1dJbYn936i8E",
+    "t": 1795003762739,
+    "mint": "HfYaaSxv2eGFzckdiPzSYC2hZm9cp9ypEiWsgti1pump",
+    "symbol": "$CAT",
+    "name": "CATECOIN",
+    "creator": "3Xt4p3b21yMLjYqNjPkyLPfN3rTfohsGGbqyEjF3uzSe",
     "mayhem": true,
     "source": "chain"
    },
    {
-    "t": 1794976493918,
-    "mint": "AiYmmJUWduEUJYxtYN94WP5a4vNV4BWCoSBakBUVpump",
-    "symbol": "kittylick",
-    "name": "Freaky ah",
-    "creator": "4462qh9k9zGZxcsU7jHa6zH5iXN9BjPwMfpMRuaersyv",
-    "mayhem": true,
-    "source": "chain"
-   },
-   {
-    "t": 1794976493352,
-    "mint": "BjFg3gZQoCUN2Tzisks2zP4CBrXbwZmrA5cX9L9rpump",
-    "symbol": "GPT",
-    "name": "Chat GPT",
-    "creator": "BEc1o79VzgmE1G5nbzCrHVY2YNxecKLyHkhDni8KZGQr",
+    "t": 1795003753259,
+    "mint": "Fm5AMbUScLGRfiYvKZ5ES8CWocA2nPmTMzAxh4xvpump",
+    "symbol": "DACT",
+    "name": "Da City Coin ",
+    "creator": "BUUshCBv1rpYWPSpnsSviV1MhNTTWZmYwV4Mo3YoptSe",
     "mayhem": false,
     "source": "chain"
    },
    {
-    "t": 1794976488203,
-    "mint": "HWCtEXGr4fx4nS4hGRv6VVx2DhvDjkSbXtRCzyzepump",
-    "symbol": "BOBO",
-    "name": "BOBO",
-    "creator": "4v3a6gBxvUMXDbUnySawLnRU2RJ87wbrvZ2sHsmBGSZZ",
+    "t": 1795003751027,
+    "mint": "AqfSky5EdmxZHa4ts3Y5MwMDb4JS4LWCNCJwVxUepump",
+    "symbol": "LOCKIN",
+    "name": "LOCKIN",
+    "creator": "Fwfpy7F2TTvha2p7bG4Zkhgau4tj3oEC95JnFM4nFy4m",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795003750770,
+    "mint": "9iagPAwCbgagjWLXa3RZRKPkV2RqNREPMVEAzzfepump",
+    "symbol": "SXSN",
+    "name": "67%",
+    "creator": "A5PVkZHMQVXLtcFjYomTFqmnt6HAVbUTtoBpyQ38zEKW",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795003747895,
+    "mint": "2MCzrRhaj8nQbmXtp6sMpFQp1oZEbJKFx4nbgKo2pump",
+    "symbol": "EDDIE",
+    "name": "CRYPTO SCAMMER IN GAME LOL",
+    "creator": "E1hu6KhT4CERj2b5tpWcF5jZxFhWHR5FUdKqYjDLaxjW",
     "mayhem": false,
     "source": "chain"
    },
    {
-    "t": 1794976487110,
-    "mint": "D7mrjeM7UWctprBv2vxJEEMra1zjnd7tW2sv1a9npump",
-    "symbol": "GTAVI",
-    "name": "Official Grand Theft Auto VI",
-    "creator": "D6m8NQN2PHDhGWSnXAiApeQEnkR5vinznTC297ErdA1s",
+    "t": 1795003747653,
+    "mint": "86DUsQ9nM8wmAtEPQhr9Qu8rRzuf52JkMstfYkRApump",
+    "symbol": "EDDIE",
+    "name": "CRYPTO SCAMMER IN GAME LOL",
+    "creator": "E1hu6KhT4CERj2b5tpWcF5jZxFhWHR5FUdKqYjDLaxjW",
     "mayhem": false,
     "source": "chain"
    },
    {
-    "t": 1794976484085,
-    "mint": "EASWz2hQZJJvfR7zkTPhCvYUz4hJuPq9TA4GQf4Kpump",
-    "symbol": "BENJIEZ",
-    "name": "CHASIN BENJIEZ",
-    "creator": "2F7TtCdYFWf2byGcmWtHxiGTQB16UtB8QEcrH8y68Xxm",
-    "mayhem": true,
-    "source": "chain"
-   },
-   {
-    "t": 1794976483889,
-    "mint": "G74s5zoDRkX7srdVhqv3UbRsz9vMm7GpGPgpNQH6pump",
-    "symbol": "GATOR",
-    "name": "Gatorpaid",
-    "creator": "F1FgimZTsmVZD7XQAv38WseLymuA2bnZqmfxcnyeAp8Z",
-    "mayhem": true,
-    "source": "chain"
-   },
-   {
-    "t": 1794976476997,
-    "mint": "HHvq7kwqSooV1JU1Phj5BrwrhLZUpLWFsAZRBjTApump",
-    "symbol": "$Pigeon",
-    "name": "BrownPigeon",
-    "creator": "6qmzfPH5699W4Xe5MkBJScrjMjs5y4TxukddLxno5a7n",
-    "mayhem": true,
-    "source": "chain"
-   },
-   {
-    "t": 1794976476460,
-    "mint": "DtHYPKfXPbe99NQ94qPErKupziPQS1G13m8bk9TZpump",
-    "symbol": "CHAROC",
-    "name": "Chaotic Rocket",
-    "creator": "9BcCdxDeNSBBBwhv86Pvk9kzhMgz5mETnRACU7koeuuR",
-    "mayhem": true,
-    "source": "chain"
-   },
-   {
-    "t": 1794976474010,
-    "mint": "FtMKyB911Lm4wRHYCLmkd7V5pSK1Fk7RwNeMMiTGpump",
-    "symbol": "PANIC",
-    "name": "panic",
-    "creator": "HedPhc4MUQpqotZYmQJLbv6BrJLJ6jCrfCM1jTj6Cp2T",
-    "mayhem": true,
-    "source": "chain"
-   },
-   {
-    "t": 1794976470808,
-    "mint": "3A4JmBJ7iGxHUbHw848nbHqB3EAwRARAScqjdFrwpump",
-    "symbol": "SCRVAN",
-    "name": "Screaming Vandal",
-    "creator": "H8WtUjqvsduGFDv8ARKDfqzZMwwM1ZfefCcnr9Knn5tJ",
-    "mayhem": true,
-    "source": "chain"
-   },
-   {
-    "t": 1794976468820,
-    "mint": "9DUwrJMGP6kg1PYgyhmLVi7FVnkFTGjDjW7xHA5kpump",
-    "symbol": "VINU",
-    "name": "GTA inu",
-    "creator": "9iyNxW2FkvxRMqq7VWn2MPPkAPf4Lcq2tyFPYPBZMqHf",
+    "t": 1795003747523,
+    "mint": "2AVKKbAf34mxAbCphgukqUFHCd92QEpDBuWxMYAopump",
+    "symbol": "EDDIE",
+    "name": "CRYPTO SCAMMER IN GAME LOL",
+    "creator": "E1hu6KhT4CERj2b5tpWcF5jZxFhWHR5FUdKqYjDLaxjW",
     "mayhem": false,
     "source": "chain"
    },
    {
-    "t": 1794976466708,
-    "mint": "GeuLXjkZ4NoVkcDPQLGNRTyeFJdgK9Nje8RdxUFZpump",
-    "symbol": "GTA VI",
-    "name": "ROCKSTAR GRAND THEFT AUTO VI",
-    "creator": "8eHZ4ijRuRYBG3YgMhqtDxs4TStc2b3yAdamfWeAda4y",
-    "mayhem": true,
-    "source": "chain"
-   },
-   {
-    "t": 1794976459441,
-    "mint": "5SVTq2Bw8akGasCzfsff2gnuJSpyGjFVNSCNyY3Cpump",
-    "symbol": "CHAROC",
-    "name": "Chaotic Rocket",
-    "creator": "9BcCdxDeNSBBBwhv86Pvk9kzhMgz5mETnRACU7koeuuR",
-    "mayhem": true,
-    "source": "chain"
-   },
-   {
-    "t": 1794976452018,
-    "mint": "GQQjby3uPxmrer7YrgHm174hH51ok5xuU3sikpXopump",
-    "symbol": "Bottrap",
-    "name": "Bot loop⚠️",
-    "creator": "CUfhBueDpCxsKPjQAstykVnqoZtLbfqynbCupYUAgvg",
-    "mayhem": true,
-    "source": "chain"
-   },
-   {
-    "t": 1794976450215,
-    "mint": "FSjz3jgjGP1phEJZNufVYCDgEEtNo4MpJzJauqjzpump",
-    "symbol": "BENJIEZ",
-    "name": "CHASIN BENJIEZ",
-    "creator": "2F7TtCdYFWf2byGcmWtHxiGTQB16UtB8QEcrH8y68Xxm",
-    "mayhem": true,
-    "source": "chain"
-   },
-   {
-    "t": 1794976448331,
-    "mint": "BniA15C8TutdqRmp8ruyqydDrmD1mxjGA1Lu9Khpump",
-    "symbol": "wApe",
-    "name": "wrappedape",
-    "creator": "FyydFaMhgYmpSn3KuEkP4ZmPQ2wTrDjB8AaES1PXoYG4",
-    "mayhem": true,
-    "source": "chain"
-   },
-   {
-    "t": 1794976444107,
-    "mint": "tBzBtd6FSwa6b9PhU76knKWahp5RftX1xBazzRCpump",
-    "symbol": "ELONUSD",
-    "name": "Elon Dollar",
-    "creator": "HpeM29TyLcBknyZYmfBDuY4V5554eqaqrwrUqF9CPo3P",
-    "mayhem": true,
-    "source": "chain"
-   },
-   {
-    "t": 1794976441248,
-    "mint": "AtX6SfJUwjPv6RKwRVnTrZJMNiWLLhkLb4jeZKLBpump",
-    "symbol": "GTA",
-    "name": "grand theft anthropic",
-    "creator": "8iw78jRhhMpTMwFn3wDdVMQL7aypSi6z3eDBkhe3vqsc",
-    "mayhem": true,
-    "source": "chain"
-   },
-   {
-    "t": 1794976440012,
-    "mint": "2JnmvPKcmdiyK24NMc6D7o3rvLkeknzn8sY8H5mppump",
-    "symbol": "Cash GTA",
-    "name": "BuckMe",
-    "creator": "wR21XHjYuvRgZM29zSLQerq9SiXmb7nxs4HRWheaGyd",
+    "t": 1795003745143,
+    "mint": "C2tfXt4iCU3Z4bVDq1emHWQfpzc6pQmQ3U5tCab9pump",
+    "symbol": "EDDIE",
+    "name": "CRYPTO SCAMMER IN GAME LOL",
+    "creator": "E1hu6KhT4CERj2b5tpWcF5jZxFhWHR5FUdKqYjDLaxjW",
     "mayhem": false,
     "source": "chain"
    },
    {
-    "t": 1794976439483,
-    "mint": "BXi1XAMuvBNpkjPssrq9irR2oXrXBVFEg477LCVPpump",
-    "symbol": "GTA",
-    "name": "Last week",
-    "creator": "4fJB9tVPtsH22HdwStUYXaVg3Z7QfgeU7vLCyLLxzXC5",
+    "t": 1795003745143,
+    "mint": "J8mSL3nKfu1CqQKxfAzyo7A3qHq6fuay3BSckmuRpump",
+    "symbol": "EDDIE",
+    "name": "CRYPTO SCAMMER IN GAME LOL",
+    "creator": "E1hu6KhT4CERj2b5tpWcF5jZxFhWHR5FUdKqYjDLaxjW",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795003744730,
+    "mint": "5XzdrExWDM6Q7SSunZ7yqEdKNyY8DU4Rsnfvi2S1pump",
+    "symbol": "EDDIE",
+    "name": "CRYPTO SCAMMER IN GAME LOL",
+    "creator": "E1hu6KhT4CERj2b5tpWcF5jZxFhWHR5FUdKqYjDLaxjW",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795003742712,
+    "mint": "CcYETM4mVRfmrosLjEkcwLfCPcm3KuYJuA5zXSGupump",
+    "symbol": "$TBC",
+    "name": "The boring Company",
+    "creator": "7odwUjYtYE4wn6gQPVdymhLtSuEneeD59RX9HGtw2EKs",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795003737679,
+    "mint": "3q4Db9pFE3qg2mFGzP4k9xcVwRy4ACbp2XvCgsPgpump",
+    "symbol": "$GOTH",
+    "name": "GOTHGIRL",
+    "creator": "Cr2geQbc5jiYK3aEPjv5KPyys99EBRtS5HGQSMFVxehP",
     "mayhem": true,
     "source": "chain"
    },
    {
-    "t": 1794976423154,
-    "mint": "Eq7MdsgCf2V3rVb63afB14EF3ZcRj2b9RGF8m4A6pump",
-    "symbol": "wApe",
-    "name": "wrappedape",
-    "creator": "w49pEgjS8G4FxSzcb6ckAxNAPN4GbN7WwTjVQs7B8Fg",
+    "t": 1795003735983,
+    "mint": "E2zXxG6aLonGb1mUNgaPn9BoKUZZ8QQAV31HJJuvpump",
+    "symbol": "LOCKIN",
+    "name": "LOCKIN",
+    "creator": "Fwfpy7F2TTvha2p7bG4Zkhgau4tj3oEC95JnFM4nFy4m",
     "mayhem": true,
     "source": "chain"
    },
    {
-    "t": 1794976421216,
-    "mint": "Dy1fu6ZjBC6g63c71B7f5jCiDahshM4fW3NvcXUMpump",
-    "symbol": "Griffith",
-    "name": "Griffith",
-    "creator": "D8TU694KJw1WtAt1v14fCx5Cq2sjPsbkqwyrGWQZXRNL",
+    "t": 1795003729469,
+    "mint": "Eafykgc9ybKGYJojpM2ZBN88H7W2CEdU5zBMn8nqpump",
+    "symbol": "GTA6",
+    "name": "GTA6",
+    "creator": "48URwdaCy9mW8yVwQSnBPoThzNphRkFyRuKVNuMHE8B7",
     "mayhem": true,
     "source": "chain"
    },
    {
-    "t": 1794976407956,
-    "mint": "9XPi4HLsDUjorZn15huStjitH1vqGQyXoNgshr33pump",
-    "symbol": "OTTER",
-    "name": "OTTERPRENEUR",
-    "creator": "9BcCdxDeNSBBBwhv86Pvk9kzhMgz5mETnRACU7koeuuR",
+    "t": 1795003704154,
+    "mint": "A36nwJsbmzpNJqWNApP9eGyzVobNuYc95eLiabTWpump",
+    "symbol": "out now",
+    "name": "out now",
+    "creator": "7pjQxwLuSfg2iT335ua9MSDyDc2HQEo3TVeXwXgXN4ri",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795003701324,
+    "mint": "2sadbEeqx9iE3fv1iT21waBBss93SXmy35PjWEvCpump",
+    "symbol": "$BURGER",
+    "name": "PLANKTON",
+    "creator": "HCwp5FKXUYdG5zj5mttwrLZdRsvGY49Fw7MXgPBNZ1sL",
     "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795003699043,
+    "mint": "HNiyrpeaGosyRUAzyRx3QDRRmyUZKR64h3Hb8xdQpump",
+    "symbol": "DihcityCoin",
+    "name": "Dihcitycoin",
+    "creator": "Ahksv1euAKcEPSUVXbwz48HHeJkkyHgMDxHPkXdSjM1F",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795003678026,
+    "mint": "9WuhJh1zEqrUriNJoBc46AU9q3rowcsgcYqAeqU8pump",
+    "symbol": "LOCKIN",
+    "name": "LOCKIN",
+    "creator": "Fwfpy7F2TTvha2p7bG4Zkhgau4tj3oEC95JnFM4nFy4m",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795003674083,
+    "mint": "C7UBSqM6Xjz615ao68Kq8EadVYacVWJhTJMGFwWLpump",
+    "symbol": "Billy",
+    "name": "Billy",
+    "creator": "AZry31LgByHrZ37sdPdH3kPPGM5HzkjhBWcerZxMgX4a",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795003670783,
+    "mint": "AWxHAy8hY1yYqNkw9uAF8bshJnTS1hgBYLNuTBK2pump",
+    "symbol": " $LUCIA",
+    "name": "LUCIA🩸PERIOD",
+    "creator": "5Ubiixo7voC62w7RWczBozfxPn5nJPw1J12swWE6qEBi",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795003667506,
+    "mint": "D41R69nZrnpiVFgFCUAzQdzrGG55F3gbkTaYDfTsVcnj",
+    "symbol": "3",
+    "name": "The Big 3",
+    "creator": "HFfMZUva7dWDZSBwnvAu7S15eMAGJhSRx7YQ8ovRRhYE",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795003658414,
+    "mint": "FWxTuWFnFLJuRgjkxzmEmYy26kevuUTYTJVhaSJ8pump",
+    "symbol": "buckz",
+    "name": "buckz",
+    "creator": "FhTPy8WsprLrbetyEAUJYYaXfChrKa2GGNxygorBMNC",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795003657204,
+    "mint": "HdfFF8Am1gZGxCxEAZWbtgXPRkRL855PcMyeCq5Jpump",
+    "symbol": "Billy",
+    "name": "Billy",
+    "creator": "9k7n6mMY7rrabkqS8uk9mRLCyM2MMtRXu6BkyxEaGBMs",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795003653096,
+    "mint": "8HcR3n2ME1LCPpoGJApuk2N46qxjMxx61uuih5Rhpump",
+    "symbol": "MWGA",
+    "name": "MAKE WEED GREAT AGAIN",
+    "creator": "oztoR5Q9cgWQo57uaZ8Dx5yssQmjtUCXJAXS2MGVZSm",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795003638917,
+    "mint": "HA7KNH3wnjuDmSkqcFU5QGG6Gc4q4GdqVBei6EQVpump",
+    "symbol": "TTWO",
+    "name": "TTWO⁠",
+    "creator": "CZvKaaUrdypq3rmxLVZz3LF6w2grtijQrmyPCCmGgyE2",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795003637459,
+    "mint": "Afx9yA6wfsZVpKdEJA1xYWQirSarFyVcUYPPc64Kpump",
+    "symbol": "DeCety",
+    "name": "AdeCety",
+    "creator": "BbAaTJJWBZN74ZniPsyyp8QuFgcVCWMVATBTPjXMe4L4",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795003629367,
+    "mint": "4c42TYp6XQFuQV116nWaR2rAYCnmx9CntVJkpsvMpump",
+    "symbol": "LOCKIN",
+    "name": "LOCKIN",
+    "creator": "Fwfpy7F2TTvha2p7bG4Zkhgau4tj3oEC95JnFM4nFy4m",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795003619776,
+    "mint": "2zk11hVDbWbgsn8FWY4WwKp5Trr6VcPwEK3i6vDFpump",
+    "symbol": "GTSEX",
+    "name": "‏GTA Sex",
+    "creator": "BLAbWrQcbcpXx5a8YLRood59gJsSLqe3m8cXq6Q94M4P",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795003617760,
+    "mint": "Dutg2AtifKh2piE6dioijNYij31vwxFyFrVsfjDMpump",
+    "symbol": " $LUCIA",
+    "name": "LUCIA PERIOD",
+    "creator": "5Ubiixo7voC62w7RWczBozfxPn5nJPw1J12swWE6qEBi",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795003613849,
+    "mint": "AmutydwkV8BCMRJd9H5XmTfQTijuz4Aryhu951jupump",
+    "symbol": "GTA:VI",
+    "name": "Grand Theft Alibi:Virtual Illne$",
+    "creator": "3uY3jHwQdQRWWDrmgSxuTK4qV9W1TJj2jtNgzAGz6jrC",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795003609206,
+    "mint": "6rdQXFpELVn3nWTWmP9zoPDQTaj2qGqR3Vy4XfXmpump",
+    "symbol": "AFTER",
+    "name": "After GTA VI",
+    "creator": "3W9UHXxvU23sPnV1XiEBriAwxxhTZiojww6yvLTAZ8Ce",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795003599932,
+    "mint": "6tv9RLuNUF59fciXVerHoo3fcL7hBZD56d3yJZS8pump",
+    "symbol": "PUMP",
+    "name": "PUMP",
+    "creator": "5pUgxQGgX36GyV5BdsBNRAw9JxJ6Br4UVddJmJ3sumhc",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795003599920,
+    "mint": "7zzsJC57DX69989ak9HhEZuDpmJkXm6oTszscS24pump",
+    "symbol": "DihcityCoin",
+    "name": "DihcityCoin",
+    "creator": "2he1DdDFamC3FiRxWwp35b7J4BAj5Jna5edAeh7oM5af",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795003593632,
+    "mint": "BjdSgHiKnfEg6GJdWHHdpHtJzqmVbxy5b1256NDxpump",
+    "symbol": "DacityCoin",
+    "name": "DacityCoin",
+    "creator": "47VGCNvc39zSNqb5sFgdoWLXQDgXG7L8goUqus7HqfRc",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795003593631,
+    "mint": "46YsYCAfPAaqxpj5ogpFLNvdRSNJrFEdsczTiMDQpump",
+    "symbol": "$CHIMAFIA",
+    "name": "Chihuahua Mafia",
+    "creator": "8b9YLuNzrBgKAycbmGThKjkR6Ry9H9CdAdWeiZE1ZAR8",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795003584811,
+    "mint": "A126dkUf2cQKB5ypWQKYUSqRvs3c3pTJkbo31SNpump",
+    "symbol": "LaMisery",
+    "name": "La Misery",
+    "creator": "5bX8r4WW3C2hL11mYV5sFF9PEL9nNyhjM8NSXVESeMrj",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795003580720,
+    "mint": "csEXpxxu3CKMz7TGB4FoTLUtV8RVevsS5JyWREppump",
+    "symbol": "BBK",
+    "name": "Beban Bebas Kripto",
+    "creator": "HQKjc27ap18wF1AVSvbiuxMdvyetBwbjfcPgL3cQkH7C",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795003571758,
+    "mint": "FTj3SoLKHNGvC1NR8udhXPWpMomQN1237kYqHCBEpump",
+    "symbol": "GTC6",
+    "name": "grand theft cat VI",
+    "creator": "5RWxh5nex4eQJLTDVu61yXMfCzrvfV5B4AgzBejqLxE5",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795003568678,
+    "mint": "8WrAwkpBgo77VpkvTDT5nFknSatrvNivqGy5XJd7pump",
+    "symbol": "CHER",
+    "name": "Cher",
+    "creator": "AUK8VVPUB869hcHS2985ZfhqKRYAoxiiimkUu83vQugp",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795003568007,
+    "mint": "94phLDjqqY7rkNH7UzDh5ViYweXopGitjLcScdJspump",
+    "symbol": "WASTED",
+    "name": "WASTED",
+    "creator": "DKfhBcKQJhB8P8Y627KS67eU3vsQ5LzMS8SGXfUdTXye",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795003568007,
+    "mint": "5iWDVVJQCUsZUCTnJ7TyknrinVt19uJWf77ydSPupump",
+    "symbol": "WASTED",
+    "name": "WASTED",
+    "creator": "DKfhBcKQJhB8P8Y627KS67eU3vsQ5LzMS8SGXfUdTXye",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795003565998,
+    "mint": "Fse7GJBWg9jfnNh3z3WvnmLVfQPpR7aDW4xHwSkGpump",
+    "symbol": "DC",
+    "name": "DacityCoin",
+    "creator": "6brYePDmavsgzCKmxsZ59BtUJKMktYSWXK1YxvqD4Qtx",
+    "mayhem": false,
     "source": "chain"
    }
   ]
  },
  "whales": {
-  "wallets_tracked": 520,
-  "wallets_with_3plus_closed": 30,
+  "wallets_tracked": 1080,
+  "wallets_with_3plus_closed": 42,
   "proven_count": 0,
-  "closed_round_trips_observed": 402,
+  "closed_round_trips_observed": 603,
   "criteria": {
    "minClosed": 8,
    "minNetSol": 0.5,
@@ -1164,243 +1216,199 @@
   "proven": [],
   "activity": [
    {
-    "t": 1794976411668,
+    "t": 1795003569586,
     "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
-    "mint": "7brf4W9X2MY69w234UBUdXPCztmpzGqV7eBD5bfNpump",
-    "symbol": null,
-    "side": "sell",
-    "sol": 0.1076,
-    "venue": "curve",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1794976411531,
-    "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
-    "mint": "9mRm74z6KgCNQoGkrXYGJfAeFMS5UBFzyC9zKXXBpump",
+    "mint": "8e8tq7kDMRU8fG35R3jrpR8mja8qNzUuNsvMdafSpump",
     "symbol": null,
     "side": "buy",
-    "sol": 0.862,
-    "venue": "pumpswap",
+    "sol": 0.5912,
+    "venue": "curve",
     "proven": true,
     "big": false
    },
    {
-    "t": 1794976411531,
+    "t": 1795003569371,
     "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
-    "mint": "GFZZxRUdLoi3ditypHkn62cNQuWwwGzwHEB85T1jpump",
+    "mint": "ALLg8mq9JdB8nimmz1VmyQhVL3DyadBF1G8ZDT7Tpump",
     "symbol": null,
     "side": "buy",
-    "sol": 0.0764,
-    "venue": "pumpswap",
+    "sol": 0.0046,
+    "venue": "curve",
     "proven": true,
     "big": false
    },
    {
-    "t": 1794976411442,
+    "t": 1795003569371,
     "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
-    "mint": "6gU4VnvxQUwatxeYsu7aApTN57iPHBfBVvcXiX8Jpump",
+    "mint": "E97nJiEC36SzHh3dUxn3E1XFsHMJLEyRroBHu1iXpump",
     "symbol": null,
     "side": "buy",
-    "sol": 0.0555,
+    "sol": 0.178,
     "venue": "curve",
     "proven": true,
     "big": false
    },
    {
-    "t": 1794976411442,
+    "t": 1795003569371,
     "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
-    "mint": "J3keCT7JPtsKFo946PLZc6Ck1tgaV5MZM5WrkVFupump",
-    "symbol": null,
-    "side": "sell",
-    "sol": 0.0155,
-    "venue": "curve",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1794976411442,
-    "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
-    "mint": "47hsftDJs2dSv1VwZBMDY8RVBAaVMu47deubF5hupump",
-    "symbol": null,
-    "side": "sell",
-    "sol": 0.0395,
-    "venue": "curve",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1794976411442,
-    "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
-    "mint": "A3L3UnQDBtFKQYBazXotFUo8kNurYL1Gu1ME3LFMpump",
-    "symbol": null,
-    "side": "sell",
-    "sol": 0.0395,
-    "venue": "curve",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1794976411176,
-    "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
-    "mint": "3fcrNUbYDhQsuEvBfZKTfJDMvXVqzCDz81HSpRfJpump",
-    "symbol": null,
-    "side": "sell",
-    "sol": 0.0042,
-    "venue": "curve",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1794976411166,
-    "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
-    "mint": "JMZGJa6pgFGwwfxKFDYLGP1QiHUNLEETBA4m7Zwpump",
+    "mint": "BxYnMGgBsFfJmL2Kgc4aLGFBkxz3zKGVkeWPEFhhpump",
     "symbol": null,
     "side": "buy",
-    "sol": 0.0069,
+    "sol": 0.0237,
     "venue": "curve",
     "proven": true,
     "big": false
    },
    {
-    "t": 1794976411166,
+    "t": 1795003569222,
     "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
-    "mint": "UatPUALfLuu5ozb7HrsPkcy6CmxVXnxprZm4ebKpump",
-    "symbol": null,
-    "side": "sell",
-    "sol": 0.0665,
-    "venue": "curve",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1794976411166,
-    "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
-    "mint": "7brf4W9X2MY69w234UBUdXPCztmpzGqV7eBD5bfNpump",
-    "symbol": null,
-    "side": "sell",
-    "sol": 0.0864,
-    "venue": "curve",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1794976410906,
-    "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
-    "mint": "9mRm74z6KgCNQoGkrXYGJfAeFMS5UBFzyC9zKXXBpump",
-    "symbol": null,
-    "side": "sell",
-    "sol": 0.1801,
-    "venue": "pumpswap",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1794976410888,
-    "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
-    "mint": "GFZZxRUdLoi3ditypHkn62cNQuWwwGzwHEB85T1jpump",
+    "mint": "4zB1i4U64pAr2qEBDAgghatK9AgpxqLKAYi33ujJpump",
     "symbol": null,
     "side": "buy",
-    "sol": 0.0339,
-    "venue": "pumpswap",
+    "sol": 0.0888,
+    "venue": "curve",
     "proven": true,
     "big": false
    },
    {
-    "t": 1794976410862,
+    "t": 1795003569215,
     "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
-    "mint": "6gU4VnvxQUwatxeYsu7aApTN57iPHBfBVvcXiX8Jpump",
+    "mint": "8e8tq7kDMRU8fG35R3jrpR8mja8qNzUuNsvMdafSpump",
     "symbol": null,
     "side": "buy",
-    "sol": 0.0503,
+    "sol": 0.1197,
     "venue": "curve",
     "proven": true,
     "big": false
    },
    {
-    "t": 1794976410862,
+    "t": 1795003568952,
     "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
-    "mint": "J3keCT7JPtsKFo946PLZc6Ck1tgaV5MZM5WrkVFupump",
+    "mint": "8BTkEMhucr7eYygw21J5tUboq6fYHL3tk7VivU7bpump",
+    "symbol": null,
+    "side": "sell",
+    "sol": 0.1252,
+    "venue": "curve",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795003568952,
+    "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
+    "mint": "9zKhqiGyQef9EnE7a9FCHwVYDPdsxetsUKDrDKZqpump",
+    "symbol": null,
+    "side": "sell",
+    "sol": 0.0115,
+    "venue": "curve",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795003568952,
+    "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
+    "mint": "Ga6aHqCNaFqUHVrxZ5HVonNWcVFZCaUg6rNQpvHypump",
     "symbol": null,
     "side": "buy",
-    "sol": 0.025,
+    "sol": 0.0188,
     "venue": "curve",
     "proven": true,
     "big": false
    },
    {
-    "t": 1794976410861,
+    "t": 1795003568681,
     "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
-    "mint": "A3L3UnQDBtFKQYBazXotFUo8kNurYL1Gu1ME3LFMpump",
-    "symbol": null,
-    "side": "sell",
-    "sol": 0.0268,
-    "venue": "curve",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1794976410861,
-    "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
-    "mint": "7Ym9D3jU5EjJvEZfNUm7q6Ph6j77fkthBjx35KBzpump",
-    "symbol": null,
-    "side": "sell",
-    "sol": 0.098,
-    "venue": "curve",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1794976410855,
-    "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
-    "mint": "6SFAau3wfikaaDa72x7brLD9qHnfp66tMgcPQ68Mpump",
+    "mint": "BxYnMGgBsFfJmL2Kgc4aLGFBkxz3zKGVkeWPEFhhpump",
     "symbol": null,
     "side": "buy",
-    "sol": 0.0075,
+    "sol": 0.0115,
     "venue": "curve",
     "proven": true,
     "big": false
    },
    {
-    "t": 1794976410855,
+    "t": 1795003568681,
     "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
-    "mint": "47hsftDJs2dSv1VwZBMDY8RVBAaVMu47deubF5hupump",
+    "mint": "E97nJiEC36SzHh3dUxn3E1XFsHMJLEyRroBHu1iXpump",
     "symbol": null,
     "side": "sell",
-    "sol": 0.1212,
+    "sol": 0.3625,
     "venue": "curve",
     "proven": true,
     "big": false
    },
    {
-    "t": 1794976410700,
+    "t": 1795003568679,
     "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
-    "mint": "7brf4W9X2MY69w234UBUdXPCztmpzGqV7eBD5bfNpump",
-    "symbol": null,
-    "side": "sell",
-    "sol": 0.0521,
-    "venue": "curve",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1794976410414,
-    "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
-    "mint": "GFZZxRUdLoi3ditypHkn62cNQuWwwGzwHEB85T1jpump",
+    "mint": "AtKe9EoW1KMFXDvm8ZvNKV5crCtfCowkaEpmbsiApump",
     "symbol": null,
     "side": "buy",
-    "sol": 0.0425,
-    "venue": "pumpswap",
+    "sol": 0.0058,
+    "venue": "curve",
     "proven": true,
     "big": false
    },
    {
-    "t": 1794976410373,
+    "t": 1795003568669,
     "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
-    "mint": "UatPUALfLuu5ozb7HrsPkcy6CmxVXnxprZm4ebKpump",
+    "mint": "ALLg8mq9JdB8nimmz1VmyQhVL3DyadBF1G8ZDT7Tpump",
+    "symbol": null,
+    "side": "buy",
+    "sol": 0.006,
+    "venue": "curve",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795003568669,
+    "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
+    "mint": "8e8tq7kDMRU8fG35R3jrpR8mja8qNzUuNsvMdafSpump",
+    "symbol": null,
+    "side": "buy",
+    "sol": 0.2743,
+    "venue": "curve",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795003568481,
+    "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
+    "mint": "4zB1i4U64pAr2qEBDAgghatK9AgpxqLKAYi33ujJpump",
+    "symbol": null,
+    "side": "buy",
+    "sol": 0.03,
+    "venue": "curve",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795003568481,
+    "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
+    "mint": "9zKhqiGyQef9EnE7a9FCHwVYDPdsxetsUKDrDKZqpump",
+    "symbol": null,
+    "side": "buy",
+    "sol": 0.0161,
+    "venue": "curve",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795003568480,
+    "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
+    "mint": "8BTkEMhucr7eYygw21J5tUboq6fYHL3tk7VivU7bpump",
     "symbol": null,
     "side": "sell",
-    "sol": 0.218,
+    "sol": 0.0966,
+    "venue": "curve",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795003568458,
+    "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
+    "mint": "dALyWnSXJKpHuH1fp52WcX1UMQ9ezqwrqnXbUhTpump",
+    "symbol": null,
+    "side": "sell",
+    "sol": 0.6052,
     "venue": "curve",
     "proven": true,
     "big": false
@@ -1411,11 +1419,11 @@
  },
  "sniper": {
   "state": "running",
-  "last_eval_ms": 1794976508554,
+  "last_eval_ms": 1795003781176,
   "paused": false,
   "pause_reason": null,
   "counts": {
-   "scans": 2962,
+   "scans": 5222,
    "triggers": 0,
    "independent_opportunities": 0,
    "vetoed": 0,
@@ -1464,41 +1472,85 @@
  },
  "router": {
   "state": "running",
-  "quotes": 3,
+  "quotes": 7,
   "errors": 0,
-  "last_quote_ms": 1794976493739,
+  "last_quote_ms": 1795003771196,
   "last_error": null,
   "recent": [
    {
-    "t": 1794976493739,
-    "mint": "BniA15C8TutdqRmp8ruyqydDrmD1mxjGA1Lu9Khpump",
-    "symbol": "wApe",
+    "t": 1795003771196,
+    "mint": "FM2KA9gFmaBZ2T6gT3udHgQ1ofTmNDLGwJorNhKzpump",
+    "symbol": null,
     "venue": "pump_curve",
     "size_sol": 0.01,
-    "rt_cost_pct": 6.622,
-    "impact_pct": 0.011,
+    "rt_cost_pct": 6.611,
+    "impact_pct": 0.006,
+    "adverse_pct": 8.6,
+    "fee_bps": 125
+   },
+   {
+    "t": 1795003741196,
+    "mint": "FM2KA9gFmaBZ2T6gT3udHgQ1ofTmNDLGwJorNhKzpump",
+    "symbol": null,
+    "venue": "pump_curve",
+    "size_sol": 0.01,
+    "rt_cost_pct": 6.604,
+    "impact_pct": 0.002,
+    "adverse_pct": 8.6,
+    "fee_bps": 125
+   },
+   {
+    "t": 1795003711195,
+    "mint": "5PA2EpcsXLzFWDBqy6d4daH2w3LYCwtxkem1RPEzpump",
+    "symbol": null,
+    "venue": "pump_curve",
+    "size_sol": 0.01,
+    "rt_cost_pct": 6.6,
+    "impact_pct": 0,
+    "adverse_pct": 5.719,
+    "fee_bps": 125
+   },
+   {
+    "t": 1795003681196,
+    "mint": "6rdQXFpELVn3nWTWmP9zoPDQTaj2qGqR3Vy4XfXmpump",
+    "symbol": "AFTER",
+    "venue": "pump_curve",
+    "size_sol": 0.01,
+    "rt_cost_pct": 6.587,
+    "impact_pct": 0,
     "adverse_pct": 25,
     "fee_bps": 125
    },
    {
-    "t": 1794976463739,
-    "mint": "6gU4VnvxQUwatxeYsu7aApTN57iPHBfBVvcXiX8Jpump",
-    "symbol": null,
+    "t": 1795003651194,
+    "mint": "6rdQXFpELVn3nWTWmP9zoPDQTaj2qGqR3Vy4XfXmpump",
+    "symbol": "AFTER",
     "venue": "pump_curve",
     "size_sol": 0.01,
-    "rt_cost_pct": 7.259,
-    "impact_pct": 0.335,
+    "rt_cost_pct": 6.588,
+    "impact_pct": 0,
     "adverse_pct": 25,
     "fee_bps": 125
    },
    {
-    "t": 1794976433738,
-    "mint": "6gU4VnvxQUwatxeYsu7aApTN57iPHBfBVvcXiX8Jpump",
+    "t": 1795003621194,
+    "mint": "9zKhqiGyQef9EnE7a9FCHwVYDPdsxetsUKDrDKZqpump",
     "symbol": null,
     "venue": "pump_curve",
     "size_sol": 0.01,
-    "rt_cost_pct": 6.85,
-    "impact_pct": 0.127,
+    "rt_cost_pct": 38.203,
+    "impact_pct": 19.102,
+    "adverse_pct": 25,
+    "fee_bps": 125
+   },
+   {
+    "t": 1795003591194,
+    "mint": "4zB1i4U64pAr2qEBDAgghatK9AgpxqLKAYi33ujJpump",
+    "symbol": null,
+    "venue": "pump_curve",
+    "size_sol": 0.01,
+    "rt_cost_pct": 13.892,
+    "impact_pct": 3.837,
     "adverse_pct": 25,
     "fee_bps": 125
    }
@@ -1517,7 +1569,7 @@
   "mode": "PAPER",
   "orders_pending": 0,
   "last_action_ms": null,
-  "last_tick_ms": 1794976508554,
+  "last_tick_ms": 1795003781176,
   "counts": {
    "approved_seen": 0,
    "sized": 0,
@@ -1546,7 +1598,7 @@
     "start_sol": 0.021644109,
     "cash_sol": 0.021644109,
     "realized_sol": 0,
-    "day": "2026-11-17",
+    "day": "2026-11-18",
     "day_start_sol": 0.021644109,
     "day_pnl_sol": 0,
     "consecutive_losses": 0,
@@ -1572,13 +1624,13 @@
     "label": "Hypothetical 1 SOL PAPER research book",
     "mode": "PAPER",
     "start_sol": 1,
-    "cash_sol": 0.994572273,
+    "cash_sol": 0.994367273,
     "realized_sol": -0.005222727,
-    "day": "2026-11-17",
-    "day_start_sol": 1,
-    "day_pnl_sol": -0.005427727,
-    "consecutive_losses": 2,
-    "paused_reason": "2 consecutive losses; new entries paused until next ET day",
+    "day": "2026-11-18",
+    "day_start_sol": 0.994572273,
+    "day_pnl_sol": -0.000205,
+    "consecutive_losses": 0,
+    "paused_reason": null,
     "trades": 2,
     "wins": 0,
     "losses": 2,
@@ -1586,7 +1638,7 @@
     "fees_sol": {
      "venue": 0.0010621435600212238,
      "network": 0.00082,
-     "failed_tx": 0.000205
+     "failed_tx": 0.00041
     },
     "equity_curve": [
      [
@@ -1609,8 +1661,8 @@
  },
  "exit": {
   "state": "running",
-  "last_check_ms": 1794976508554,
-  "checks": 6097,
+  "last_check_ms": 1795003781176,
+  "checks": 10745,
   "policies": {
    "X1_fixed": {
     "stop": -10,
@@ -1640,12 +1692,17 @@
  },
  "opportunities": [],
  "opportunity_stats": {
-  "total_independent_opportunities": 122,
+  "total_independent_opportunities": 178,
   "by_setup_disposition": [
    {
     "setup": "A",
     "disposition": "FILLED",
     "n": 2
+   },
+   {
+    "setup": "A",
+    "disposition": "NO_FILL",
+    "n": 1
    },
    {
     "setup": "A",
@@ -1655,7 +1712,7 @@
    {
     "setup": "A",
     "disposition": "VETOED",
-    "n": 86
+    "n": 133
    },
    {
     "setup": "B",
@@ -1665,7 +1722,7 @@
    {
     "setup": "B",
     "disposition": "VETOED",
-    "n": 32
+    "n": 40
    }
   ]
  },
@@ -2248,1054 +2305,1054 @@
  ],
  "journal": [
   {
-   "t": 1794976403723,
+   "t": 1795003659113,
+   "agent": "REF-SNIPER",
+   "kind": "pass",
+   "mint": "6rdQXFpELVn3nWTWmP9zoPDQTaj2qGqR3Vy4XfXmpump",
+   "msg": "AFTER R_curve: PASSED_NOT_ORDERED"
+  },
+  {
+   "t": 1795003561177,
    "agent": "DESK",
    "kind": "restore",
    "mint": null,
-   "msg": "restored books and 0 open positions from 2026-11-18T04:32:52.799Z"
+   "msg": "restored books and 0 open positions from 2026-11-18T12:05:50.965Z"
   },
   {
-   "t": 1794976349971,
+   "t": 1795003561177,
+   "agent": "REF-DESK",
+   "kind": "restore",
+   "mint": null,
+   "msg": "reference lane restored: 0 open positions, 0 per-mint cooldowns, 0 pending orders cancelled"
+  },
+  {
+   "t": 1795003423370,
    "agent": "SNIPER",
    "kind": "veto",
-   "mint": "Zit65o7buR1QkvDu5JRq1DJBp1sU8pefRb4NHrNpump",
-   "msg": "SAM setup A: VETOED"
+   "mint": "9UKo9XNm5bF2AUb1jpjw2GoeiPFUng9HKczmVyZ9Ny5s",
+   "msg": "Shockcat setup A: VETOED"
   },
   {
-   "t": 1794976309763,
-   "agent": "SNIPER",
-   "kind": "pass",
-   "mint": "74cJ7kQLNSwYy1LSjSYJtiEwKxZSRWCrfju9rw7Rpump",
-   "msg": "RAINBET setup A: PASSED_NOT_ORDERED"
-  },
-  {
-   "t": 1794976064788,
+   "t": 1795003243524,
    "agent": "SNIPER",
    "kind": "veto",
-   "mint": "4woQVauyTuUqPF1WAR74msYaDFn9mASMVY2EXWBepump",
-   "msg": "BOBO  setup A: VETOED"
+   "mint": "2FSgBQeCwXMti2Xg5dozqm5TKEF5svTuvsHqk5jcpump",
+   "msg": "MFC setup A: VETOED"
   },
   {
-   "t": 1794976056063,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "pGn2K21qVVcQqqrVWPZLydMe4rYyymTyKHWufLXpump",
-   "msg": "XBOX setup A: VETOED"
-  },
-  {
-   "t": 1794975916961,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "4M4jvnZjF16dfXeKAznqT8CVuRTJUMCHBxMP34S6pump",
-   "msg": "BOBO setup A: VETOED"
-  },
-  {
-   "t": 1794975884601,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "57i7wM8EtiCwhgrumd7MHyUmcjNQmNtMdifBHL8Npump",
-   "msg": "XBOX setup A: VETOED"
-  },
-  {
-   "t": 1794975867888,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "kLfxoVWkLeaqr2coK8zXYwEJqKnt44v59D3E1FUpump",
-   "msg": "slop.cash setup A: VETOED"
-  },
-  {
-   "t": 1794975847168,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "GAF62CrWyfH2oM6KPnBZ7wR8UfDxRsZYGU2xMY4Upump",
-   "msg": "UDTF setup B: VETOED"
-  },
-  {
-   "t": 1794975644073,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "4XVGCkBrwEt2cphADRrqMFdpUkXNCa2wozijCTVfpump",
-   "msg": "DCI setup B: VETOED"
-  },
-  {
-   "t": 1794975491033,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "y5EWuWG374VEdoyDM1izc35Y6SJs5tHo5r8Ht1qpump",
-   "msg": "Speed setup B: VETOED"
-  },
-  {
-   "t": 1794975474988,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "DYfWZa54SkgZrUjLCnupaQgtdVksbVuY5WfMjsRhpump",
-   "msg": "GTAVI setup B: VETOED"
-  },
-  {
-   "t": 1794975415870,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "2tKjPFvzeWqBmmxjtGBb3zfb8zfFVePjpBhHbE2epump",
-   "msg": " setup B: VETOED"
-  },
-  {
-   "t": 1794975359225,
+   "t": 1795003121530,
    "agent": "DESK",
    "kind": "resume",
    "mint": null,
    "msg": "feeds fresh again: agents resumed"
   },
   {
-   "t": 1794975356858,
+   "t": 1795003119389,
    "agent": "DESK",
    "kind": "pause",
    "mint": null,
-   "msg": "agents paused: solana_ws stale (315.872 s)"
+   "msg": "agents paused: solana_ws stale (398.818 s)"
   },
   {
-   "t": 1794975356858,
+   "t": 1795003119389,
    "agent": "DESK",
    "kind": "suspend",
    "mint": null,
-   "msg": "timer gap 316 s detected (box suspend or stall); feeds reconnected"
+   "msg": "timer gap 399 s detected (box suspend or stall); feeds reconnected"
   },
   {
-   "t": 1794974989725,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "HrwgZ4NDxjivwDtPaw5GfgfvYtfHS9LrowQJYnfwpump",
-   "msg": "GTA setup B: VETOED"
-  },
-  {
-   "t": 1794974731078,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "7tijwxS637VVd48yfcstheKa4zdB4WZkDqouLScmpump",
-   "msg": "UDTF setup A: VETOED"
-  },
-  {
-   "t": 1794974546659,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "9x3FSiX5Qd6wSs9Y7P59ZAC3qnW5TVrMk8ev2j8ipump",
-   "msg": "PUMPOFF setup A: VETOED"
-  },
-  {
-   "t": 1794974425288,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "2pD4t3MRAhp5nxLFGgYFTJRovYBHxzPusUGBTp7Dpump",
-   "msg": "gamer setup A: VETOED"
-  },
-  {
-   "t": 1794974363441,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "Hhp3UNqqJqNuwVErhZt9wdU4YzpaSBjwhC21mqL4pump",
-   "msg": "HI setup A: VETOED"
-  },
-  {
-   "t": 1794974187664,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "B7oXpqLLJzWHQdVMuu47R5pnpeF6Fg4FUesxMZSYpump",
-   "msg": "AI setup B: VETOED"
-  },
-  {
-   "t": 1794974087941,
-   "agent": "EXIT",
-   "kind": "close",
-   "mint": "BqCXRDBKYwJtzaiqKi7XpcUEpfYGMfm5pKEiRY47pump",
-   "msg": "research/X3_time CSR 9.57% (time limit 300s)"
-  },
-  {
-   "t": 1794974064197,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "5pR3fgprdHQ6BDSpTgHQDDaijnAUGYxqsTgh7L9CDP3r",
-   "msg": "Human setup A: VETOED"
-  },
-  {
-   "t": 1794974026263,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "4XVGCkBrwEt2cphADRrqMFdpUkXNCa2wozijCTVfpump",
-   "msg": "DCI setup B: VETOED"
-  },
-  {
-   "t": 1794973839556,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "Do7ZybdCGRz9hoCXECVYC7xm4hXJTGsEdaS3eJfPPc2b",
-   "msg": "GRUB setup A: VETOED"
-  },
-  {
-   "t": 1794973791962,
-   "agent": "EXIT",
-   "kind": "close",
-   "mint": "BqCXRDBKYwJtzaiqKi7XpcUEpfYGMfm5pKEiRY47pump",
-   "msg": "research/X2_trail CSR -10.40% (stop -10% (executable -10.40%))"
-  },
-  {
-   "t": 1794973791962,
-   "agent": "EXIT",
-   "kind": "close",
-   "mint": "BqCXRDBKYwJtzaiqKi7XpcUEpfYGMfm5pKEiRY47pump",
-   "msg": "research/X1_fixed CSR -10.40% (stop -10% (executable -10.40%))"
-  },
-  {
-   "t": 1794973787597,
-   "agent": "EXIT",
-   "kind": "close",
-   "mint": "BqCXRDBKYwJtzaiqKi7XpcUEpfYGMfm5pKEiRY47pump",
-   "msg": "research/X4_signal CSR -9.28% (proven-wallet exit)"
-  },
-  {
-   "t": 1794973785074,
-   "agent": "EXEC",
-   "kind": "fill",
-   "mint": "BqCXRDBKYwJtzaiqKi7XpcUEpfYGMfm5pKEiRY47pump",
-   "msg": "research filled CSR"
-  },
-  {
-   "t": 1794973783052,
-   "agent": "SNIPER",
-   "kind": "pass",
-   "mint": "BqCXRDBKYwJtzaiqKi7XpcUEpfYGMfm5pKEiRY47pump",
-   "msg": "CSR setup A: ORDER_PENDING"
-  },
-  {
-   "t": 1794973765537,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "Dqy93p85N4kHFhiHLfHpiuXiLCTsPyhW3VGZAeVpump",
-   "msg": "UHI setup B: VETOED"
-  },
-  {
-   "t": 1794973752112,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "J7egpGwY6ieT3CbrRaEcx6ytkqX7CqGYApp96fnCpump",
-   "msg": "AI setup B: VETOED"
-  },
-  {
-   "t": 1794973675208,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "y5EWuWG374VEdoyDM1izc35Y6SJs5tHo5r8Ht1qpump",
-   "msg": "Speed setup B: VETOED"
-  },
-  {
-   "t": 1794973639646,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "4XVGCkBrwEt2cphADRrqMFdpUkXNCa2wozijCTVfpump",
-   "msg": "DCI setup A: VETOED"
-  },
-  {
-   "t": 1794973511801,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "44gNPkTVKwfNf2fPBdwiPZrVVXLVYTkmBk5VdBzrpump",
-   "msg": "BUFO setup B: VETOED"
-  },
-  {
-   "t": 1794973407052,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "AesMqCrLf1xtnA1yjPB46sU4cbxN2yjXFFhfhJNKh6LN",
-   "msg": "GRASS setup A: VETOED"
-  },
-  {
-   "t": 1794973401008,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "2tKjPFvzeWqBmmxjtGBb3zfb8zfFVePjpBhHbE2epump",
-   "msg": " setup B: VETOED"
-  },
-  {
-   "t": 1794973389943,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "9XsvTPREU8GFNhw88FkQ35jSExJa6gqYN9d1oVMBpump",
-   "msg": "QiZai setup A: VETOED"
-  },
-  {
-   "t": 1794973326253,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "4kXCmbmZFN41VNY7oUk5Mq6Vq9uMsuqoTWPaBG62pump",
-   "msg": "BOOLOO setup A: VETOED"
-  },
-  {
-   "t": 1794973027781,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "H7yAb2gYfBCDtUEv1KnRg3yD4pn1gV8ynSyAXjfjpump",
-   "msg": "Callout setup A: VETOED"
-  },
-  {
-   "t": 1794973000989,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "3RurseicGJ7BjCt71vufeaqN3k1rL9kqdKZbeTdCpump",
-   "msg": "Grub setup A: VETOED"
-  },
-  {
-   "t": 1794972854480,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "EvH3RsJ8NhSazw8yJdAi44kG3H1a5FvhrVZVnJKNpump",
-   "msg": "WOFI setup B: VETOED"
-  },
-  {
-   "t": 1794972821716,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "Aw5n9GAmovieSUs4rYhyrNGRqRKqcfVAB4KzLjxKzYH1",
-   "msg": "QiZai setup A: VETOED"
-  },
-  {
-   "t": 1794972764208,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "44gNPkTVKwfNf2fPBdwiPZrVVXLVYTkmBk5VdBzrpump",
-   "msg": "BUFO setup A: VETOED"
-  },
-  {
-   "t": 1794972473692,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "8LK1MyMQwmbdpNaJ6g5u95MkJ2YooScMQsadsfPGpump",
-   "msg": "VCN setup B: VETOED"
-  },
-  {
-   "t": 1794972195438,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "9cKtJpkhnjk59VMm16DCcWRYtaznD7NFMN8K2Nvzpump",
-   "msg": "GTA6 setup A: VETOED"
-  },
-  {
-   "t": 1794972049789,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "EYQTW2e2R94v7dzw6ZSfPtt7q5CcoLxSXLm1dwVhpump",
-   "msg": "NADJA setup B: VETOED"
-  },
-  {
-   "t": 1794972007478,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "4CQDSqg2oYMBhAwtVGdZPbp9e9cj9s59eS81GksNpump",
-   "msg": "VIC setup A: VETOED"
-  },
-  {
-   "t": 1794971945299,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "4kXCmbmZFN41VNY7oUk5Mq6Vq9uMsuqoTWPaBG62pump",
-   "msg": "BOOLOO setup A: VETOED"
-  },
-  {
-   "t": 1794971681264,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "YeCJFYiPCRXyBAcoA7i6hqKB8DnbgxF4PLhFoPfpump",
-   "msg": "Rockstar setup A: VETOED"
-  },
-  {
-   "t": 1794971623547,
-   "agent": "EXIT",
-   "kind": "close",
-   "mint": "5kqFxGM1F79MJTSW79ahWUL8MUeyDe6ENbcfrM18pump",
-   "msg": "research/X2_trail CLBTC -12.76% (stop -10% (executable -12.76%))"
-  },
-  {
-   "t": 1794971623547,
-   "agent": "EXIT",
-   "kind": "close",
-   "mint": "5kqFxGM1F79MJTSW79ahWUL8MUeyDe6ENbcfrM18pump",
-   "msg": "research/X1_fixed CLBTC -12.76% (stop -10% (executable -12.76%))"
-  },
-  {
-   "t": 1794971588881,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "8LK1MyMQwmbdpNaJ6g5u95MkJ2YooScMQsadsfPGpump",
-   "msg": "VCN setup A: VETOED"
-  },
-  {
-   "t": 1794971563002,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "44gNPkTVKwfNf2fPBdwiPZrVVXLVYTkmBk5VdBzrpump",
-   "msg": "BUFO setup A: VETOED"
-  },
-  {
-   "t": 1794971379121,
-   "agent": "EXIT",
-   "kind": "close",
-   "mint": "5kqFxGM1F79MJTSW79ahWUL8MUeyDe6ENbcfrM18pump",
-   "msg": "research/X3_time CLBTC 8.98% (time limit 300s)"
-  },
-  {
-   "t": 1794971344164,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "8YN1xuBeKvQi1dBS9UxhB1zN7Kk1rbGBrHErYhAxpump",
-   "msg": "idgaf setup A: VETOED"
-  },
-  {
-   "t": 1794971218123,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "Aw5n9GAmovieSUs4rYhyrNGRqRKqcfVAB4KzLjxKzYH1",
-   "msg": "QiZai setup A: VETOED"
-  },
-  {
-   "t": 1794971141476,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "DfgZA8sW82bzBrk1Arj9wHM5xJaSEeULzK94dGBTpump",
-   "msg": "NADJA setup B: VETOED"
-  },
-  {
-   "t": 1794971109760,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "BCnnwNa6sUX8MXq9LPBsSMiGwaxUthwjDu8FgAQvpump",
-   "msg": "REAV setup A: VETOED"
-  },
-  {
-   "t": 1794971082891,
-   "agent": "EXIT",
-   "kind": "close",
-   "mint": "5kqFxGM1F79MJTSW79ahWUL8MUeyDe6ENbcfrM18pump",
-   "msg": "research/X4_signal CLBTC -4.38% (proven-wallet exit)"
-  },
-  {
-   "t": 1794971076673,
-   "agent": "EXEC",
-   "kind": "fill",
-   "mint": "5kqFxGM1F79MJTSW79ahWUL8MUeyDe6ENbcfrM18pump",
-   "msg": "research filled CLBTC"
-  },
-  {
-   "t": 1794971073916,
-   "agent": "SNIPER",
-   "kind": "pass",
-   "mint": "5kqFxGM1F79MJTSW79ahWUL8MUeyDe6ENbcfrM18pump",
-   "msg": "CLBTC setup A: ORDER_PENDING"
-  },
-  {
-   "t": 1794971035465,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "2tKjPFvzeWqBmmxjtGBb3zfb8zfFVePjpBhHbE2epump",
-   "msg": " setup B: VETOED"
-  },
-  {
-   "t": 1794971001662,
+   "t": 1795002720340,
    "agent": "DESK",
    "kind": "resume",
    "mint": null,
    "msg": "feeds fresh again: agents resumed"
   },
   {
-   "t": 1794970999490,
+   "t": 1795002718304,
    "agent": "DESK",
    "kind": "pause",
    "mint": null,
-   "msg": "agents paused: solana_ws stale (103.122 s)"
+   "msg": "agents paused: solana_ws stale (43.171 s)"
   },
   {
-   "t": 1794970999490,
+   "t": 1795002718304,
    "agent": "DESK",
    "kind": "suspend",
    "mint": null,
-   "msg": "timer gap 104 s detected (box suspend or stall); feeds reconnected"
+   "msg": "timer gap 42 s detected (box suspend or stall); feeds reconnected"
   },
   {
-   "t": 1794970748769,
+   "t": 1795002554553,
    "agent": "DESK",
    "kind": "resume",
    "mint": null,
    "msg": "feeds fresh again: agents resumed"
   },
   {
-   "t": 1794970746592,
+   "t": 1795002552355,
    "agent": "DESK",
    "kind": "pause",
    "mint": null,
-   "msg": "agents paused: solana_ws stale (569.464 s)"
+   "msg": "agents paused: solana_ws stale (73.347 s)"
   },
   {
-   "t": 1794970746592,
+   "t": 1795002552355,
    "agent": "DESK",
    "kind": "suspend",
    "mint": null,
-   "msg": "timer gap 569 s detected (box suspend or stall); feeds reconnected"
+   "msg": "timer gap 74 s detected (box suspend or stall); feeds reconnected"
   },
   {
-   "t": 1794970037128,
+   "t": 1795002454572,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "Hsjw2z1TS4YGp3ELikbNm1eqFMCoGMF18swmPsr4pump",
+   "msg": "smugcat setup A: VETOED"
+  },
+  {
+   "t": 1795002341329,
    "agent": "DESK",
    "kind": "resume",
    "mint": null,
    "msg": "feeds fresh again: agents resumed"
   },
   {
-   "t": 1794970034986,
+   "t": 1795002339106,
    "agent": "DESK",
    "kind": "pause",
    "mint": null,
-   "msg": "agents paused: solana_ws stale (671.639 s)"
+   "msg": "agents paused: solana_ws stale (621.318 s)"
   },
   {
-   "t": 1794970034986,
+   "t": 1795002339106,
    "agent": "DESK",
    "kind": "suspend",
    "mint": null,
-   "msg": "timer gap 672 s detected (box suspend or stall); feeds reconnected"
+   "msg": "timer gap 622 s detected (box suspend or stall); feeds reconnected"
   },
   {
-   "t": 1794969240354,
+   "t": 1795001595770,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "6wafPJRhRQxjKBq5q1ZgJtTA8JVkNY3eGe8ZcEtgpump",
+   "msg": "GTA6M setup A: VETOED"
+  },
+  {
+   "t": 1795001572182,
    "agent": "DESK",
    "kind": "resume",
    "mint": null,
    "msg": "feeds fresh again: agents resumed"
   },
   {
-   "t": 1794969238232,
+   "t": 1795001570041,
    "agent": "DESK",
    "kind": "pause",
    "mint": null,
-   "msg": "agents paused: solana_ws stale (325.836 s)"
+   "msg": "agents paused: solana_ws stale (27.362 s)"
   },
   {
-   "t": 1794969238232,
+   "t": 1795001570041,
    "agent": "DESK",
    "kind": "suspend",
    "mint": null,
-   "msg": "timer gap 326 s detected (box suspend or stall); feeds reconnected"
+   "msg": "timer gap 28 s detected (box suspend or stall); feeds reconnected"
   },
   {
-   "t": 1794968788070,
-   "agent": "DESK",
-   "kind": "resume",
-   "mint": null,
-   "msg": "feeds fresh again: agents resumed"
-  },
-  {
-   "t": 1794968787070,
-   "agent": "DESK",
-   "kind": "pause",
-   "mint": null,
-   "msg": "agents paused: solana_ws stale (182.914 s)"
-  },
-  {
-   "t": 1794968787070,
+   "t": 1795001539282,
    "agent": "DESK",
    "kind": "suspend",
    "mint": null,
-   "msg": "timer gap 178 s detected (box suspend or stall); feeds reconnected"
+   "msg": "timer gap 94 s detected (box suspend or stall); feeds reconnected"
   },
   {
-   "t": 1794968603716,
+   "t": 1795001324966,
    "agent": "DESK",
    "kind": "resume",
    "mint": null,
    "msg": "feeds fresh again: agents resumed"
   },
   {
-   "t": 1794968601709,
+   "t": 1795001322784,
    "agent": "DESK",
    "kind": "pause",
    "mint": null,
-   "msg": "agents paused: solana_ws stale (21.483 s)"
+   "msg": "agents paused: solana_ws stale (385.99 s)"
   },
   {
-   "t": 1794968601709,
+   "t": 1795001322784,
+   "agent": "DESK",
+   "kind": "suspend",
+   "mint": null,
+   "msg": "timer gap 386 s detected (box suspend or stall); feeds reconnected"
+  },
+  {
+   "t": 1795000796737,
+   "agent": "DESK",
+   "kind": "resume",
+   "mint": null,
+   "msg": "feeds fresh again: agents resumed"
+  },
+  {
+   "t": 1795000794710,
+   "agent": "DESK",
+   "kind": "pause",
+   "mint": null,
+   "msg": "agents paused: solana_ws stale (247.817 s)"
+  },
+  {
+   "t": 1795000794710,
+   "agent": "DESK",
+   "kind": "suspend",
+   "mint": null,
+   "msg": "timer gap 247 s detected (box suspend or stall); feeds reconnected"
+  },
+  {
+   "t": 1795000397547,
+   "agent": "DESK",
+   "kind": "resume",
+   "mint": null,
+   "msg": "feeds fresh again: agents resumed"
+  },
+  {
+   "t": 1795000395405,
+   "agent": "DESK",
+   "kind": "pause",
+   "mint": null,
+   "msg": "agents paused: solana_ws stale (29.331 s)"
+  },
+  {
+   "t": 1795000395405,
+   "agent": "DESK",
+   "kind": "suspend",
+   "mint": null,
+   "msg": "timer gap 30 s detected (box suspend or stall); feeds reconnected"
+  },
+  {
+   "t": 1795000345834,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "6wafPJRhRQxjKBq5q1ZgJtTA8JVkNY3eGe8ZcEtgpump",
+   "msg": "GTA6M setup A: VETOED"
+  },
+  {
+   "t": 1795000227397,
+   "agent": "DESK",
+   "kind": "resume",
+   "mint": null,
+   "msg": "feeds fresh again: agents resumed"
+  },
+  {
+   "t": 1795000225241,
+   "agent": "DESK",
+   "kind": "pause",
+   "mint": null,
+   "msg": "agents paused: solana_ws stale (691.901 s)"
+  },
+  {
+   "t": 1795000225241,
+   "agent": "DESK",
+   "kind": "suspend",
+   "mint": null,
+   "msg": "timer gap 692 s detected (box suspend or stall); feeds reconnected"
+  },
+  {
+   "t": 1794999388055,
+   "agent": "DESK",
+   "kind": "resume",
+   "mint": null,
+   "msg": "feeds fresh again: agents resumed"
+  },
+  {
+   "t": 1794999385849,
+   "agent": "DESK",
+   "kind": "pause",
+   "mint": null,
+   "msg": "agents paused: solana_ws stale (394.488 s)"
+  },
+  {
+   "t": 1794999385849,
+   "agent": "DESK",
+   "kind": "suspend",
+   "mint": null,
+   "msg": "timer gap 395 s detected (box suspend or stall); feeds reconnected"
+  },
+  {
+   "t": 1794998835837,
+   "agent": "DESK",
+   "kind": "resume",
+   "mint": null,
+   "msg": "feeds fresh again: agents resumed"
+  },
+  {
+   "t": 1794998833711,
+   "agent": "DESK",
+   "kind": "pause",
+   "mint": null,
+   "msg": "agents paused: solana_ws stale (690.518 s)"
+  },
+  {
+   "t": 1794998833711,
+   "agent": "DESK",
+   "kind": "suspend",
+   "mint": null,
+   "msg": "timer gap 690 s detected (box suspend or stall); feeds reconnected"
+  },
+  {
+   "t": 1794998009327,
+   "agent": "DESK",
+   "kind": "resume",
+   "mint": null,
+   "msg": "feeds fresh again: agents resumed"
+  },
+  {
+   "t": 1794998007104,
+   "agent": "DESK",
+   "kind": "pause",
+   "mint": null,
+   "msg": "agents paused: solana_ws stale (374.31 s)"
+  },
+  {
+   "t": 1794998007104,
+   "agent": "DESK",
+   "kind": "suspend",
+   "mint": null,
+   "msg": "timer gap 375 s detected (box suspend or stall); feeds reconnected"
+  },
+  {
+   "t": 1794997511050,
+   "agent": "DESK",
+   "kind": "resume",
+   "mint": null,
+   "msg": "feeds fresh again: agents resumed"
+  },
+  {
+   "t": 1794997509046,
+   "agent": "DESK",
+   "kind": "pause",
+   "mint": null,
+   "msg": "agents paused: solana_ws stale (26.912 s)"
+  },
+  {
+   "t": 1794997509046,
+   "agent": "DESK",
+   "kind": "suspend",
+   "mint": null,
+   "msg": "timer gap 27 s detected (box suspend or stall); feeds reconnected"
+  },
+  {
+   "t": 1794997333919,
+   "agent": "DESK",
+   "kind": "resume",
+   "mint": null,
+   "msg": "feeds fresh again: agents resumed"
+  },
+  {
+   "t": 1794997331543,
+   "agent": "DESK",
+   "kind": "pause",
+   "mint": null,
+   "msg": "agents paused: solana_ws stale (277.892 s)"
+  },
+  {
+   "t": 1794997331543,
+   "agent": "DESK",
+   "kind": "suspend",
+   "mint": null,
+   "msg": "timer gap 279 s detected (box suspend or stall); feeds reconnected"
+  },
+  {
+   "t": 1794997051038,
    "agent": "DESK",
    "kind": "suspend",
    "mint": null,
    "msg": "timer gap 22 s detected (box suspend or stall); feeds reconnected"
   },
   {
-   "t": 1794968436396,
+   "t": 1794996986587,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "6etmJvXMShGaE3qqz2grYnUThhhaBSQgp7r3XVhBpump",
+   "msg": "WIPED setup A: VETOED"
+  },
+  {
+   "t": 1794996886463,
+   "agent": "REF-SNIPER",
+   "kind": "pass",
+   "mint": "9n3xpPiiTYSsU5WGFkq5hyoPnhtvM5nfb5XqBQVwpump",
+   "msg": "GTA6 R_curve: PASSED_NOT_ORDERED"
+  },
+  {
+   "t": 1794996841606,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "8XJoEc4KCpuJbRx1PkWQnzzctf2x3qmnsvnWmdrPpump",
+   "msg": "mihaogta setup A: VETOED"
+  },
+  {
+   "t": 1794996757399,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "9UKo9XNm5bF2AUb1jpjw2GoeiPFUng9HKczmVyZ9Ny5s",
+   "msg": "Shockcat setup A: VETOED"
+  },
+  {
+   "t": 1794996699587,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "veUeZzn3P8Sjy2NhSSkjQsAbRR2nPG8NqBZdQghpump",
+   "msg": "AEXGTA setup A: VETOED"
+  },
+  {
+   "t": 1794996569569,
+   "agent": "EXEC",
+   "kind": "no_fill",
+   "mint": "B1uBWar9TA4e74hSzSkuyfpfdzEv2nyz4cEUWbnupump",
+   "msg": "research no fill Eww"
+  },
+  {
+   "t": 1794996567318,
+   "agent": "SNIPER",
+   "kind": "pass",
+   "mint": "B1uBWar9TA4e74hSzSkuyfpfdzEv2nyz4cEUWbnupump",
+   "msg": "Eww setup A: ORDER_PENDING"
+  },
+  {
+   "t": 1794996275464,
    "agent": "DESK",
    "kind": "resume",
    "mint": null,
    "msg": "feeds fresh again: agents resumed"
   },
   {
-   "t": 1794968434031,
+   "t": 1794996274464,
    "agent": "DESK",
    "kind": "pause",
    "mint": null,
-   "msg": "agents paused: solana_ws stale (452.56 s)"
+   "msg": "agents paused: solana_ws stale (565.031 s)"
   },
   {
-   "t": 1794968434031,
+   "t": 1794996274464,
    "agent": "DESK",
    "kind": "suspend",
    "mint": null,
-   "msg": "timer gap 453 s detected (box suspend or stall); feeds reconnected"
+   "msg": "timer gap 559 s detected (box suspend or stall); feeds reconnected"
   },
   {
-   "t": 1794967966460,
+   "t": 1794995508039,
    "agent": "SNIPER",
    "kind": "veto",
-   "mint": "Dvqxk4X4XmKaZyQbnGs3VTGo3nHS4aiXBSJFk6mXpump",
-   "msg": "SHMURDA setup A: VETOED"
+   "mint": "9UKo9XNm5bF2AUb1jpjw2GoeiPFUng9HKczmVyZ9Ny5s",
+   "msg": "Shockcat setup A: VETOED"
   },
   {
-   "t": 1794967867500,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "9S5h5vnyunB3YaZuZuuMLujtbuCGjVVyKHtfE6GMpump",
-   "msg": "Predblox setup A: VETOED"
-  },
-  {
-   "t": 1794967842334,
+   "t": 1794995274549,
    "agent": "DESK",
    "kind": "resume",
    "mint": null,
    "msg": "feeds fresh again: agents resumed"
   },
   {
-   "t": 1794967840013,
+   "t": 1794995272399,
    "agent": "DESK",
    "kind": "pause",
    "mint": null,
-   "msg": "agents paused: solana_ws stale (58.981 s)"
+   "msg": "agents paused: solana_ws stale (727.307 s)"
   },
   {
-   "t": 1794967840013,
+   "t": 1794995272399,
    "agent": "DESK",
    "kind": "suspend",
    "mint": null,
-   "msg": "timer gap 60 s detected (box suspend or stall); feeds reconnected"
+   "msg": "timer gap 727 s detected (box suspend or stall); feeds reconnected"
   },
   {
-   "t": 1794967780379,
-   "agent": "DESK",
-   "kind": "resume",
-   "mint": null,
-   "msg": "feeds fresh again: agents resumed"
-  },
-  {
-   "t": 1794967779380,
-   "agent": "DESK",
-   "kind": "pause",
-   "mint": null,
-   "msg": "agents paused: solana_ws stale (10.448 s)"
-  },
-  {
-   "t": 1794967662979,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "Bygm5ULo9xBRdvzp5TAqtvxd5FLHf6wt8T1tBNo5pump",
-   "msg": "SLOPAGANDA setup A: VETOED"
-  },
-  {
-   "t": 1794967640939,
-   "agent": "DESK",
-   "kind": "resume",
-   "mint": null,
-   "msg": "feeds fresh again: agents resumed"
-  },
-  {
-   "t": 1794967631516,
-   "agent": "DESK",
-   "kind": "pause",
-   "mint": null,
-   "msg": "agents paused: solana_ws stale (130.84 s)"
-  },
-  {
-   "t": 1794967631516,
+   "t": 1794994541928,
    "agent": "DESK",
    "kind": "suspend",
    "mint": null,
-   "msg": "timer gap 131 s detected (box suspend or stall); feeds reconnected"
+   "msg": "timer gap 36 s detected (box suspend or stall); feeds reconnected"
   },
   {
-   "t": 1794967377781,
+   "t": 1794994439198,
    "agent": "SNIPER",
    "kind": "veto",
-   "mint": "47mUZNAjSFA3nmxnRa1y7P9Jmi5WPWpVP1ACPQZqpump",
-   "msg": "Spud setup B: VETOED"
+   "mint": "2SzcrrCprPRSK8AFnC7LsvrGeb684LUrq9Kv2JcKpump",
+   "msg": "imagine setup A: VETOED"
   },
   {
-   "t": 1794967376035,
+   "t": 1794994373522,
+   "agent": "DESK",
+   "kind": "resume",
+   "mint": null,
+   "msg": "feeds fresh again: agents resumed"
+  },
+  {
+   "t": 1794994371416,
+   "agent": "DESK",
+   "kind": "pause",
+   "mint": null,
+   "msg": "agents paused: solana_ws stale (313.834 s)"
+  },
+  {
+   "t": 1794994371416,
+   "agent": "DESK",
+   "kind": "suspend",
+   "mint": null,
+   "msg": "timer gap 314 s detected (box suspend or stall); feeds reconnected"
+  },
+  {
+   "t": 1794993934884,
+   "agent": "DESK",
+   "kind": "resume",
+   "mint": null,
+   "msg": "feeds fresh again: agents resumed"
+  },
+  {
+   "t": 1794993932765,
+   "agent": "DESK",
+   "kind": "pause",
+   "mint": null,
+   "msg": "agents paused: solana_ws stale (505.579 s)"
+  },
+  {
+   "t": 1794993932765,
+   "agent": "DESK",
+   "kind": "suspend",
+   "mint": null,
+   "msg": "timer gap 506 s detected (box suspend or stall); feeds reconnected"
+  },
+  {
+   "t": 1794993305577,
+   "agent": "DESK",
+   "kind": "resume",
+   "mint": null,
+   "msg": "feeds fresh again: agents resumed"
+  },
+  {
+   "t": 1794993303352,
+   "agent": "DESK",
+   "kind": "pause",
+   "mint": null,
+   "msg": "agents paused: solana_ws stale (327.962 s)"
+  },
+  {
+   "t": 1794993303352,
+   "agent": "DESK",
+   "kind": "suspend",
+   "mint": null,
+   "msg": "timer gap 329 s detected (box suspend or stall); feeds reconnected"
+  },
+  {
+   "t": 1794992853447,
+   "agent": "DESK",
+   "kind": "resume",
+   "mint": null,
+   "msg": "feeds fresh again: agents resumed"
+  },
+  {
+   "t": 1794992851259,
+   "agent": "DESK",
+   "kind": "pause",
+   "mint": null,
+   "msg": "agents paused: solana_ws stale (206.469 s)"
+  },
+  {
+   "t": 1794992851259,
+   "agent": "DESK",
+   "kind": "suspend",
+   "mint": null,
+   "msg": "timer gap 207 s detected (box suspend or stall); feeds reconnected"
+  },
+  {
+   "t": 1794992599886,
    "agent": "SNIPER",
    "kind": "veto",
-   "mint": "2tKjPFvzeWqBmmxjtGBb3zfb8zfFVePjpBhHbE2epump",
+   "mint": "RuNJnNFkX3LXv4Y2e5AXNXY7bWaFEgtFAuDntZsMcVu",
+   "msg": "Runner setup A: VETOED"
+  },
+  {
+   "t": 1794992527611,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "GoUw3cshZCTSDUcb91BxsHbVLwhbJg2stuJDU1Rwpump",
+   "msg": "CleverCat setup A: VETOED"
+  },
+  {
+   "t": 1794992511340,
+   "agent": "DESK",
+   "kind": "resume",
+   "mint": null,
+   "msg": "feeds fresh again: agents resumed"
+  },
+  {
+   "t": 1794992510340,
+   "agent": "DESK",
+   "kind": "pause",
+   "mint": null,
+   "msg": "agents paused: solana_ws stale (634.415 s)"
+  },
+  {
+   "t": 1794992510340,
+   "agent": "DESK",
+   "kind": "suspend",
+   "mint": null,
+   "msg": "timer gap 629 s detected (box suspend or stall); feeds reconnected"
+  },
+  {
+   "t": 1794991873889,
+   "agent": "DESK",
+   "kind": "suspend",
+   "mint": null,
+   "msg": "timer gap 42 s detected (box suspend or stall); feeds reconnected"
+  },
+  {
+   "t": 1794991755524,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "2SzcrrCprPRSK8AFnC7LsvrGeb684LUrq9Kv2JcKpump",
+   "msg": "imagine setup A: VETOED"
+  },
+  {
+   "t": 1794991685660,
+   "agent": "DESK",
+   "kind": "resume",
+   "mint": null,
+   "msg": "feeds fresh again: agents resumed"
+  },
+  {
+   "t": 1794991683543,
+   "agent": "DESK",
+   "kind": "pause",
+   "mint": null,
+   "msg": "agents paused: solana_ws stale (178.223 s)"
+  },
+  {
+   "t": 1794991683543,
+   "agent": "DESK",
+   "kind": "suspend",
+   "mint": null,
+   "msg": "timer gap 179 s detected (box suspend or stall); feeds reconnected"
+  },
+  {
+   "t": 1794991373516,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "7WSSwEsH7rNuMnrG6BDhX2g2U1jE8qpt8vHUZeBTqnRL",
+   "msg": "CHEEKY setup A: VETOED"
+  },
+  {
+   "t": 1794991358946,
+   "agent": "DESK",
+   "kind": "resume",
+   "mint": null,
+   "msg": "feeds fresh again: agents resumed"
+  },
+  {
+   "t": 1794991356736,
+   "agent": "DESK",
+   "kind": "pause",
+   "mint": null,
+   "msg": "agents paused: solana_ws stale (213.489 s)"
+  },
+  {
+   "t": 1794991356736,
+   "agent": "DESK",
+   "kind": "suspend",
+   "mint": null,
+   "msg": "timer gap 214 s detected (box suspend or stall); feeds reconnected"
+  },
+  {
+   "t": 1794991096778,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "8m6YmC1dDW5iF3Kc7rEsay2ZbKcZ133KSoyj3ASFpump",
+   "msg": "Sharkcards setup B: VETOED"
+  },
+  {
+   "t": 1794991022620,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "6u73k8WTWjmuSHGV9HHVVqc5VKi9j34GJxqbQuXQpump",
+   "msg": "DaPussy setup A: VETOED"
+  },
+  {
+   "t": 1794991008895,
+   "agent": "DESK",
+   "kind": "suspend",
+   "mint": null,
+   "msg": "timer gap 196 s detected (box suspend or stall); feeds reconnected"
+  },
+  {
+   "t": 1794990734249,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "HQhr9AHhkjtGbmPZyQkU8Es7DQMezhZBFpFHX7Uqpump",
+   "msg": "eepy setup A: VETOED"
+  },
+  {
+   "t": 1794990686469,
+   "agent": "DESK",
+   "kind": "resume",
+   "mint": null,
+   "msg": "feeds fresh again: agents resumed"
+  },
+  {
+   "t": 1794990684330,
+   "agent": "DESK",
+   "kind": "pause",
+   "mint": null,
+   "msg": "agents paused: solana_ws stale (412.885 s)"
+  },
+  {
+   "t": 1794990684330,
+   "agent": "DESK",
+   "kind": "suspend",
+   "mint": null,
+   "msg": "timer gap 413 s detected (box suspend or stall); feeds reconnected"
+  },
+  {
+   "t": 1794990211345,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "DCK1jU3mtRUesgVkWvRkCVeeyKVuibAQoRuA4WwLpump",
+   "msg": "Miyamoto setup A: VETOED"
+  },
+  {
+   "t": 1794990202738,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "HxrsBU7EQb6z9X3ifi8EwFF7TDF3tB8iro13ERa8pump",
+   "msg": "KATIA setup A: VETOED"
+  },
+  {
+   "t": 1794990198619,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "rM4LMyz3DVZpzu1oAiEfwWeM52F11aUcWCK1HxRpump",
+   "msg": "catcycle setup A: VETOED"
+  },
+  {
+   "t": 1794989952243,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "DsKaihShxUwBejiSxqAMYesRmAgKAcXDUQRMQspVfaYs",
+   "msg": "Elon setup A: VETOED"
+  },
+  {
+   "t": 1794989925570,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "AAWVwN42eKf2GebRh2APzjd8Gr3q3bg8MYvS23j5pump",
+   "msg": "LR setup A: VETOED"
+  },
+  {
+   "t": 1794989896478,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "8m6YmC1dDW5iF3Kc7rEsay2ZbKcZ133KSoyj3ASFpump",
+   "msg": "Sharkcards setup B: VETOED"
+  },
+  {
+   "t": 1794989838186,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "AXfWMhyYFiVcuEhFvNCGcqP1W7rrQPdMKuP7TGD3XEbY",
+   "msg": "KURNIATIAE setup A: VETOED"
+  },
+  {
+   "t": 1794989712188,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "5UAZQeP4dHCRscmLFHdTMPMJLdGNYmRaZQdYF5g7pump",
+   "msg": "BACKED setup A: VETOED"
+  },
+  {
+   "t": 1794989692481,
+   "agent": "REF-SNIPER",
+   "kind": "pass",
+   "mint": "8m6YmC1dDW5iF3Kc7rEsay2ZbKcZ133KSoyj3ASFpump",
+   "msg": "Sharkcards R_curve: PASSED_NOT_ORDERED"
+  },
+  {
+   "t": 1794989521439,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "HQhr9AHhkjtGbmPZyQkU8Es7DQMezhZBFpFHX7Uqpump",
+   "msg": "eepy setup A: VETOED"
+  },
+  {
+   "t": 1794989463068,
+   "agent": "DESK",
+   "kind": "resume",
+   "mint": null,
+   "msg": "feeds fresh again: agents resumed"
+  },
+  {
+   "t": 1794989460960,
+   "agent": "DESK",
+   "kind": "pause",
+   "mint": null,
+   "msg": "agents paused: solana_ws stale (600.674 s)"
+  },
+  {
+   "t": 1794989460960,
+   "agent": "DESK",
+   "kind": "suspend",
+   "mint": null,
+   "msg": "timer gap 601 s detected (box suspend or stall); feeds reconnected"
+  },
+  {
+   "t": 1794988803447,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "612XXqog8XwMvPeesNYmCVyQwFvj99n5SHHnNt4wpump",
+   "msg": "WIFMIHAO setup A: VETOED"
+  },
+  {
+   "t": 1794988749043,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "HxrsBU7EQb6z9X3ifi8EwFF7TDF3tB8iro13ERa8pump",
+   "msg": "KATIA setup A: VETOED"
+  },
+  {
+   "t": 1794988725934,
+   "agent": "DESK",
+   "kind": "resume",
+   "mint": null,
+   "msg": "feeds fresh again: agents resumed"
+  },
+  {
+   "t": 1794988723799,
+   "agent": "DESK",
+   "kind": "pause",
+   "mint": null,
+   "msg": "agents paused: solana_ws stale (431.724 s)"
+  },
+  {
+   "t": 1794988723799,
+   "agent": "DESK",
+   "kind": "suspend",
+   "mint": null,
+   "msg": "timer gap 432 s detected (box suspend or stall); feeds reconnected"
+  },
+  {
+   "t": 1794988227622,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "AFVepWoHvbv4RB9qg76o67uGSrt6qeLJjSMLgXeKpump",
+   "msg": "Rockstar setup B: VETOED"
+  },
+  {
+   "t": 1794988152682,
+   "agent": "DESK",
+   "kind": "resume",
+   "mint": null,
+   "msg": "feeds fresh again: agents resumed"
+  },
+  {
+   "t": 1794988150546,
+   "agent": "DESK",
+   "kind": "pause",
+   "mint": null,
+   "msg": "agents paused: solana_ws stale (98.701 s)"
+  },
+  {
+   "t": 1794988150546,
+   "agent": "DESK",
+   "kind": "suspend",
+   "mint": null,
+   "msg": "timer gap 99 s detected (box suspend or stall); feeds reconnected"
+  },
+  {
+   "t": 1794987920409,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "HQhr9AHhkjtGbmPZyQkU8Es7DQMezhZBFpFHX7Uqpump",
+   "msg": "eepy setup A: VETOED"
+  },
+  {
+   "t": 1794987912319,
+   "agent": "DESK",
+   "kind": "resume",
+   "mint": null,
+   "msg": "feeds fresh again: agents resumed"
+  },
+  {
+   "t": 1794987910044,
+   "agent": "DESK",
+   "kind": "pause",
+   "mint": null,
+   "msg": "agents paused: solana_ws stale (279.884 s)"
+  },
+  {
+   "t": 1794987910044,
+   "agent": "DESK",
+   "kind": "suspend",
+   "mint": null,
+   "msg": "timer gap 281 s detected (box suspend or stall); feeds reconnected"
+  },
+  {
+   "t": 1794987588284,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "tsfb7yH8HH4Lqt9Nktv4i78EVP37Bta9fqtQ6NyPUMP",
+   "msg": "CLIP setup A: VETOED"
+  },
+  {
+   "t": 1794987579676,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "3UkaeBb24WYTg1SKiLhUrXWeoBVpVPJLYDs8gEggpump",
+   "msg": "Puton setup A: VETOED"
+  },
+  {
+   "t": 1794987513652,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "5p53bQEmjoT894qUGh5tcKh4xZdJzpL6ivmQ9djvpump",
+   "msg": "STELLAR setup A: VETOED"
+  },
+  {
+   "t": 1794987425783,
+   "agent": "REF-SNIPER",
+   "kind": "pass",
+   "mint": "rWnVngd4mS8cNFjR6xCF5Te8if2j2Rnwv44etQDpump",
+   "msg": "USPR R_post: PASSED_NOT_ORDERED"
+  },
+  {
+   "t": 1794987425770,
+   "agent": "REF-SNIPER",
+   "kind": "pass",
+   "mint": "rWnVngd4mS8cNFjR6xCF5Te8if2j2Rnwv44etQDpump",
+   "msg": "USPR R_curve: PASSED_NOT_ORDERED"
+  },
+  {
+   "t": 1794987309291,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "612XXqog8XwMvPeesNYmCVyQwFvj99n5SHHnNt4wpump",
+   "msg": "WIFMIHAO setup A: VETOED"
+  },
+  {
+   "t": 1794987306918,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "2s1D7HoDNHooSFJh5rY37SPbj6Yo8n9aW81JHaMLpump",
+   "msg": "Suica setup A: VETOED"
+  },
+  {
+   "t": 1794987284406,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "B9gcDkgabEvUAh34x4zcf8zEKYc3NRGrd5PTiXhtpump",
+   "msg": "DUO setup A: VETOED"
+  },
+  {
+   "t": 1794987160296,
+   "agent": "DESK",
+   "kind": "resume",
+   "mint": null,
+   "msg": "feeds fresh again: agents resumed"
+  },
+  {
+   "t": 1794987158060,
+   "agent": "DESK",
+   "kind": "pause",
+   "mint": null,
+   "msg": "agents paused: solana_ws stale (461.492 s)"
+  },
+  {
+   "t": 1794987158060,
+   "agent": "DESK",
+   "kind": "suspend",
+   "mint": null,
+   "msg": "timer gap 462 s detected (box suspend or stall); feeds reconnected"
+  },
+  {
+   "t": 1794986586826,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "5tBqBJAqp5audfYMmxWYCBqfUm33S31jonnLL2rApump",
    "msg": " setup B: VETOED"
   },
   {
-   "t": 1794967364572,
+   "t": 1794986573253,
    "agent": "DESK",
    "kind": "resume",
    "mint": null,
    "msg": "feeds fresh again: agents resumed"
   },
   {
-   "t": 1794967358019,
+   "t": 1794986571082,
    "agent": "DESK",
    "kind": "pause",
    "mint": null,
-   "msg": "agents paused: solana_ws stale (1136.1 s)"
+   "msg": "agents paused: solana_ws stale (16.384 s)"
   },
   {
-   "t": 1794967358019,
+   "t": 1794986571082,
    "agent": "DESK",
    "kind": "suspend",
    "mint": null,
-   "msg": "timer gap 1137 s detected (box suspend or stall); feeds reconnected"
+   "msg": "timer gap 16 s detected (box suspend or stall); feeds reconnected"
   },
   {
-   "t": 1794966220496,
+   "t": 1794986507700,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "CxgVW6RHKUgycS47HLXzBhYZFdH82VuUeksHnJDtpump",
+   "msg": "Gamooor setup A: VETOED"
+  },
+  {
+   "t": 1794986504405,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "HxrsBU7EQb6z9X3ifi8EwFF7TDF3tB8iro13ERa8pump",
+   "msg": "KATIA setup A: VETOED"
+  },
+  {
+   "t": 1794986496254,
+   "agent": "REF-SNIPER",
+   "kind": "pass",
+   "mint": "KwqTPgnTLFAhPWX47PLNi1ZfrXMJzsnVMTP5YZnpump",
+   "msg": "VTC R_post: PASSED_NOT_ORDERED"
+  },
+  {
+   "t": 1794986496221,
+   "agent": "REF-SNIPER",
+   "kind": "pass",
+   "mint": "KwqTPgnTLFAhPWX47PLNi1ZfrXMJzsnVMTP5YZnpump",
+   "msg": "VTC R_curve: PASSED_NOT_ORDERED"
+  },
+  {
+   "t": 1794986440818,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "FfEvtaX1ne42SGzyKbvDsiHhRrBsDjyjyMrRDsPZpump",
+   "msg": "CoT setup A: VETOED"
+  },
+  {
+   "t": 1794986401195,
    "agent": "DESK",
    "kind": "resume",
    "mint": null,
    "msg": "feeds fresh again: agents resumed"
   },
   {
-   "t": 1794966219496,
+   "t": 1794986399042,
    "agent": "DESK",
    "kind": "pause",
    "mint": null,
-   "msg": "agents paused: solana_ws stale (12.801 s)"
+   "msg": "agents paused: solana_ws stale (104.746 s)"
   },
   {
-   "t": 1794966065628,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "25KGXWSJUk7shhkq8zzXg7qxwUT6YbNvhxG9DFLzuTL3",
-   "msg": "Crypto setup A: VETOED"
-  },
-  {
-   "t": 1794965859118,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "47mUZNAjSFA3nmxnRa1y7P9Jmi5WPWpVP1ACPQZqpump",
-   "msg": "Spud setup B: VETOED"
-  },
-  {
-   "t": 1794965843537,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "384AZhwJUqi5x71bDKeijQaCXBSfvZzJfmcFqCempump",
-   "msg": "DЕWIЕ setup A: VETOED"
-  },
-  {
-   "t": 1794965782565,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "2tKjPFvzeWqBmmxjtGBb3zfb8zfFVePjpBhHbE2epump",
-   "msg": " setup B: VETOED"
-  },
-  {
-   "t": 1794965775257,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "9RtVwVD35U23oVXC8bkK2HGdzKcLrs2mETBMCQRMpump",
-   "msg": "GTAVI setup A: VETOED"
-  },
-  {
-   "t": 1794965726957,
-   "agent": "DESK",
-   "kind": "resume",
-   "mint": null,
-   "msg": "feeds fresh again: agents resumed"
-  },
-  {
-   "t": 1794965724615,
-   "agent": "DESK",
-   "kind": "pause",
-   "mint": null,
-   "msg": "agents paused: solana_ws stale (904.755 s)"
-  },
-  {
-   "t": 1794965724615,
+   "t": 1794986399042,
    "agent": "DESK",
    "kind": "suspend",
    "mint": null,
-   "msg": "timer gap 905 s detected (box suspend or stall); feeds reconnected"
-  },
-  {
-   "t": 1794964819566,
-   "agent": "DESK",
-   "kind": "resume",
-   "mint": null,
-   "msg": "feeds fresh again: agents resumed"
-  },
-  {
-   "t": 1794964817540,
-   "agent": "DESK",
-   "kind": "pause",
-   "mint": null,
-   "msg": "agents paused: solana_ws stale (23.25 s)"
-  },
-  {
-   "t": 1794964817540,
-   "agent": "DESK",
-   "kind": "suspend",
-   "mint": null,
-   "msg": "timer gap 23 s detected (box suspend or stall); feeds reconnected"
-  },
-  {
-   "t": 1794964723841,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "CJWT8fw4xFoLYiPWE2GXhBdBjq2Hbv7hnSsB5RMwpump",
-   "msg": "JENSEN setup A: VETOED"
-  },
-  {
-   "t": 1794964672600,
-   "agent": "DESK",
-   "kind": "resume",
-   "mint": null,
-   "msg": "feeds fresh again: agents resumed"
-  },
-  {
-   "t": 1794964670310,
-   "agent": "DESK",
-   "kind": "pause",
-   "mint": null,
-   "msg": "agents paused: solana_ws stale (123.121 s)"
-  },
-  {
-   "t": 1794964670310,
-   "agent": "DESK",
-   "kind": "suspend",
-   "mint": null,
-   "msg": "timer gap 123 s detected (box suspend or stall); feeds reconnected"
-  },
-  {
-   "t": 1794964545903,
-   "agent": "DESK",
-   "kind": "resume",
-   "mint": null,
-   "msg": "feeds fresh again: agents resumed"
-  },
-  {
-   "t": 1794964543890,
-   "agent": "DESK",
-   "kind": "pause",
-   "mint": null,
-   "msg": "agents paused: solana_ws stale (19.662 s)"
-  },
-  {
-   "t": 1794964543890,
-   "agent": "DESK",
-   "kind": "suspend",
-   "mint": null,
-   "msg": "timer gap 20 s detected (box suspend or stall); feeds reconnected"
-  },
-  {
-   "t": 1794964440470,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "Egw4iSTUq9CmEPAXzvXm32grJ8pSuDSgywBfVcebpump",
-   "msg": " setup B: VETOED"
-  },
-  {
-   "t": 1794964392070,
-   "agent": "DESK",
-   "kind": "resume",
-   "mint": null,
-   "msg": "feeds fresh again: agents resumed"
-  },
-  {
-   "t": 1794964389879,
-   "agent": "DESK",
-   "kind": "suspend",
-   "mint": null,
-   "msg": "timer gap 80 s detected (box suspend or stall); feeds reconnected"
-  },
-  {
-   "t": 1794964307897,
-   "agent": "DESK",
-   "kind": "pause",
-   "mint": null,
-   "msg": "agents paused: solana_ws stale (24.043 s)"
-  },
-  {
-   "t": 1794964307897,
-   "agent": "DESK",
-   "kind": "suspend",
-   "mint": null,
-   "msg": "timer gap 24 s detected (box suspend or stall); feeds reconnected"
-  },
-  {
-   "t": 1794964234025,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "3eN7hNBQYoDXzs4bb4eiqdZj3KxWgMbeTBVjN7nqpump",
-   "msg": ":4 setup A: VETOED"
-  },
-  {
-   "t": 1794964193396,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "2tKjPFvzeWqBmmxjtGBb3zfb8zfFVePjpBhHbE2epump",
-   "msg": " setup B: VETOED"
-  },
-  {
-   "t": 1794964160724,
-   "agent": "DESK",
-   "kind": "resume",
-   "mint": null,
-   "msg": "feeds fresh again: agents resumed"
-  },
-  {
-   "t": 1794964158070,
-   "agent": "DESK",
-   "kind": "pause",
-   "mint": null,
-   "msg": "agents paused: solana_ws stale (197.469 s)"
-  },
-  {
-   "t": 1794964158070,
-   "agent": "DESK",
-   "kind": "suspend",
-   "mint": null,
-   "msg": "timer gap 198 s detected (box suspend or stall); feeds reconnected"
-  },
-  {
-   "t": 1794963937700,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "47mUZNAjSFA3nmxnRa1y7P9Jmi5WPWpVP1ACPQZqpump",
-   "msg": "Spud setup B: VETOED"
-  },
-  {
-   "t": 1794963914154,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "ANrpZYby5CtZPqXNgRgPg8ndsoQA3mKDeDEZ4PCopump",
-   "msg": "Speed setup A: VETOED"
-  },
-  {
-   "t": 1794963861744,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "9RtVwVD35U23oVXC8bkK2HGdzKcLrs2mETBMCQRMpump",
-   "msg": "GTAVI setup A: VETOED"
-  },
-  {
-   "t": 1794963857440,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "Gy88jhkFuBX7fiDDKRDBFuJgw7o6VhsrPKpVmkbJpump",
-   "msg": "chippy setup A: VETOED"
-  },
-  {
-   "t": 1794963818213,
-   "agent": "DESK",
-   "kind": "resume",
-   "mint": null,
-   "msg": "feeds fresh again: agents resumed"
-  },
-  {
-   "t": 1794963817212,
-   "agent": "DESK",
-   "kind": "pause",
-   "mint": null,
-   "msg": "agents paused: solana_ws stale (14.361 s)"
-  },
-  {
-   "t": 1794963722181,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "47mUZNAjSFA3nmxnRa1y7P9Jmi5WPWpVP1ACPQZqpump",
-   "msg": "Spud setup A: VETOED"
-  },
-  {
-   "t": 1794963671511,
-   "agent": "DESK",
-   "kind": "resume",
-   "mint": null,
-   "msg": "feeds fresh again: agents resumed"
-  },
-  {
-   "t": 1794963669407,
-   "agent": "DESK",
-   "kind": "pause",
-   "mint": null,
-   "msg": "agents paused: solana_ws stale (113.925 s)"
-  },
-  {
-   "t": 1794963669407,
-   "agent": "DESK",
-   "kind": "suspend",
-   "mint": null,
-   "msg": "timer gap 114 s detected (box suspend or stall); feeds reconnected"
-  },
-  {
-   "t": 1794963536624,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "E47AtoUk2wJqkUSijHPJecfc2SAaWeDG6cd2yYVpump",
-   "msg": "GPU setup A: VETOED"
-  },
-  {
-   "t": 1794963526490,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "BLezXs2kedkATKhZk8sgYHNJaGu1TSRLqRUbW5pzpump",
-   "msg": "MONITO setup A: VETOED"
-  },
-  {
-   "t": 1794963422069,
-   "agent": "DESK",
-   "kind": "resume",
-   "mint": null,
-   "msg": "feeds fresh again: agents resumed"
-  },
-  {
-   "t": 1794963419843,
-   "agent": "DESK",
-   "kind": "pause",
-   "mint": null,
-   "msg": "agents paused: solana_ws stale (135.386 s)"
-  },
-  {
-   "t": 1794963419843,
-   "agent": "DESK",
-   "kind": "suspend",
-   "mint": null,
-   "msg": "timer gap 136 s detected (box suspend or stall); feeds reconnected"
-  },
-  {
-   "t": 1794963094744,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "5iF96NtVjw1pGU3WKnMuWsmfDuXMYCmDv71EPATupump",
-   "msg": "Leonida setup B: VETOED"
-  },
-  {
-   "t": 1794963068105,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "3o7e3wthvhRbkxrzBRzhu2ASRhQve3jWFqtaFtNPpump",
-   "msg": "BAWSAQ setup A: VETOED"
-  },
-  {
-   "t": 1794962930321,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "2tKjPFvzeWqBmmxjtGBb3zfb8zfFVePjpBhHbE2epump",
-   "msg": " setup B: VETOED"
-  },
-  {
-   "t": 1794962907649,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "9WUzF4HRMrkKHSfoVx9WMhHiFcHYw6jxH2YTuCNRpump",
-   "msg": "CRIPMAS setup A: VETOED"
+   "msg": "timer gap 105 s detected (box suspend or stall); feeds reconnected"
   }
  ],
  "validation": {
@@ -3306,15 +3363,15 @@
   "note": "Paper results are not proof of future profitability. Live trading requires separate explicit authorization."
  },
  "storage": {
-  "raw_records_this_run": 23833,
-  "raw_files": 11,
-  "raw_bytes_on_disk": 598362047,
+  "raw_records_this_run": 35311,
+  "raw_files": 19,
+  "raw_bytes_on_disk": 1004803776,
   "db": "data/desk.db"
  },
  "health": {
-  "pid": 382552,
-  "rss_mb": 225,
-  "uptime_s": 105
+  "pid": 492459,
+  "rss_mb": 176,
+  "uptime_s": 221
  },
  "reference_lane": {
   "lane": "reference",
@@ -3379,29 +3436,29 @@
    "GRAD": {
     "name": "GRAD",
     "role": "PumpKit graduation feed + \"graduating\" stage (realSol/85 ≥ 90%)",
-    "last_activity_ms": 1794976508554,
-    "age_s": 0.1,
+    "last_activity_ms": 1795003781176,
+    "age_s": 0,
     "fresh": true,
     "state": "running",
-    "summary": "0 coins flagged ≥90% · 2 graduations tradable"
+    "summary": "1 coins flagged ≥90% · 0 graduations tradable"
    },
    "WHALES": {
     "name": "WHALES",
     "role": "PumpKit whale filter: single trade ≥ 10 SOL, SOL-quoted",
-    "last_activity_ms": 1794976508554,
-    "age_s": 0.1,
+    "last_activity_ms": 1795003781176,
+    "age_s": 0,
     "fresh": true,
     "state": "running",
-    "summary": "0 whale trades (0 buys / 0 sells)"
+    "summary": "4 whale trades (2 buys / 2 sells)"
    },
    "SNIPER": {
     "name": "SNIPER",
     "role": "our implementation: GRAD flag + whale buy ≤ 60 s → entry; hard can't-sell vetoes only",
-    "last_activity_ms": 1794976508554,
-    "age_s": 0.1,
+    "last_activity_ms": 1795003781176,
+    "age_s": 0,
     "fresh": true,
     "state": "running",
-    "summary": "0 opportunities · 0 passed · 0 vetoed"
+    "summary": "1 opportunities · 1 passed · 0 vetoed"
    },
    "ROUTER": {
     "name": "ROUTER",
@@ -3415,17 +3472,17 @@
    "EXEC": {
     "name": "EXEC",
     "role": "paper fills, target 0.10 SOL capped by risk limits, 5% slippage limit",
-    "last_activity_ms": 1794976508554,
-    "age_s": 0.1,
+    "last_activity_ms": 1795003781176,
+    "age_s": 0,
     "fresh": true,
     "state": "running",
-    "summary": "0 fills · 0 no-fills · 0 sizing rejections"
+    "summary": "0 fills · 0 no-fills · 1 sizing rejections"
    },
    "EXIT": {
     "name": "EXIT",
     "role": "TP +35% / SL −10% / 30-min limit on executable value",
-    "last_activity_ms": 1794976508554,
-    "age_s": 0.1,
+    "last_activity_ms": 1795003781176,
+    "age_s": 0,
     "fresh": true,
     "state": "running",
     "summary": "0 open simulated positions"
@@ -3436,77 +3493,188 @@
    "label": "Reference-replication lane · hypothetical 1 SOL PAPER research book",
    "mode": "PAPER",
    "start_sol": 1,
-   "cash_sol": 1,
-   "realized_sol": 0,
-   "day": "2026-11-17",
+   "cash_sol": 0.974832389,
+   "realized_sol": -0.025167611,
+   "day": "2026-11-18",
    "day_start_sol": 1,
-   "day_pnl_sol": 0,
-   "consecutive_losses": 0,
-   "paused_reason": null,
-   "trades": 0,
+   "day_pnl_sol": -0.025167611,
+   "consecutive_losses": 1,
+   "paused_reason": "daily modeled loss limit 2% reached; paused until next ET day",
+   "trades": 1,
    "wins": 0,
-   "losses": 0,
-   "max_drawdown_pct": 0,
+   "losses": 1,
+   "max_drawdown_pct": 2.517,
    "fees_sol": {
-    "venue": 0,
-    "network": 0,
+    "venue": 0.00007430722645711598,
+    "network": 0.00041,
     "failed_tx": 0
    },
    "equity_curve": [
     [
      1794976403723,
      1
+    ],
+    [
+     1794983056734,
+     0.9748323893476281
     ]
    ],
    "open_value_sol": 0,
-   "equity_sol": 1,
-   "return_pct": 0
+   "equity_sol": 0.974832389,
+   "return_pct": -2.5168
   },
   "counts": {
-   "whale_trades": 0,
-   "whale_buys": 0,
-   "whale_sells": 0,
-   "grad_flags": 0,
-   "graduations_seen": 2,
-   "signals": 0,
-   "independent_opportunities": 0,
+   "whale_trades": 4,
+   "whale_buys": 2,
+   "whale_sells": 2,
+   "grad_flags": 1,
+   "graduations_seen": 0,
+   "signals": 1,
+   "independent_opportunities": 1,
    "vetoed": 0,
-   "passed": 0,
+   "passed": 1,
    "veto_reasons": {},
-   "not_applied_current_lane_vetoes": 0
+   "not_applied_current_lane_vetoes": 1
   },
-  "whale_events": [],
-  "grad_flags": [
+  "whale_events": [
    {
-    "t": 1794976410436,
-    "mint": "9mRm74z6KgCNQoGkrXYGJfAeFMS5UBFzyC9zKXXBpump",
-    "symbol": null,
-    "stage": "graduated_tradable",
-    "progress_pct": 100
+    "t": 1795003673250,
+    "mint": "D41R69nZrnpiVFgFCUAzQdzrGG55F3gbkTaYDfTsVcnj",
+    "symbol": "3",
+    "side": "sell",
+    "sol": 11.852,
+    "wallet": "bwamJzztZsepfkteWRChggmXuiiCQvpLqPietdNfSXa",
+    "venue": "curve",
+    "progress_pct": 0,
+    "slot": 470929034
    },
    {
-    "t": 1794976409310,
-    "mint": "GFZZxRUdLoi3ditypHkn62cNQuWwwGzwHEB85T1jpump",
+    "t": 1795003667506,
+    "mint": "D41R69nZrnpiVFgFCUAzQdzrGG55F3gbkTaYDfTsVcnj",
+    "symbol": "3",
+    "side": "buy",
+    "sol": 11.852,
+    "wallet": "bwamJzztZsepfkteWRChggmXuiiCQvpLqPietdNfSXa",
+    "venue": "curve",
+    "progress_pct": 13.94,
+    "slot": 470929013
+   },
+   {
+    "t": 1795003614930,
+    "mint": "D2LshyJJqC8agN53GmwppQNtnPwtcXdmSmpRLRBWpump",
     "symbol": null,
-    "stage": "graduated_tradable",
-    "progress_pct": 100
+    "side": "sell",
+    "sol": 13.891,
+    "wallet": "7AnSKcH35fmDpHGS7mZ89z8eRAdPs3nkocZJhKToYugV",
+    "venue": "curve",
+    "progress_pct": 2.7,
+    "slot": 470928772
+   },
+   {
+    "t": 1795003609206,
+    "mint": "6rdQXFpELVn3nWTWmP9zoPDQTaj2qGqR3Vy4XfXmpump",
+    "symbol": "AFTER",
+    "side": "buy",
+    "sol": 10.668,
+    "wallet": "3W9UHXxvU23sPnV1XiEBriAwxxhTZiojww6yvLTAZ8Ce",
+    "venue": "curve",
+    "progress_pct": 12.55,
+    "slot": 470928758
    }
   ],
-  "opportunities": [],
+  "grad_flags": [
+   {
+    "t": 1795003657355,
+    "mint": "6rdQXFpELVn3nWTWmP9zoPDQTaj2qGqR3Vy4XfXmpump",
+    "symbol": "AFTER",
+    "stage": "graduating",
+    "progress_pct": 91.52
+   }
+  ],
+  "opportunities": [
+   {
+    "id": 14,
+    "t": 1795003657355,
+    "decided_t": 1795003659113,
+    "mint": "6rdQXFpELVn3nWTWmP9zoPDQTaj2qGqR3Vy4XfXmpump",
+    "symbol": "AFTER",
+    "setup": "R_curve",
+    "phase": "PRE",
+    "features": {
+     "pumpkit_progress_pct": 91.52,
+     "grad_flag_t": 1795003657355,
+     "since_tradable_s": null,
+     "whale": {
+      "t": 1795003609206,
+      "sol": 10.668,
+      "wallet": "3W9UHXxvU23sPnV1XiEBriAwxxhTZiojww6yvLTAZ8Ce",
+      "venue": "curve",
+      "ago_s": 48.1
+     },
+     "price": 3.6097417365523036e-7,
+     "liq_sol": 77.795
+    },
+    "vetoes": [],
+    "not_applied_vetoes": [
+     "holder concentration unverified"
+    ],
+    "safety": {
+     "token_program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+     "mint_authority": null,
+     "freeze_authority": null,
+     "extensions": [
+      "metadataPointer",
+      "tokenMetadata"
+     ]
+    },
+    "disposition": "PASSED_NOT_ORDERED",
+    "reason": "not ordered — daily modeled loss limit 2% reached; paused until next ET day",
+    "current_view": "setup A not triggered: curve completion 97.6% outside 25–85%, age 48 s < 90 s",
+    "size_sol": null
+   }
+  ],
   "open": [],
   "pending_orders": [],
   "decisions": [],
   "exec_counts": {
-   "approved_seen": 0,
+   "approved_seen": 1,
    "sized": 0,
-   "rejected": 0,
+   "rejected": 1,
    "orders": 0,
    "fills": 0,
    "no_fills": 0,
-   "reject_reasons": {},
+   "reject_reasons": {
+    "daily modeled loss limit 2% reached; paused until next ET day": 1
+   },
    "no_fill_reasons": {}
   },
-  "trades": [],
+  "trades": [
+   {
+    "id": 1,
+    "policy": "R1_tp_sl",
+    "mint": "LZhPy4uk9RhcpZ7W352LUvRusYudapZKo6SXBfypump",
+    "symbol": "ANTHROPIC",
+    "setup": "R_post",
+    "venue": "pumpswap",
+    "period": "night(0-6ET)",
+    "entry_t": 1794981482476,
+    "exit_t": 1794983056734,
+    "size_sol": 0.024759829652371994,
+    "pnl_sol": -0.025167610652371993,
+    "pnl_pct": -100.81226670809961,
+    "exit_reason": "stop -10% (executable -100.81%)",
+    "costs": {
+     "entry_network": 0.000205,
+     "exit_network": 0.000205,
+     "entry_venue_fee": 0.000074279,
+     "exit_venue_fee": 2.77375e-8,
+     "entry_slippage_pct": 4.054,
+     "shortfall_pct": 0.001
+    },
+    "mfe": -0.47405752019922115,
+    "mae": -100.81226670809961
+   }
+  ],
   "router_recent": []
  },
  "comparison": {
@@ -3515,47 +3683,47 @@
   "lanes": {
    "current": {
     "label": "Current six-agent strategy (pumpdesk6 v0, research book)",
-    "independent_opportunities": 0,
-    "vetoed": 0,
-    "passed": 0,
+    "independent_opportunities": 56,
+    "vetoed": 55,
+    "passed": 1,
     "not_ordered": 0,
-    "no_fills": 0,
+    "no_fills": 1,
     "entries": 0,
     "exits": 0,
     "open_now": 0,
     "wins": 0,
     "losses": 0,
     "win_rate": null,
-    "net_pnl_sol": 0,
+    "net_pnl_sol": -0.000205,
     "avg_pnl_pct": null,
-    "fees_sol": 0,
-    "failed_tx_fees_sol": 0,
+    "fees_sol": 0.000205,
+    "failed_tx_fees_sol": 0.000205,
     "note": "net_pnl_sol is after every modeled cost (venue fees, network+priority fees, slippage, failed-tx fees); open positions are not counted until their simulated exit completes"
    },
    "reference": {
     "label": "Reference replication (0xNevsky stack, closest available)",
-    "independent_opportunities": 0,
+    "independent_opportunities": 14,
     "vetoed": 0,
-    "passed": 0,
-    "not_ordered": 0,
+    "passed": 14,
+    "not_ordered": 13,
     "no_fills": 0,
-    "entries": 0,
-    "exits": 0,
+    "entries": 1,
+    "exits": 1,
     "open_now": 0,
     "wins": 0,
-    "losses": 0,
-    "win_rate": null,
-    "net_pnl_sol": 0,
-    "avg_pnl_pct": null,
-    "fees_sol": 0,
+    "losses": 1,
+    "win_rate": 0,
+    "net_pnl_sol": -0.025167611,
+    "avg_pnl_pct": -100.812,
+    "fees_sol": 0.000484307,
     "failed_tx_fees_sol": 0,
     "note": "net_pnl_sol is after every modeled cost (venue fees, network+priority fees, slippage, failed-tx fees); open positions are not counted until their simulated exit completes"
    }
   },
   "current_all_time_research_book": {
-   "independent_opportunities": 122,
-   "vetoed": 118,
-   "passed": 4,
+   "independent_opportunities": 178,
+   "vetoed": 173,
+   "passed": 5,
    "not_ordered": 1,
    "no_fills": 0,
    "entries": 2,
@@ -3570,12 +3738,1145 @@
    "failed_tx_fees_sol": 0,
    "note": "net_pnl_sol is after every modeled cost (venue fees, network+priority fees, slippage, failed-tx fees); open positions are not counted until their simulated exit completes"
   },
-  "diff": [],
+  "diff": [
+   {
+    "t": 1795003657355,
+    "mint": "6rdQXFpELVn3nWTWmP9zoPDQTaj2qGqR3Vy4XfXmpump",
+    "symbol": "AFTER",
+    "reference": {
+     "decision": "PASSED_NOT_ORDERED",
+     "setup": "R_curve",
+     "reason": "not ordered — daily modeled loss limit 2% reached; paused until next ET day",
+     "current_lane_vetoes_not_applied": [
+      "holder concentration unverified"
+     ]
+    },
+    "current": {
+     "decision": "NO_SIGNAL",
+     "reason": "setup A not triggered: curve completion 97.6% outside 25–85%, age 48 s < 90 s"
+    },
+    "same_decision": false,
+    "why_different": "current NO_SIGNAL: setup A not triggered: curve completion 97.6% outside 25–85%, age 48 s < 90 s | reference PASSED_NOT_ORDERED: not ordered — daily modeled loss limit 2% reached; paused until next ET day"
+   },
+   {
+    "t": 1795003423370,
+    "mint": "9UKo9XNm5bF2AUb1jpjw2GoeiPFUng9HKczmVyZ9Ny5s",
+    "symbol": "Shockcat",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: 11 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 39.9% of supply"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 51.8% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 11 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 39.9% of supply | reference NO_SIGNAL: GRAD: curve progress 51.8% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1795003243524,
+    "mint": "2FSgBQeCwXMti2Xg5dozqm5TKEF5svTuvsHqk5jcpump",
+    "symbol": "MFC",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "creator dev buy 12.5% of supply; wash-trading pattern: 72% of 2-min volume from wallets both buying and selling"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 30.8% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: creator dev buy 12.5% of supply; wash-trading pattern: 72% of 2-min volume from wallets both buying and selling | reference NO_SIGNAL: GRAD: curve progress 30.8% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1795002454572,
+    "mint": "Hsjw2z1TS4YGp3ELikbNm1eqFMCoGMF18swmPsr4pump",
+    "symbol": "smugcat",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: 12 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 47.7% of supply; wash-trading pattern: 72% of 2-min volume from wallets both buying and selling"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 24.9% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 12 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 47.7% of supply | reference NO_SIGNAL: GRAD: curve progress 24.9% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1795001595770,
+    "mint": "6wafPJRhRQxjKBq5q1ZgJtTA8JVkNY3eGe8ZcEtgpump",
+    "symbol": "GTA6M",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "dumping: 63% below peak"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 33.1% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: dumping: 63% below peak | reference NO_SIGNAL: GRAD: curve progress 33.1% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1795000345699,
+    "mint": "6wafPJRhRQxjKBq5q1ZgJtTA8JVkNY3eGe8ZcEtgpump",
+    "symbol": "GTA6M",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "holder concentration unverified"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 52.8% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: holder concentration unverified | reference NO_SIGNAL: GRAD: curve progress 52.8% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794996986587,
+    "mint": "6etmJvXMShGaE3qqz2grYnUThhhaBSQgp7r3XVhBpump",
+    "symbol": "WIPED",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: 5 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 43.2% of supply"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 32.8% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 5 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 43.2% of supply | reference NO_SIGNAL: GRAD: curve progress 32.8% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794996886324,
+    "mint": "9n3xpPiiTYSsU5WGFkq5hyoPnhtvM5nfb5XqBQVwpump",
+    "symbol": "GTA6",
+    "reference": {
+     "decision": "PASSED_NOT_ORDERED",
+     "setup": "R_curve",
+     "reason": "not ordered — daily modeled loss limit 2% reached; paused until next ET day",
+     "current_lane_vetoes_not_applied": [
+      "holder concentration unverified"
+     ]
+    },
+    "current": {
+     "decision": "NO_SIGNAL",
+     "reason": "setup A not triggered: curve completion 100.0% outside 25–85%, age 0 s < 90 s, 11 unique buyers in 60 s < 12"
+    },
+    "same_decision": false,
+    "why_different": "current NO_SIGNAL: setup A not triggered: curve completion 100.0% outside 25–85%, age 0 s < 90 s, 11 unique buyers in 60 s < 12 | reference PASSED_NOT_ORDERED: not ordered — daily modeled loss limit 2% reached; paused until next ET day"
+   },
+   {
+    "t": 1794996841606,
+    "mint": "8XJoEc4KCpuJbRx1PkWQnzzctf2x3qmnsvnWmdrPpump",
+    "symbol": "mihaogta",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: 4 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 55.3% of supply"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 46.7% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 4 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 55.3% of supply | reference NO_SIGNAL: GRAD: curve progress 46.7% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794996757399,
+    "mint": "9UKo9XNm5bF2AUb1jpjw2GoeiPFUng9HKczmVyZ9Ny5s",
+    "symbol": "Shockcat",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: 11 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 39.9% of supply; wash-trading pattern: 52% of 2-min volume from wallets both buying and selling; dumping: 42% below peak"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 44.6% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 11 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 39.9% of supply | reference NO_SIGNAL: GRAD: curve progress 44.6% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794996699587,
+    "mint": "veUeZzn3P8Sjy2NhSSkjQsAbRR2nPG8NqBZdQghpump",
+    "symbol": "AEXGTA",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "wash-trading pattern: 87% of 2-min volume from wallets both buying and selling"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 11.6% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: wash-trading pattern: 87% of 2-min volume from wallets both buying and selling | reference NO_SIGNAL: GRAD: curve progress 11.6% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794996567235,
+    "mint": "B1uBWar9TA4e74hSzSkuyfpfdzEv2nyz4cEUWbnupump",
+    "symbol": "Eww",
+    "current": {
+     "decision": "NO_FILL",
+     "setup": "A",
+     "reason": "slippage limit: price moved 5.07% against order during 2000 ms latency (limit 5%)"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 18.9% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current NO_FILL: slippage limit: price moved 5.07% against order during 2000 ms latency (limit 5%) | reference NO_SIGNAL: GRAD: curve progress 18.9% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794995508039,
+    "mint": "9UKo9XNm5bF2AUb1jpjw2GoeiPFUng9HKczmVyZ9Ny5s",
+    "symbol": "Shockcat",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: 11 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 39.9% of supply; wash-trading pattern: 62% of 2-min volume from wallets both buying and selling"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 24.0% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 11 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 39.9% of supply | reference NO_SIGNAL: GRAD: curve progress 24.0% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794994439198,
+    "mint": "2SzcrrCprPRSK8AFnC7LsvrGeb684LUrq9Kv2JcKpump",
+    "symbol": "imagine",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: 5 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 18.3% of supply"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 42.3% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 5 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 18.3% of supply | reference NO_SIGNAL: GRAD: curve progress 42.3% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794992599886,
+    "mint": "RuNJnNFkX3LXv4Y2e5AXNXY7bWaFEgtFAuDntZsMcVu",
+    "symbol": "Runner",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: 5 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 37.0% of supply; wash-trading pattern: 77% of 2-min volume from wallets both buying and selling"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 18.1% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 5 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 37.0% of supply | reference NO_SIGNAL: GRAD: curve progress 18.1% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794992527611,
+    "mint": "GoUw3cshZCTSDUcb91BxsHbVLwhbJg2stuJDU1Rwpump",
+    "symbol": "CleverCat",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: 7 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 24.4% of supply"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 19.5% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 7 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 24.4% of supply | reference NO_SIGNAL: GRAD: curve progress 19.5% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794991755524,
+    "mint": "2SzcrrCprPRSK8AFnC7LsvrGeb684LUrq9Kv2JcKpump",
+    "symbol": "imagine",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: 5 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 18.3% of supply"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 47.3% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 5 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 18.3% of supply | reference NO_SIGNAL: GRAD: curve progress 47.3% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794991373516,
+    "mint": "7WSSwEsH7rNuMnrG6BDhX2g2U1jE8qpt8vHUZeBTqnRL",
+    "symbol": "CHEEKY",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "creator selling: sold 100% of bought tokens; launch bundle: 4 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 16.7% of supply; creator dev buy 15.2% of supply; volume concentration: top-3 wallets 88% of 2-min volume"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 53.9% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: creator selling: sold 100% of bought tokens; launch bundle: 4 non-creator buyers in the create slot | reference NO_SIGNAL: GRAD: curve progress 53.9% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794991096778,
+    "mint": "8m6YmC1dDW5iF3Kc7rEsay2ZbKcZ133KSoyj3ASFpump",
+    "symbol": "Sharkcards",
+    "current": {
+     "decision": "VETOED",
+     "setup": "B",
+     "reason": "creator selling: sold 120% of bought tokens; launch bundle: 4 non-creator buyers in the create slot; creator dev buy 20.3% of supply"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: creator selling: sold 120% of bought tokens; launch bundle: 4 non-creator buyers in the create slot | reference NO_SIGNAL: WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached"
+   },
+   {
+    "t": 1794991022620,
+    "mint": "6u73k8WTWjmuSHGV9HHVVqc5VKi9j34GJxqbQuXQpump",
+    "symbol": "DaPussy",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: 10 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 45.7% of supply"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 57.1% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s (last 14.815 SOL 303 s ago); reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 10 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 45.7% of supply | reference NO_SIGNAL: GRAD: curve progress 57.1% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s (last 14.815 SOL 303 s ago)"
+   },
+   {
+    "t": 1794990734249,
+    "mint": "HQhr9AHhkjtGbmPZyQkU8Es7DQMezhZBFpFHX7Uqpump",
+    "symbol": "eepy",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: 8 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 28.8% of supply; dumping: 81% below peak"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 18.1% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 8 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 28.8% of supply | reference NO_SIGNAL: GRAD: curve progress 18.1% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794990211345,
+    "mint": "DCK1jU3mtRUesgVkWvRkCVeeyKVuibAQoRuA4WwLpump",
+    "symbol": "Miyamoto",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "creator dev buy 15.1% of supply"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 23.7% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: creator dev buy 15.1% of supply | reference NO_SIGNAL: GRAD: curve progress 23.7% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794990202738,
+    "mint": "HxrsBU7EQb6z9X3ifi8EwFF7TDF3tB8iro13ERa8pump",
+    "symbol": "KATIA",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "creator selling: sold 90% of bought tokens; creator dev buy 12.5% of supply; volume concentration: top-3 wallets 64% of 2-min volume; dumping: 52% below peak"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 49.1% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: creator selling: sold 90% of bought tokens; creator dev buy 12.5% of supply | reference NO_SIGNAL: GRAD: curve progress 49.1% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794990198619,
+    "mint": "rM4LMyz3DVZpzu1oAiEfwWeM52F11aUcWCK1HxRpump",
+    "symbol": "catcycle",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: create-slot buyers hold 32.8% of supply; dumping: 43% below peak"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 11.1% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s (last 11.852 SOL 242 s ago); reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: create-slot buyers hold 32.8% of supply; dumping: 43% below peak | reference NO_SIGNAL: GRAD: curve progress 11.1% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s (last 11.852 SOL 242 s ago)"
+   },
+   {
+    "t": 1794989952243,
+    "mint": "DsKaihShxUwBejiSxqAMYesRmAgKAcXDUQRMQspVfaYs",
+    "symbol": "Elon",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "creator selling: sold 100% of bought tokens; launch bundle: 3 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 16.8% of supply; creator dev buy 15.2% of supply; wash-trading pattern: 70% of 2-min volume from wallets both buying and selling"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 34.1% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: creator selling: sold 100% of bought tokens; launch bundle: 3 non-creator buyers in the create slot | reference NO_SIGNAL: GRAD: curve progress 34.1% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794989925570,
+    "mint": "AAWVwN42eKf2GebRh2APzjd8Gr3q3bg8MYvS23j5pump",
+    "symbol": "LR",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: 3 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 35.5% of supply"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 19.9% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 3 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 35.5% of supply | reference NO_SIGNAL: GRAD: curve progress 19.9% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794989838186,
+    "mint": "AXfWMhyYFiVcuEhFvNCGcqP1W7rrQPdMKuP7TGD3XEbY",
+    "symbol": "KURNIATIAE",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "creator dev buy 11.4% of supply; volume concentration: top-3 wallets 66% of 2-min volume"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 9.8% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: creator dev buy 11.4% of supply; volume concentration: top-3 wallets 66% of 2-min volume | reference NO_SIGNAL: GRAD: curve progress 9.8% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794989712188,
+    "mint": "5UAZQeP4dHCRscmLFHdTMPMJLdGNYmRaZQdYF5g7pump",
+    "symbol": "BACKED",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: 5 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 16.5% of supply"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 25.2% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 5 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 16.5% of supply | reference NO_SIGNAL: GRAD: curve progress 25.2% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794989692387,
+    "mint": "8m6YmC1dDW5iF3Kc7rEsay2ZbKcZ133KSoyj3ASFpump",
+    "symbol": "Sharkcards",
+    "reference": {
+     "decision": "PASSED_NOT_ORDERED",
+     "setup": "R_curve",
+     "reason": "not ordered — daily modeled loss limit 2% reached; paused until next ET day",
+     "current_lane_vetoes_not_applied": []
+    },
+    "current": {
+     "decision": "VETOED",
+     "setup": "B",
+     "reason": "creator selling: sold 120% of bought tokens; launch bundle: 4 non-creator buyers in the create slot; creator dev buy 20.3% of supply"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: creator selling: sold 120% of bought tokens; launch bundle: 4 non-creator buyers in the create slot | reference PASSED_NOT_ORDERED: not ordered — daily modeled loss limit 2% reached; paused until next ET day"
+   },
+   {
+    "t": 1794989521439,
+    "mint": "HQhr9AHhkjtGbmPZyQkU8Es7DQMezhZBFpFHX7Uqpump",
+    "symbol": "eepy",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: 8 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 28.8% of supply; dumping: 69% below peak"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 32.7% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 8 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 28.8% of supply | reference NO_SIGNAL: GRAD: curve progress 32.7% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794988803447,
+    "mint": "612XXqog8XwMvPeesNYmCVyQwFvj99n5SHHnNt4wpump",
+    "symbol": "WIFMIHAO",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "creator selling: sold 73% of bought tokens; creator dev buy 15.7% of supply; dumping: 52% below peak"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 46.1% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: creator selling: sold 73% of bought tokens; creator dev buy 15.7% of supply | reference NO_SIGNAL: GRAD: curve progress 46.1% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794988749043,
+    "mint": "HxrsBU7EQb6z9X3ifi8EwFF7TDF3tB8iro13ERa8pump",
+    "symbol": "KATIA",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "creator selling: sold 90% of bought tokens; creator dev buy 12.5% of supply; dumping: 42% below peak"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 57.0% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: creator selling: sold 90% of bought tokens; creator dev buy 12.5% of supply | reference NO_SIGNAL: GRAD: curve progress 57.0% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794988227622,
+    "mint": "AFVepWoHvbv4RB9qg76o67uGSrt6qeLJjSMLgXeKpump",
+    "symbol": "Rockstar",
+    "current": {
+     "decision": "VETOED",
+     "setup": "B",
+     "reason": "launch bundle: 9 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 33.3% of supply; creator dev buy 10.8% of supply; wash-trading pattern: 62% of 2-min volume from wallets both buying and selling"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: graduated 63 min ago (> 30 min window); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 9 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 33.3% of supply | reference NO_SIGNAL: GRAD: graduated 63 min ago (> 30 min window); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794987920409,
+    "mint": "HQhr9AHhkjtGbmPZyQkU8Es7DQMezhZBFpFHX7Uqpump",
+    "symbol": "eepy",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: 8 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 28.8% of supply"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 48.4% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 8 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 28.8% of supply | reference NO_SIGNAL: GRAD: curve progress 48.4% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794987588284,
+    "mint": "tsfb7yH8HH4Lqt9Nktv4i78EVP37Bta9fqtQ6NyPUMP",
+    "symbol": "CLIP",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: create-slot buyers hold 30.2% of supply; wash-trading pattern: 74% of 2-min volume from wallets both buying and selling"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 29.2% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s (last 11.644 SOL 124 s ago); reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: create-slot buyers hold 30.2% of supply; wash-trading pattern: 74% of 2-min volume from wallets both buying and selling | reference NO_SIGNAL: GRAD: curve progress 29.2% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s (last 11.644 SOL 124 s ago)"
+   },
+   {
+    "t": 1794987579676,
+    "mint": "3UkaeBb24WYTg1SKiLhUrXWeoBVpVPJLYDs8gEggpump",
+    "symbol": "Puton",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: 6 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 23.4% of supply; wash-trading pattern: 72% of 2-min volume from wallets both buying and selling"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 39.6% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 6 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 23.4% of supply | reference NO_SIGNAL: GRAD: curve progress 39.6% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794987513405,
+    "mint": "5p53bQEmjoT894qUGh5tcKh4xZdJzpL6ivmQ9djvpump",
+    "symbol": "STELLAR",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "holder concentration unverified"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 19.0% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: holder concentration unverified | reference NO_SIGNAL: GRAD: curve progress 19.0% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794987425662,
+    "mint": "rWnVngd4mS8cNFjR6xCF5Te8if2j2Rnwv44etQDpump",
+    "symbol": "USPR",
+    "reference": {
+     "decision": "PASSED_NOT_ORDERED",
+     "setup": "R_post",
+     "reason": "not ordered — daily modeled loss limit 2% reached; paused until next ET day",
+     "current_lane_vetoes_not_applied": [
+      "holder concentration unverified"
+     ]
+    },
+    "current": {
+     "decision": "NO_SIGNAL",
+     "reason": "setup B not triggered: pool age 0 s < 120 s, 2 AMM trades < 25, 2 unique buyers in 120 s < 10"
+    },
+    "same_decision": false,
+    "why_different": "current NO_SIGNAL: setup B not triggered: pool age 0 s < 120 s, 2 AMM trades < 25, 2 unique buyers in 120 s < 10 | reference PASSED_NOT_ORDERED: not ordered — daily modeled loss limit 2% reached; paused until next ET day"
+   },
+   {
+    "t": 1794987425629,
+    "mint": "rWnVngd4mS8cNFjR6xCF5Te8if2j2Rnwv44etQDpump",
+    "symbol": "USPR",
+    "reference": {
+     "decision": "PASSED_NOT_ORDERED",
+     "setup": "R_curve",
+     "reason": "not ordered — daily modeled loss limit 2% reached; paused until next ET day",
+     "current_lane_vetoes_not_applied": [
+      "holder concentration unverified"
+     ]
+    },
+    "current": {
+     "decision": "NO_SIGNAL",
+     "reason": "setup A not triggered: curve completion 100.0% outside 25–85%, age 0 s < 90 s, 1 unique buyers in 60 s < 12"
+    },
+    "same_decision": false,
+    "why_different": "current NO_SIGNAL: setup A not triggered: curve completion 100.0% outside 25–85%, age 0 s < 90 s, 1 unique buyers in 60 s < 12 | reference PASSED_NOT_ORDERED: not ordered — daily modeled loss limit 2% reached; paused until next ET day"
+   },
+   {
+    "t": 1794987309291,
+    "mint": "612XXqog8XwMvPeesNYmCVyQwFvj99n5SHHnNt4wpump",
+    "symbol": "WIFMIHAO",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "creator selling: sold 34% of bought tokens; creator dev buy 15.7% of supply; volume concentration: top-3 wallets 61% of 2-min volume"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 24.0% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: creator selling: sold 34% of bought tokens; creator dev buy 15.7% of supply | reference NO_SIGNAL: GRAD: curve progress 24.0% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794987306918,
+    "mint": "2s1D7HoDNHooSFJh5rY37SPbj6Yo8n9aW81JHaMLpump",
+    "symbol": "Suica",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: 5 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 19.3% of supply"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 21.9% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 5 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 19.3% of supply | reference NO_SIGNAL: GRAD: curve progress 21.9% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794987284406,
+    "mint": "B9gcDkgabEvUAh34x4zcf8zEKYc3NRGrd5PTiXhtpump",
+    "symbol": "DUO",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: 6 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 30.5% of supply"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 18.5% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 6 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 30.5% of supply | reference NO_SIGNAL: GRAD: curve progress 18.5% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794986507700,
+    "mint": "CxgVW6RHKUgycS47HLXzBhYZFdH82VuUeksHnJDtpump",
+    "symbol": "Gamooor",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: 8 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 20.5% of supply; wash-trading pattern: 76% of 2-min volume from wallets both buying and selling"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 18.1% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 8 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 20.5% of supply | reference NO_SIGNAL: GRAD: curve progress 18.1% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794986504405,
+    "mint": "HxrsBU7EQb6z9X3ifi8EwFF7TDF3tB8iro13ERa8pump",
+    "symbol": "KATIA",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "creator selling: sold 75% of bought tokens; creator dev buy 12.5% of supply; wash-trading pattern: 91% of 2-min volume from wallets both buying and selling"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 16.4% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: creator selling: sold 75% of bought tokens; creator dev buy 12.5% of supply | reference NO_SIGNAL: GRAD: curve progress 16.4% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794986496060,
+    "mint": "KwqTPgnTLFAhPWX47PLNi1ZfrXMJzsnVMTP5YZnpump",
+    "symbol": "VTC",
+    "reference": {
+     "decision": "PASSED_NOT_ORDERED",
+     "setup": "R_post",
+     "reason": "not ordered — daily modeled loss limit 2% reached; paused until next ET day",
+     "current_lane_vetoes_not_applied": [
+      "holder concentration unverified"
+     ]
+    },
+    "current": {
+     "decision": "NO_SIGNAL",
+     "reason": "setup B not triggered: pool age 0 s < 120 s, 2 AMM trades < 25, 2 unique buyers in 120 s < 10"
+    },
+    "same_decision": false,
+    "why_different": "current NO_SIGNAL: setup B not triggered: pool age 0 s < 120 s, 2 AMM trades < 25, 2 unique buyers in 120 s < 10 | reference PASSED_NOT_ORDERED: not ordered — daily modeled loss limit 2% reached; paused until next ET day"
+   },
+   {
+    "t": 1794986496007,
+    "mint": "KwqTPgnTLFAhPWX47PLNi1ZfrXMJzsnVMTP5YZnpump",
+    "symbol": "VTC",
+    "reference": {
+     "decision": "PASSED_NOT_ORDERED",
+     "setup": "R_curve",
+     "reason": "not ordered — daily modeled loss limit 2% reached; paused until next ET day",
+     "current_lane_vetoes_not_applied": [
+      "holder concentration unverified"
+     ]
+    },
+    "current": {
+     "decision": "NO_SIGNAL",
+     "reason": "setup A not triggered: curve completion 100.0% outside 25–85%, age 0 s < 90 s, 1 unique buyers in 60 s < 12"
+    },
+    "same_decision": false,
+    "why_different": "current NO_SIGNAL: setup A not triggered: curve completion 100.0% outside 25–85%, age 0 s < 90 s, 1 unique buyers in 60 s < 12 | reference PASSED_NOT_ORDERED: not ordered — daily modeled loss limit 2% reached; paused until next ET day"
+   },
+   {
+    "t": 1794986440818,
+    "mint": "FfEvtaX1ne42SGzyKbvDsiHhRrBsDjyjyMrRDsPZpump",
+    "symbol": "CoT",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "creator selling: sold 100% of bought tokens; launch bundle: 3 non-creator buyers in the create slot"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 10.8% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: creator selling: sold 100% of bought tokens; launch bundle: 3 non-creator buyers in the create slot | reference NO_SIGNAL: GRAD: curve progress 10.8% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794986254731,
+    "mint": "5tBqBJAqp5audfYMmxWYCBqfUm33S31jonnLL2rApump",
+    "symbol": null,
+    "reference": {
+     "decision": "PASSED_NOT_ORDERED",
+     "setup": "R_curve",
+     "reason": "not ordered — daily modeled loss limit 2% reached; paused until next ET day",
+     "current_lane_vetoes_not_applied": [
+      "holder concentration unverified"
+     ]
+    },
+    "current": {
+     "decision": "VETOED",
+     "setup": "B",
+     "reason": "holder concentration unverified"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: holder concentration unverified | reference PASSED_NOT_ORDERED: not ordered — daily modeled loss limit 2% reached; paused until next ET day"
+   },
+   {
+    "t": 1794986205232,
+    "mint": "AFVepWoHvbv4RB9qg76o67uGSrt6qeLJjSMLgXeKpump",
+    "symbol": "Rockstar",
+    "current": {
+     "decision": "VETOED",
+     "setup": "B",
+     "reason": "launch bundle: 9 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 33.3% of supply; creator dev buy 10.8% of supply; wash-trading pattern: 74% of 2-min volume from wallets both buying and selling"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 9 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 33.3% of supply | reference NO_SIGNAL: WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached"
+   },
+   {
+    "t": 1794984425728,
+    "mint": "AFVepWoHvbv4RB9qg76o67uGSrt6qeLJjSMLgXeKpump",
+    "symbol": "Rockstar",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: 9 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 33.3% of supply; creator dev buy 10.8% of supply"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 50.7% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 9 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 33.3% of supply | reference NO_SIGNAL: GRAD: curve progress 50.7% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794984012148,
+    "mint": "9Wb1n6AP3mhm6sTeZcvrK4ZAXpX6Xh7N1grXQhuksLzr",
+    "symbol": null,
+    "reference": {
+     "decision": "PASSED_NOT_ORDERED",
+     "setup": "R_post",
+     "reason": "not ordered — daily modeled loss limit 2% reached; paused until next ET day",
+     "current_lane_vetoes_not_applied": [
+      "holder concentration unverified"
+     ]
+    },
+    "current": {
+     "decision": "NO_SIGNAL",
+     "reason": "setup B not triggered: pool age 83 s < 120 s"
+    },
+    "same_decision": false,
+    "why_different": "current NO_SIGNAL: setup B not triggered: pool age 83 s < 120 s | reference PASSED_NOT_ORDERED: not ordered — daily modeled loss limit 2% reached; paused until next ET day"
+   },
+   {
+    "t": 1794983919083,
+    "mint": "eRCFZ3yPfcSu7VeF6es12ZcsEZj7iaAoydrgSRrpump",
+    "symbol": "GODF",
+    "reference": {
+     "decision": "PASSED_NOT_ORDERED",
+     "setup": "R_post",
+     "reason": "not ordered — daily modeled loss limit 2% reached; paused until next ET day",
+     "current_lane_vetoes_not_applied": [
+      "holder concentration unverified"
+     ]
+    },
+    "current": {
+     "decision": "NO_SIGNAL",
+     "reason": "setup B not triggered: pool age 0 s < 120 s, 2 AMM trades < 25, 2 unique buyers in 120 s < 10"
+    },
+    "same_decision": false,
+    "why_different": "current NO_SIGNAL: setup B not triggered: pool age 0 s < 120 s, 2 AMM trades < 25, 2 unique buyers in 120 s < 10 | reference PASSED_NOT_ORDERED: not ordered — daily modeled loss limit 2% reached; paused until next ET day"
+   },
+   {
+    "t": 1794983919023,
+    "mint": "eRCFZ3yPfcSu7VeF6es12ZcsEZj7iaAoydrgSRrpump",
+    "symbol": "GODF",
+    "reference": {
+     "decision": "PASSED_NOT_ORDERED",
+     "setup": "R_curve",
+     "reason": "not ordered — daily modeled loss limit 2% reached; paused until next ET day",
+     "current_lane_vetoes_not_applied": [
+      "holder concentration unverified"
+     ]
+    },
+    "current": {
+     "decision": "NO_SIGNAL",
+     "reason": "setup A not triggered: curve completion 100.0% outside 25–85%, age 0 s < 90 s, 1 unique buyers in 60 s < 12"
+    },
+    "same_decision": false,
+    "why_different": "current NO_SIGNAL: setup A not triggered: curve completion 100.0% outside 25–85%, age 0 s < 90 s, 1 unique buyers in 60 s < 12 | reference PASSED_NOT_ORDERED: not ordered — daily modeled loss limit 2% reached; paused until next ET day"
+   },
+   {
+    "t": 1794983691626,
+    "mint": "CFt616G7CWyQRQgnQ5JcaLZa6AFZ2BaByKnS4Xxxpump",
+    "symbol": "MUSTACHECAT",
+    "reference": {
+     "decision": "PASSED_NOT_ORDERED",
+     "setup": "R_curve",
+     "reason": "not ordered — daily modeled loss limit 2% reached; paused until next ET day",
+     "current_lane_vetoes_not_applied": [
+      "holder concentration unverified"
+     ]
+    },
+    "current": {
+     "decision": "NO_SIGNAL",
+     "reason": "setup A not triggered: curve completion 100.0% outside 25–85%, age 0 s < 90 s, 11 unique buyers in 60 s < 12"
+    },
+    "same_decision": false,
+    "why_different": "current NO_SIGNAL: setup A not triggered: curve completion 100.0% outside 25–85%, age 0 s < 90 s, 11 unique buyers in 60 s < 12 | reference PASSED_NOT_ORDERED: not ordered — daily modeled loss limit 2% reached; paused until next ET day"
+   },
+   {
+    "t": 1794982780894,
+    "mint": "85HaGWJmEyZjhNTpsPuPvurV6V4EG5v4zwDSm45dpump",
+    "symbol": null,
+    "current": {
+     "decision": "VETOED",
+     "setup": "B",
+     "reason": "volume concentration: top-3 wallets 84% of 2-min volume"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: graduated 39 min ago (> 30 min window); WHALES: no ≥10 SOL buy in the last 60 s"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: volume concentration: top-3 wallets 84% of 2-min volume | reference NO_SIGNAL: GRAD: graduated 39 min ago (> 30 min window); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794981480287,
+    "mint": "LZhPy4uk9RhcpZ7W352LUvRusYudapZKo6SXBfypump",
+    "symbol": "ANTHROPIC",
+    "reference": {
+     "decision": "FILLED",
+     "setup": "R_post",
+     "reason": "filled 0.024760 SOL on pumpswap (slippage vs quote 4.054%)",
+     "current_lane_vetoes_not_applied": [
+      "holder concentration: top holder 79.3% > 10%",
+      "holder concentration: top10 99.1% > 35%"
+     ]
+    },
+    "current": {
+     "decision": "NO_SIGNAL",
+     "reason": "setup B not triggered: pool age 0 s < 120 s, 2 AMM trades < 25, 2 unique buyers in 120 s < 10"
+    },
+    "same_decision": false,
+    "why_different": "current NO_SIGNAL: setup B not triggered: pool age 0 s < 120 s, 2 AMM trades < 25, 2 unique buyers in 120 s < 10 | reference FILLED: filled 0.024760 SOL on pumpswap (slippage vs quote 4.054%)"
+   },
+   {
+    "t": 1794981480268,
+    "mint": "LZhPy4uk9RhcpZ7W352LUvRusYudapZKo6SXBfypump",
+    "symbol": "ANTHROPIC",
+    "reference": {
+     "decision": "PASSED_NOT_ORDERED",
+     "setup": "R_curve",
+     "reason": "not ordered — one position at a time (1 open)",
+     "current_lane_vetoes_not_applied": [
+      "holder concentration: top holder 79.3% > 10%",
+      "holder concentration: top10 99.1% > 35%"
+     ]
+    },
+    "current": {
+     "decision": "NO_SIGNAL",
+     "reason": "setup A not triggered: curve completion 100.0% outside 25–85%, age 0 s < 90 s, 1 unique buyers in 60 s < 12"
+    },
+    "same_decision": false,
+    "why_different": "current NO_SIGNAL: setup A not triggered: curve completion 100.0% outside 25–85%, age 0 s < 90 s, 1 unique buyers in 60 s < 12 | reference PASSED_NOT_ORDERED: not ordered — one position at a time (1 open)"
+   },
+   {
+    "t": 1794981471494,
+    "mint": "EuAt8JTBqZLfrYFVbiNaJVKt1Wyu2FF87HAbpJGWpump",
+    "symbol": "SI",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: 6 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 17.7% of supply; wash-trading pattern: 85% of 2-min volume from wallets both buying and selling"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 14.5% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 6 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 17.7% of supply | reference NO_SIGNAL: GRAD: curve progress 14.5% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794981178529,
+    "mint": "85HaGWJmEyZjhNTpsPuPvurV6V4EG5v4zwDSm45dpump",
+    "symbol": null,
+    "current": {
+     "decision": "VETOED",
+     "setup": "B",
+     "reason": "holder concentration unverified"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "WHALES: no ≥10 SOL buy in the last 60 s"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: holder concentration unverified | reference NO_SIGNAL: WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794980506023,
+    "mint": "58XKLnKeH4epVPiEUNfNiVZUbxje4VQCefgRGXeApump",
+    "symbol": "po",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: 5 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 37.3% of supply; wash-trading pattern: 53% of 2-min volume from wallets both buying and selling"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 46.6% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 5 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 37.3% of supply | reference NO_SIGNAL: GRAD: curve progress 46.6% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794979944835,
+    "mint": "4tuanyyjVfLYzXc3MyPo3eYcvqpfTHV7zMUmYETdDXYw",
+    "symbol": "RABBIT",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: 5 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 27.7% of supply"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 58.7% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 5 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 27.7% of supply | reference NO_SIGNAL: GRAD: curve progress 58.7% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794978771584,
+    "mint": "CFP6gJRSp9EDP5atqebQvfA43chjXnokWvPhG2TFpump",
+    "symbol": "Grinch",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "holder concentration unverified"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 16.1% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: holder concentration unverified | reference NO_SIGNAL: GRAD: curve progress 16.1% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794978031010,
+    "mint": "D6REawj58gC8K6rVHR5YRTtFRQU7roKXpJFwt9g7Q9C2",
+    "symbol": null,
+    "current": {
+     "decision": "VETOED",
+     "setup": "B",
+     "reason": "volume concentration: top-3 wallets 66% of 2-min volume"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "WHALES: no ≥10 SOL buy in the last 60 s"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: volume concentration: top-3 wallets 66% of 2-min volume | reference NO_SIGNAL: WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794977586572,
+    "mint": "8eHuZ3LdRM8VxHBFd457356ThvLf8irr2rStA69Dpump",
+    "symbol": "DCI",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: 10 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 33.4% of supply; creator dev buy 11.2% of supply"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 29.4% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 10 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 33.4% of supply | reference NO_SIGNAL: GRAD: curve progress 29.4% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794977474220,
+    "mint": "eokZh8bAWZkoCdVPBqzd2rhdMuMG9NdFR8hk7EMpump",
+    "symbol": "FEET",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "creator selling: sold 58% of bought tokens; launch bundle: 4 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 26.8% of supply; creator dev buy 15.2% of supply; wash-trading pattern: 55% of 2-min volume from wallets both buying and selling"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 34.0% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: creator selling: sold 58% of bought tokens; launch bundle: 4 non-creator buyers in the create slot | reference NO_SIGNAL: GRAD: curve progress 34.0% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794977349939,
+    "mint": "FZEGhrBuyWKi87jjhUq7gSvqHmoPMYozHawpnxrXpump",
+    "symbol": "GPACK",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "creator selling: sold 100% of bought tokens; launch bundle: 3 non-creator buyers in the create slot; creator dev buy 33.9% of supply; dumping: 46% below peak"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 51.6% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s (last 13.827 SOL 708 s ago)"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: creator selling: sold 100% of bought tokens; launch bundle: 3 non-creator buyers in the create slot | reference NO_SIGNAL: GRAD: curve progress 51.6% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s (last 13.827 SOL 708 s ago)"
+   },
+   {
+    "t": 1794977224110,
+    "mint": "B9Yf2fKRdMShJ4B6o7R1DC52jyZnwvRhPJsmACRXpump",
+    "symbol": "Puten",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: 8 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 23.9% of supply"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 47.4% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 8 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 23.9% of supply | reference NO_SIGNAL: GRAD: curve progress 47.4% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1794976616389,
+    "mint": "HWCtEXGr4fx4nS4hGRv6VVx2DhvDjkSbXtRCzyzepump",
+    "symbol": "BOBO",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "launch bundle: 3 non-creator buyers in the create slot; wash-trading pattern: 53% of 2-min volume from wallets both buying and selling"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 9.5% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: launch bundle: 3 non-creator buyers in the create slot; wash-trading pattern: 53% of 2-min volume from wallets both buying and selling | reference NO_SIGNAL: GRAD: curve progress 9.5% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   }
+  ],
   "diff_counts": {
-   "rows": 0,
+   "rows": 68,
    "same": 0,
-   "only_reference_signal": 0,
-   "only_current_signal": 0
+   "only_reference_signal": 12,
+   "only_current_signal": 54
   },
   "sample_warning": "Small sample: differences in a handful of trades are not statistically meaningful. Target ≥100 independent closed trades per lane before drawing conclusions."
  }
