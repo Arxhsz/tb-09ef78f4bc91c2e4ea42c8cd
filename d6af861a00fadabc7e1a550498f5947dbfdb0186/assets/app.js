@@ -101,7 +101,9 @@ function renderRef() {
 }
 function render() {
   if (!D) return; const age = (Date.now() - D.generated_at_ms) / 1000; $('#gen').textContent = `data ${D.generated_at_et} · schema ${D.schema} v${D.schema_version} · params ${D.params_version}`;
-  const fb = $('#fresh-badge'); fb.textContent = age < 30 ? `fresh · ${Math.round(age)}s` : `STALE · ${Math.round(age / 60)} min old`; fb.className = 'badge ' + (age < 30 ? 'ok' : 'bad');
+  const fb = $('#fresh-badge'); const staleAfterS = 15 * 60; // warn only past ~15 min; publish cadence is 5 min
+  if (age < staleAfterS) { fb.textContent = age < 60 ? `fresh · ${Math.round(age)}s` : `fresh · ${Math.max(1, Math.round(age / 60))} min`; fb.className = 'badge ok'; }
+  else { fb.textContent = `STALE · ${Math.round(age / 60)} min old`; fb.className = 'badge bad'; }
   $('#live-badge').textContent = D.live_trading_enabled ? 'LIVE ?!' : 'live trading: OFF'; const pb = $('#paused'); pb.classList.toggle('hidden', !D.paused_reason); pb.textContent = D.paused_reason ? `Agents paused: ${D.paused_reason}` : '';
   renderAgents(); renderBooks(); renderFeeds(); renderMarket(); renderOpps(); renderTrades(); renderStrat(); renderRef();
 }
