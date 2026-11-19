@@ -1,8 +1,8 @@
 {
  "schema": "pumpdesk6.desk-export",
  "schema_version": "1.3.0",
- "generated_at_ms": 1795054980925,
- "generated_at_et": "11/18/2026, 9:23:00 PM ET",
+ "generated_at_ms": 1795055280977,
+ "generated_at_et": "11/18/2026, 9:28:00 PM ET",
  "mode": "PAPER",
  "live_trading_enabled": false,
  "params_version": "v0-2026-11-17",
@@ -11,36 +11,36 @@
  "feeds": {
   "solana_ws": {
    "name": "solana_ws",
-   "msgs": 9269864,
+   "msgs": 9473648,
    "connects": 312,
    "reconnects": 311,
    "errors": 310,
    "last_error": "closed by peer",
-   "last_msg_ms": 1795054980925,
-   "age_s": 0.051,
+   "last_msg_ms": 1795055280977,
+   "age_s": 0.01,
    "fresh": true
   },
   "pumpportal_ws": {
    "name": "pumpportal_ws",
-   "msgs": 1704,
+   "msgs": 1733,
    "connects": 2,
    "reconnects": 1,
    "errors": 0,
    "last_error": "resume after 27s gap",
-   "last_msg_ms": 1795054975903,
-   "age_s": 5.073,
+   "last_msg_ms": 1795055279573,
+   "age_s": 1.414,
    "fresh": true
   },
   "helius_http": {
    "ok": 2,
-   "err": 382,
+   "err": 388,
    "last_ok": 1795048736314,
    "last_err": "skipped: HTTP 429 cooldown"
   },
   "public_rpc": {
-   "ok": 238,
-   "err": 240,
-   "last_ok": 1795054832818,
+   "ok": 244,
+   "err": 243,
+   "last_ok": 1795055258903,
    "last_err": "HTTP 429"
   }
  },
@@ -49,52 +49,52 @@
    "name": "GRAD",
    "role": "bonding-curve & graduation intelligence",
    "state": "running",
-   "last_activity_ms": 1795054980925,
-   "last_activity_et": "11/18/2026, 9:23:00 PM ET",
+   "last_activity_ms": 1795055280977,
+   "last_activity_et": "11/18/2026, 9:28:00 PM ET",
    "age_s": 0,
    "fresh": true,
    "freshness_limit_s": 15,
-   "summary": "924 mints tracked · 62 graduations · 123 pools"
+   "summary": "958 mints tracked · 64 graduations · 127 pools"
   },
   "WHALES": {
    "name": "WHALES",
    "role": "smart-wallet & capital-flow tracking",
    "state": "running",
-   "last_activity_ms": 1795054980925,
-   "last_activity_et": "11/18/2026, 9:23:00 PM ET",
+   "last_activity_ms": 1795055280977,
+   "last_activity_et": "11/18/2026, 9:28:00 PM ET",
    "age_s": 0,
    "fresh": true,
    "freshness_limit_s": 15,
-   "summary": "46012 wallets · 113 proven · 73893 closed round trips observed"
+   "summary": "47743 wallets · 114 proven · 80450 closed round trips observed"
   },
   "SNIPER": {
    "name": "SNIPER",
    "role": "entry selection & token safety",
    "state": "running",
-   "last_activity_ms": 1795054980925,
-   "last_activity_et": "11/18/2026, 9:23:00 PM ET",
+   "last_activity_ms": 1795055280977,
+   "last_activity_et": "11/18/2026, 9:28:00 PM ET",
    "age_s": 0,
    "fresh": true,
    "freshness_limit_s": 15,
-   "summary": "96 independent opportunities · 0 passed · 96 vetoed"
+   "summary": "99 independent opportunities · 0 passed · 99 vetoed"
   },
   "ROUTER": {
    "name": "ROUTER",
    "role": "venue & execution-quote optimization",
    "state": "running",
-   "last_activity_ms": 1795054951012,
-   "last_activity_et": "11/18/2026, 9:22:31 PM ET",
-   "age_s": 29.9,
+   "last_activity_ms": 1795055251024,
+   "last_activity_et": "11/18/2026, 9:27:31 PM ET",
+   "age_s": 30,
    "fresh": true,
    "freshness_limit_s": 90,
-   "summary": "393 quotes · 0 errors"
+   "summary": "403 quotes · 0 errors"
   },
   "EXEC": {
    "name": "EXEC",
    "role": "position sizing & simulated execution (PAPER)",
    "state": "running",
-   "last_activity_ms": 1795054980925,
-   "last_activity_et": "11/18/2026, 9:23:00 PM ET",
+   "last_activity_ms": 1795055280977,
+   "last_activity_et": "11/18/2026, 9:28:00 PM ET",
    "age_s": 0,
    "fresh": true,
    "freshness_limit_s": 10,
@@ -104,8 +104,8 @@
    "name": "EXIT",
    "role": "position monitoring & exits",
    "state": "running",
-   "last_activity_ms": 1795054980925,
-   "last_activity_et": "11/18/2026, 9:23:00 PM ET",
+   "last_activity_ms": 1795055280977,
+   "last_activity_et": "11/18/2026, 9:28:00 PM ET",
    "age_s": 0,
    "fresh": true,
    "freshness_limit_s": 10,
@@ -187,122 +187,107 @@
  },
  "grad": {
   "counts": {
-   "creates": 3592,
-   "trades": 318775,
-   "completes": 62,
-   "migrations": 122,
-   "pools": 123,
-   "amm_trades": 127939,
-   "amm_unmapped": 1734479,
-   "pumpportal_new": 1597,
-   "pumpportal_migrations": 103
+   "creates": 3675,
+   "trades": 328373,
+   "completes": 64,
+   "migrations": 126,
+   "pools": 127,
+   "amm_trades": 136745,
+   "amm_unmapped": 1788355,
+   "pumpportal_new": 1623,
+   "pumpportal_migrations": 106
   },
-  "tracked_mints": 924,
-  "tracked_pools": 62,
+  "tracked_mints": 958,
+  "tracked_pools": 64,
   "phases": {
-   "PRE": 315,
+   "PRE": 329,
    "TRANSITION": 1,
-   "POST": 62
+   "POST": 64
   },
   "curves": [
    {
-    "mint": "g8hEazg3metRF9pdLVGWu3mN6nKf27Gg7xCMYArpump",
-    "symbol": null,
-    "completion_pct": 93.76,
-    "liq_sol": 67.718,
-    "price_sol": 2.9664106056567065e-7,
-    "age_s": null,
-    "trades": 1,
-    "flow60": {
-     "net_sol": 0,
-     "unique_buyers": 0,
-     "buy_share": 0
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "81fhGv19ZYoufZdqHb2NGvuTviYyEHJ9W1D8h9Tppump",
-    "symbol": null,
-    "completion_pct": 87.97,
-    "liq_sol": 55.778,
-    "price_sol": 2.2857406714667431e-7,
-    "age_s": null,
-    "trades": 1,
-    "flow60": {
-     "net_sol": 0,
-     "unique_buyers": 0,
-     "buy_share": 0
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "FXkJhdEEm6Wi1T4UY6rdL5uWSf5muB1FBKEAuSJApump",
-    "symbol": null,
-    "completion_pct": 87.74,
-    "liq_sol": 55.362,
-    "price_sol": 2.2636558153899331e-7,
-    "age_s": null,
-    "trades": 25,
-    "flow60": {
-     "net_sol": 0,
-     "unique_buyers": 3,
-     "buy_share": 0.5
-    },
-    "seen_from_create": false
-   },
-   {
     "mint": "QDsTBqfFEt4yrpqfU7edcc9E6u7nHrbz15eqY8jpump",
     "symbol": "GMGM",
-    "completion_pct": 87.71,
-    "liq_sol": 55.292,
-    "price_sol": 2.2599463525255455e-7,
-    "age_s": 253,
-    "trades": 454,
+    "completion_pct": 91.79,
+    "liq_sol": 63.311,
+    "price_sol": 2.704881259197068e-7,
+    "age_s": 553,
+    "trades": 818,
     "flow60": {
-     "net_sol": 9.716,
-     "unique_buyers": 72,
-     "buy_share": 0.57
-    },
-    "seen_from_create": true
-   },
-   {
-    "mint": "5UfJsnoQPyDXtZhFjjzVFPnseY9BYGB2kmjwQr13pump",
-    "symbol": "DAMNTRAIN",
-    "completion_pct": 86.75,
-    "liq_sol": 0.07,
-    "price_sol": 2.2607887257166721e-10,
-    "age_s": 371,
-    "trades": 350,
-    "flow60": {
-     "net_sol": 0.05,
-     "unique_buyers": 5,
-     "buy_share": 0.58
+     "net_sol": 15.351,
+     "unique_buyers": 33,
+     "buy_share": 0.69
     },
     "seen_from_create": true
    },
    {
     "mint": "EKjdkz5igA2ByqoX5HNLn8B8MThJ8SURvvgRAqzcpump",
     "symbol": null,
-    "completion_pct": 85.06,
-    "liq_sol": 50.801,
-    "price_sol": 2.028227567061084e-7,
+    "completion_pct": 83.24,
+    "liq_sol": 47.974,
+    "price_sol": 1.888783464033769e-7,
     "age_s": null,
-    "trades": 25,
+    "trades": 35,
     "flow60": {
-     "net_sol": 3.978,
-     "unique_buyers": 13,
-     "buy_share": 0.91
+     "net_sol": -2.155,
+     "unique_buyers": 3,
+     "buy_share": 0.18
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "8n24pFnBGGeAt7nKdYyRfKi8bptauBrnak5KGDMxpump",
+    "symbol": "$PIKAM",
+    "completion_pct": 82.83,
+    "liq_sol": 0.508,
+    "price_sol": 7.253998352959587e-9,
+    "age_s": 89,
+    "trades": 298,
+    "flow60": {
+     "net_sol": 0.333,
+     "unique_buyers": 22,
+     "buy_share": 0.51
+    },
+    "seen_from_create": true
+   },
+   {
+    "mint": "7FJhdVdvCC67mVwiLUeixpCkiF1GP42KpfNiQFWapump",
+    "symbol": null,
+    "completion_pct": 81.09,
+    "liq_sol": 44.882,
+    "price_sol": 1.7419394601454622e-7,
+    "age_s": null,
+    "trades": 1,
+    "flow60": {
+     "net_sol": -1.268,
+     "unique_buyers": 0,
+     "buy_share": 0
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "efo75jisqQsV8jghoXuseQRGwJyE5ee8AwY4z5opump",
+    "symbol": null,
+    "completion_pct": 80.2,
+    "liq_sol": 43.675,
+    "price_sol": 1.6862405972627592e-7,
+    "age_s": null,
+    "trades": 1,
+    "flow60": {
+     "net_sol": 2.476,
+     "unique_buyers": 1,
+     "buy_share": 1
     },
     "seen_from_create": false
    },
    {
     "mint": "Hsjw2z1TS4YGp3ELikbNm1eqFMCoGMF18swmPsr4pump",
     "symbol": null,
-    "completion_pct": 80.24,
-    "liq_sol": 43.731,
-    "price_sol": 1.6887851888024957e-7,
+    "completion_pct": 79.99,
+    "liq_sol": 43.39,
+    "price_sol": 1.6732085901730725e-7,
     "age_s": null,
-    "trades": 210,
+    "trades": 216,
     "flow60": {
      "net_sol": 0,
      "unique_buyers": 0,
@@ -311,31 +296,61 @@
     "seen_from_create": false
    },
    {
+    "mint": "42kBJN76bSphUiHL5dgxeqWva173uVeNpWf6U9ufpump",
+    "symbol": null,
+    "completion_pct": 78.7,
+    "liq_sol": 0.688,
+    "price_sol": 2.466140557502249e-9,
+    "age_s": null,
+    "trades": 3,
+    "flow60": {
+     "net_sol": 0,
+     "unique_buyers": 0,
+     "buy_share": 0
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "2hgKSomVH4sWLFY8BT2AXVpfWvxCKseDfcnqDmkcpump",
+    "symbol": null,
+    "completion_pct": 76.33,
+    "liq_sol": 38.841,
+    "price_sol": 1.4722258499068724e-7,
+    "age_s": null,
+    "trades": 17,
+    "flow60": {
+     "net_sol": 0.363,
+     "unique_buyers": 3,
+     "buy_share": 1
+    },
+    "seen_from_create": false
+   },
+   {
     "mint": "Hj3usZwh3JbQkZZNNE3cWYh1QBcGU7pfAcXqbHgppump",
     "symbol": "Komugi",
-    "completion_pct": 76.82,
-    "liq_sol": 39.408,
-    "price_sol": 1.4965780870403178e-7,
-    "age_s": 1121,
-    "trades": 383,
+    "completion_pct": 76.07,
+    "liq_sol": 38.539,
+    "price_sol": 1.4593346958545845e-7,
+    "age_s": 1421,
+    "trades": 439,
     "flow60": {
-     "net_sol": 2.683,
-     "unique_buyers": 4,
-     "buy_share": 0.86
+     "net_sol": 3.537,
+     "unique_buyers": 7,
+     "buy_share": 0.63
     },
     "seen_from_create": true
    },
    {
-    "mint": "71dDsEfohSRUsVPPB1rsKRspoXH7nt1g8EgMhSxXpump",
+    "mint": "C84B31RfBYc5jtZAasdgN9AMpLt2uUdL2b5DUwEpump",
     "symbol": null,
-    "completion_pct": 73.8,
-    "liq_sol": 36.007,
-    "price_sol": 1.353486811918266e-7,
+    "completion_pct": 73.89,
+    "liq_sol": 36.1,
+    "price_sol": 1.3573222144353667e-7,
     "age_s": null,
-    "trades": 362,
+    "trades": 66,
     "flow60": {
-     "net_sol": -0.86,
-     "unique_buyers": 1,
+     "net_sol": 0,
+     "unique_buyers": 0,
      "buy_share": 0
     },
     "seen_from_create": false
@@ -343,41 +358,71 @@
    {
     "mint": "B6WrSLSVbF5iG5CTaRLp6U8yy8b9cspUXithjda3REAL",
     "symbol": null,
-    "completion_pct": 73.39,
-    "liq_sol": 35.568,
-    "price_sol": 1.3355729059436255e-7,
+    "completion_pct": 72.96,
+    "liq_sol": 35.119,
+    "price_sol": 1.317342696058378e-7,
     "age_s": null,
-    "trades": 16,
+    "trades": 18,
     "flow60": {
-     "net_sol": 1.151,
-     "unique_buyers": 7,
-     "buy_share": 0.6
+     "net_sol": -0.449,
+     "unique_buyers": 1,
+     "buy_share": 0.2
     },
     "seen_from_create": false
    },
    {
-    "mint": "C84B31RfBYc5jtZAasdgN9AMpLt2uUdL2b5DUwEpump",
-    "symbol": null,
-    "completion_pct": 72.8,
-    "liq_sol": 34.951,
-    "price_sol": 1.3105288337425299e-7,
-    "age_s": null,
-    "trades": 58,
+    "mint": "92m4S52bu3dZyqzPmPStu8Krz6JcpzHdsG4D5QBqpump",
+    "symbol": "GTA Strategy ",
+    "completion_pct": 71.42,
+    "liq_sol": 33.549,
+    "price_sol": 1.2545564058250694e-7,
+    "age_s": 387,
+    "trades": 1262,
     "flow60": {
-     "net_sol": -1.516,
+     "net_sol": -3.715,
+     "unique_buyers": 53,
+     "buy_share": 0.45
+    },
+    "seen_from_create": true
+   },
+   {
+    "mint": "7YdTKiALfyq7fYFVe67oMMJxmoCqv534eVeDc7dBpump",
+    "symbol": null,
+    "completion_pct": 71.26,
+    "liq_sol": 33.383,
+    "price_sol": 1.2480255305165183e-7,
+    "age_s": null,
+    "trades": 3,
+    "flow60": {
+     "net_sol": 0,
      "unique_buyers": 0,
      "buy_share": 0
     },
     "seen_from_create": false
    },
    {
-    "mint": "NpSfSGJnG649YxcgYMUx98MTWKNsRJ8cs1Px3opZgtv",
+    "mint": "8xixSdRxfgAGZAtH7FBTndvHugcbCNYgGjeWfcxhpump",
     "symbol": null,
-    "completion_pct": 68.92,
-    "liq_sol": 31.151,
-    "price_sol": 1.1616697075891796e-7,
+    "completion_pct": 70.88,
+    "liq_sol": 33.014,
+    "price_sol": 1.2335428682065027e-7,
     "age_s": null,
-    "trades": 102,
+    "trades": 95,
+    "flow60": {
+     "net_sol": -0.403,
+     "unique_buyers": 0,
+     "buy_share": 0
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "71dDsEfohSRUsVPPB1rsKRspoXH7nt1g8EgMhSxXpump",
+    "symbol": null,
+    "completion_pct": 70.86,
+    "liq_sol": 32.998,
+    "price_sol": 1.232896783101994e-7,
+    "age_s": null,
+    "trades": 369,
     "flow60": {
      "net_sol": 0,
      "unique_buyers": 0,
@@ -388,11 +433,26 @@
    {
     "mint": "6z9zZnrS5EwpiZfJPKqzhQhd9hkiQuyy9EW9ZcfBpump",
     "symbol": null,
-    "completion_pct": 66.84,
-    "liq_sol": 29.292,
-    "price_sol": 1.0921294567070095e-7,
+    "completion_pct": 66.54,
+    "liq_sol": 29.038,
+    "price_sol": 1.0827684875623816e-7,
     "age_s": null,
-    "trades": 100,
+    "trades": 104,
+    "flow60": {
+     "net_sol": 0,
+     "unique_buyers": 0,
+     "buy_share": 0
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "EzL6hy8z79dv674kGipoL8VnEokQ5931iMk6Hj2zcN15",
+    "symbol": null,
+    "completion_pct": 65.53,
+    "liq_sol": 34.486,
+    "price_sol": 1.3290062907983737e-7,
+    "age_s": null,
+    "trades": 322,
     "flow60": {
      "net_sol": 0,
      "unique_buyers": 0,
@@ -403,189 +463,9 @@
    {
     "mint": "2FSgBQeCwXMti2Xg5dozqm5TKEF5svTuvsHqk5jcpump",
     "symbol": null,
-    "completion_pct": 65.97,
-    "liq_sol": 28.546,
-    "price_sol": 1.0648117963812277e-7,
-    "age_s": null,
-    "trades": 6,
-    "flow60": {
-     "net_sol": 0,
-     "unique_buyers": 0,
-     "buy_share": 0
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "DFbhjinSRRgXSfsTd8htfKRsxSqgNu3sVFVmez16pump",
-    "symbol": "PODW",
-    "completion_pct": 64.72,
-    "liq_sol": 27.513,
-    "price_sol": 1.0275776721060877e-7,
-    "age_s": 3438,
-    "trades": 356,
-    "flow60": {
-     "net_sol": 0,
-     "unique_buyers": 0,
-     "buy_share": 0
-    },
-    "seen_from_create": true
-   },
-   {
-    "mint": "CuxpChveTRQx35VUe2y18X45Vh7dhhjB5C2jfYG2pump",
-    "symbol": null,
-    "completion_pct": 64.04,
-    "liq_sol": 26.961,
-    "price_sol": 1.0079364293542477e-7,
-    "age_s": null,
-    "trades": 574,
-    "flow60": {
-     "net_sol": 0,
-     "unique_buyers": 0,
-     "buy_share": 0
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "DaR6wL16BeA2GUGcFw87DJLbSRAAw6AJaXKX39xSpump",
-    "symbol": null,
-    "completion_pct": 62.48,
-    "liq_sol": 25.743,
-    "price_sol": 9.652845174134698e-8,
-    "age_s": null,
-    "trades": 2,
-    "flow60": {
-     "net_sol": 0,
-     "unique_buyers": 0,
-     "buy_share": 0
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "3T9guYBwZKnWfvgYzAmHdkLgAHWN3UPUVGwR98bXpump",
-    "symbol": null,
-    "completion_pct": 62.13,
-    "liq_sol": 25.478,
-    "price_sol": 9.56154038274025e-8,
-    "age_s": null,
-    "trades": 116,
-    "flow60": {
-     "net_sol": 1.448,
-     "unique_buyers": 5,
-     "buy_share": 0.69
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "Fo3wVf6DyHyg9vjywPFo5ox3c8evssxsRL24RURaVS8j",
-    "symbol": "Toku",
-    "completion_pct": 61.8,
-    "liq_sol": 25.23,
-    "price_sol": 9.476119237933254e-8,
-    "age_s": 1103,
-    "trades": 93,
-    "flow60": {
-     "net_sol": 1.532,
-     "unique_buyers": 9,
-     "buy_share": 1
-    },
-    "seen_from_create": true
-   },
-   {
-    "mint": "92m4S52bu3dZyqzPmPStu8Krz6JcpzHdsG4D5QBqpump",
-    "symbol": "GTA Strategy ",
-    "completion_pct": 60.33,
-    "liq_sol": 24.142,
-    "price_sol": 9.106514443510557e-8,
-    "age_s": 87,
-    "trades": 332,
-    "flow60": {
-     "net_sol": 18.083,
-     "unique_buyers": 74,
-     "buy_share": 0.65
-    },
-    "seen_from_create": true
-   },
-   {
-    "mint": "DrCp53xpQANiF2Aimb4bXWVkdDWPEvWktG6y8AjNpump",
-    "symbol": null,
-    "completion_pct": 58.22,
-    "liq_sol": 22.661,
-    "price_sol": 8.614898816686218e-8,
-    "age_s": null,
-    "trades": 28,
-    "flow60": {
-     "net_sol": 0,
-     "unique_buyers": 0,
-     "buy_share": 0
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "CDaymQo4nuuWamceXPRSATQ3QSPtC69c2Don8pSpump",
-    "symbol": "Catalyst",
-    "completion_pct": 58.1,
-    "liq_sol": 22.579,
-    "price_sol": 8.588207324365158e-8,
-    "age_s": 4889,
-    "trades": 553,
-    "flow60": {
-     "net_sol": -1.267,
-     "unique_buyers": 0,
-     "buy_share": 0
-    },
-    "seen_from_create": true
-   },
-   {
-    "mint": "9UKo9XNm5bF2AUb1jpjw2GoeiPFUng9HKczmVyZ9Ny5s",
-    "symbol": null,
-    "completion_pct": 57.59,
-    "liq_sol": 22.238,
-    "price_sol": 8.477255369910044e-8,
-    "age_s": null,
-    "trades": 14,
-    "flow60": {
-     "net_sol": 2.494,
-     "unique_buyers": 8,
-     "buy_share": 1
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "GmGR4KUh4GQcKJJqom8Q7mbg5eSqCGu1sEx9krBpump",
-    "symbol": null,
-    "completion_pct": 55.69,
-    "liq_sol": 20.99,
-    "price_sol": 8.077110092327796e-8,
-    "age_s": null,
-    "trades": 6,
-    "flow60": {
-     "net_sol": 0,
-     "unique_buyers": 0,
-     "buy_share": 0
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "W7qgjR86T3hbghev2dXsEJyr1bsk2U59VmnTPzFMkK3",
-    "symbol": "Nikumaru",
-    "completion_pct": 55.56,
-    "liq_sol": 20.903,
-    "price_sol": 8.049576299872098e-8,
-    "age_s": 1115,
-    "trades": 40,
-    "flow60": {
-     "net_sol": 2.838,
-     "unique_buyers": 5,
-     "buy_share": 1
-    },
-    "seen_from_create": true
-   },
-   {
-    "mint": "3LCNqqLNXMxCPxqB9PvRteV1k8FUmSZtgCjcTxFdpump",
-    "symbol": null,
-    "completion_pct": 54.09,
-    "liq_sol": 19.984,
-    "price_sol": 7.761415316701557e-8,
+    "completion_pct": 65.19,
+    "liq_sol": 27.9,
+    "price_sol": 1.0414606994873593e-7,
     "age_s": null,
     "trades": 8,
     "flow60": {
@@ -596,15 +476,225 @@
     "seen_from_create": false
    },
    {
+    "mint": "HYXgjJc3ABFARF8i2H9B2hkbWZLFBPZTSkPqA8yHpump",
+    "symbol": null,
+    "completion_pct": 63.5,
+    "liq_sol": 26.535,
+    "price_sol": 9.929151802382178e-8,
+    "age_s": null,
+    "trades": 16,
+    "flow60": {
+     "net_sol": 1.157,
+     "unique_buyers": 7,
+     "buy_share": 0.59
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "DFbhjinSRRgXSfsTd8htfKRsxSqgNu3sVFVmez16pump",
+    "symbol": "PODW",
+    "completion_pct": 63.35,
+    "liq_sol": 26.413,
+    "price_sol": 9.886469123412672e-8,
+    "age_s": 3738,
+    "trades": 364,
+    "flow60": {
+     "net_sol": -0.177,
+     "unique_buyers": 0,
+     "buy_share": 0
+    },
+    "seen_from_create": true
+   },
+   {
+    "mint": "CuxpChveTRQx35VUe2y18X45Vh7dhhjB5C2jfYG2pump",
+    "symbol": null,
+    "completion_pct": 63.33,
+    "liq_sol": 26.402,
+    "price_sol": 9.882458664535863e-8,
+    "age_s": null,
+    "trades": 577,
+    "flow60": {
+     "net_sol": 0,
+     "unique_buyers": 0,
+     "buy_share": 0
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "3T9guYBwZKnWfvgYzAmHdkLgAHWN3UPUVGwR98bXpump",
+    "symbol": null,
+    "completion_pct": 61.92,
+    "liq_sol": 25.321,
+    "price_sol": 9.507324031755737e-8,
+    "age_s": null,
+    "trades": 117,
+    "flow60": {
+     "net_sol": -0.158,
+     "unique_buyers": 0,
+     "buy_share": 0
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "7VnsqR2HmtoPRQe9xjbbtUuXtQthsNwY58GKVvmcpump",
+    "symbol": null,
+    "completion_pct": 58.46,
+    "liq_sol": 22.824,
+    "price_sol": 8.668426616452234e-8,
+    "age_s": null,
+    "trades": 1,
+    "flow60": {
+     "net_sol": 0,
+     "unique_buyers": 0,
+     "buy_share": 0
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "CDaymQo4nuuWamceXPRSATQ3QSPtC69c2Don8pSpump",
+    "symbol": "Catalyst",
+    "completion_pct": 57.92,
+    "liq_sol": 22.46,
+    "price_sol": 8.549520874140201e-8,
+    "age_s": 5190,
+    "trades": 554,
+    "flow60": {
+     "net_sol": 0,
+     "unique_buyers": 0,
+     "buy_share": 0
+    },
+    "seen_from_create": true
+   },
+   {
+    "mint": "Gqz7b4NvCm7co4gmSd1H2VgVzTGYBvGyTFU7z4ddpump",
+    "symbol": null,
+    "completion_pct": 57.83,
+    "liq_sol": 22.4,
+    "price_sol": 8.529918619623509e-8,
+    "age_s": null,
+    "trades": 19,
+    "flow60": {
+     "net_sol": 3.289,
+     "unique_buyers": 8,
+     "buy_share": 1
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "HXArLhkjkN1tphsmF28hBFgrSRXhZMp4dRqYtWhtpump",
+    "symbol": null,
+    "completion_pct": 55.75,
+    "liq_sol": 21.029,
+    "price_sol": 8.089378937530183e-8,
+    "age_s": null,
+    "trades": 3,
+    "flow60": {
+     "net_sol": 0,
+     "unique_buyers": 0,
+     "buy_share": 0
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "9UKo9XNm5bF2AUb1jpjw2GoeiPFUng9HKczmVyZ9Ny5s",
+    "symbol": null,
+    "completion_pct": 55.24,
+    "liq_sol": 20.7,
+    "price_sol": 7.985305180071854e-8,
+    "age_s": null,
+    "trades": 18,
+    "flow60": {
+     "net_sol": 0,
+     "unique_buyers": 0,
+     "buy_share": 0
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "Fo3wVf6DyHyg9vjywPFo5ox3c8evssxsRL24RURaVS8j",
+    "symbol": "Toku",
+    "completion_pct": 54.73,
+    "liq_sol": 20.381,
+    "price_sol": 7.885070295937616e-8,
+    "age_s": 1403,
+    "trades": 104,
+    "flow60": {
+     "net_sol": -1.777,
+     "unique_buyers": 0,
+     "buy_share": 0
+    },
+    "seen_from_create": true
+   },
+   {
+    "mint": "W7qgjR86T3hbghev2dXsEJyr1bsk2U59VmnTPzFMkK3",
+    "symbol": "Nikumaru",
+    "completion_pct": 52.23,
+    "liq_sol": 18.864,
+    "price_sol": 7.41736434410973e-8,
+    "age_s": 1415,
+    "trades": 78,
+    "flow60": {
+     "net_sol": 0,
+     "unique_buyers": 0,
+     "buy_share": 0
+    },
+    "seen_from_create": true
+   },
+   {
+    "mint": "24kDn1RqKE9QBCUrCyPvp1zzttp3NbpPbuDhXzgWpump",
+    "symbol": "awd",
+    "completion_pct": 52,
+    "liq_sol": 0,
+    "price_sol": 1.358118583935692e-7,
+    "age_s": 191,
+    "trades": 34,
+    "flow60": {
+     "net_sol": 0,
+     "unique_buyers": 0,
+     "buy_share": 0
+    },
+    "seen_from_create": true
+   },
+   {
+    "mint": "9PSmrfaEHLvARGgZ5i8HvopRNgoAg45J5wgFggCSpump",
+    "symbol": null,
+    "completion_pct": 51.39,
+    "liq_sol": 18.378,
+    "price_sol": 7.270601838112807e-8,
+    "age_s": null,
+    "trades": 3,
+    "flow60": {
+     "net_sol": -0.007,
+     "unique_buyers": 0,
+     "buy_share": 0
+    },
+    "seen_from_create": false
+   },
+   {
     "mint": "GT2Ay2QpgMm4GhhbBXPpjiX87um4aiDdLHNC6Xuwpump",
     "symbol": null,
-    "completion_pct": 52.78,
-    "liq_sol": 19.193,
-    "price_sol": 7.517575575248527e-8,
+    "completion_pct": 50.93,
+    "liq_sol": 18.11,
+    "price_sol": 7.190222123347296e-8,
     "age_s": null,
-    "trades": 285,
+    "trades": 290,
     "flow60": {
-     "net_sol": -0.134,
+     "net_sol": -1.238,
+     "unique_buyers": 0,
+     "buy_share": 0
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "veUeZzn3P8Sjy2NhSSkjQsAbRR2nPG8NqBZdQghpump",
+    "symbol": null,
+    "completion_pct": 50.12,
+    "liq_sol": 17.655,
+    "price_sol": 7.054991307266184e-8,
+    "age_s": null,
+    "trades": 6,
+    "flow60": {
+     "net_sol": 0,
      "unique_buyers": 0,
      "buy_share": 0
     },
@@ -613,200 +703,138 @@
    {
     "mint": "NMX3DEvN4XrsKJoWKBPyK9X5AwfwvtcGYxrwzLfpump",
     "symbol": null,
-    "completion_pct": 49.63,
-    "liq_sol": 17.383,
-    "price_sol": 6.9746149973202e-8,
+    "completion_pct": 49.59,
+    "liq_sol": 17.357,
+    "price_sol": 6.967076228851882e-8,
     "age_s": null,
-    "trades": 47,
-    "flow60": {
-     "net_sol": -0.036,
-     "unique_buyers": 0,
-     "buy_share": 0
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "E26zyc5CG5BNkgZCFVTmVZxXuD4hjJDUcVAoxyWGpump",
-    "symbol": null,
-    "completion_pct": 49.39,
-    "liq_sol": 17.248,
-    "price_sol": 6.934997036555191e-8,
-    "age_s": null,
-    "trades": 1,
+    "trades": 48,
     "flow60": {
      "net_sol": 0,
      "unique_buyers": 0,
      "buy_share": 0
     },
     "seen_from_create": false
-   },
-   {
-    "mint": "Gqz7b4NvCm7co4gmSd1H2VgVzTGYBvGyTFU7z4ddpump",
-    "symbol": null,
-    "completion_pct": 49.12,
-    "liq_sol": 17.101,
-    "price_sol": 6.89196766638972e-8,
-    "age_s": null,
-    "trades": 7,
-    "flow60": {
-     "net_sol": -0.076,
-     "unique_buyers": 0,
-     "buy_share": 0
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump",
-    "symbol": null,
-    "completion_pct": 48.56,
-    "liq_sol": 16.796,
-    "price_sol": 6.802904517082383e-8,
-    "age_s": null,
-    "trades": 200,
-    "flow60": {
-     "net_sol": 0,
-     "unique_buyers": 0,
-     "buy_share": 0
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "CUockEXtonoxJ7pVipwNYhekieZXdupwJy1zzhCkpump",
-    "symbol": "GTASANTA",
-    "completion_pct": 43.86,
-    "liq_sol": 14.39,
-    "price_sol": 6.121507756967164e-8,
-    "age_s": 374,
-    "trades": 456,
-    "flow60": {
-     "net_sol": 1.321,
-     "unique_buyers": 22,
-     "buy_share": 0.53
-    },
-    "seen_from_create": true
    },
    {
     "mint": "CuBcKa4zTYqWoSzmLjoBphqHbcbRXm9qAjZ1hFG2pump",
     "symbol": null,
-    "completion_pct": 43.6,
-    "liq_sol": 14.267,
-    "price_sol": 6.087577561208745e-8,
+    "completion_pct": 45.23,
+    "liq_sol": 15.068,
+    "price_sol": 6.309812358228205e-8,
     "age_s": null,
-    "trades": 6,
+    "trades": 9,
     "flow60": {
-     "net_sol": 0.127,
-     "unique_buyers": 1,
-     "buy_share": 1
+     "net_sol": 0,
+     "unique_buyers": 0,
+     "buy_share": 0
+    },
+    "seen_from_create": false
+   },
+   {
+    "mint": "Ag5H7Zcg8jPqrHfPmDWYHzCMRH3jhqpFwJtcuZHFpump",
+    "symbol": "NiTrump",
+    "completion_pct": 45.13,
+    "liq_sol": 15.018,
+    "price_sol": 6.295848162054444e-8,
+    "age_s": 274,
+    "trades": 118,
+    "flow60": {
+     "net_sol": 5.396,
+     "unique_buyers": 22,
+     "buy_share": 0.69
+    },
+    "seen_from_create": true
+   },
+   {
+    "mint": "71664H6wxg8cF4qjtaACt21DX5RoFNcf4HwSGKfgpump",
+    "symbol": null,
+    "completion_pct": 44.34,
+    "liq_sol": 14.626,
+    "price_sol": 6.186676937107798e-8,
+    "age_s": null,
+    "trades": 1,
+    "flow60": {
+     "net_sol": -0.002,
+     "unique_buyers": 0,
+     "buy_share": 0
     },
     "seen_from_create": false
    },
    {
     "mint": "DzKbm41ZuztSpwjddZJ9LnKfPm8fgHEheiqQBxKK2PCn",
     "symbol": null,
-    "completion_pct": 43.48,
-    "liq_sol": 14.209,
-    "price_sol": 6.071535175003804e-8,
+    "completion_pct": 42.91,
+    "liq_sol": 13.936,
+    "price_sol": 5.9968359782662e-8,
     "age_s": null,
-    "trades": 127,
+    "trades": 131,
     "flow60": {
-     "net_sol": 0.829,
-     "unique_buyers": 3,
-     "buy_share": 1
+     "net_sol": -0.273,
+     "unique_buyers": 2,
+     "buy_share": 0.4
     },
     "seen_from_create": false
    },
    {
-    "mint": "A93gAQerHdsNzqdu1RfERhxR4cSYrqh7KpcPa7oxpump",
-    "symbol": "VICEFUND",
-    "completion_pct": 43.47,
-    "liq_sol": 14.204,
-    "price_sol": 6.070184226305547e-8,
-    "age_s": 4498,
-    "trades": 117,
+    "mint": "8e4Km4t4Et7HMapKjQ9rVzubXeS18kYpq2692wxGpump",
+    "symbol": null,
+    "completion_pct": 42.3,
+    "liq_sol": 13.646,
+    "price_sol": 5.918008291741469e-8,
+    "age_s": null,
+    "trades": 14,
     "flow60": {
      "net_sol": 0,
      "unique_buyers": 0,
      "buy_share": 0
     },
-    "seen_from_create": true
+    "seen_from_create": false
    },
    {
     "mint": "8ew5o2iWUbrVksR9btWfyrmR3WegMswc9AqcW9UPpump",
     "symbol": null,
-    "completion_pct": 40.98,
-    "liq_sol": 13.037,
-    "price_sol": 5.7539715370917464e-8,
+    "completion_pct": 41.68,
+    "liq_sol": 13.359,
+    "price_sol": 5.8402113948201016e-8,
     "age_s": null,
-    "trades": 37,
-    "flow60": {
-     "net_sol": 0.624,
-     "unique_buyers": 1,
-     "buy_share": 1
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "6FUaqDmSf5iAa93KTC9beMpEebnox29cg4gnCD5Fpump",
-    "symbol": null,
-    "completion_pct": 39.6,
-    "liq_sol": 12.414,
-    "price_sol": 5.5886560433559136e-8,
-    "age_s": null,
-    "trades": 13,
+    "trades": 44,
     "flow60": {
      "net_sol": 0,
      "unique_buyers": 0,
      "buy_share": 0
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "25YFutpWTzYYkvGKJuUCrCVcZ2NBdZM49Tr9qCp4pump",
-    "symbol": null,
-    "completion_pct": 38.93,
-    "liq_sol": 12.118,
-    "price_sol": 5.5107625044711e-8,
-    "age_s": null,
-    "trades": 1,
-    "flow60": {
-     "net_sol": 0,
-     "unique_buyers": 0,
-     "buy_share": 0
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "CoxKzTdc6yFoMmKN2V1hApZJ8DWKfvuujYxZQJh9pump",
-    "symbol": null,
-    "completion_pct": 38.4,
-    "liq_sol": 11.888,
-    "price_sol": 5.450893455291912e-8,
-    "age_s": null,
-    "trades": 2,
-    "flow60": {
-     "net_sol": -0.224,
-     "unique_buyers": 0,
-     "buy_share": 0
-    },
-    "seen_from_create": false
-   },
-   {
-    "mint": "7ACq9bgHPCT33TWC6yaxLX5CfNQBbFachy9xKD7Spump",
-    "symbol": null,
-    "completion_pct": 36.56,
-    "liq_sol": 11.109,
-    "price_sol": 5.2498831799791393e-8,
-    "age_s": null,
-    "trades": 108,
-    "flow60": {
-     "net_sol": -0.362,
-     "unique_buyers": 1,
-     "buy_share": 0.29
     },
     "seen_from_create": false
    }
   ],
   "graduated": [
+   {
+    "mint": "2cgP9MdErNqSyBiDbu3ENzTW9nt2YvSpTpKgKMeXpump",
+    "symbol": "Solana",
+    "phase": "POST",
+    "pool": "4zFTRPAF4aX3WiLNeP7uuKE3w2mRcajZUxT1Ae3BmkZr",
+    "liq_at_complete_sol": 0.650889855,
+    "liq_at_pool_sol": 0.635889854,
+    "liq_now_sol": 0.143,
+    "amm_trades": 112,
+    "complete_t": 1795055051213,
+    "pool_t": 1795055051763,
+    "tradable_t": 1795055051764,
+    "price_sol": 1.0958313317877586e-10
+   },
+   {
+    "mint": "5UfJsnoQPyDXtZhFjjzVFPnseY9BYGB2kmjwQr13pump",
+    "symbol": "DAMNTRAIN",
+    "phase": "POST",
+    "pool": "8NaPncvwTxJkDYCTreE6UY91nC2B5fh8uaaegnbCSBgp",
+    "liq_at_complete_sol": 0.10303501,
+    "liq_at_pool_sol": 0.088035009,
+    "liq_now_sol": 0.023,
+    "amm_trades": 53,
+    "complete_t": 1795054981892,
+    "pool_t": 1795054982388,
+    "tradable_t": 1795054982400,
+    "price_sol": 2.4935933149222566e-11
+   },
    {
     "mint": "qGcdEMHLGDATDC4pSpYJgjjYm7AGPpHS58hYo4qpump",
     "symbol": "Solana",
@@ -814,12 +842,12 @@
     "pool": "3yqTg8zBjfd1fSnGQ15D6X8ew7sDLBe95h2YjezvVCDq",
     "liq_at_complete_sol": 3.008470742,
     "liq_at_pool_sol": 2.993470741,
-    "liq_now_sol": 0.56,
-    "amm_trades": 440,
+    "liq_now_sol": 0.639,
+    "amm_trades": 479,
     "complete_t": 1795054718907,
     "pool_t": 1795054719459,
     "tradable_t": 1795054719530,
-    "price_sol": 2.49406704358042e-10
+    "price_sol": 3.5789657253364175e-10
    },
    {
     "mint": "9mUngS58zt5njRS2qbC7hMKPdSW8SidPqvPkNVd5pump",
@@ -828,12 +856,12 @@
     "pool": "FGk6o6J4AzX7hiQ8ZWpCaKyQMZ3EuoTFAFu6yxnhx8WM",
     "liq_at_complete_sol": 0.127099381,
     "liq_at_pool_sol": 0.11209938,
-    "liq_now_sol": 0.04,
-    "amm_trades": 335,
+    "liq_now_sol": 0.039,
+    "amm_trades": 337,
     "complete_t": 1795054616845,
     "pool_t": 1795054617479,
     "tradable_t": 1795054617310,
-    "price_sol": 3.081028088926042e-11
+    "price_sol": 2.804688311493766e-11
    },
    {
     "mint": "DBwZbw4xtjBJGcRR5mt9Z9kULUFSBMhMGtcz5PT8pump",
@@ -842,12 +870,12 @@
     "pool": "Eh8uqRUCgbojGWaioDg5HJaY8J2UNdKHU4yfUHJ4renr",
     "liq_at_complete_sol": 0.445663913,
     "liq_at_pool_sol": 0.430663912,
-    "liq_now_sol": 0.164,
-    "amm_trades": 143,
+    "liq_now_sol": 0.158,
+    "amm_trades": 145,
     "complete_t": 1795054491110,
     "pool_t": 1795054491330,
     "tradable_t": 1795054491531,
-    "price_sol": 3.0034370998359474e-10
+    "price_sol": 2.8105816166037403e-10
    },
    {
     "mint": "5JYdYUwe8R58ALCkj2iNh29cSg7zt2UiNpZVXdoXpump",
@@ -856,12 +884,12 @@
     "pool": "86bZkx2E9Dk5hb78SffVAnsigmD4jCmQRxNAwL6mUYVG",
     "liq_at_complete_sol": 2.101159123,
     "liq_at_pool_sol": 2.086159122,
-    "liq_now_sol": 0.238,
-    "amm_trades": 243,
+    "liq_now_sol": 0.237,
+    "amm_trades": 244,
     "complete_t": 1795054404078,
     "pool_t": 1795054404368,
     "tradable_t": 1795054404408,
-    "price_sol": 1.278309792362734e-10
+    "price_sol": 1.2749588991393978e-10
    },
    {
     "mint": "B5VNXjLZs3xRFAVFU1tFc9pFCVRSgkf5UuvXR5Vfpump",
@@ -870,12 +898,12 @@
     "pool": "BVEWoMGoEisLhqqnd4nXZCWq9oYLSqStCe9DvksjQu58",
     "liq_at_complete_sol": 85.005359057,
     "liq_at_pool_sol": 84.990359056,
-    "liq_now_sol": 127.518,
-    "amm_trades": 6054,
+    "liq_now_sol": 0.849,
+    "amm_trades": 11843,
     "complete_t": 1795054112148,
     "pool_t": 1795054112308,
     "tradable_t": 1795054112150,
-    "price_sol": 0.0000011661704694952454
+    "price_sol": 1.8421400878860636e-8
    },
    {
     "mint": "81qLoUnJt7rPGX2bvrJKE1CgsgGmADpPcBFYey7vpump",
@@ -884,12 +912,12 @@
     "pool": "DT2NUJNDsVQskJWsZDCW1m5yW7kDtCZpxXyVerFPeg8o",
     "liq_at_complete_sol": 85.005359057,
     "liq_at_pool_sol": 84.990359056,
-    "liq_now_sol": 5028.208,
-    "amm_trades": 46,
+    "liq_now_sol": 5028.258,
+    "amm_trades": 49,
     "complete_t": 1795054029361,
     "pool_t": 1795054029361,
     "tradable_t": 1795054029346,
-    "price_sol": 0.0014450205055304053
+    "price_sol": 0.0014450492309914824
    },
    {
     "mint": "7KVnjTq1Z3z1JyxYHCVPk9Dz9KgE7x5aUUh2LSNopump",
@@ -926,12 +954,12 @@
     "pool": "FKKSHxRzi5RxyShHSzLiZ8Dm9Y6GPn1pxJUAVtzhzJcy",
     "liq_at_complete_sol": 85.005359078,
     "liq_at_pool_sol": 84.990359077,
-    "liq_now_sol": 101.121,
-    "amm_trades": 511,
+    "liq_now_sol": 103.163,
+    "amm_trades": 526,
     "complete_t": 1795053626886,
     "pool_t": 1795053627008,
     "tradable_t": 1795053626892,
-    "price_sol": 7.952145637243463e-7
+    "price_sol": 8.221553331146022e-7
    },
    {
     "mint": "6YBCUHCDAQH8JofVU3hbGXg52YxewTs89u2AcjuEpump",
@@ -940,12 +968,12 @@
     "pool": "BaFg7PNkfuG2AvaNVMzR3YyKDVWSjXFJPn8jgPDApSDy",
     "liq_at_complete_sol": 85.005361688,
     "liq_at_pool_sol": 89.190116081,
-    "liq_now_sol": 82.006,
-    "amm_trades": 4897,
+    "liq_now_sol": 60.039,
+    "amm_trades": 5091,
     "complete_t": 1795053147532,
     "pool_t": 1795053148049,
     "tradable_t": 1795053148043,
-    "price_sol": 5.24965008701404e-7
+    "price_sol": 3.2231403915536386e-7
    },
    {
     "mint": "75kQaaFVKWkG4TG2pwaEi84J4cGShtFF1K99h7Bypump",
@@ -996,12 +1024,12 @@
     "pool": "6u5DyFVzDT611XLxa98QZMhJJ4WY4J3Ux1Bp7tJAaP2H",
     "liq_at_complete_sol": 1.012373654,
     "liq_at_pool_sol": 0.997373653,
-    "liq_now_sol": 0.448,
-    "amm_trades": 92,
+    "liq_now_sol": 0.453,
+    "amm_trades": 97,
     "complete_t": 1795052770875,
     "pool_t": 1795052771368,
     "tradable_t": 1795052771648,
-    "price_sol": 9.685692329546308e-10
+    "price_sol": 9.915009874417663e-10
    },
    {
     "mint": "CyzFSmRJBGCVQ2SDrEWA6SNxKj931PjSiGYA26Bspump",
@@ -1039,11 +1067,11 @@
     "liq_at_complete_sol": 85.005359057,
     "liq_at_pool_sol": 84.990359056,
     "liq_now_sol": 0.984,
-    "amm_trades": 160,
+    "amm_trades": 161,
     "complete_t": 1795052731110,
     "pool_t": 1795052731140,
     "tradable_t": 1795052731327,
-    "price_sol": 1.9561705182219884e-8
+    "price_sol": 1.9561974875736454e-8
    },
    {
     "mint": "Hik9pdPZpcaAKmKKimcKF6qsR2NQPn51FDBEN8xFpump",
@@ -1052,12 +1080,12 @@
     "pool": "46AjJnvJauYXNhzzAsMhZg9RubdLdGy7DTXpoKz1fkAN",
     "liq_at_complete_sol": 85.005360646,
     "liq_at_pool_sol": 85.801680244,
-    "liq_now_sol": 16.569,
-    "amm_trades": 5179,
+    "liq_now_sol": 19.078,
+    "amm_trades": 5200,
     "complete_t": 1795052542780,
     "pool_t": 1795052543402,
     "tradable_t": 1795052543411,
-    "price_sol": 6.416265103610765e-8
+    "price_sol": 7.368374395324404e-8
    },
    {
     "mint": "BwnGyvy5TYcNim86MQzMtPd8DbGN2VS8yY4U2GkVpump",
@@ -1136,12 +1164,12 @@
     "pool": "Hcjeg3iWFbrvR3FJvGZAnxKkEbDhuDZNtqdDSZnN899e",
     "liq_at_complete_sol": 85.005360995,
     "liq_at_pool_sol": 92.158190559,
-    "liq_now_sol": 5.221,
-    "amm_trades": 1659,
+    "liq_now_sol": 4.994,
+    "amm_trades": 1662,
     "complete_t": 1795051386857,
     "pool_t": 1795051387281,
     "tradable_t": 1795051387396,
-    "price_sol": 2.9267683243159772e-8
+    "price_sol": 2.868802146687482e-8
    },
    {
     "mint": "3zGcdxJnxkz6EFnjBkjjNs3y1chdTief4r9etwXepump",
@@ -1234,12 +1262,12 @@
     "pool": "E228rR6v99NTkHW19DoTdPCmrcL8rnnzTBVwz2VNkwww",
     "liq_at_complete_sol": 85.005360389,
     "liq_at_pool_sol": 84.990360388,
-    "liq_now_sol": 247.058,
-    "amm_trades": 21623,
+    "liq_now_sol": 269.795,
+    "amm_trades": 22918,
     "complete_t": 1795050224331,
     "pool_t": 1795050224813,
     "tradable_t": 1795050224874,
-    "price_sol": 0.000003157605755658476
+    "price_sol": 0.0000035418375383487537
    },
    {
     "mint": "J8bXHZaudYJxRmCRowspWd9d33eTTgkUZWj4TB9tpump",
@@ -1248,12 +1276,12 @@
     "pool": "F74DPqrajjJQf6m8Wp4teWGgT2SXEVgQtSckPP66JAN1",
     "liq_at_complete_sol": 85.005359065,
     "liq_at_pool_sol": 86.785414715,
-    "liq_now_sol": 115.599,
-    "amm_trades": 666,
+    "liq_now_sol": 124.991,
+    "amm_trades": 688,
     "complete_t": 1795049989149,
     "pool_t": 1795049989229,
     "tradable_t": 1795049989191,
-    "price_sol": 0.0000010014780776873067
+    "price_sol": 0.0000011467392281983605
    },
    {
     "mint": "73Qzv8KdyeCsSTX1xrwiUCT6JWVHhpHcWqLhUsxLpump",
@@ -1276,12 +1304,12 @@
     "pool": "9CSpGRobBDeYtq2gqdsAK9CA1nrWa3YvMUsendgxaXgM",
     "liq_at_complete_sol": 85.005359057,
     "liq_at_pool_sol": 84.990359056,
-    "liq_now_sol": 175.329,
-    "amm_trades": 9904,
+    "liq_now_sol": 161.937,
+    "amm_trades": 10476,
     "complete_t": 1795049353172,
     "pool_t": 1795049353192,
     "tradable_t": 1795049353192,
-    "price_sol": 0.0000020201836664318475
+    "price_sol": 0.0000017453441875286624
    },
    {
     "mint": "5RCq2Spis2JfycJK8vu1B3nrehunzkEc4etmxUazpump",
@@ -1304,12 +1332,12 @@
     "pool": "HD8Z3syRj8bErAifGewBEf6nVa9AwVePwmnsQtnxcsPq",
     "liq_at_complete_sol": 85.005361731,
     "liq_at_pool_sol": 84.99036173,
-    "liq_now_sol": 5.396,
-    "amm_trades": 2446,
+    "liq_now_sol": 4.982,
+    "amm_trades": 2449,
     "complete_t": 1795049067551,
     "pool_t": 1795049068635,
     "tradable_t": 1795049068680,
-    "price_sol": 2.973606287441429e-8
+    "price_sol": 2.8649518616244236e-8
    },
    {
     "mint": "Buaq55kgwioSqwtDEAMrXQ48SHehJtKUDpq8GkHdpump",
@@ -1338,37 +1366,71 @@
     "pool_t": 1795048705788,
     "tradable_t": 1795048706056,
     "price_sol": 1.770182361482959e-10
-   },
-   {
-    "mint": "DW4xraDwqcYUTZ1u6Wr2Yr46czLSScNkXXu8pu74pump",
-    "symbol": null,
-    "phase": "POST",
-    "pool": "8govV1YLUTcJXSFwXoU3URG8TxGJLBjpVDbTvnfcSpgb",
-    "liq_at_complete_sol": 0.17226007,
-    "liq_at_pool_sol": 0.157260069,
-    "liq_now_sol": 0.019,
-    "amm_trades": 135,
-    "complete_t": 1795048581463,
-    "pool_t": 1795048582528,
-    "tradable_t": 1795048583295,
-    "price_sol": 1.1398717968927722e-11
-   },
-   {
-    "mint": "JDjy8Hd6smkfEUmsPuMsVQEtZmV7CsbV4uDEWAcbpump",
-    "symbol": "STENKS",
-    "phase": "POST",
-    "pool": "25D6XKUG53ehd9jsGN29iaeuTfjCBUge8TC18jgJBgmh",
-    "liq_at_complete_sol": 1.0374201,
-    "liq_at_pool_sol": 1.022420099,
-    "liq_now_sol": 0.149,
-    "amm_trades": 139,
-    "complete_t": 1795048217761,
-    "pool_t": 1795048218281,
-    "tradable_t": 1795048218416,
-    "price_sol": 1.0456983273490398e-10
    }
   ],
   "graduation_events": [
+   {
+    "t": 1795055051764,
+    "mint": "2cgP9MdErNqSyBiDbu3ENzTW9nt2YvSpTpKgKMeXpump",
+    "symbol": "Solana",
+    "stage": "tradable",
+    "pool": "4zFTRPAF4aX3WiLNeP7uuKE3w2mRcajZUxT1Ae3BmkZr",
+    "liq_sol": 0.635949854
+   },
+   {
+    "t": 1795055051763,
+    "mint": "2cgP9MdErNqSyBiDbu3ENzTW9nt2YvSpTpKgKMeXpump",
+    "symbol": "Solana",
+    "stage": "pool_created",
+    "pool": "4zFTRPAF4aX3WiLNeP7uuKE3w2mRcajZUxT1Ae3BmkZr",
+    "liq_sol": 0.635889854
+   },
+   {
+    "t": 1795055051669,
+    "mint": "2cgP9MdErNqSyBiDbu3ENzTW9nt2YvSpTpKgKMeXpump",
+    "symbol": "Solana",
+    "stage": "pool_created",
+    "pool": "4zFTRPAF4aX3WiLNeP7uuKE3w2mRcajZUxT1Ae3BmkZr",
+    "liq_sol": 0.635889854
+   },
+   {
+    "t": 1795055051213,
+    "mint": "2cgP9MdErNqSyBiDbu3ENzTW9nt2YvSpTpKgKMeXpump",
+    "symbol": "Solana",
+    "stage": "complete",
+    "liq_sol": 0.650889855
+   },
+   {
+    "t": 1795054982400,
+    "mint": "5UfJsnoQPyDXtZhFjjzVFPnseY9BYGB2kmjwQr13pump",
+    "symbol": "DAMNTRAIN",
+    "stage": "tradable",
+    "pool": "8NaPncvwTxJkDYCTreE6UY91nC2B5fh8uaaegnbCSBgp",
+    "liq_sol": 0.088095009
+   },
+   {
+    "t": 1795054982388,
+    "mint": "5UfJsnoQPyDXtZhFjjzVFPnseY9BYGB2kmjwQr13pump",
+    "symbol": "DAMNTRAIN",
+    "stage": "pool_created",
+    "pool": "8NaPncvwTxJkDYCTreE6UY91nC2B5fh8uaaegnbCSBgp",
+    "liq_sol": 0.088035009
+   },
+   {
+    "t": 1795054982283,
+    "mint": "5UfJsnoQPyDXtZhFjjzVFPnseY9BYGB2kmjwQr13pump",
+    "symbol": "DAMNTRAIN",
+    "stage": "pool_created",
+    "pool": "8NaPncvwTxJkDYCTreE6UY91nC2B5fh8uaaegnbCSBgp",
+    "liq_sol": 0.088035009
+   },
+   {
+    "t": 1795054981892,
+    "mint": "5UfJsnoQPyDXtZhFjjzVFPnseY9BYGB2kmjwQr13pump",
+    "symbol": "DAMNTRAIN",
+    "stage": "complete",
+    "liq_sol": 0.10303501
+   },
    {
     "t": 1795054719530,
     "mint": "qGcdEMHLGDATDC4pSpYJgjjYm7AGPpHS58hYo4qpump",
@@ -1771,200 +1833,39 @@
     "symbol": "JACKED",
     "stage": "complete",
     "liq_sol": 0.700416383
-   },
-   {
-    "t": 1795052771648,
-    "mint": "8VQtUyjwQBmJy5dE6paGq4nkTcg9k3DEvx7ywbtTpump",
-    "symbol": "GTGOAT",
-    "stage": "tradable",
-    "pool": "6u5DyFVzDT611XLxa98QZMhJJ4WY4J3Ux1Bp7tJAaP2H",
-    "liq_sol": 0.997433653
-   },
-   {
-    "t": 1795052771368,
-    "mint": "8VQtUyjwQBmJy5dE6paGq4nkTcg9k3DEvx7ywbtTpump",
-    "symbol": "GTGOAT",
-    "stage": "pool_created",
-    "pool": "6u5DyFVzDT611XLxa98QZMhJJ4WY4J3Ux1Bp7tJAaP2H",
-    "liq_sol": 0.997373653
-   },
-   {
-    "t": 1795052771249,
-    "mint": "8VQtUyjwQBmJy5dE6paGq4nkTcg9k3DEvx7ywbtTpump",
-    "symbol": "GTGOAT",
-    "stage": "pool_created",
-    "pool": "6u5DyFVzDT611XLxa98QZMhJJ4WY4J3Ux1Bp7tJAaP2H",
-    "liq_sol": 0.997373653
-   },
-   {
-    "t": 1795052770875,
-    "mint": "8VQtUyjwQBmJy5dE6paGq4nkTcg9k3DEvx7ywbtTpump",
-    "symbol": "GTGOAT",
-    "stage": "complete",
-    "liq_sol": 1.012373654
-   },
-   {
-    "t": 1795052769612,
-    "mint": "CyzFSmRJBGCVQ2SDrEWA6SNxKj931PjSiGYA26Bspump",
-    "symbol": "wolfpack",
-    "stage": "tradable",
-    "pool": "HZemfvN7u5YLJ5EW6EpUurfWka8bMHzzpE4wtskyVrsW",
-    "liq_sol": 15.763710524
-   },
-   {
-    "t": 1795052769399,
-    "mint": "CyzFSmRJBGCVQ2SDrEWA6SNxKj931PjSiGYA26Bspump",
-    "symbol": "wolfpack",
-    "stage": "pool_created",
-    "pool": "HZemfvN7u5YLJ5EW6EpUurfWka8bMHzzpE4wtskyVrsW",
-    "liq_sol": 11.348146659
-   },
-   {
-    "t": 1795052769325,
-    "mint": "CyzFSmRJBGCVQ2SDrEWA6SNxKj931PjSiGYA26Bspump",
-    "symbol": "wolfpack",
-    "stage": "pool_created",
-    "pool": "HZemfvN7u5YLJ5EW6EpUurfWka8bMHzzpE4wtskyVrsW",
-    "liq_sol": 11.348146659
-   },
-   {
-    "t": 1795052769129,
-    "mint": "CyzFSmRJBGCVQ2SDrEWA6SNxKj931PjSiGYA26Bspump",
-    "symbol": "wolfpack",
-    "stage": "complete",
-    "liq_sol": 11.36314666
    }
   ],
   "discoveries": [
    {
-    "t": 1795054977566,
-    "mint": "BACV6j5z9UpYCvoYzFjTGswNBoYsYNH1HD7wSyGXpump",
-    "symbol": "$REXTON",
-    "name": "Rexton Coin",
-    "creator": "13XfHNQTeQ4yMkk7SX5rWTdfW8PDkYCB7hgkGCxJrZ8N",
+    "t": 1795055279993,
+    "mint": "Fp73mXVZgrnVwU92ZJuLwzPrGK1GSCXRwGsr1hRipump",
+    "symbol": "$PIKAM",
+    "name": "PIKA PIKA MAYHEM",
+    "creator": "42nx7krcZY538v8jQ6sENasJBegSCJ8X5GKnR8bKw9m8",
     "mayhem": true,
     "source": "chain"
    },
    {
-    "t": 1795054976006,
-    "mint": "uRxhgJB9EfCV5HRKESk3ykvArUdywPMH2es1qunpump",
-    "symbol": "Vice City",
-    "name": "WELCOME TO",
-    "creator": "982JYUUrNSf1iq3FygiJNE8GF6UDLvWcSvDDY3sN6LMF",
+    "t": 1795055277020,
+    "mint": "6EptPtf2HvR9z6cfhspZ3fc4MzUhu8xqjjm8WorKpump",
+    "symbol": "dcat ",
+    "name": "dissapointed cat",
+    "creator": "AkLAAAym5nhnsbh9vvMVjkEy8C9W8VD9GRrRYmatYWZh",
     "mayhem": false,
     "source": "chain"
    },
    {
-    "t": 1795054974442,
-    "mint": "Fe3mewtsigUMBKbeZkWrBdx8JxUpGCYST8LTSGp8pump",
-    "symbol": "HFOX",
-    "name": "Hoop Fox",
-    "creator": "zAtkDxEVbJqFTLqrMx1y3CGf2xpp5gHr5rr493ZVrxK",
-    "mayhem": true,
-    "source": "chain"
-   },
-   {
-    "t": 1795054972194,
-    "mint": "6rJmHjRq5nHoBdK79XKAdoD6mx2p11JAhKx4XHoVpump",
-    "symbol": "uinhim",
-    "name": "uinhim",
-    "creator": "87RD6rbSbE5DVBd1Zr9eWFmBP8XVCoukHp9kZr2YMKty",
-    "mayhem": true,
-    "source": "chain"
-   },
-   {
-    "t": 1795054970273,
-    "mint": "ECi7bJBLErL1ktgyj84rfuPFLoNakyzoNB3Aa8hGpump",
-    "symbol": "BKCOCO",
-    "name": "CHOCO BURGER",
-    "creator": "GNMzTjNzNq7ivavH2nzDZvvZ6d5r9kkWT4FMJtViyKut",
-    "mayhem": true,
-    "source": "chain"
-   },
-   {
-    "t": 1795054968707,
-    "mint": "FeYyx3t4jNykNhkipMJ9qfDAw3J27sjLXWbgq2v6pump",
-    "symbol": "DRPA",
-    "name": "Dripping Patrick ",
-    "creator": "7RVaQ989ptutJm9AwJFTXTXugXDogiLLx6imMSVAFQbE",
-    "mayhem": false,
-    "source": "chain"
-   },
-   {
-    "t": 1795054968707,
-    "mint": "Gm4Do3RKtRgiAwsqUoMJnuSaotVaDWUNQ8VQPs28pump",
-    "symbol": "$SLJK",
-    "name": "Soljack",
-    "creator": "FKe2sRCMzLPTJvArXeTonxAH259C6JotdsaHhbrKN54v",
-    "mayhem": true,
-    "source": "chain"
-   },
-   {
-    "t": 1795054967717,
-    "mint": "9w6dtt1xzoqg897k72H5HxTSjvb4FTK47HyY4NvXpump",
-    "symbol": "TRAINCJ",
-    "name": "follow the damn train cj",
+    "t": 1795055276461,
+    "mint": "GKFcLSvtDUNfMctd5C55PrbzrJhZCgY3sCxHd8JApump",
+    "symbol": "HEREWEGO",
+    "name": "ah shit here we go again",
     "creator": "HWUnfRdrzFfyPpVcmZHr9FdenUP1hjP1C7jUSyzYP1FH",
     "mayhem": true,
     "source": "chain"
    },
    {
-    "t": 1795054966409,
-    "mint": "JAahMJQFE6FRBGmPfPRRGQ3n21cR5pjB657vCbPqpump",
-    "symbol": "$REXTON",
-    "name": "Rexton Coin",
-    "creator": "13XfHNQTeQ4yMkk7SX5rWTdfW8PDkYCB7hgkGCxJrZ8N",
-    "mayhem": true,
-    "source": "chain"
-   },
-   {
-    "t": 1795054960638,
-    "mint": "2cgP9MdErNqSyBiDbu3ENzTW9nt2YvSpTpKgKMeXpump",
-    "symbol": "Solana",
-    "name": "Bublé bée",
-    "creator": "Guj1hnne2pkhTEugbQEC6upXNehnna162HoynS713d8k",
-    "mayhem": true,
-    "source": "chain"
-   },
-   {
-    "t": 1795054955551,
-    "mint": "HYoD7We7E2jMCoGBhboGiZNJNurWoZN5942cuMqnpump",
-    "symbol": "MGOAT",
-    "name": "MoonGoat",
-    "creator": "4kmdaf7dpgPR1qegScCbKKBkjdo3XqusB213MhVbqdk7",
-    "mayhem": true,
-    "source": "chain"
-   },
-   {
-    "t": 1795054955136,
-    "mint": "E5Ey9QhxzosK1jVS49XZS4AwC3JnDTejMLnBZxcepump",
-    "symbol": "BrycexD",
-    "name": "ByrcexD Coin!",
-    "creator": "F7ULS8Rpam5rpt3gvLiqd9vnH3Ky84QUV4sYHmrPEBSt",
-    "mayhem": false,
-    "source": "chain"
-   },
-   {
-    "t": 1795054954957,
-    "mint": "hsYTndYMs6N15wVLAqe4wY1ACJW9bDxbcNoorwHpump",
-    "symbol": "awd",
-    "name": "awd",
-    "creator": "6nU2L7MQVUWjtdKHVpuZA9aind73nd3rXC4YFo8KQCy4",
-    "mayhem": true,
-    "source": "chain"
-   },
-   {
-    "t": 1795054952871,
-    "mint": "oJLEictmNxwPq5KXLBNC8doAiaToLzGjqWo52rHpump",
-    "symbol": "$SLJK",
-    "name": "Soljack",
-    "creator": "357p4X6AwF7kUMzWg8AY2AbgE585EDcYH6jGkXFE3nGW",
-    "mayhem": true,
-    "source": "chain"
-   },
-   {
-    "t": 1795054946053,
-    "mint": "CspTTsyZrvSucN2uZc3hGo8N5Fb3FQz4BzysHVZJpump",
+    "t": 1795055274443,
+    "mint": "BV7UDdARREV5GA66HTSaifBPvDcUsYEra819QW2fpump",
     "symbol": "HC",
     "name": "Hustler Coin",
     "creator": "EGkKcpAPcvvsofKPJnrgboPrqS8BpBuUR5Ht8CzAXLQS",
@@ -1972,8 +1873,35 @@
     "source": "chain"
    },
    {
-    "t": 1795054943499,
-    "mint": "Aztr6trUG53exBaLjYfV7Txq831MSZhK12zm3ZNTpump",
+    "t": 1795055272991,
+    "mint": "XBxZT4GMR9apbyJJojJGxiwpkdxTC4AzdNvX1Kcpump",
+    "symbol": "mmrich",
+    "name": "makemerich",
+    "creator": "4q5YsoMciSRaYiPRz21KsNwVAfdUid3csYc7gZUyXWj4",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795055268241,
+    "mint": "Gt8ghjDCqSqMkbV3SJy721jT7hmFD13xFiBfpTFkpump",
+    "symbol": "$BWIZ",
+    "name": "🍌 BANANA WIZARD",
+    "creator": "4kmdaf7dpgPR1qegScCbKKBkjdo3XqusB213MhVbqdk7",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795055260201,
+    "mint": "F6bvjv84dhiAXHSRiawi99tHksZHxe3yoSpfSeaBpump",
+    "symbol": "EVIL",
+    "name": "EVILcoin",
+    "creator": "FKe2sRCMzLPTJvArXeTonxAH259C6JotdsaHhbrKN54v",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795055257134,
+    "mint": "9UefhkWQqjKgWydsVEyqTGhNWkmK7waQccHcAWczpump",
     "symbol": "$REXTON",
     "name": "Rexton Coin",
     "creator": "13XfHNQTeQ4yMkk7SX5rWTdfW8PDkYCB7hgkGCxJrZ8N",
@@ -1981,134 +1909,80 @@
     "source": "chain"
    },
    {
-    "t": 1795054938770,
-    "mint": "B6dr4ydnSdZaiBcV4vdFKup4JQzq64zW45s4Jnwvpump",
-    "symbol": "wApe",
-    "name": "wrappedape",
-    "creator": "7qS94nqG8TXifQ7ptKrFWs9aU34uh6RssdJ5QBYAQDk5",
+    "t": 1795055257034,
+    "mint": "8SkGb1eS7V5L31NJGZbpGKEFvfsVUMD6qQv1spNJpump",
+    "symbol": "mmrich",
+    "name": "makemerich",
+    "creator": "4q5YsoMciSRaYiPRz21KsNwVAfdUid3csYc7gZUyXWj4",
     "mayhem": true,
     "source": "chain"
    },
    {
-    "t": 1795054930008,
-    "mint": "BY3KCQpkmAYkPupQA5LRpesiuiwQtWQTef31sw8Rpump",
-    "symbol": "Solana",
-    "name": "Bublé bée ",
-    "creator": "Guj1hnne2pkhTEugbQEC6upXNehnna162HoynS713d8k",
+    "t": 1795055255116,
+    "mint": "AobvPrXbNWaqsdezpuZewn7fhiqbVkLyHy4sVioVpump",
+    "symbol": "CountDown",
+    "name": "The Countdown ",
+    "creator": "4ZywyzEzB9bBN3pKmq9FdNyoX2fWdV94ux3KDt7Qbui3",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795055253819,
+    "mint": "DieWKH3XtgeHiePmrZLxWgB3QdAShUdQf4NyEHEMpump",
+    "symbol": "song",
+    "name": "song coin",
+    "creator": "Dz5vVmADBBkhfiPC8kqNTA4zMmz9C25o4CzHMWZ1b6h4",
     "mayhem": true,
     "source": "chain"
    },
    {
-    "t": 1795054925266,
-    "mint": "E9vzxi9Z46VEnNhEp9e6J3vCAMTn1KK8uCdpp5arpump",
-    "symbol": "$GRICH",
-    "name": "GET RICH",
-    "creator": "7xHZEkvF6XgfU6ZvFbEa7fBjwYLpCf3uc8msjtcY65oM",
+    "t": 1795055248331,
+    "mint": "Fr4EdaQzuqEjVGqMjL9gUaNtvYAGhhZQqW9HaA1Rpump",
+    "symbol": "GTA6GRANNY",
+    "name": "Granny’s GTA Money",
+    "creator": "8JfcER7gmYT7a2nWh5PZioUWustHVmtX7a3mu45kG8y8",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795055245090,
+    "mint": "5SLQRboK2vBp3eMNuGDycmYDV9Nk5K9FPvMkAsVMpump",
+    "symbol": "$PIKAM",
+    "name": "PIKA PIKA MAYHEM",
+    "creator": "42nx7krcZY538v8jQ6sENasJBegSCJ8X5GKnR8bKw9m8",
     "mayhem": true,
     "source": "chain"
    },
    {
-    "t": 1795054924951,
-    "mint": "9AsfPwx6MW62getDcDpAMSDpPK6sGnY7ELA31PKqpump",
-    "symbol": "TTWO",
-    "name": "TTWO COIN",
-    "creator": "8Bpchn6RLQxodKWeT2NhQQ4waaBYXS8kr5TTycyvEgmP",
+    "t": 1795055238889,
+    "mint": "92LJ1UkjtyyJ9D6DkLoNdDV2bM3Pv8aX4bZyXWFJpump",
+    "symbol": "gtaSTR",
+    "name": "GTA stratagy",
+    "creator": "F1FgimZTsmVZD7XQAv38WseLymuA2bnZqmfxcnyeAp8Z",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795055237716,
+    "mint": "7jSwnw16DGagccNdNvPGgtr6Q3ZnPmyqMxhm6C4opump",
+    "symbol": "afc",
+    "name": "away from console",
+    "creator": "veZk6SFTv6SPuTy5WExjuE4gccVqoWCxtnba2wv6pb2",
     "mayhem": false,
     "source": "chain"
    },
    {
-    "t": 1795054921465,
-    "mint": "H93hMpLn8qbydqsSotLkzojzUakHuLCduPY5UQfspump",
-    "symbol": "BUNC",
-    "name": "Buncoin",
-    "creator": "2F5a4PheoRQh3zpWkCr7WjH4jSEUmDUZz8BiKRU7JwCL",
-    "mayhem": false,
+    "t": 1795055233121,
+    "mint": "2yiGtkGif5uKFVRKFL1BS6ihiyaWhASz681A9Bhtpump",
+    "symbol": "LaMisery",
+    "name": "La Misery",
+    "creator": "9j6NRZ9Cj2Vkko5YwyCavaAWqFar55FfM464uDzw6txx",
+    "mayhem": true,
     "source": "chain"
    },
    {
-    "t": 1795054921465,
-    "mint": "EGQJi7dUny5X21o3cHEN8wXRqdeeRMZezQB2iekJpump",
-    "symbol": "BUNC",
-    "name": "Buncoin",
-    "creator": "2F5a4PheoRQh3zpWkCr7WjH4jSEUmDUZz8BiKRU7JwCL",
-    "mayhem": false,
-    "source": "chain"
-   },
-   {
-    "t": 1795054921465,
-    "mint": "E4ck1xhh4gA8XgwyxLcELds5aCZy4cRtqhv7Tnr5pump",
-    "symbol": "BUNC",
-    "name": "Buncoin",
-    "creator": "2F5a4PheoRQh3zpWkCr7WjH4jSEUmDUZz8BiKRU7JwCL",
-    "mayhem": false,
-    "source": "chain"
-   },
-   {
-    "t": 1795054921465,
-    "mint": "9WtZTvbn9afxTqrUnWro11QeND1Me2RZU6gSnfRkpump",
-    "symbol": "BUNC",
-    "name": "Buncoin",
-    "creator": "2F5a4PheoRQh3zpWkCr7WjH4jSEUmDUZz8BiKRU7JwCL",
-    "mayhem": false,
-    "source": "chain"
-   },
-   {
-    "t": 1795054921465,
-    "mint": "6XfnzszK35ytJoca5E25Hq7kaW2CgFcp8UMqURhopump",
-    "symbol": "BUNC",
-    "name": "Buncoin",
-    "creator": "2F5a4PheoRQh3zpWkCr7WjH4jSEUmDUZz8BiKRU7JwCL",
-    "mayhem": false,
-    "source": "chain"
-   },
-   {
-    "t": 1795054921465,
-    "mint": "BaYeqQ3C2p1EDYgLG24zpjv3fotFFQfZHxaWpALmpump",
-    "symbol": "BUNC",
-    "name": "Buncoin",
-    "creator": "2F5a4PheoRQh3zpWkCr7WjH4jSEUmDUZz8BiKRU7JwCL",
-    "mayhem": false,
-    "source": "chain"
-   },
-   {
-    "t": 1795054921465,
-    "mint": "4XjqNurWXk2Wpx6hSrFxnimMHZno4oVZSw7DT3oupump",
-    "symbol": "BUNC",
-    "name": "Buncoin",
-    "creator": "2F5a4PheoRQh3zpWkCr7WjH4jSEUmDUZz8BiKRU7JwCL",
-    "mayhem": false,
-    "source": "chain"
-   },
-   {
-    "t": 1795054921465,
-    "mint": "FNk9c7xa6RAJHTH6p4JSMENi7ezJmANk9M9CkvTmpump",
-    "symbol": "BUNC",
-    "name": "Buncoin",
-    "creator": "2F5a4PheoRQh3zpWkCr7WjH4jSEUmDUZz8BiKRU7JwCL",
-    "mayhem": false,
-    "source": "chain"
-   },
-   {
-    "t": 1795054921436,
-    "mint": "FhLK3nfbKWXmMHCFLhfALdxAimHxMosD4mvtx9vqpump",
-    "symbol": "BUNC",
-    "name": "Buncoin",
-    "creator": "2F5a4PheoRQh3zpWkCr7WjH4jSEUmDUZz8BiKRU7JwCL",
-    "mayhem": false,
-    "source": "chain"
-   },
-   {
-    "t": 1795054921436,
-    "mint": "BgUvsWo6uWbqvTaMW2ncgRhuvcrSJEvBzNs3HD24pump",
-    "symbol": "BUNC",
-    "name": "Buncoin",
-    "creator": "2F5a4PheoRQh3zpWkCr7WjH4jSEUmDUZz8BiKRU7JwCL",
-    "mayhem": false,
-    "source": "chain"
-   },
-   {
-    "t": 1795054917005,
-    "mint": "G2VMKsTrjv2Fio9vLfbfisQJkkJANXEtNTRGcKSMpump",
+    "t": 1795055233077,
+    "mint": "7jUeUKakFSQjsknmammWRAmEmJjn8e7BuHC6pnxupump",
     "symbol": "$REXTON",
     "name": "Rexton Coin",
     "creator": "13XfHNQTeQ4yMkk7SX5rWTdfW8PDkYCB7hgkGCxJrZ8N",
@@ -2116,170 +1990,80 @@
     "source": "chain"
    },
    {
-    "t": 1795054894984,
-    "mint": "5mBX6hoGPx7j9CFvAuTmK1zTeKEc3Fp1c19a2jP7pump",
-    "symbol": "BKCOCO",
-    "name": "CHOCO BURGER",
-    "creator": "GNMzTjNzNq7ivavH2nzDZvvZ6d5r9kkWT4FMJtViyKut",
+    "t": 1795055226564,
+    "mint": "GHW5h28RUecTM2itpdPAw6jABVi7iRyRXZAXEYc2pump",
+    "symbol": "HGTD",
+    "name": "jajaja",
+    "creator": "Ap9cbtpfvkrDaGUigtDez7Dv11mg346Nb8RQHmXunhXz",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795055223518,
+    "mint": "HZhmHJWDHZLVkZqYMLfx2RF7yVQQcHGLXQnhLB6Gpump",
+    "symbol": "SPA6",
+    "name": "South Park Auto 6",
+    "creator": "8vvA1MjjN8shfGZth6zgAxmfY9EYFrgGk6chG5XuBhJM",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795055218530,
+    "mint": "JA6YLPgVRq37MhkPVXkKd9jickxJpDQMEvGgFmPGpump",
+    "symbol": "TEARS",
+    "name": "Trader Tears",
+    "creator": "79TVSsNuXMpp8qNZBVcm1GHoXKpkqmN7mpcVDt7e9G7e",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795055212782,
+    "mint": "DrPDYBoTu7pTra4mtTw6p9YUFkBXagEi3m2c9N3hpump",
+    "symbol": "afc",
+    "name": "away from console",
+    "creator": "3ME3nhQ4Ur5dbMPz5jyhfgtyBbY3mNDFXVi3DECPAXWD",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795055211441,
+    "mint": "GuhEvfxyfm4kXwNDiEuNbgyQGq26mHFDmQymfvLApump",
+    "symbol": "GPA",
+    "name": "Grand Pump Auto",
+    "creator": "9vCdg7DfxAsoNzy4W8cKM7aaDvrusRKzZGC1WwM5HABz",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795055209159,
+    "mint": "4Rqw5UbP7P4HUoWX9kFNYMXnoYbpkHDEZ1wcrCMDpump",
+    "symbol": "$chef",
+    "name": "Chef coin",
+    "creator": "BprSsZHyvweK7HVkrezEeYLzUuiWRH5TKHhXKwsQU5FG",
     "mayhem": true,
     "source": "chain"
    },
    {
-    "t": 1795054894179,
-    "mint": "6QwUtppfGisXv91rMHcGFXgKJM4JnvvPeaSQ8NaHpump",
-    "symbol": "GUPSEY",
-    "name": "Goat Cupsey",
-    "creator": "4JVoukCLF4cmGugTHmnb2pj2sGsKV4udXWQHAJGMWpAv",
+    "t": 1795055207353,
+    "mint": "FbmCxKuRQZEEcXsrC2CkMStHTytR72FTLtfRpykxpump",
+    "symbol": "MEGACITY",
+    "name": "MEGACITY",
+    "creator": "CgPK4mLVSbSH6NJmQbciBJjAu7yac9iffFGTruQiuWHN",
     "mayhem": false,
     "source": "chain"
    },
    {
-    "t": 1795054894168,
-    "mint": "92m4S52bu3dZyqzPmPStu8Krz6JcpzHdsG4D5QBqpump",
-    "symbol": "GTA Strategy ",
-    "name": "GTASTR",
-    "creator": "DF4yhCeMYNSZwhkQ8R66k2njkaWypAWoVfgnuDQxwpa5",
-    "mayhem": false,
-    "source": "chain"
-   },
-   {
-    "t": 1795054887784,
-    "mint": "E2P8cEu5dLx9XUBcp6RXjDX55R8RvAjbFGNCGg5zpump",
-    "symbol": "DSTY",
-    "name": "Audashitty",
-    "creator": "HDetNHNjPQSbbxWJNQi3i3dmhNA8XqNKURjtXazX5frd",
+    "t": 1795055205865,
+    "mint": "J2bSvcGRCEvYF28eFr89x7vvvot2V7D1d8sYenWxpump",
+    "symbol": "kittylick",
+    "name": "Freaky ah",
+    "creator": "FKe2sRCMzLPTJvArXeTonxAH259C6JotdsaHhbrKN54v",
     "mayhem": true,
     "source": "chain"
    },
    {
-    "t": 1795054885257,
-    "mint": "5soYbqQ16Nhu52PuBLR9rshAtm4uK7hNrTexUCKipump",
-    "symbol": "GTA",
-    "name": "GoyTheftA",
-    "creator": "2kJg3YzGb9BUqEnKpybmo6jrtuW8eWDCveiYLM9JutUD",
-    "mayhem": false,
-    "source": "chain"
-   },
-   {
-    "t": 1795054882774,
-    "mint": "964kt7FxmuPx4Rw52qkaY87bYUWK5P6wRkfvMP5kpump",
-    "symbol": "dfg",
-    "name": "dfg",
-    "creator": "6nU2L7MQVUWjtdKHVpuZA9aind73nd3rXC4YFo8KQCy4",
-    "mayhem": true,
-    "source": "chain"
-   },
-   {
-    "t": 1795054878123,
-    "mint": "8xwkg17uLBUeKATqEXG6otSWDgdC97yJMkxWBi2apump",
-    "symbol": "BUNC",
-    "name": "Buncoin",
-    "creator": "3QjLPuA44praZLKJA6QChTk8xkQBwzCw8Vuc5ubPvmMS",
-    "mayhem": false,
-    "source": "chain"
-   },
-   {
-    "t": 1795054878123,
-    "mint": "FmSXxVjMw5o7rGyu345wsqEvsWfExPH7fNed4z8Upump",
-    "symbol": "BUNC",
-    "name": "Buncoin",
-    "creator": "3QjLPuA44praZLKJA6QChTk8xkQBwzCw8Vuc5ubPvmMS",
-    "mayhem": false,
-    "source": "chain"
-   },
-   {
-    "t": 1795054878123,
-    "mint": "5JQBe7tZ3LCnxeA9iMfQvFcCHkWwU3MxpVSkBCWppump",
-    "symbol": "BUNC",
-    "name": "Buncoin",
-    "creator": "3QjLPuA44praZLKJA6QChTk8xkQBwzCw8Vuc5ubPvmMS",
-    "mayhem": false,
-    "source": "chain"
-   },
-   {
-    "t": 1795054878123,
-    "mint": "2qd1hws5ACBZRVEvRFZcWr1UkwgXcZEcHwDLo3qPpump",
-    "symbol": "BUNC",
-    "name": "Buncoin",
-    "creator": "3QjLPuA44praZLKJA6QChTk8xkQBwzCw8Vuc5ubPvmMS",
-    "mayhem": false,
-    "source": "chain"
-   },
-   {
-    "t": 1795054878123,
-    "mint": "4N848oJWVSK8rX6QTnGXh9KskiXSG4mLvaSromp1pump",
-    "symbol": "BUNC",
-    "name": "Buncoin",
-    "creator": "3QjLPuA44praZLKJA6QChTk8xkQBwzCw8Vuc5ubPvmMS",
-    "mayhem": false,
-    "source": "chain"
-   },
-   {
-    "t": 1795054878123,
-    "mint": "HosoTowuM9bhuaNwzvRxk7K69D69ERutA9zBCkVzpump",
-    "symbol": "BUNC",
-    "name": "Buncoin",
-    "creator": "3QjLPuA44praZLKJA6QChTk8xkQBwzCw8Vuc5ubPvmMS",
-    "mayhem": false,
-    "source": "chain"
-   },
-   {
-    "t": 1795054878123,
-    "mint": "2JBP6r89jvStuE9rpnA6EtMPrLt5CHddDRNKv6bTpump",
-    "symbol": "BUNC",
-    "name": "Buncoin",
-    "creator": "3QjLPuA44praZLKJA6QChTk8xkQBwzCw8Vuc5ubPvmMS",
-    "mayhem": false,
-    "source": "chain"
-   },
-   {
-    "t": 1795054878123,
-    "mint": "9BCi63GQVDusTTjba6iN3WXkL6e18DzY5knp7qejpump",
-    "symbol": "BUNC",
-    "name": "Buncoin",
-    "creator": "3QjLPuA44praZLKJA6QChTk8xkQBwzCw8Vuc5ubPvmMS",
-    "mayhem": false,
-    "source": "chain"
-   },
-   {
-    "t": 1795054878123,
-    "mint": "CTPdobs6n9mpHWcMje4F9GYQark624m2HsWmbwqupump",
-    "symbol": "BUNC",
-    "name": "Buncoin",
-    "creator": "3QjLPuA44praZLKJA6QChTk8xkQBwzCw8Vuc5ubPvmMS",
-    "mayhem": false,
-    "source": "chain"
-   },
-   {
-    "t": 1795054878122,
-    "mint": "5cvvNa3AZ2d3a39rSXmrecB71LQ45wETxv6kHjB9pump",
-    "symbol": "BUNC",
-    "name": "Buncoin",
-    "creator": "3QjLPuA44praZLKJA6QChTk8xkQBwzCw8Vuc5ubPvmMS",
-    "mayhem": false,
-    "source": "chain"
-   },
-   {
-    "t": 1795054876300,
-    "mint": "6dm6nPLSH7MhiEkfkCRM8dBFCVP4YVyU6PmcHCWSpump",
-    "symbol": "$APY",
-    "name": "Apocry Coin",
-    "creator": "E7ftWpaF5MipLycSeeMq7Fw7x73SMzv3u893AobR9VxP",
-    "mayhem": false,
-    "source": "chain"
-   },
-   {
-    "t": 1795054871984,
-    "mint": "C7QUYCuxSgp9pMnaVTuHHKuM1wRnTEHZdpfRWZsxpump",
-    "symbol": "CHURN",
-    "name": "Greg from Operations",
-    "creator": "DfoMkiGvqyDQHXjKme83RDypGTAqJg9EsJnJKffqa5e8",
-    "mayhem": false,
-    "source": "chain"
-   },
-   {
-    "t": 1795054869129,
-    "mint": "2Y3DWFqz5S4LXfKg78cJRKogkzWaQEwez7xD2xHVpump",
+    "t": 1795055204060,
+    "mint": "3HWEqTBr7xZBqgfK4qgxHib6Ffhnt8KeBgspF7WRpump",
     "symbol": "CountDown",
     "name": "The Countdown ",
     "creator": "4ZywyzEzB9bBN3pKmq9FdNyoX2fWdV94ux3KDt7Qbui3",
@@ -2287,44 +2071,17 @@
     "source": "chain"
    },
    {
-    "t": 1795054868585,
-    "mint": "G91MPZ8aj4c7aE6VVgLfjhGtG1E15opWRoZ6WrGupump",
-    "symbol": "MM",
-    "name": "Mayhem Mode",
-    "creator": "AzUKQHCibuiw3nPRvzFZvWCN9ErH52gcRYuukyCuM7gz",
+    "t": 1795055199649,
+    "mint": "JBYZmFDxrm6CBADSCz3JKoAM4JAFETrnsD5udAKNpump",
+    "symbol": "HC",
+    "name": "Hustler Coin",
+    "creator": "EGkKcpAPcvvsofKPJnrgboPrqS8BpBuUR5Ht8CzAXLQS",
     "mayhem": true,
     "source": "chain"
    },
    {
-    "t": 1795054868434,
-    "mint": "AbMofZSrcpFV1GGC89KLa1MK4zrgDAXRPTjQqXPjpump",
-    "symbol": "SolStar",
-    "name": "Solana Meme All Star",
-    "creator": "7PwZEMTTb1pmMAKr7JDthRpmnX3msdYS1iu7hmeMqCPB",
-    "mayhem": false,
-    "source": "chain"
-   },
-   {
-    "t": 1795054867488,
-    "mint": "8LE7mcr4yghgbh9b7Lq5czS4PJpg3CK4YpdaUVEupump",
-    "symbol": "RICK",
-    "name": "Gucci Rick",
-    "creator": "7qS94nqG8TXifQ7ptKrFWs9aU34uh6RssdJ5QBYAQDk5",
-    "mayhem": true,
-    "source": "chain"
-   },
-   {
-    "t": 1795054865623,
-    "mint": "4SEuoC9M5i77FiBEtPHVcR4xzjBfTohc2nNJxWTZpump",
-    "symbol": "Pump City",
-    "name": "Pump City",
-    "creator": "9vCdg7DfxAsoNzy4W8cKM7aaDvrusRKzZGC1WwM5HABz",
-    "mayhem": false,
-    "source": "chain"
-   },
-   {
-    "t": 1795054844438,
-    "mint": "3oRssKVYmKWd2XvSNFGLPL5RDdkDrYqU7xNL8C5vpump",
+    "t": 1795055197989,
+    "mint": "24btndu45tHVkLXxm7LqeWLo5eajxWiTB2qojstapump",
     "symbol": "$REXTON",
     "name": "Rexton Coin",
     "creator": "13XfHNQTeQ4yMkk7SX5rWTdfW8PDkYCB7hgkGCxJrZ8N",
@@ -2332,35 +2089,98 @@
     "source": "chain"
    },
    {
-    "t": 1795054842317,
-    "mint": "CDugFyKjAnfeRa4mStEZGTRKapzgdwvSD5mW3J5mpump",
-    "symbol": "TRADE",
-    "name": "Trade Now!",
-    "creator": "7xHZEkvF6XgfU6ZvFbEa7fBjwYLpCf3uc8msjtcY65oM",
+    "t": 1795055192272,
+    "mint": "8tRFu1YvMifGBX9ZdMsXWcwbchLdCJEDYWamoS2Upump",
+    "symbol": "FCAT",
+    "name": "Founder Cat",
+    "creator": "8DmjFJs1KZRsvLjbR1H4n9CHyDdQT42ugcHi3B99fBmM",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795055191714,
+    "mint": "8n24pFnBGGeAt7nKdYyRfKi8bptauBrnak5KGDMxpump",
+    "symbol": "$PIKAM",
+    "name": "PIKA PIKA MAYHEM",
+    "creator": "42nx7krcZY538v8jQ6sENasJBegSCJ8X5GKnR8bKw9m8",
     "mayhem": true,
     "source": "chain"
    },
    {
-    "t": 1795054839782,
-    "mint": "5gQno8JyeAuwXtQUYYz2JY1jMvKsmB7Qkg2RNw3Hpump",
-    "symbol": "sef",
-    "name": "sef",
-    "creator": "6nU2L7MQVUWjtdKHVpuZA9aind73nd3rXC4YFo8KQCy4",
+    "t": 1795055189180,
+    "mint": "FFVd31hhBh7iRYGxJtWhmmJQaoHbNoMHpurfC7X3pump",
+    "symbol": "STENKS",
+    "name": "STENKS",
+    "creator": "87RD6rbSbE5DVBd1Zr9eWFmBP8XVCoukHp9kZr2YMKty",
     "mayhem": true,
     "source": "chain"
    },
    {
-    "t": 1795054830413,
-    "mint": "4rbMkRh6MM1Daq5g3DG9cD1xTwcVfCtvTuTJpexBpump",
-    "symbol": "fg",
-    "name": "falling guy",
-    "creator": "7qS94nqG8TXifQ7ptKrFWs9aU34uh6RssdJ5QBYAQDk5",
+    "t": 1795055182194,
+    "mint": "DdL3UKEDgFX4ZdjeeV75RBLS51CW57oCW9aTRet1pump",
+    "symbol": "GTASIXKDAY",
+    "name": "GTA SIXK DAY",
+    "creator": "69a7VmgpqHA1vAsjucGeJ5UjpfYAVDA3HsrKGkAcA8ev",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795055181413,
+    "mint": "6e84AvNmLVTesxzsTr6mPi9kFJWpLPbQqjwKk4pHpump",
+    "symbol": "$CAT",
+    "name": "CATECOIN",
+    "creator": "DLe5jh8aFbiNKiPityX7fRXnD5BVtFRLwV3mu8XyPyre",
     "mayhem": true,
     "source": "chain"
    },
    {
-    "t": 1795054825802,
-    "mint": "FQ64z2W8A1aQQhME1EE7XX2MQX7eXTRAD7CegE4Spump",
+    "t": 1795055180813,
+    "mint": "9avCTSSBi9zjvq11BXz4QFzcWCUASTMTzWAY8xypump",
+    "symbol": "$REXTON",
+    "name": "Rexton Coin",
+    "creator": "13XfHNQTeQ4yMkk7SX5rWTdfW8PDkYCB7hgkGCxJrZ8N",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795055175022,
+    "mint": "C5vcYLn2gqYHv7BDANTKq9E2idLoGjywVMdDGNtjpump",
+    "symbol": "$PIKAM",
+    "name": "PIKA PIKA MAYHEM",
+    "creator": "42nx7krcZY538v8jQ6sENasJBegSCJ8X5GKnR8bKw9m8",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795055163935,
+    "mint": "6HWvgrZhuMirnjbJRC6oCRzQZmNSibYMMJzDe2Bvpump",
+    "symbol": "PPRISM",
+    "name": "Plasma Prism",
+    "creator": "zAtkDxEVbJqFTLqrMx1y3CGf2xpp5gHr5rr493ZVrxK",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795055157560,
+    "mint": "84rium2kBpAfzeKC1E7VBavyJxYEnKY8Ss936szfpump",
+    "symbol": "$REXTON",
+    "name": "Rexton Coin",
+    "creator": "13XfHNQTeQ4yMkk7SX5rWTdfW8PDkYCB7hgkGCxJrZ8N",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795055152373,
+    "mint": "2yrpjDUSfAaW8YtTeV6Djuxov6DVYPcRFC5bVUmqpump",
+    "symbol": "beer",
+    "name": "beer",
+    "creator": "4kmdaf7dpgPR1qegScCbKKBkjdo3XqusB213MhVbqdk7",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795055149014,
+    "mint": "4fjSpsRUZb4cg86AJyxCzNqiTtJCfMCxAAV2dWdXpump",
     "symbol": "USMS",
     "name": "USMS",
     "creator": "6iDhhh3XPW5yVjzahLQNxw3qUdsYTKEzQ1j3XczUeTKo",
@@ -2368,21 +2188,201 @@
     "source": "chain"
    },
    {
-    "t": 1795054822822,
-    "mint": "HKkjQoWXoDNu6WazgJpmQManTLsyG17uZbYBCkXwpump",
-    "symbol": "TRAINCJ",
-    "name": "follow the damn train cj",
-    "creator": "HWUnfRdrzFfyPpVcmZHr9FdenUP1hjP1C7jUSyzYP1FH",
+    "t": 1795055146708,
+    "mint": "6yN7dhTvzoxkfZ3q7qGn3cF6rnUtnUYGcBE7VcTUpump",
+    "symbol": "ai",
+    "name": "ai inu",
+    "creator": "EqxeKy2NBNdAzgPaaBKo5sUhpkCJcwHkazXP2YMw2Rd1",
     "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795055135008,
+    "mint": "4vGrHg8fwyDZqBH2NhyfhtbH6PrLBwy32vYqHEdJpump",
+    "symbol": "$REXTON",
+    "name": "Rexton Coin",
+    "creator": "13XfHNQTeQ4yMkk7SX5rWTdfW8PDkYCB7hgkGCxJrZ8N",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795055123790,
+    "mint": "94j1Bhdt7m7ZqegaEM3Vds3zCtjGjWGLmE53de1ypump",
+    "symbol": "USMS",
+    "name": "USMS",
+    "creator": "6iDhhh3XPW5yVjzahLQNxw3qUdsYTKEzQ1j3XczUeTKo",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795055123602,
+    "mint": "JAnMSGzDhmUDjjGxBS66YjYVBdpFnhc8hDW8Urtwpump",
+    "symbol": "HC",
+    "name": "Hustler Coin",
+    "creator": "EGkKcpAPcvvsofKPJnrgboPrqS8BpBuUR5Ht8CzAXLQS",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795055123023,
+    "mint": "42qVwAzZp3qzdyCDCdKrK4rNgccDJFPm6KmZpn3Mpump",
+    "symbol": "WHAE",
+    "name": "kidswhale",
+    "creator": "9AqALMKfbRyQ1V9tjQyQ95eBT9afH2Upk5kV3MB6gDbr",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795055122636,
+    "mint": "Ea3zUkyWNvMbFwYZHZo85x7noQaYmkHmzwkSXJP9pump",
+    "symbol": "DSTY",
+    "name": "Audashitty",
+    "creator": "HDetNHNjPQSbbxWJNQi3i3dmhNA8XqNKURjtXazX5frd",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795055122469,
+    "mint": "8ZuNPVZNndNHpdqUsG7Hc7Tg432Xp37eh7ezJfLmpump",
+    "symbol": "PUMP CITY",
+    "name": "Pump City",
+    "creator": "9vCdg7DfxAsoNzy4W8cKM7aaDvrusRKzZGC1WwM5HABz",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795055111066,
+    "mint": "5ZsDfaimb8AWcuVkxKkRfPP9xmMBHYropk8a93c2pump",
+    "symbol": "PUPTOP",
+    "name": "Pup on Top",
+    "creator": "4kTj6fitD5pkM32gQ7KToqVZ5v5PyC9956W2Vth2n4QQ",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795055105195,
+    "mint": "59xfEP78ipBWKTXnizERA4HLxVuEE5nG2NSjMCg9pump",
+    "symbol": "$MABA",
+    "name": "MASTER BATE",
+    "creator": "3wJxazfUB755Rtrg3h9RkhtcnftN2JGVPkwXwUKmxxEH",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795055104793,
+    "mint": "GWZTUniHQ8g5qcHNuyEzxvZPuMFoXXv7v5KhsL3vpump",
+    "symbol": "$CCOW",
+    "name": "cat cow",
+    "creator": "7qS94nqG8TXifQ7ptKrFWs9aU34uh6RssdJ5QBYAQDk5",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795055101020,
+    "mint": "Bbf3osjJS1jH2aiYuQMDwB43wCABRzB17nAZKBH8pump",
+    "symbol": "GTAliens",
+    "name": "Grand Theft Aliens",
+    "creator": "EXnvJiDCuaFXk6x64jRFpSZMS7fc56ERzU3kTRHSUZC2",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795055100012,
+    "mint": "BZYta5FP25LgHs4Q2CrbmUdRyxAfZwBNCb6xkZ8Vpump",
+    "symbol": "DSTY",
+    "name": "Audashitty",
+    "creator": "HDetNHNjPQSbbxWJNQi3i3dmhNA8XqNKURjtXazX5frd",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795055092872,
+    "mint": "6f6Q8JRUGkg3B3VKJ9ENbeg4UxL6p4pEDs3dcGZyeqTQ",
+    "symbol": "VICEHEIST",
+    "name": "Vice Heist",
+    "creator": "HkVvV8goHwKq6wjEt4ZwVkobP8YEedQNHLVWNTgkiAeN",
+    "mayhem": false,
+    "source": "chain"
+   },
+   {
+    "t": 1795055090841,
+    "mint": "DEsLyHjFpdyQUoiA26FGJ6WHmLV6T6dBES8FHWRSpump",
+    "symbol": "trench",
+    "name": "trench life",
+    "creator": "7qS94nqG8TXifQ7ptKrFWs9aU34uh6RssdJ5QBYAQDk5",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795055089781,
+    "mint": "24kDn1RqKE9QBCUrCyPvp1zzttp3NbpPbuDhXzgWpump",
+    "symbol": "awd",
+    "name": "awd",
+    "creator": "6nU2L7MQVUWjtdKHVpuZA9aind73nd3rXC4YFo8KQCy4",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795055086689,
+    "mint": "C2aq6x6VkbAZbimsRb3ugU7uiGa4WHdR8dk1PFiJpump",
+    "symbol": "ai",
+    "name": "ai inu",
+    "creator": "EqxeKy2NBNdAzgPaaBKo5sUhpkCJcwHkazXP2YMw2Rd1",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795055085427,
+    "mint": "BpBzDPhdK5ey1BpBJrsi1eW7GAWzGzFPJpiY1mhMpump",
+    "symbol": "$REXTON",
+    "name": "Rexton Coin",
+    "creator": "13XfHNQTeQ4yMkk7SX5rWTdfW8PDkYCB7hgkGCxJrZ8N",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795055078880,
+    "mint": "28tcY3MDUpe9bhg8xZ9Hz7SDWF99AAkvZM7NvCABpump",
+    "symbol": "Solana",
+    "name": "Bublé bée",
+    "creator": "Guj1hnne2pkhTEugbQEC6upXNehnna162HoynS713d8k",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795055078869,
+    "mint": "7VGJk5FkZRGpjRDHywYYnBzAKRYabSbZQP39TScypump",
+    "symbol": "STENKS",
+    "name": "STENKS",
+    "creator": "9j6NRZ9Cj2Vkko5YwyCavaAWqFar55FfM464uDzw6txx",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795055077561,
+    "mint": "7nUY8qmd9BXVCmKtqHXg3fJVPajPhLKMssTNu7pnpump",
+    "symbol": "BR",
+    "name": "BEEERRRRR",
+    "creator": "AzUKQHCibuiw3nPRvzFZvWCN9ErH52gcRYuukyCuM7gz",
+    "mayhem": true,
+    "source": "chain"
+   },
+   {
+    "t": 1795055075162,
+    "mint": "Ei6pibTaJzFF3S72KqYVT7Rw5GYnmziSEJk57arXpump",
+    "symbol": "GAMBIT",
+    "name": "Jetski Doge",
+    "creator": "BLpQUnCfXV5GiJSUBrSUfm5q6Lmr4oUzS2eMZ1zWiHpF",
+    "mayhem": false,
     "source": "chain"
    }
   ]
  },
  "whales": {
-  "wallets_tracked": 46012,
-  "wallets_with_3plus_closed": 3784,
-  "proven_count": 113,
-  "closed_round_trips_observed": 73893,
+  "wallets_tracked": 47743,
+  "wallets_with_3plus_closed": 3893,
+  "proven_count": 114,
+  "closed_round_trips_observed": 80450,
   "criteria": {
    "minClosed": 8,
    "minNetSol": 0.5,
@@ -2421,42 +2421,42 @@
     "pf": 8.21,
     "win_rate": 0.62,
     "max_dd_sol": 0.7564,
-    "trades_per_hour": 118,
+    "trades_per_hour": 115,
     "creator": false,
     "insider_hits": 0,
-    "last_t": 1795054943349
+    "last_t": 1795055096236
    },
    {
     "wallet": "72tAZjqymv4J2KHDPd3rzFkPL78tj556K32BJgBmBu5D",
-    "closed": 49,
-    "wins": 28,
-    "losses": 21,
-    "net_sol": 14.2787,
-    "avg_win": 0.622,
-    "avg_loss": -0.1493,
-    "pf": 5.55,
-    "win_rate": 0.57,
+    "closed": 52,
+    "wins": 30,
+    "losses": 22,
+    "net_sol": 15.3169,
+    "avg_win": 0.6217,
+    "avg_loss": -0.1516,
+    "pf": 5.59,
+    "win_rate": 0.58,
     "max_dd_sol": 1.0962,
-    "trades_per_hour": 88,
+    "trades_per_hour": 86,
     "creator": false,
     "insider_hits": 0,
-    "last_t": 1795054967951
+    "last_t": 1795055261563
    },
    {
     "wallet": "743wxXzAE5asUoboQ7YYzmGQwE3kf7b3Rf7rDq6NxLb4",
-    "closed": 96,
-    "wins": 55,
+    "closed": 97,
+    "wins": 56,
     "losses": 41,
-    "net_sol": 14.0385,
-    "avg_win": 0.3258,
+    "net_sol": 14.2109,
+    "avg_win": 0.3231,
     "avg_loss": -0.0947,
-    "pf": 4.62,
-    "win_rate": 0.57,
+    "pf": 4.66,
+    "win_rate": 0.58,
     "max_dd_sol": 0.7426,
-    "trades_per_hour": 84,
+    "trades_per_hour": 83,
     "creator": false,
     "insider_hits": 0,
-    "last_t": 1795054967547
+    "last_t": 1795055074189
    },
    {
     "wallet": "55msLm128tQdXLXCXLxd756H9SaCo7wPpdetEioe7D8d",
@@ -2492,19 +2492,35 @@
    },
    {
     "wallet": "STorreSu8X6yPLmiEScNHSGDinqV7j84hWjmvH9SPwk",
-    "closed": 107,
-    "wins": 51,
-    "losses": 56,
-    "net_sol": 11.1297,
-    "avg_win": 0.3531,
-    "avg_loss": -0.1228,
-    "pf": 2.62,
+    "closed": 111,
+    "wins": 53,
+    "losses": 58,
+    "net_sol": 10.941,
+    "avg_win": 0.341,
+    "avg_loss": -0.1229,
+    "pf": 2.53,
     "win_rate": 0.48,
     "max_dd_sol": 1.0769,
-    "trades_per_hour": 87,
+    "trades_per_hour": 90,
     "creator": false,
     "insider_hits": 0,
-    "last_t": 1795054919573
+    "last_t": 1795055268748
+   },
+   {
+    "wallet": "Grozoe2Lk9yu7kWPcCMuWEbrnuBYseBExkYAuHPRJUdJ",
+    "closed": 102,
+    "wins": 63,
+    "losses": 39,
+    "net_sol": 7.175,
+    "avg_win": 0.1859,
+    "avg_loss": -0.1163,
+    "pf": 2.58,
+    "win_rate": 0.62,
+    "max_dd_sol": 1.0291,
+    "trades_per_hour": 82,
+    "creator": false,
+    "insider_hits": 0,
+    "last_t": 1795055279788
    },
    {
     "wallet": "48mTAhFgsqTJXTvvMUxR7VBrz2hhGQWzxHameLFonMbs",
@@ -2521,22 +2537,6 @@
     "creator": false,
     "insider_hits": 0,
     "last_t": 1795054426480
-   },
-   {
-    "wallet": "Grozoe2Lk9yu7kWPcCMuWEbrnuBYseBExkYAuHPRJUdJ",
-    "closed": 99,
-    "wins": 60,
-    "losses": 39,
-    "net_sol": 6.0687,
-    "avg_win": 0.1767,
-    "avg_loss": -0.1163,
-    "pf": 2.34,
-    "win_rate": 0.61,
-    "max_dd_sol": 1.0291,
-    "trades_per_hour": 91,
-    "creator": false,
-    "insider_hits": 0,
-    "last_t": 1795054945860
    },
    {
     "wallet": "B9h6X9WQ5d9j2YzeJXt929sW5Lhq5vGHTSrrN9e6q6aS",
@@ -2587,22 +2587,6 @@
     "last_t": 1795053553997
    },
    {
-    "wallet": "Bx6cvJ1zEurodnxAZi38HkRMb5jeR1CdsX9tGx8LiMt",
-    "closed": 178,
-    "wins": 118,
-    "losses": 60,
-    "net_sol": 5.0169,
-    "avg_win": 0.075,
-    "avg_loss": -0.064,
-    "pf": 2.31,
-    "win_rate": 0.66,
-    "max_dd_sol": 0.4945,
-    "trades_per_hour": 118,
-    "creator": false,
-    "insider_hits": 0,
-    "last_t": 1795054977777
-   },
-   {
     "wallet": "YARSciE3tFureJbF9YmeBSxY946V24DmeKhuV3AoyXW",
     "closed": 8,
     "wins": 5,
@@ -2629,10 +2613,10 @@
     "pf": 7.87,
     "win_rate": 0.5,
     "max_dd_sol": 0.3917,
-    "trades_per_hour": 7,
+    "trades_per_hour": 9,
     "creator": false,
     "insider_hits": 0,
-    "last_t": 1795054681103
+    "last_t": 1795055074555
    },
    {
     "wallet": "2c4Nd25BehQBNpug4E5DAVVSNmyYZxYBVUnjFMu19iMS",
@@ -2651,6 +2635,22 @@
     "last_t": 1795054940553
    },
    {
+    "wallet": "13bEQbWhZsrTmiY9Gg6jbasoyXNq1LxCoysraVcrKK6",
+    "closed": 153,
+    "wins": 89,
+    "losses": 64,
+    "net_sol": 3.8535,
+    "avg_win": 0.067,
+    "avg_loss": -0.033,
+    "pf": 2.82,
+    "win_rate": 0.58,
+    "max_dd_sol": 0.2762,
+    "trades_per_hour": 118,
+    "creator": false,
+    "insider_hits": 0,
+    "last_t": 1795055148702
+   },
+   {
     "wallet": "5981EnT1JLAfRqoBpn4jvd81ie5FXMgAJgkJnpYAsJs3",
     "closed": 33,
     "wins": 27,
@@ -2664,23 +2664,7 @@
     "trades_per_hour": 55,
     "creator": false,
     "insider_hits": 0,
-    "last_t": 1795054812989
-   },
-   {
-    "wallet": "13bEQbWhZsrTmiY9Gg6jbasoyXNq1LxCoysraVcrKK6",
-    "closed": 149,
-    "wins": 87,
-    "losses": 62,
-    "net_sol": 3.7985,
-    "avg_win": 0.0674,
-    "avg_loss": -0.0333,
-    "pf": 2.84,
-    "win_rate": 0.58,
-    "max_dd_sol": 0.2762,
-    "trades_per_hour": 119,
-    "creator": false,
-    "insider_hits": 0,
-    "last_t": 1795054954075
+    "last_t": 1795055079452
    },
    {
     "wallet": "F8fBUJ2MZ7Nn9yPsS5hWJjDfSaFcywzvHvZPSyfcfcbL",
@@ -2693,26 +2677,10 @@
     "pf": 10.19,
     "win_rate": 0.67,
     "max_dd_sol": 0.181,
-    "trades_per_hour": 48,
+    "trades_per_hour": 50,
     "creator": false,
     "insider_hits": 0,
-    "last_t": 1795054904245
-   },
-   {
-    "wallet": "4oN18efpHpmaStKe759haW5EBqNYiga9qYF8vPkXNT2z",
-    "closed": 37,
-    "wins": 20,
-    "losses": 17,
-    "net_sol": 3.4508,
-    "avg_win": 0.199,
-    "avg_loss": -0.0311,
-    "pf": 7.53,
-    "win_rate": 0.54,
-    "max_dd_sol": 0.2302,
-    "trades_per_hour": 29,
-    "creator": false,
-    "insider_hits": 0,
-    "last_t": 1795054883218
+    "last_t": 1795055060658
    },
    {
     "wallet": "GxhMzqiA6T3Hauh4uQWYBEaxHsKhXGpa9pcj4UZcbt7c",
@@ -2729,6 +2697,22 @@
     "creator": false,
     "insider_hits": 0,
     "last_t": 1795054747771
+   },
+   {
+    "wallet": "4oN18efpHpmaStKe759haW5EBqNYiga9qYF8vPkXNT2z",
+    "closed": 38,
+    "wins": 20,
+    "losses": 18,
+    "net_sol": 3.0502,
+    "avg_win": 0.199,
+    "avg_loss": -0.0516,
+    "pf": 4.28,
+    "win_rate": 0.53,
+    "max_dd_sol": 0.4797,
+    "trades_per_hour": 31,
+    "creator": false,
+    "insider_hits": 0,
+    "last_t": 1795055033081
    },
    {
     "wallet": "DuiSZASGoLH6BiUqhYW5nYYRNkk8Dyb1GzESvLugJF5A",
@@ -2873,110 +2857,137 @@
     "creator": false,
     "insider_hits": 0,
     "last_t": 1795053382162
+   },
+   {
+    "wallet": "FfW5e8gKJfgaZPog6DiJoW6Kif6Fb23CokWprRhHVjV1",
+    "closed": 25,
+    "wins": 18,
+    "losses": 7,
+    "net_sol": 2.2114,
+    "avg_win": 0.1306,
+    "avg_loss": -0.0198,
+    "pf": 16.94,
+    "win_rate": 0.72,
+    "max_dd_sol": 0.0875,
+    "trades_per_hour": 14,
+    "creator": false,
+    "insider_hits": 0,
+    "last_t": 1795053683517
    }
   ],
   "activity": [
    {
-    "t": 1795054978985,
-    "wallet": "Hx44ecKZzK2UqZfVSxBp6B46jLBc2KGUwp4x9bLoR9GJ",
-    "mint": "JAahMJQFE6FRBGmPfPRRGQ3n21cR5pjB657vCbPqpump",
-    "symbol": "$REXTON",
-    "side": "buy",
-    "sol": 0.0148,
-    "venue": "curve",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1795054978728,
-    "wallet": "Hx44ecKZzK2UqZfVSxBp6B46jLBc2KGUwp4x9bLoR9GJ",
-    "mint": "oJLEictmNxwPq5KXLBNC8doAiaToLzGjqWo52rHpump",
-    "symbol": "$SLJK",
+    "t": 1795055279788,
+    "wallet": "Grozoe2Lk9yu7kWPcCMuWEbrnuBYseBExkYAuHPRJUdJ",
+    "mint": "Ag5H7Zcg8jPqrHfPmDWYHzCMRH3jhqpFwJtcuZHFpump",
+    "symbol": "NiTrump",
     "side": "sell",
-    "sol": 0.0242,
+    "sol": 0.637,
     "venue": "curve",
     "proven": true,
     "big": false
    },
    {
-    "t": 1795054977777,
-    "wallet": "Bx6cvJ1zEurodnxAZi38HkRMb5jeR1CdsX9tGx8LiMt",
-    "mint": "oJLEictmNxwPq5KXLBNC8doAiaToLzGjqWo52rHpump",
-    "symbol": "$SLJK",
-    "side": "sell",
-    "sol": 0.3615,
-    "venue": "curve",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1795054977410,
-    "wallet": "FADHFavuAuQW5C5RGoWtde2SSw8VnUwjuowttDro91vo",
-    "mint": "9UKo9XNm5bF2AUb1jpjw2GoeiPFUng9HKczmVyZ9Ny5s",
+    "t": 1795055277898,
+    "wallet": "nnnBBfAqeTnJgxMjNgUGquNFSYnw5CbcpemU89tznUj",
+    "mint": "6YBCUHCDAQH8JofVU3hbGXg52YxewTs89u2AcjuEpump",
     "symbol": null,
     "side": "buy",
-    "sol": 0.1518,
-    "venue": "curve",
+    "sol": 0.5938,
+    "venue": "pumpswap",
     "proven": true,
     "big": false
    },
    {
-    "t": 1795054975276,
-    "wallet": "Hx44ecKZzK2UqZfVSxBp6B46jLBc2KGUwp4x9bLoR9GJ",
-    "mint": "oJLEictmNxwPq5KXLBNC8doAiaToLzGjqWo52rHpump",
-    "symbol": "$SLJK",
+    "t": 1795055273117,
+    "wallet": "2KaGG9SLDaBoHt2ujezXzLXcgNEDzPDGn89G63M3xzfz",
+    "mint": "92m4S52bu3dZyqzPmPStu8Krz6JcpzHdsG4D5QBqpump",
+    "symbol": "GTA Strategy ",
     "side": "buy",
-    "sol": 0.0148,
+    "sol": 0.067,
     "venue": "curve",
     "proven": true,
     "big": false
    },
    {
-    "t": 1795054975258,
-    "wallet": "ACSzfEnXbGaxBN1iD2pR1C6tQYSiBvqGPx8Wx1ZTbV2o",
-    "mint": "JAahMJQFE6FRBGmPfPRRGQ3n21cR5pjB657vCbPqpump",
-    "symbol": "$REXTON",
+    "t": 1795055272292,
+    "wallet": "77wS9zZHJ57AXR2QvkX8Fu8iqUPBbYvUnJ2irb36QyTG",
+    "mint": "92m4S52bu3dZyqzPmPStu8Krz6JcpzHdsG4D5QBqpump",
+    "symbol": "GTA Strategy ",
     "side": "buy",
-    "sol": 0.1564,
+    "sol": 0.0988,
     "venue": "curve",
     "proven": true,
     "big": false
    },
    {
-    "t": 1795054972969,
-    "wallet": "3n2zw7DonkUMbbtCgreXdT4Zii6ZxtRBrSerUs2zP7FX",
-    "mint": "oJLEictmNxwPq5KXLBNC8doAiaToLzGjqWo52rHpump",
-    "symbol": "$SLJK",
+    "t": 1795055270338,
+    "wallet": "DQZcUYZsibt6qJwKyZAmeLpNsVvDCSWVZgis6amW6f5z",
+    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
+    "symbol": "FNDR",
+    "side": "buy",
+    "sol": 0.0674,
+    "venue": "pumpswap",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795055268748,
+    "wallet": "STorreSu8X6yPLmiEScNHSGDinqV7j84hWjmvH9SPwk",
+    "mint": "92m4S52bu3dZyqzPmPStu8Krz6JcpzHdsG4D5QBqpump",
+    "symbol": "GTA Strategy ",
+    "side": "buy",
+    "sol": 0.802,
+    "venue": "curve",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795055266304,
+    "wallet": "HPeURAAtok9pzyRbk1WbxrQKXV6FrxKctziGhZ7z9unT",
+    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
+    "symbol": "FNDR",
+    "side": "buy",
+    "sol": 0.0979,
+    "venue": "pumpswap",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795055263411,
+    "wallet": "77wS9zZHJ57AXR2QvkX8Fu8iqUPBbYvUnJ2irb36QyTG",
+    "mint": "92m4S52bu3dZyqzPmPStu8Krz6JcpzHdsG4D5QBqpump",
+    "symbol": "GTA Strategy ",
     "side": "sell",
-    "sol": 0.0779,
+    "sol": 0.0953,
     "venue": "curve",
     "proven": true,
     "big": false
    },
    {
-    "t": 1795054972587,
-    "wallet": "Hx44ecKZzK2UqZfVSxBp6B46jLBc2KGUwp4x9bLoR9GJ",
-    "mint": "CspTTsyZrvSucN2uZc3hGo8N5Fb3FQz4BzysHVZJpump",
+    "t": 1795055261563,
+    "wallet": "72tAZjqymv4J2KHDPd3rzFkPL78tj556K32BJgBmBu5D",
+    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
+    "symbol": "FNDR",
+    "side": "buy",
+    "sol": 4.9456,
+    "venue": "pumpswap",
+    "proven": true,
+    "big": true
+   },
+   {
+    "t": 1795055257367,
+    "wallet": "3n2zw7DonkUMbbtCgreXdT4Zii6ZxtRBrSerUs2zP7FX",
+    "mint": "JBYZmFDxrm6CBADSCz3JKoAM4JAFETrnsD5udAKNpump",
     "symbol": "HC",
     "side": "sell",
-    "sol": 0.0078,
+    "sol": 0.0812,
     "venue": "curve",
     "proven": true,
     "big": false
    },
    {
-    "t": 1795054972415,
-    "wallet": "Bx6cvJ1zEurodnxAZi38HkRMb5jeR1CdsX9tGx8LiMt",
-    "mint": "oJLEictmNxwPq5KXLBNC8doAiaToLzGjqWo52rHpump",
-    "symbol": "$SLJK",
-    "side": "buy",
-    "sol": 0.233,
-    "venue": "curve",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1795054971630,
+    "t": 1795055257287,
     "wallet": "DQZcUYZsibt6qJwKyZAmeLpNsVvDCSWVZgis6amW6f5z",
     "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
     "symbol": "FNDR",
@@ -2987,130 +2998,53 @@
     "big": false
    },
    {
-    "t": 1795054969537,
-    "wallet": "Hx44ecKZzK2UqZfVSxBp6B46jLBc2KGUwp4x9bLoR9GJ",
-    "mint": "CspTTsyZrvSucN2uZc3hGo8N5Fb3FQz4BzysHVZJpump",
+    "t": 1795055257219,
+    "wallet": "3n2zw7DonkUMbbtCgreXdT4Zii6ZxtRBrSerUs2zP7FX",
+    "mint": "JBYZmFDxrm6CBADSCz3JKoAM4JAFETrnsD5udAKNpump",
     "symbol": "HC",
     "side": "buy",
-    "sol": 0.0148,
+    "sol": 0.0751,
     "venue": "curve",
     "proven": true,
     "big": false
    },
    {
-    "t": 1795054968707,
-    "wallet": "Bx6cvJ1zEurodnxAZi38HkRMb5jeR1CdsX9tGx8LiMt",
-    "mint": "CspTTsyZrvSucN2uZc3hGo8N5Fb3FQz4BzysHVZJpump",
-    "symbol": "HC",
-    "side": "sell",
-    "sol": 0.1008,
-    "venue": "curve",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1795054967951,
-    "wallet": "72tAZjqymv4J2KHDPd3rzFkPL78tj556K32BJgBmBu5D",
-    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
-    "symbol": "FNDR",
-    "side": "sell",
-    "sol": 4.6231,
-    "venue": "pumpswap",
-    "proven": true,
-    "big": true
-   },
-   {
-    "t": 1795054967547,
-    "wallet": "743wxXzAE5asUoboQ7YYzmGQwE3kf7b3Rf7rDq6NxLb4",
-    "mint": "Hj3usZwh3JbQkZZNNE3cWYh1QBcGU7pfAcXqbHgppump",
-    "symbol": "Komugi",
-    "side": "buy",
-    "sol": 0.9877,
-    "venue": "curve",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1795054962781,
-    "wallet": "ACSzfEnXbGaxBN1iD2pR1C6tQYSiBvqGPx8Wx1ZTbV2o",
-    "mint": "CspTTsyZrvSucN2uZc3hGo8N5Fb3FQz4BzysHVZJpump",
-    "symbol": "HC",
-    "side": "sell",
-    "sol": 0.1203,
-    "venue": "curve",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1795054960834,
-    "wallet": "bummy2yjrb69HLXZB1cbqLLvvd7YE9qk314kufx3UzK",
-    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
-    "symbol": "FNDR",
-    "side": "buy",
-    "sol": 0.2473,
-    "venue": "pumpswap",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1795054959320,
-    "wallet": "ACSzfEnXbGaxBN1iD2pR1C6tQYSiBvqGPx8Wx1ZTbV2o",
-    "mint": "CspTTsyZrvSucN2uZc3hGo8N5Fb3FQz4BzysHVZJpump",
-    "symbol": "HC",
-    "side": "buy",
-    "sol": 0.1564,
-    "venue": "curve",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1795054958711,
-    "wallet": "Bx6cvJ1zEurodnxAZi38HkRMb5jeR1CdsX9tGx8LiMt",
-    "mint": "CspTTsyZrvSucN2uZc3hGo8N5Fb3FQz4BzysHVZJpump",
-    "symbol": "HC",
-    "side": "buy",
-    "sol": 0.2294,
-    "venue": "curve",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1795054958313,
-    "wallet": "DQZcUYZsibt6qJwKyZAmeLpNsVvDCSWVZgis6amW6f5z",
-    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
-    "symbol": "FNDR",
-    "side": "sell",
-    "sol": 0.1551,
-    "venue": "pumpswap",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1795054955581,
-    "wallet": "7DyzpBsqDupBw8kiFMnBCCaKsdGH61DVtTe5iczRpcm1",
-    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
-    "symbol": "FNDR",
-    "side": "sell",
-    "sol": 1.0825,
-    "venue": "pumpswap",
-    "proven": true,
-    "big": true
-   },
-   {
-    "t": 1795054954075,
-    "wallet": "13bEQbWhZsrTmiY9Gg6jbasoyXNq1LxCoysraVcrKK6",
+    "t": 1795055257083,
+    "wallet": "77wS9zZHJ57AXR2QvkX8Fu8iqUPBbYvUnJ2irb36QyTG",
     "mint": "92m4S52bu3dZyqzPmPStu8Krz6JcpzHdsG4D5QBqpump",
     "symbol": "GTA Strategy ",
     "side": "buy",
-    "sol": 0.2469,
+    "sol": 0.0988,
     "venue": "curve",
     "proven": true,
     "big": false
    },
    {
-    "t": 1795054953952,
+    "t": 1795055257037,
     "wallet": "F5CYW9mFWTgCWXuJyVNFWqS36MQozaZNtdsocr7hq5uF",
     "mint": "EKjdkz5igA2ByqoX5HNLn8B8MThJ8SURvvgRAqzcpump",
+    "symbol": null,
+    "side": "sell",
+    "sol": 0.5582,
+    "venue": "curve",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795055256509,
+    "wallet": "4AqQosAv2WqBHjYiZkKggUgdViCknZWGsT42y77Gpn5d",
+    "mint": "92m4S52bu3dZyqzPmPStu8Krz6JcpzHdsG4D5QBqpump",
+    "symbol": "GTA Strategy ",
+    "side": "sell",
+    "sol": 0.409,
+    "venue": "curve",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795055254263,
+    "wallet": "HNzLMbdXb2YPNzegjMmL223ACP2jwHYK3AnQZFzrddCu",
+    "mint": "HYXgjJc3ABFARF8i2H9B2hkbWZLFBPZTSkPqA8yHpump",
     "symbol": null,
     "side": "buy",
     "sol": 0.5926,
@@ -3119,185 +3053,174 @@
     "big": false
    },
    {
-    "t": 1795054951927,
-    "wallet": "7Js5gmq57y9jG2sseKrAeJt3vbncSWSFFHDEsyJDnyVm",
+    "t": 1795055253283,
+    "wallet": "DQZcUYZsibt6qJwKyZAmeLpNsVvDCSWVZgis6amW6f5z",
     "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
     "symbol": "FNDR",
-    "side": "sell",
-    "sol": 1.0088,
+    "side": "buy",
+    "sol": 0.1347,
     "venue": "pumpswap",
     "proven": true,
-    "big": true
+    "big": false
    },
    {
-    "t": 1795054946646,
+    "t": 1795055252952,
     "wallet": "FADHFavuAuQW5C5RGoWtde2SSw8VnUwjuowttDro91vo",
-    "mint": "3T9guYBwZKnWfvgYzAmHdkLgAHWN3UPUVGwR98bXpump",
+    "mint": "HYXgjJc3ABFARF8i2H9B2hkbWZLFBPZTSkPqA8yHpump",
     "symbol": null,
     "side": "buy",
-    "sol": 0.1673,
+    "sol": 0.1728,
     "venue": "curve",
     "proven": true,
     "big": false
    },
    {
-    "t": 1795054946292,
-    "wallet": "ADgbCgBmWR1Lqdoea5BynuUeZqpMv7wHX2nzaogPrTAw",
-    "mint": "GT2Ay2QpgMm4GhhbBXPpjiX87um4aiDdLHNC6Xuwpump",
-    "symbol": null,
+    "t": 1795055252398,
+    "wallet": "3n2zw7DonkUMbbtCgreXdT4Zii6ZxtRBrSerUs2zP7FX",
+    "mint": "8n24pFnBGGeAt7nKdYyRfKi8bptauBrnak5KGDMxpump",
+    "symbol": "$PIKAM",
     "side": "sell",
-    "sol": 0.1338,
+    "sol": 0.0646,
     "venue": "curve",
     "proven": true,
     "big": false
    },
    {
-    "t": 1795054945860,
-    "wallet": "13bEQbWhZsrTmiY9Gg6jbasoyXNq1LxCoysraVcrKK6",
-    "mint": "92m4S52bu3dZyqzPmPStu8Krz6JcpzHdsG4D5QBqpump",
-    "symbol": "GTA Strategy ",
+    "t": 1795055252287,
+    "wallet": "HrJZchvCmTgq22SYoDsNv82H3MpRLT4oKggHYQ7CFEqA",
+    "mint": "7jUeUKakFSQjsknmammWRAmEmJjn8e7BuHC6pnxupump",
+    "symbol": "$REXTON",
     "side": "sell",
-    "sol": 0.3404,
+    "sol": 0.0369,
     "venue": "curve",
     "proven": true,
     "big": false
    },
    {
-    "t": 1795054945860,
-    "wallet": "Grozoe2Lk9yu7kWPcCMuWEbrnuBYseBExkYAuHPRJUdJ",
-    "mint": "92m4S52bu3dZyqzPmPStu8Krz6JcpzHdsG4D5QBqpump",
-    "symbol": "GTA Strategy ",
-    "side": "sell",
-    "sol": 0.377,
-    "venue": "curve",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1795054944923,
-    "wallet": "77wS9zZHJ57AXR2QvkX8Fu8iqUPBbYvUnJ2irb36QyTG",
-    "mint": "92m4S52bu3dZyqzPmPStu8Krz6JcpzHdsG4D5QBqpump",
-    "symbol": "GTA Strategy ",
-    "side": "sell",
-    "sol": 0.1245,
-    "venue": "curve",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1795054944897,
-    "wallet": "HNzLMbdXb2YPNzegjMmL223ACP2jwHYK3AnQZFzrddCu",
-    "mint": "CUockEXtonoxJ7pVipwNYhekieZXdupwJy1zzhCkpump",
-    "symbol": "GTASANTA",
-    "side": "sell",
-    "sol": 1.4089,
-    "venue": "curve",
-    "proven": true,
-    "big": true
-   },
-   {
-    "t": 1795054944449,
-    "wallet": "2rioswXVBeFxyU6t3R2bXQnnrnYoww8Pq63b1w4LhpTQ",
-    "mint": "92m4S52bu3dZyqzPmPStu8Krz6JcpzHdsG4D5QBqpump",
-    "symbol": "GTA Strategy ",
+    "t": 1795055252002,
+    "wallet": "3n2zw7DonkUMbbtCgreXdT4Zii6ZxtRBrSerUs2zP7FX",
+    "mint": "8n24pFnBGGeAt7nKdYyRfKi8bptauBrnak5KGDMxpump",
+    "symbol": "$PIKAM",
     "side": "buy",
-    "sol": 0.4938,
+    "sol": 0.0543,
     "venue": "curve",
     "proven": true,
     "big": false
    },
    {
-    "t": 1795054944283,
+    "t": 1795055251969,
+    "wallet": "HrJZchvCmTgq22SYoDsNv82H3MpRLT4oKggHYQ7CFEqA",
+    "mint": "7jUeUKakFSQjsknmammWRAmEmJjn8e7BuHC6pnxupump",
+    "symbol": "$REXTON",
+    "side": "buy",
+    "sol": 0.0551,
+    "venue": "curve",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795055251482,
+    "wallet": "6rZrnRsAAXRDVDME7p3PvKxFNihxnvgkCdGZxmBc3eFH",
+    "mint": "JBYZmFDxrm6CBADSCz3JKoAM4JAFETrnsD5udAKNpump",
+    "symbol": "HC",
+    "side": "sell",
+    "sol": 0.2237,
+    "venue": "curve",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795055251018,
+    "wallet": "HrJZchvCmTgq22SYoDsNv82H3MpRLT4oKggHYQ7CFEqA",
+    "mint": "7jUeUKakFSQjsknmammWRAmEmJjn8e7BuHC6pnxupump",
+    "symbol": "$REXTON",
+    "side": "sell",
+    "sol": 0.0484,
+    "venue": "curve",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795055250597,
+    "wallet": "HrJZchvCmTgq22SYoDsNv82H3MpRLT4oKggHYQ7CFEqA",
+    "mint": "7jUeUKakFSQjsknmammWRAmEmJjn8e7BuHC6pnxupump",
+    "symbol": "$REXTON",
+    "side": "buy",
+    "sol": 0.0395,
+    "venue": "curve",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795055249972,
     "wallet": "G3A4eyKyhAyAFro3r8LsoPaBprMstUJYeWtjnjsDhcRL",
-    "mint": "4EMvCj1rMYpJwoPa2aghsphhvUyyXMqwCBTV6PRdpump",
-    "symbol": null,
+    "mint": "7jSwnw16DGagccNdNvPGgtr6Q3ZnPmyqMxhm6C4opump",
+    "symbol": "afc",
     "side": "sell",
-    "sol": 0.2778,
+    "sol": 0.5156,
     "venue": "curve",
     "proven": true,
     "big": false
    },
    {
-    "t": 1795054943349,
-    "wallet": "ssssssA47RhvLY4jkMQFZBTjiSoL5gUr4b8QbnB5thY",
-    "mint": "6YBCUHCDAQH8JofVU3hbGXg52YxewTs89u2AcjuEpump",
+    "t": 1795055249972,
+    "wallet": "Bp2NiFdy6TEL5m1XEpoThNr2hJFcMgwoT1dfkVZsVotn",
+    "mint": "8tRFu1YvMifGBX9ZdMsXWcwbchLdCJEDYWamoS2Upump",
+    "symbol": "FCAT",
+    "side": "sell",
+    "sol": 0.2711,
+    "venue": "curve",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795055249522,
+    "wallet": "FA4u5ZweMsZzwJDs2QmdrzLDmruHt5KiJk7KC4kMHvy6",
+    "mint": "5SLQRboK2vBp3eMNuGDycmYDV9Nk5K9FPvMkAsVMpump",
+    "symbol": "$PIKAM",
+    "side": "sell",
+    "sol": 1.0076,
+    "venue": "curve",
+    "proven": true,
+    "big": true
+   },
+   {
+    "t": 1795055248601,
+    "wallet": "G3A4eyKyhAyAFro3r8LsoPaBprMstUJYeWtjnjsDhcRL",
+    "mint": "7jSwnw16DGagccNdNvPGgtr6Q3ZnPmyqMxhm6C4opump",
+    "symbol": "afc",
+    "side": "buy",
+    "sol": 0.5135,
+    "venue": "curve",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795055246793,
+    "wallet": "FADHFavuAuQW5C5RGoWtde2SSw8VnUwjuowttDro91vo",
+    "mint": "Gqz7b4NvCm7co4gmSd1H2VgVzTGYBvGyTFU7z4ddpump",
     "symbol": null,
     "side": "buy",
-    "sol": 1.3773,
-    "venue": "pumpswap",
-    "proven": true,
-    "big": true
-   },
-   {
-    "t": 1795054941262,
-    "wallet": "ssssssA47RhvLY4jkMQFZBTjiSoL5gUr4b8QbnB5thY",
-    "mint": "6YBCUHCDAQH8JofVU3hbGXg52YxewTs89u2AcjuEpump",
-    "symbol": null,
-    "side": "sell",
-    "sol": 1.5225,
-    "venue": "pumpswap",
-    "proven": true,
-    "big": true
-   },
-   {
-    "t": 1795054940553,
-    "wallet": "2c4Nd25BehQBNpug4E5DAVVSNmyYZxYBVUnjFMu19iMS",
-    "mint": "y2nMeCkifSCfzJv6jVoQ1ev1VjfRJwswdRZuJthpump",
-    "symbol": null,
-    "side": "sell",
-    "sol": 0.0547,
+    "sol": 0.1539,
     "venue": "curve",
     "proven": true,
     "big": false
    },
    {
-    "t": 1795054938865,
-    "wallet": "P3gqNAWCfYKuJjnk1D5y7uXJ8rkQ58TFP185Ad6M9ZJ",
-    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
-    "symbol": "FNDR",
-    "side": "sell",
-    "sol": 0.2418,
-    "venue": "pumpswap",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1795054938753,
-    "wallet": "3vKC1m1CgNL3AU27NTYZ93zfpPeFV9JSAV9k9oMuD4HW",
-    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
-    "symbol": "FNDR",
-    "side": "sell",
-    "sol": 0.872,
-    "venue": "pumpswap",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1795054937697,
-    "wallet": "2c4Nd25BehQBNpug4E5DAVVSNmyYZxYBVUnjFMu19iMS",
-    "mint": "y2nMeCkifSCfzJv6jVoQ1ev1VjfRJwswdRZuJthpump",
-    "symbol": null,
-    "side": "sell",
-    "sol": 0.0558,
+    "t": 1795055246793,
+    "wallet": "6rZrnRsAAXRDVDME7p3PvKxFNihxnvgkCdGZxmBc3eFH",
+    "mint": "JBYZmFDxrm6CBADSCz3JKoAM4JAFETrnsD5udAKNpump",
+    "symbol": "HC",
+    "side": "buy",
+    "sol": 0.1481,
     "venue": "curve",
     "proven": true,
     "big": false
    },
    {
-    "t": 1795054937523,
+    "t": 1795055246559,
     "wallet": "Bp2NiFdy6TEL5m1XEpoThNr2hJFcMgwoT1dfkVZsVotn",
-    "mint": "B6WrSLSVbF5iG5CTaRLp6U8yy8b9cspUXithjda3REAL",
-    "symbol": null,
-    "side": "sell",
-    "sol": 0.2997,
-    "venue": "curve",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1795054935539,
-    "wallet": "Bp2NiFdy6TEL5m1XEpoThNr2hJFcMgwoT1dfkVZsVotn",
-    "mint": "B6WrSLSVbF5iG5CTaRLp6U8yy8b9cspUXithjda3REAL",
+    "mint": "Gqz7b4NvCm7co4gmSd1H2VgVzTGYBvGyTFU7z4ddpump",
     "symbol": null,
     "side": "buy",
     "sol": 0.2963,
@@ -3306,122 +3229,199 @@
     "big": false
    },
    {
-    "t": 1795054935389,
-    "wallet": "9999xxvxwKh9UMiNiESjTTCh3nzeXh8af7i9Dn7pckHV",
-    "mint": "CUockEXtonoxJ7pVipwNYhekieZXdupwJy1zzhCkpump",
-    "symbol": "GTASANTA",
-    "side": "sell",
-    "sol": 0.7418,
-    "venue": "curve",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1795054934190,
-    "wallet": "HNzLMbdXb2YPNzegjMmL223ACP2jwHYK3AnQZFzrddCu",
-    "mint": "CUockEXtonoxJ7pVipwNYhekieZXdupwJy1zzhCkpump",
-    "symbol": "GTASANTA",
-    "side": "buy",
-    "sol": 1.4069,
-    "venue": "curve",
-    "proven": true,
-    "big": true
-   },
-   {
-    "t": 1795054934190,
-    "wallet": "9999xxvxwKh9UMiNiESjTTCh3nzeXh8af7i9Dn7pckHV",
-    "mint": "CUockEXtonoxJ7pVipwNYhekieZXdupwJy1zzhCkpump",
-    "symbol": "GTASANTA",
-    "side": "buy",
-    "sol": 0.7407,
-    "venue": "curve",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1795054932362,
-    "wallet": "13bEQbWhZsrTmiY9Gg6jbasoyXNq1LxCoysraVcrKK6",
-    "mint": "CUockEXtonoxJ7pVipwNYhekieZXdupwJy1zzhCkpump",
-    "symbol": "GTASANTA",
-    "side": "sell",
-    "sol": 0.1832,
-    "venue": "curve",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1795054930265,
-    "wallet": "2c4Nd25BehQBNpug4E5DAVVSNmyYZxYBVUnjFMu19iMS",
-    "mint": "6YBCUHCDAQH8JofVU3hbGXg52YxewTs89u2AcjuEpump",
+    "t": 1795055245800,
+    "wallet": "FADHFavuAuQW5C5RGoWtde2SSw8VnUwjuowttDro91vo",
+    "mint": "3T9guYBwZKnWfvgYzAmHdkLgAHWN3UPUVGwR98bXpump",
     "symbol": null,
     "side": "sell",
-    "sol": 0.441,
-    "venue": "pumpswap",
+    "sol": 0.1575,
+    "venue": "curve",
     "proven": true,
     "big": false
    },
    {
-    "t": 1795054925343,
-    "wallet": "CoJatHdT3goMJKCLS3h28LrGeUm6rqzk17HHcKKonZuF",
+    "t": 1795055245799,
+    "wallet": "Bp2NiFdy6TEL5m1XEpoThNr2hJFcMgwoT1dfkVZsVotn",
+    "mint": "8tRFu1YvMifGBX9ZdMsXWcwbchLdCJEDYWamoS2Upump",
+    "symbol": "FCAT",
+    "side": "buy",
+    "sol": 0.2963,
+    "venue": "curve",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795055242480,
+    "wallet": "2fvYPPn4FiLhKgremcvQwSMBTsha7DiKRHWRSamAfBbY",
     "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
     "symbol": "FNDR",
     "side": "sell",
-    "sol": 0.5548,
+    "sol": 0.5694,
     "venue": "pumpswap",
     "proven": true,
     "big": false
    },
    {
-    "t": 1795054922109,
-    "wallet": "13bEQbWhZsrTmiY9Gg6jbasoyXNq1LxCoysraVcrKK6",
-    "mint": "92m4S52bu3dZyqzPmPStu8Krz6JcpzHdsG4D5QBqpump",
-    "symbol": "GTA Strategy ",
+    "t": 1795055241473,
+    "wallet": "DQZcUYZsibt6qJwKyZAmeLpNsVvDCSWVZgis6amW6f5z",
+    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
+    "symbol": "FNDR",
     "side": "buy",
-    "sol": 0.2469,
-    "venue": "curve",
+    "sol": 0.1347,
+    "venue": "pumpswap",
     "proven": true,
     "big": false
    },
    {
-    "t": 1795054922079,
-    "wallet": "Grozoe2Lk9yu7kWPcCMuWEbrnuBYseBExkYAuHPRJUdJ",
-    "mint": "92m4S52bu3dZyqzPmPStu8Krz6JcpzHdsG4D5QBqpump",
-    "symbol": "GTA Strategy ",
-    "side": "buy",
-    "sol": 0.2558,
-    "venue": "curve",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1795054921083,
-    "wallet": "Bx6cvJ1zEurodnxAZi38HkRMb5jeR1CdsX9tGx8LiMt",
-    "mint": "5hHRne8eDiy85arc82n3kuS7yD5kvowGmbPvHXmApump",
-    "symbol": "HC",
+    "t": 1795055237501,
+    "wallet": "HrJZchvCmTgq22SYoDsNv82H3MpRLT4oKggHYQ7CFEqA",
+    "mint": "3HWEqTBr7xZBqgfK4qgxHib6Ffhnt8KeBgspF7WRpump",
+    "symbol": "CountDown",
     "side": "sell",
-    "sol": 0.2694,
+    "sol": 0.0465,
     "venue": "curve",
     "proven": true,
     "big": false
    },
    {
-    "t": 1795054920321,
-    "wallet": "Bx6cvJ1zEurodnxAZi38HkRMb5jeR1CdsX9tGx8LiMt",
-    "mint": "5hHRne8eDiy85arc82n3kuS7yD5kvowGmbPvHXmApump",
-    "symbol": "HC",
-    "side": "buy",
-    "sol": 0.1896,
-    "venue": "curve",
-    "proven": true,
-    "big": false
-   },
-   {
-    "t": 1795054919573,
-    "wallet": "STorreSu8X6yPLmiEScNHSGDinqV7j84hWjmvH9SPwk",
-    "mint": "92m4S52bu3dZyqzPmPStu8Krz6JcpzHdsG4D5QBqpump",
-    "symbol": "GTA Strategy ",
+    "t": 1795055237462,
+    "wallet": "DQZcUYZsibt6qJwKyZAmeLpNsVvDCSWVZgis6amW6f5z",
+    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
+    "symbol": "FNDR",
     "side": "sell",
-    "sol": 0.4805,
+    "sol": 0.1621,
+    "venue": "pumpswap",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795055237275,
+    "wallet": "CoJatHdT3goMJKCLS3h28LrGeUm6rqzk17HHcKKonZuF",
+    "mint": "6YBCUHCDAQH8JofVU3hbGXg52YxewTs89u2AcjuEpump",
+    "symbol": null,
+    "side": "sell",
+    "sol": 0.5707,
+    "venue": "pumpswap",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795055236269,
+    "wallet": "HrJZchvCmTgq22SYoDsNv82H3MpRLT4oKggHYQ7CFEqA",
+    "mint": "3HWEqTBr7xZBqgfK4qgxHib6Ffhnt8KeBgspF7WRpump",
+    "symbol": "CountDown",
+    "side": "buy",
+    "sol": 0.0612,
+    "venue": "curve",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795055235703,
+    "wallet": "HrJZchvCmTgq22SYoDsNv82H3MpRLT4oKggHYQ7CFEqA",
+    "mint": "3HWEqTBr7xZBqgfK4qgxHib6Ffhnt8KeBgspF7WRpump",
+    "symbol": "CountDown",
+    "side": "sell",
+    "sol": 0.0687,
+    "venue": "curve",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795055234945,
+    "wallet": "HrJZchvCmTgq22SYoDsNv82H3MpRLT4oKggHYQ7CFEqA",
+    "mint": "3HWEqTBr7xZBqgfK4qgxHib6Ffhnt8KeBgspF7WRpump",
+    "symbol": "CountDown",
+    "side": "buy",
+    "sol": 0.096,
+    "venue": "curve",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795055225643,
+    "wallet": "55mX9tbeNC6UDo6KLknzgBq7kNVpH4SWKxsAcw6c3emR",
+    "mint": "DrPDYBoTu7pTra4mtTw6p9YUFkBXagEi3m2c9N3hpump",
+    "symbol": "afc",
+    "side": "sell",
+    "sol": 0.3132,
+    "venue": "curve",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795055223762,
+    "wallet": "G3A4eyKyhAyAFro3r8LsoPaBprMstUJYeWtjnjsDhcRL",
+    "mint": "4SRNMAaqbESnyc1EDHC4UGnCr1R4PtiiGSo1XVhkpump",
+    "symbol": null,
+    "side": "sell",
+    "sol": 0.2984,
+    "venue": "curve",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795055222513,
+    "wallet": "G3A4eyKyhAyAFro3r8LsoPaBprMstUJYeWtjnjsDhcRL",
+    "mint": "4SRNMAaqbESnyc1EDHC4UGnCr1R4PtiiGSo1XVhkpump",
+    "symbol": null,
+    "side": "buy",
+    "sol": 0.3015,
+    "venue": "curve",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795055219724,
+    "wallet": "96JTtvBj3PP2WTsXrCSaSH3Ga4aboutJX2s4ZHNjENcA",
+    "mint": "Hik9pdPZpcaAKmKKimcKF6qsR2NQPn51FDBEN8xFpump",
+    "symbol": "BrycexD",
+    "side": "sell",
+    "sol": 0.3748,
+    "venue": "pumpswap",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795055219474,
+    "wallet": "CoJatHdT3goMJKCLS3h28LrGeUm6rqzk17HHcKKonZuF",
+    "mint": "Hik9pdPZpcaAKmKKimcKF6qsR2NQPn51FDBEN8xFpump",
+    "symbol": "BrycexD",
+    "side": "sell",
+    "sol": 0.5717,
+    "venue": "pumpswap",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795055219429,
+    "wallet": "55mX9tbeNC6UDo6KLknzgBq7kNVpH4SWKxsAcw6c3emR",
+    "mint": "DrPDYBoTu7pTra4mtTw6p9YUFkBXagEi3m2c9N3hpump",
+    "symbol": "afc",
+    "side": "buy",
+    "sol": 0.2963,
+    "venue": "curve",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795055217409,
+    "wallet": "3n2zw7DonkUMbbtCgreXdT4Zii6ZxtRBrSerUs2zP7FX",
+    "mint": "8n24pFnBGGeAt7nKdYyRfKi8bptauBrnak5KGDMxpump",
+    "symbol": "$PIKAM",
+    "side": "sell",
+    "sol": 0.0931,
+    "venue": "curve",
+    "proven": true,
+    "big": false
+   },
+   {
+    "t": 1795055216723,
+    "wallet": "3n2zw7DonkUMbbtCgreXdT4Zii6ZxtRBrSerUs2zP7FX",
+    "mint": "8n24pFnBGGeAt7nKdYyRfKi8bptauBrnak5KGDMxpump",
+    "symbol": "$PIKAM",
+    "side": "buy",
+    "sol": 0.0751,
     "venue": "curve",
     "proven": true,
     "big": false
@@ -3432,28 +3432,28 @@
  },
  "sniper": {
   "state": "running",
-  "last_eval_ms": 1795054980925,
+  "last_eval_ms": 1795055280977,
   "paused": false,
   "pause_reason": null,
   "counts": {
-   "scans": 446707,
-   "triggers": 96,
-   "independent_opportunities": 96,
-   "vetoed": 96,
+   "scans": 465111,
+   "triggers": 99,
+   "independent_opportunities": 99,
+   "vetoed": 99,
    "passed": 0,
    "by_setup": {
-    "A": 62,
+    "A": 65,
     "B": 34
    },
    "veto_reasons": {
     "launch bundle": 103,
-    "wash-trading pattern": 26,
+    "wash-trading pattern": 27,
     "holder concentration unverified": 10,
-    "creator selling": 28,
+    "creator selling": 30,
     "dumping": 11,
     "creator dev buy 11.3% of supply": 2,
     "creator dev buy 59.3% of supply": 3,
-    "volume concentration": 10,
+    "volume concentration": 12,
     "creator dev buy 79.3% of supply": 8,
     "extreme spike": 2,
     "creator dev buy 70.6% of supply": 2,
@@ -3463,11 +3463,48 @@
     "creator dev buy 10.8% of supply": 2,
     "creator dev buy 15.3% of supply": 1,
     "creator dev buy 39.9% of supply": 1,
-    "creator dev buy 65.2% of supply": 1
+    "creator dev buy 65.2% of supply": 1,
+    "creator dev buy 25.0% of supply": 1
    }
   },
   "pending_safety_checks": 0,
   "recent": [
+   {
+    "t": 1795055258246,
+    "mint": "Ag5H7Zcg8jPqrHfPmDWYHzCMRH3jhqpFwJtcuZHFpump",
+    "symbol": "NiTrump",
+    "setup": "A",
+    "passed": false,
+    "vetoes": [
+     "creator selling: sold 100% of bought tokens",
+     "volume concentration: top-3 wallets 75% of 2-min volume"
+    ],
+    "whale_confirmed": false
+   },
+   {
+    "t": 1795055202532,
+    "mint": "E5Ey9QhxzosK1jVS49XZS4AwC3JnDTejMLnBZxcepump",
+    "symbol": "BrycexD",
+    "setup": "A",
+    "passed": false,
+    "vetoes": [
+     "volume concentration: top-3 wallets 100% of 2-min volume"
+    ],
+    "whale_confirmed": false
+   },
+   {
+    "t": 1795054992695,
+    "mint": "92m4S52bu3dZyqzPmPStu8Krz6JcpzHdsG4D5QBqpump",
+    "symbol": "GTA Strategy ",
+    "setup": "A",
+    "passed": false,
+    "vetoes": [
+     "creator selling: sold 100% of bought tokens",
+     "creator dev buy 25.0% of supply",
+     "wash-trading pattern: 85% of 2-min volume from wallets both buying and selling"
+    ],
+    "whale_confirmed": true
+   },
    {
     "t": 1795054832088,
     "mint": "A4jXnWk1rDRDth6HmDASi45c89n1AguTHivAQPTVpump",
@@ -4045,43 +4082,6 @@
      "wash-trading pattern: 76% of 2-min volume from wallets both buying and selling"
     ],
     "whale_confirmed": false
-   },
-   {
-    "t": 1795050360385,
-    "mint": "A4jXnWk1rDRDth6HmDASi45c89n1AguTHivAQPTVpump",
-    "symbol": "GTASZN",
-    "setup": "B",
-    "passed": false,
-    "vetoes": [
-     "creator selling: sold 63% of bought tokens",
-     "creator dev buy 79.3% of supply"
-    ],
-    "whale_confirmed": false
-   },
-   {
-    "t": 1795050353109,
-    "mint": "3ZhsX6y2aEYoiwRFCu7mtwuMWSFH654dhyR2aGRVpump",
-    "symbol": "LUCIA",
-    "setup": "B",
-    "passed": false,
-    "vetoes": [
-     "creator selling: sold 100% of bought tokens",
-     "launch bundle: 17 non-creator buyers in the create slot",
-     "launch bundle: create-slot buyers hold 78.4% of supply"
-    ],
-    "whale_confirmed": false
-   },
-   {
-    "t": 1795050110078,
-    "mint": "J8bXHZaudYJxRmCRowspWd9d33eTTgkUZWj4TB9tpump",
-    "symbol": "LUCKG",
-    "setup": "B",
-    "passed": false,
-    "vetoes": [
-     "launch bundle: 5 non-creator buyers in the create slot",
-     "creator dev buy 70.6% of supply"
-    ],
-    "whale_confirmed": true
    }
   ],
   "setups": {
@@ -4120,11 +4120,121 @@
  },
  "router": {
   "state": "running",
-  "quotes": 393,
+  "quotes": 403,
   "errors": 0,
-  "last_quote_ms": 1795054951012,
+  "last_quote_ms": 1795055251024,
   "last_error": null,
   "recent": [
+   {
+    "t": 1795055251024,
+    "mint": "31BPsvtuUMvgfQztueEz5KoqTK7xguD6DbVP9r6ouqmw",
+    "symbol": "TRENCHER",
+    "venue": "pump_curve",
+    "size_sol": 0.01,
+    "rt_cost_pct": 6.633,
+    "impact_pct": 0.017,
+    "adverse_pct": 3,
+    "fee_bps": 125
+   },
+   {
+    "t": 1795055221023,
+    "mint": "92m4S52bu3dZyqzPmPStu8Krz6JcpzHdsG4D5QBqpump",
+    "symbol": "GTA Strategy ",
+    "venue": "pump_curve",
+    "size_sol": 0.01,
+    "rt_cost_pct": 6.598,
+    "impact_pct": 0,
+    "adverse_pct": 6.393,
+    "fee_bps": 125
+   },
+   {
+    "t": 1795055191023,
+    "mint": "BCq2mYpPExx8hczg3x5314Suk1DgUxWsUpGFwC1spump",
+    "symbol": null,
+    "venue": "pump_curve",
+    "size_sol": 0.01,
+    "rt_cost_pct": 6.631,
+    "impact_pct": 0.016,
+    "adverse_pct": 3,
+    "fee_bps": 125
+   },
+   {
+    "t": 1795055161023,
+    "mint": "92m4S52bu3dZyqzPmPStu8Krz6JcpzHdsG4D5QBqpump",
+    "symbol": "GTA Strategy ",
+    "venue": "pump_curve",
+    "size_sol": 0.01,
+    "rt_cost_pct": 6.6,
+    "impact_pct": 0,
+    "adverse_pct": 6.29,
+    "fee_bps": 125
+   },
+   {
+    "t": 1795055131022,
+    "mint": "92m4S52bu3dZyqzPmPStu8Krz6JcpzHdsG4D5QBqpump",
+    "symbol": "GTA Strategy ",
+    "venue": "pump_curve",
+    "size_sol": 0.01,
+    "rt_cost_pct": 6.6,
+    "impact_pct": 0,
+    "adverse_pct": 6.393,
+    "fee_bps": 125
+   },
+   {
+    "t": 1795055101023,
+    "mint": "BCq2mYpPExx8hczg3x5314Suk1DgUxWsUpGFwC1spump",
+    "symbol": null,
+    "venue": "pump_curve",
+    "size_sol": 0.01,
+    "rt_cost_pct": 6.631,
+    "impact_pct": 0.016,
+    "adverse_pct": 3,
+    "fee_bps": 125
+   },
+   {
+    "t": 1795055071022,
+    "mint": "BCq2mYpPExx8hczg3x5314Suk1DgUxWsUpGFwC1spump",
+    "symbol": null,
+    "venue": "pump_curve",
+    "size_sol": 0.01,
+    "rt_cost_pct": 6.629,
+    "impact_pct": 0.015,
+    "adverse_pct": 3,
+    "fee_bps": 125
+   },
+   {
+    "t": 1795055041022,
+    "mint": "QDsTBqfFEt4yrpqfU7edcc9E6u7nHrbz15eqY8jpump",
+    "symbol": "GMGM",
+    "venue": "pump_curve",
+    "size_sol": 0.01,
+    "rt_cost_pct": 6.591,
+    "impact_pct": 0,
+    "adverse_pct": 3.507,
+    "fee_bps": 125
+   },
+   {
+    "t": 1795055011011,
+    "mint": "QDsTBqfFEt4yrpqfU7edcc9E6u7nHrbz15eqY8jpump",
+    "symbol": "GMGM",
+    "venue": "pump_curve",
+    "size_sol": 0.01,
+    "rt_cost_pct": 6.592,
+    "impact_pct": 0,
+    "adverse_pct": 3.507,
+    "fee_bps": 125
+   },
+   {
+    "t": 1795054981011,
+    "mint": "CUockEXtonoxJ7pVipwNYhekieZXdupwJy1zzhCkpump",
+    "symbol": "GTASANTA",
+    "venue": "pump_curve",
+    "size_sol": 0.01,
+    "rt_cost_pct": 6.613,
+    "impact_pct": 0.007,
+    "adverse_pct": 6.202,
+    "fee_bps": 125
+   },
    {
     "t": 1795054951012,
     "mint": "BCq2mYpPExx8hczg3x5314Suk1DgUxWsUpGFwC1spump",
@@ -4454,116 +4564,6 @@
     "impact_pct": 0,
     "adverse_pct": 1.852,
     "fee_bps": 125
-   },
-   {
-    "t": 1795054050975,
-    "mint": "Gnn6t1uD3w2eNDDm94XvdKnw98rqcusjwgXMSeZwpump",
-    "symbol": "MIND",
-    "venue": "pump_curve",
-    "size_sol": 0.01,
-    "rt_cost_pct": 6.632,
-    "impact_pct": 0.016,
-    "adverse_pct": 17.001,
-    "fee_bps": 125
-   },
-   {
-    "t": 1795054020974,
-    "mint": "Gnn6t1uD3w2eNDDm94XvdKnw98rqcusjwgXMSeZwpump",
-    "symbol": "MIND",
-    "venue": "pump_curve",
-    "size_sol": 0.01,
-    "rt_cost_pct": 6.632,
-    "impact_pct": 0.016,
-    "adverse_pct": 17.001,
-    "fee_bps": 125
-   },
-   {
-    "t": 1795053990974,
-    "mint": "BCq2mYpPExx8hczg3x5314Suk1DgUxWsUpGFwC1spump",
-    "symbol": null,
-    "venue": "pump_curve",
-    "size_sol": 0.01,
-    "rt_cost_pct": 6.589,
-    "impact_pct": 0,
-    "adverse_pct": 2.415,
-    "fee_bps": 125
-   },
-   {
-    "t": 1795053960974,
-    "mint": "7VTT3rVcayLQ9dm7HLfVb871zfKcGZvAQmednDTupump",
-    "symbol": null,
-    "venue": "pump_curve",
-    "size_sol": 0.01,
-    "rt_cost_pct": 6.631,
-    "impact_pct": 0.016,
-    "adverse_pct": 3,
-    "fee_bps": 125
-   },
-   {
-    "t": 1795053930952,
-    "mint": "Gnn6t1uD3w2eNDDm94XvdKnw98rqcusjwgXMSeZwpump",
-    "symbol": "MIND",
-    "venue": "pump_curve",
-    "size_sol": 0.01,
-    "rt_cost_pct": 6.63,
-    "impact_pct": 0.016,
-    "adverse_pct": 17.001,
-    "fee_bps": 125
-   },
-   {
-    "t": 1795053900953,
-    "mint": "Gnn6t1uD3w2eNDDm94XvdKnw98rqcusjwgXMSeZwpump",
-    "symbol": "MIND",
-    "venue": "pump_curve",
-    "size_sol": 0.01,
-    "rt_cost_pct": 6.607,
-    "impact_pct": 0.004,
-    "adverse_pct": 9.132,
-    "fee_bps": 125
-   },
-   {
-    "t": 1795053870951,
-    "mint": "4G64HSm1jMcwDBdbWUiPzYA4KX7rC8282MDwVQmrpump",
-    "symbol": "PAGE",
-    "venue": "pump_curve",
-    "size_sol": 0.01,
-    "rt_cost_pct": 6.616,
-    "impact_pct": 0.008,
-    "adverse_pct": 3,
-    "fee_bps": 125
-   },
-   {
-    "t": 1795053840951,
-    "mint": "BCq2mYpPExx8hczg3x5314Suk1DgUxWsUpGFwC1spump",
-    "symbol": null,
-    "venue": "pump_curve",
-    "size_sol": 0.01,
-    "rt_cost_pct": 6.589,
-    "impact_pct": 0,
-    "adverse_pct": 4.229,
-    "fee_bps": 125
-   },
-   {
-    "t": 1795053810949,
-    "mint": "Gnn6t1uD3w2eNDDm94XvdKnw98rqcusjwgXMSeZwpump",
-    "symbol": "MIND",
-    "venue": "pump_curve",
-    "size_sol": 0.01,
-    "rt_cost_pct": 6.597,
-    "impact_pct": 0,
-    "adverse_pct": 4.945,
-    "fee_bps": 125
-   },
-   {
-    "t": 1795053780949,
-    "mint": "Gnn6t1uD3w2eNDDm94XvdKnw98rqcusjwgXMSeZwpump",
-    "symbol": "MIND",
-    "venue": "pump_curve",
-    "size_sol": 0.01,
-    "rt_cost_pct": 6.598,
-    "impact_pct": 0,
-    "adverse_pct": 6.337,
-    "fee_bps": 125
    }
   ],
   "cost_model": {
@@ -4580,7 +4580,7 @@
   "mode": "PAPER",
   "orders_pending": 0,
   "last_action_ms": null,
-  "last_tick_ms": 1795054980925,
+  "last_tick_ms": 1795055280977,
   "counts": {
    "approved_seen": 0,
    "sized": 0,
@@ -4672,8 +4672,8 @@
  },
  "exit": {
   "state": "running",
-  "last_check_ms": 1795054980925,
-  "checks": 912431,
+  "last_check_ms": 1795055280977,
+  "checks": 949711,
   "policies": {
    "X1_fixed": {
     "stop": -10,
@@ -4702,6 +4702,114 @@
   "open": []
  },
  "opportunities": [
+  {
+   "id": 510,
+   "t": 1795055258246,
+   "decided_t": 1795055258246,
+   "mint": "Ag5H7Zcg8jPqrHfPmDWYHzCMRH3jhqpFwJtcuZHFpump",
+   "symbol": "NiTrump",
+   "setup": "A",
+   "phase": "PRE",
+   "whale_confirmed": false,
+   "features": {
+    "completion_pct": 40.37,
+    "age_s": 252,
+    "flow": {
+     "buySol": 4.719,
+     "sellSol": 1.343,
+     "net": 3.376,
+     "total": 6.062,
+     "buyShare": 0.778,
+     "uniqueBuyers": 12,
+     "uniqueSellers": 9,
+     "washSharePct": 8.157,
+     "top3VolPct": 65.883
+    },
+    "price": 5.6795634276436386e-8,
+    "liq_sol": 12.758
+   },
+   "vetoes": [
+    "creator selling: sold 100% of bought tokens",
+    "volume concentration: top-3 wallets 75% of 2-min volume"
+   ],
+   "safety": null,
+   "exec": null,
+   "disposition": "VETOED",
+   "reason": "creator selling: sold 100% of bought tokens; volume concentration: top-3 wallets 75% of 2-min volume",
+   "books": {}
+  },
+  {
+   "id": 509,
+   "t": 1795055202532,
+   "decided_t": 1795055202532,
+   "mint": "E5Ey9QhxzosK1jVS49XZS4AwC3JnDTejMLnBZxcepump",
+   "symbol": "BrycexD",
+   "setup": "A",
+   "phase": "PRE",
+   "whale_confirmed": false,
+   "features": {
+    "completion_pct": 25.51,
+    "age_s": 247,
+    "flow": {
+     "buySol": 3.385,
+     "sellSol": 0.098,
+     "net": 3.288,
+     "total": 3.483,
+     "buyShare": 0.972,
+     "uniqueBuyers": 15,
+     "uniqueSellers": 1,
+     "washSharePct": 0,
+     "top3VolPct": 99.965
+    },
+    "price": 4.24589907448875e-8,
+    "liq_sol": 6.97
+   },
+   "vetoes": [
+    "volume concentration: top-3 wallets 100% of 2-min volume"
+   ],
+   "safety": null,
+   "exec": null,
+   "disposition": "VETOED",
+   "reason": "volume concentration: top-3 wallets 100% of 2-min volume",
+   "books": {}
+  },
+  {
+   "id": 508,
+   "t": 1795054992695,
+   "decided_t": 1795054992695,
+   "mint": "92m4S52bu3dZyqzPmPStu8Krz6JcpzHdsG4D5QBqpump",
+   "symbol": "GTA Strategy ",
+   "setup": "A",
+   "phase": "PRE",
+   "whale_confirmed": true,
+   "features": {
+    "completion_pct": 63.3,
+    "age_s": 99,
+    "flow": {
+     "buySol": 33.198,
+     "sellSol": 21.827,
+     "net": 11.371,
+     "total": 55.026,
+     "buyShare": 0.603,
+     "uniqueBuyers": 73,
+     "uniqueSellers": 44,
+     "washSharePct": 61.573,
+     "top3VolPct": 23.212
+    },
+    "price": 9.873689932474242e-8,
+    "liq_sol": 26.377
+   },
+   "vetoes": [
+    "creator selling: sold 100% of bought tokens",
+    "creator dev buy 25.0% of supply",
+    "wash-trading pattern: 85% of 2-min volume from wallets both buying and selling"
+   ],
+   "safety": null,
+   "exec": null,
+   "disposition": "VETOED",
+   "reason": "creator selling: sold 100% of bought tokens; creator dev buy 25.0% of supply; wash-trading pattern: 85% of 2-min volume from wallets both buying and selling",
+   "books": {}
+  },
   {
    "id": 507,
    "t": 1795054832088,
@@ -8329,7 +8437,7 @@
   }
  ],
  "opportunity_stats": {
-  "total_independent_opportunities": 507,
+  "total_independent_opportunities": 510,
   "by_setup_disposition": [
    {
     "setup": "A",
@@ -8349,7 +8457,7 @@
    {
     "setup": "A",
     "disposition": "VETOED",
-    "n": 331
+    "n": 334
    },
    {
     "setup": "B",
@@ -8941,6 +9049,48 @@
   }
  ],
  "journal": [
+  {
+   "t": 1795055258246,
+   "agent": "CHAL-SNIPER",
+   "kind": "veto",
+   "mint": "Ag5H7Zcg8jPqrHfPmDWYHzCMRH3jhqpFwJtcuZHFpump",
+   "msg": "NiTrump setup A: VETOED"
+  },
+  {
+   "t": 1795055258246,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "Ag5H7Zcg8jPqrHfPmDWYHzCMRH3jhqpFwJtcuZHFpump",
+   "msg": "NiTrump setup A: VETOED"
+  },
+  {
+   "t": 1795055202532,
+   "agent": "CHAL-SNIPER",
+   "kind": "veto",
+   "mint": "E5Ey9QhxzosK1jVS49XZS4AwC3JnDTejMLnBZxcepump",
+   "msg": "BrycexD setup A: VETOED"
+  },
+  {
+   "t": 1795055202532,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "E5Ey9QhxzosK1jVS49XZS4AwC3JnDTejMLnBZxcepump",
+   "msg": "BrycexD setup A: VETOED"
+  },
+  {
+   "t": 1795054992695,
+   "agent": "CHAL-SNIPER",
+   "kind": "veto",
+   "mint": "92m4S52bu3dZyqzPmPStu8Krz6JcpzHdsG4D5QBqpump",
+   "msg": "GTA Strategy  setup A: VETOED"
+  },
+  {
+   "t": 1795054992695,
+   "agent": "SNIPER",
+   "kind": "veto",
+   "mint": "92m4S52bu3dZyqzPmPStu8Krz6JcpzHdsG4D5QBqpump",
+   "msg": "GTA Strategy  setup A: VETOED"
+  },
   {
    "t": 1795054832088,
    "agent": "CHAL-SNIPER",
@@ -9948,48 +10098,6 @@
    "kind": "veto",
    "mint": "QB6TzbmVTwR3vXbq5D1GaEMfEHaewub6MUSwtDypump",
    "msg": "Vice setup A: VETOED"
-  },
-  {
-   "t": 1795049164176,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "QB6TzbmVTwR3vXbq5D1GaEMfEHaewub6MUSwtDypump",
-   "msg": "Vice setup A: VETOED"
-  },
-  {
-   "t": 1795049159676,
-   "agent": "CHAL-SNIPER",
-   "kind": "veto",
-   "mint": "A4jXnWk1rDRDth6HmDASi45c89n1AguTHivAQPTVpump",
-   "msg": "GTASZN setup B: VETOED"
-  },
-  {
-   "t": 1795049159676,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "A4jXnWk1rDRDth6HmDASi45c89n1AguTHivAQPTVpump",
-   "msg": "GTASZN setup B: VETOED"
-  },
-  {
-   "t": 1795049152236,
-   "agent": "CHAL-SNIPER",
-   "kind": "veto",
-   "mint": "8iHYxX34mMP71PTWpsieYgVdgqTvpLUrN1KRTLReBFbA",
-   "msg": "BCT setup A: VETOED"
-  },
-  {
-   "t": 1795049152236,
-   "agent": "SNIPER",
-   "kind": "veto",
-   "mint": "8iHYxX34mMP71PTWpsieYgVdgqTvpLUrN1KRTLReBFbA",
-   "msg": "BCT setup A: VETOED"
-  },
-  {
-   "t": 1795049149241,
-   "agent": "CHAL-SNIPER",
-   "kind": "veto",
-   "mint": "7pdTRNzjvREnbZRa3R5NTUPWjbfHGvk8fo118a7Hpump",
-   "msg": "Katyusha setup A: VETOED"
   }
  ],
  "validation": {
@@ -10000,15 +10108,15 @@
   "note": "Paper results are not proof of future profitability. Live trading requires separate explicit authorization."
  },
  "storage": {
-  "raw_records_this_run": 2027903,
+  "raw_records_this_run": 2094396,
   "raw_files": 33,
-  "raw_bytes_on_disk": 2597152662,
+  "raw_bytes_on_disk": 2611317732,
   "db": "data/desk.db"
  },
  "health": {
   "pid": 392780,
-  "rss_mb": 416,
-  "uptime_s": 11829
+  "rss_mb": 425,
+  "uptime_s": 12129
  },
  "reference_lane": {
   "lane": "reference",
@@ -10073,25 +10181,25 @@
    "GRAD": {
     "name": "GRAD",
     "role": "PumpKit graduation feed + \"graduating\" stage (realSol/85 ≥ 90%)",
-    "last_activity_ms": 1795054980925,
+    "last_activity_ms": 1795055280977,
     "age_s": 0,
     "fresh": true,
     "state": "running",
-    "summary": "32 coins flagged ≥90% · 74 graduations tradable"
+    "summary": "32 coins flagged ≥90% · 76 graduations tradable"
    },
    "WHALES": {
     "name": "WHALES",
     "role": "PumpKit whale filter: single trade ≥ 10 SOL, SOL-quoted",
-    "last_activity_ms": 1795054980925,
+    "last_activity_ms": 1795055280977,
     "age_s": 0,
     "fresh": true,
     "state": "running",
-    "summary": "1445 whale trades (730 buys / 715 sells)"
+    "summary": "1478 whale trades (743 buys / 735 sells)"
    },
    "SNIPER": {
     "name": "SNIPER",
     "role": "our implementation: GRAD flag + whale buy ≤ 60 s → entry; hard can't-sell vetoes only",
-    "last_activity_ms": 1795054980925,
+    "last_activity_ms": 1795055280977,
     "age_s": 0,
     "fresh": true,
     "state": "running",
@@ -10109,7 +10217,7 @@
    "EXEC": {
     "name": "EXEC",
     "role": "paper fills, target 0.10 SOL capped by risk limits, 5% slippage limit",
-    "last_activity_ms": 1795054980925,
+    "last_activity_ms": 1795055280977,
     "age_s": 0,
     "fresh": true,
     "state": "running",
@@ -10118,7 +10226,7 @@
    "EXIT": {
     "name": "EXIT",
     "role": "TP +35% / SL −10% / 30-min limit on executable value",
-    "last_activity_ms": 1795054980925,
+    "last_activity_ms": 1795055280977,
     "age_s": 0,
     "fresh": true,
     "state": "running",
@@ -10161,11 +10269,11 @@
    "return_pct": -2.5168
   },
   "counts": {
-   "whale_trades": 1445,
-   "whale_buys": 730,
-   "whale_sells": 715,
+   "whale_trades": 1478,
+   "whale_buys": 743,
+   "whale_sells": 735,
    "grad_flags": 32,
-   "graduations_seen": 74,
+   "graduations_seen": 76,
    "signals": 38,
    "independent_opportunities": 38,
    "vetoed": 0,
@@ -10174,6 +10282,369 @@
    "not_applied_current_lane_vetoes": 38
   },
   "whale_events": [
+   {
+    "t": 1795055257036,
+    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
+    "symbol": "FNDR",
+    "side": "sell",
+    "sol": 13.198,
+    "wallet": "DgbrXprN1RCyaMBDP3dKoyUsRUNCxrVeUb4U3BasPNRS",
+    "venue": "pumpswap",
+    "progress_pct": 100,
+    "slot": 471168174
+   },
+   {
+    "t": 1795055236283,
+    "mint": "3ZhsX6y2aEYoiwRFCu7mtwuMWSFH654dhyR2aGRVpump",
+    "symbol": "LUCIA",
+    "side": "buy",
+    "sol": 19.763,
+    "wallet": "2ebQUEXCahVipdBULsDU39BKRpJB7Z4fHjxvVRnTtrDo",
+    "venue": "pumpswap",
+    "progress_pct": 100,
+    "slot": 471168061
+   },
+   {
+    "t": 1795055210978,
+    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
+    "symbol": "FNDR",
+    "side": "buy",
+    "sol": 12.36,
+    "wallet": "3rZdG9N1zEtmFmS43JPFtJwYP66uJSxJ7LsYhL1Kuudg",
+    "venue": "pumpswap",
+    "progress_pct": 100,
+    "slot": 471167970
+   },
+   {
+    "t": 1795055204679,
+    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
+    "symbol": "FNDR",
+    "side": "buy",
+    "sol": 12.115,
+    "wallet": "6SHqkzJfZYiNqmz4xDiwndEAqbubuAVt44LwJ9GF3obS",
+    "venue": "pumpswap",
+    "progress_pct": 100,
+    "slot": 471167944
+   },
+   {
+    "t": 1795055165140,
+    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
+    "symbol": "FNDR",
+    "side": "buy",
+    "sol": 12.115,
+    "wallet": "6SHqkzJfZYiNqmz4xDiwndEAqbubuAVt44LwJ9GF3obS",
+    "venue": "pumpswap",
+    "progress_pct": 100,
+    "slot": 471167761
+   },
+   {
+    "t": 1795055152407,
+    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
+    "symbol": "FNDR",
+    "side": "buy",
+    "sol": 24.988,
+    "wallet": "ARu4n5mFdZogZAravu7CcizaojWnS6oqka37gdLT5SZn",
+    "venue": "pumpswap",
+    "progress_pct": 100,
+    "slot": 471167701
+   },
+   {
+    "t": 1795055150124,
+    "mint": "B5VNXjLZs3xRFAVFU1tFc9pFCVRSgkf5UuvXR5Vfpump",
+    "symbol": "MANDY",
+    "side": "sell",
+    "sol": 10.474,
+    "wallet": "DwQZZmyjQjEPfxveni68p7vtGoVC2bdJeUHNRw2mMdjk",
+    "venue": "pumpswap",
+    "progress_pct": 100,
+    "slot": 471167690
+   },
+   {
+    "t": 1795055144842,
+    "mint": "B5VNXjLZs3xRFAVFU1tFc9pFCVRSgkf5UuvXR5Vfpump",
+    "symbol": "MANDY",
+    "side": "sell",
+    "sol": 15.055,
+    "wallet": "CWQbMseUbmN8mnxoChEtBKPw1H192DDWJFRuNn47CCp5",
+    "venue": "pumpswap",
+    "progress_pct": 100,
+    "slot": 471167665
+   },
+   {
+    "t": 1795055110529,
+    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
+    "symbol": "FNDR",
+    "side": "buy",
+    "sol": 12.375,
+    "wallet": "ARu4n5mFdZogZAravu7CcizaojWnS6oqka37gdLT5SZn",
+    "venue": "pumpswap",
+    "progress_pct": 100,
+    "slot": 471167503
+   },
+   {
+    "t": 1795055108767,
+    "mint": "A4jXnWk1rDRDth6HmDASi45c89n1AguTHivAQPTVpump",
+    "symbol": "GTASZN",
+    "side": "sell",
+    "sol": 17.964,
+    "wallet": "79H2eRaeHiy3hAewied1UcYWaQts3TYqaspkiUstb5DP",
+    "venue": "pumpswap",
+    "progress_pct": 100,
+    "slot": 471167495
+   },
+   {
+    "t": 1795055107032,
+    "mint": "24kDn1RqKE9QBCUrCyPvp1zzttp3NbpPbuDhXzgWpump",
+    "symbol": "awd",
+    "side": "sell",
+    "sol": 37.246,
+    "wallet": "6nU2L7MQVUWjtdKHVpuZA9aind73nd3rXC4YFo8KQCy4",
+    "venue": "curve",
+    "progress_pct": 0.01,
+    "slot": 471167487
+   },
+   {
+    "t": 1795055105390,
+    "mint": "24kDn1RqKE9QBCUrCyPvp1zzttp3NbpPbuDhXzgWpump",
+    "symbol": "awd",
+    "side": "sell",
+    "sol": 22.899,
+    "wallet": "6nU2L7MQVUWjtdKHVpuZA9aind73nd3rXC4YFo8KQCy4",
+    "venue": "curve",
+    "progress_pct": 37.38,
+    "slot": 471167479
+   },
+   {
+    "t": 1795055104581,
+    "mint": "24kDn1RqKE9QBCUrCyPvp1zzttp3NbpPbuDhXzgWpump",
+    "symbol": "awd",
+    "side": "buy",
+    "sol": 12.246,
+    "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
+    "venue": "curve",
+    "progress_pct": 55.12,
+    "slot": 471167475
+   },
+   {
+    "t": 1795055104580,
+    "mint": "24kDn1RqKE9QBCUrCyPvp1zzttp3NbpPbuDhXzgWpump",
+    "symbol": "awd",
+    "side": "sell",
+    "sol": 10.626,
+    "wallet": "6nU2L7MQVUWjtdKHVpuZA9aind73nd3rXC4YFo8KQCy4",
+    "venue": "curve",
+    "progress_pct": 40.71,
+    "slot": 471167475
+   },
+   {
+    "t": 1795055103691,
+    "mint": "24kDn1RqKE9QBCUrCyPvp1zzttp3NbpPbuDhXzgWpump",
+    "symbol": "awd",
+    "side": "buy",
+    "sol": 10.89,
+    "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
+    "venue": "curve",
+    "progress_pct": 59.71,
+    "slot": 471167471
+   },
+   {
+    "t": 1795055103328,
+    "mint": "24kDn1RqKE9QBCUrCyPvp1zzttp3NbpPbuDhXzgWpump",
+    "symbol": "awd",
+    "side": "sell",
+    "sol": 13.613,
+    "wallet": "6nU2L7MQVUWjtdKHVpuZA9aind73nd3rXC4YFo8KQCy4",
+    "venue": "curve",
+    "progress_pct": 46.82,
+    "slot": 471167469
+   },
+   {
+    "t": 1795055103105,
+    "mint": "24kDn1RqKE9QBCUrCyPvp1zzttp3NbpPbuDhXzgWpump",
+    "symbol": "awd",
+    "side": "buy",
+    "sol": 15.791,
+    "wallet": "BwWK17cbHxwWBKZkUYvzxLcNQ1YVyaFezduWbtm2de6s",
+    "venue": "curve",
+    "progress_pct": 62.83,
+    "slot": 471167468
+   },
+   {
+    "t": 1795055089781,
+    "mint": "24kDn1RqKE9QBCUrCyPvp1zzttp3NbpPbuDhXzgWpump",
+    "symbol": "awd",
+    "side": "buy",
+    "sol": 21.728,
+    "wallet": "6nU2L7MQVUWjtdKHVpuZA9aind73nd3rXC4YFo8KQCy4",
+    "venue": "curve",
+    "progress_pct": 25.56,
+    "slot": 471167404
+   },
+   {
+    "t": 1795055086799,
+    "mint": "B5VNXjLZs3xRFAVFU1tFc9pFCVRSgkf5UuvXR5Vfpump",
+    "symbol": "MANDY",
+    "side": "sell",
+    "sol": 16.685,
+    "wallet": "J5ChFc1bJbEfEcXvz4Y2n6gaSWpSjGVzwdHT1BMTApLH",
+    "venue": "pumpswap",
+    "progress_pct": 100,
+    "slot": 471167391
+   },
+   {
+    "t": 1795055077064,
+    "mint": "B5VNXjLZs3xRFAVFU1tFc9pFCVRSgkf5UuvXR5Vfpump",
+    "symbol": "MANDY",
+    "side": "sell",
+    "sol": 13.927,
+    "wallet": "8wSAfgNAVTih2XHkseSGkL8UgGsaTHKXpUgvNzkHFYkA",
+    "venue": "pumpswap",
+    "progress_pct": 100,
+    "slot": 471167317
+   },
+   {
+    "t": 1795055053053,
+    "mint": "B5VNXjLZs3xRFAVFU1tFc9pFCVRSgkf5UuvXR5Vfpump",
+    "symbol": "MANDY",
+    "side": "sell",
+    "sol": 18.594,
+    "wallet": "GNCpcCUq1rz48gy8WU1KzNJcv5g3AuGPNo8Z1VTsfjK9",
+    "venue": "pumpswap",
+    "progress_pct": 100,
+    "slot": 471167223
+   },
+   {
+    "t": 1795055047673,
+    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
+    "symbol": "FNDR",
+    "side": "sell",
+    "sol": 10.875,
+    "wallet": "26VFpXJBo1xJYmQ1hukYEe5vkC8KkvLbjp8DdMQkgd47",
+    "venue": "pumpswap",
+    "progress_pct": 100,
+    "slot": 471167208
+   },
+   {
+    "t": 1795055047481,
+    "mint": "B5VNXjLZs3xRFAVFU1tFc9pFCVRSgkf5UuvXR5Vfpump",
+    "symbol": "MANDY",
+    "side": "sell",
+    "sol": 20.625,
+    "wallet": "2Yq9jk2N3mNBkFj1XYj4rUNRzRHbfw8DJZo3QJM8BNyP",
+    "venue": "pumpswap",
+    "progress_pct": 100,
+    "slot": 471167207
+   },
+   {
+    "t": 1795055046423,
+    "mint": "A4jXnWk1rDRDth6HmDASi45c89n1AguTHivAQPTVpump",
+    "symbol": "GTASZN",
+    "side": "sell",
+    "sol": 18.681,
+    "wallet": "6Qsmr7hPN1b4ihjdtSMEStsVr2Xxs1iQVD1bvAfHxGXF",
+    "venue": "pumpswap",
+    "progress_pct": 100,
+    "slot": 471167203
+   },
+   {
+    "t": 1795055041085,
+    "mint": "B5VNXjLZs3xRFAVFU1tFc9pFCVRSgkf5UuvXR5Vfpump",
+    "symbol": "MANDY",
+    "side": "sell",
+    "sol": 19.112,
+    "wallet": "Bmv6314qcjGgeTrrfRwc2QEjNsUvYEqJzqXAGnrxZTCY",
+    "venue": "pumpswap",
+    "progress_pct": 100,
+    "slot": 471167179
+   },
+   {
+    "t": 1795055033110,
+    "mint": "5MmP45R8Gqm35x8YqgvLgmqvArv5MGGPprttMV2Xpump",
+    "symbol": "sef",
+    "side": "sell",
+    "sol": 19.182,
+    "wallet": "6nU2L7MQVUWjtdKHVpuZA9aind73nd3rXC4YFo8KQCy4",
+    "venue": "curve",
+    "progress_pct": 26.48,
+    "slot": 471167140
+   },
+   {
+    "t": 1795055031563,
+    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
+    "symbol": "FNDR",
+    "side": "buy",
+    "sol": 10.003,
+    "wallet": "6WSomnPjzUE8amcT3SgXkYiPrTujzhVgkefqy11xRu46",
+    "venue": "pumpswap",
+    "progress_pct": 100,
+    "slot": 471167127
+   },
+   {
+    "t": 1795055013507,
+    "mint": "B5VNXjLZs3xRFAVFU1tFc9pFCVRSgkf5UuvXR5Vfpump",
+    "symbol": "MANDY",
+    "side": "sell",
+    "sol": 19.617,
+    "wallet": "7N16s1DF1fCzCEVZp2PsgPGJfdW4rZQi5aurXsMLY3uT",
+    "venue": "pumpswap",
+    "progress_pct": 100,
+    "slot": 471167046
+   },
+   {
+    "t": 1795055008121,
+    "mint": "B5VNXjLZs3xRFAVFU1tFc9pFCVRSgkf5UuvXR5Vfpump",
+    "symbol": "MANDY",
+    "side": "sell",
+    "sol": 19.438,
+    "wallet": "DwQZZmyjQjEPfxveni68p7vtGoVC2bdJeUHNRw2mMdjk",
+    "venue": "pumpswap",
+    "progress_pct": 100,
+    "slot": 471167025
+   },
+   {
+    "t": 1795055004635,
+    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
+    "symbol": "FNDR",
+    "side": "buy",
+    "sol": 20.35,
+    "wallet": "ARu4n5mFdZogZAravu7CcizaojWnS6oqka37gdLT5SZn",
+    "venue": "pumpswap",
+    "progress_pct": 100,
+    "slot": 471167011
+   },
+   {
+    "t": 1795055002899,
+    "mint": "5MmP45R8Gqm35x8YqgvLgmqvArv5MGGPprttMV2Xpump",
+    "symbol": "sef",
+    "side": "buy",
+    "sol": 21.728,
+    "wallet": "6nU2L7MQVUWjtdKHVpuZA9aind73nd3rXC4YFo8KQCy4",
+    "venue": "curve",
+    "progress_pct": 25.56,
+    "slot": 471167002
+   },
+   {
+    "t": 1795054991955,
+    "mint": "A4jXnWk1rDRDth6HmDASi45c89n1AguTHivAQPTVpump",
+    "symbol": "GTASZN",
+    "side": "sell",
+    "sol": 19.322,
+    "wallet": "9rhuKP2QWcSJqo5K5GdKxRUPZoZ4vRTWz6TjFT77JpAW",
+    "venue": "pumpswap",
+    "progress_pct": 100,
+    "slot": 471166949
+   },
+   {
+    "t": 1795054987945,
+    "mint": "A4jXnWk1rDRDth6HmDASi45c89n1AguTHivAQPTVpump",
+    "symbol": "GTASZN",
+    "side": "sell",
+    "sol": 19.447,
+    "wallet": "EKfcv4KQnfvPK9LC9QALSDaMp3MBTYcLvVpQoaB1cRsB",
+    "venue": "pumpswap",
+    "progress_pct": 100,
+    "slot": 471166931
+   },
    {
     "t": 1795054954957,
     "mint": "hsYTndYMs6N15wVLAqe4wY1ACJW9bDxbcNoorwHpump",
@@ -10360,372 +10831,23 @@
     "venue": "curve",
     "progress_pct": 48.31,
     "slot": 471166450
-   },
-   {
-    "t": 1795054885258,
-    "mint": "5soYbqQ16Nhu52PuBLR9rshAtm4uK7hNrTexUCKipump",
-    "symbol": "GTA",
-    "side": "buy",
-    "sol": 13.289,
-    "wallet": "BPK1KgSfusfPmPqRgSJmjhh93ikUDvV26nDBxHh2Msj1",
-    "venue": "curve",
-    "progress_pct": 25.45,
-    "slot": 471166450
-   },
-   {
-    "t": 1795054882774,
-    "mint": "964kt7FxmuPx4Rw52qkaY87bYUWK5P6wRkfvMP5kpump",
-    "symbol": "dfg",
-    "side": "buy",
-    "sol": 21.728,
-    "wallet": "6nU2L7MQVUWjtdKHVpuZA9aind73nd3rXC4YFo8KQCy4",
-    "venue": "curve",
-    "progress_pct": 25.56,
-    "slot": 471166437
-   },
-   {
-    "t": 1795054839782,
-    "mint": "5gQno8JyeAuwXtQUYYz2JY1jMvKsmB7Qkg2RNw3Hpump",
-    "symbol": "sef",
-    "side": "buy",
-    "sol": 21.728,
-    "wallet": "6nU2L7MQVUWjtdKHVpuZA9aind73nd3rXC4YFo8KQCy4",
-    "venue": "curve",
-    "progress_pct": 25.56,
-    "slot": 471166236
-   },
-   {
-    "t": 1795054784191,
-    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
-    "symbol": "FNDR",
-    "side": "sell",
-    "sol": 11.75,
-    "wallet": "ARu4n5mFdZogZAravu7CcizaojWnS6oqka37gdLT5SZn",
-    "venue": "pumpswap",
-    "progress_pct": 100,
-    "slot": 471165951
-   },
-   {
-    "t": 1795054777876,
-    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
-    "symbol": "FNDR",
-    "side": "sell",
-    "sol": 12.33,
-    "wallet": "ARu4n5mFdZogZAravu7CcizaojWnS6oqka37gdLT5SZn",
-    "venue": "pumpswap",
-    "progress_pct": 100,
-    "slot": 471165915
-   },
-   {
-    "t": 1795054767280,
-    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
-    "symbol": "FNDR",
-    "side": "sell",
-    "sol": 22.202,
-    "wallet": "B2m5rDeMQ9d34bcYC2Jjx815VDKjSBY34FDZtKQjMwSG",
-    "venue": "pumpswap",
-    "progress_pct": 100,
-    "slot": 471165873
-   },
-   {
-    "t": 1795054731558,
-    "mint": "QDsTBqfFEt4yrpqfU7edcc9E6u7nHrbz15eqY8jpump",
-    "symbol": "GMGM",
-    "side": "sell",
-    "sol": 12.636,
-    "wallet": "H7nYD436qCt92K4bY6VPA1cF9vD1343inKPDFLK5Wn1h",
-    "venue": "curve",
-    "progress_pct": 21.84,
-    "slot": 471165704
-   },
-   {
-    "t": 1795054698139,
-    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
-    "symbol": "FNDR",
-    "side": "sell",
-    "sol": 11.405,
-    "wallet": "ARu4n5mFdZogZAravu7CcizaojWnS6oqka37gdLT5SZn",
-    "venue": "pumpswap",
-    "progress_pct": 100,
-    "slot": 471165582
-   },
-   {
-    "t": 1795054683353,
-    "mint": "HtJ6GbAvZkMgFqn3Vb38LSuhKmhbnQHL2UjVzqBvpump",
-    "symbol": null,
-    "side": "sell",
-    "sol": 15.489,
-    "wallet": "5sB2mhnV6qkCCE2BDLVxBz1iuS7FAVwC8WdDM2FJrwLg",
-    "venue": "curve",
-    "progress_pct": 0.18,
-    "slot": 471165514
-   },
-   {
-    "t": 1795054674663,
-    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
-    "symbol": "FNDR",
-    "side": "sell",
-    "sol": 19.125,
-    "wallet": "8QFm58Sxg2Rocg9crz6fHVkRH14jvYKog21KSNxwJYeM",
-    "venue": "pumpswap",
-    "progress_pct": 100,
-    "slot": 471165474
-   },
-   {
-    "t": 1795054666101,
-    "mint": "3ZhsX6y2aEYoiwRFCu7mtwuMWSFH654dhyR2aGRVpump",
-    "symbol": "LUCIA",
-    "side": "buy",
-    "sol": 19.763,
-    "wallet": "5aCHQQGuCytpR7csfuJyWTu6GqstdXq3yPfvCb1tsmXH",
-    "venue": "pumpswap",
-    "progress_pct": 100,
-    "slot": 471165420
-   },
-   {
-    "t": 1795054641900,
-    "mint": "FQphTZ3HudbcsudRWYmuXbmBzUcEpnnhBL8N4Qkqpump",
-    "symbol": "NiTrump",
-    "side": "sell",
-    "sol": 14.233,
-    "wallet": "4ZvukwqXc2AFAHcuvW8VrKD9j3zGHuoqW4hvEQfANH2n",
-    "venue": "curve",
-    "progress_pct": 2.74,
-    "slot": 471165288
-   },
-   {
-    "t": 1795054630947,
-    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
-    "symbol": "FNDR",
-    "side": "sell",
-    "sol": 21.182,
-    "wallet": "ARu4n5mFdZogZAravu7CcizaojWnS6oqka37gdLT5SZn",
-    "venue": "pumpswap",
-    "progress_pct": 100,
-    "slot": 471165254
-   },
-   {
-    "t": 1795054615052,
-    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
-    "symbol": "FNDR",
-    "side": "sell",
-    "sol": 10.878,
-    "wallet": "ARu4n5mFdZogZAravu7CcizaojWnS6oqka37gdLT5SZn",
-    "venue": "pumpswap",
-    "progress_pct": 100,
-    "slot": 471165187
-   },
-   {
-    "t": 1795054613310,
-    "mint": "6P25FMW2aEjzFjzeikpuKT4kZQTD9RWnMg8WykdNpump",
-    "symbol": "TST",
-    "side": "sell",
-    "sol": 24.217,
-    "wallet": "dS3ENFZLZYhHEUVSmGsrzg5pKhDo3mqf6SWojVRzCUy",
-    "venue": "curve",
-    "progress_pct": 0.18,
-    "slot": 471165171
-   },
-   {
-    "t": 1795054548670,
-    "mint": "eic7esMUGqHfANyx2GiKPAXEcUhAQWNjPTSK2pTpump",
-    "symbol": "GOYTHEFT",
-    "side": "sell",
-    "sol": 10.361,
-    "wallet": "FUUuFTfv9AxTeJ3zh9PwyKWhmPPzbinwVCan1N5pz2aY",
-    "venue": "curve",
-    "progress_pct": 43.01,
-    "slot": 471164878
-   },
-   {
-    "t": 1795054546269,
-    "mint": "eic7esMUGqHfANyx2GiKPAXEcUhAQWNjPTSK2pTpump",
-    "symbol": "GOYTHEFT",
-    "side": "sell",
-    "sol": 14.647,
-    "wallet": "5vA229Wi8DLcEWmFpj51dDD7C2vnkJ9SJrtUuxqUgmkE",
-    "venue": "curve",
-    "progress_pct": 38.33,
-    "slot": 471164869
-   },
-   {
-    "t": 1795054545855,
-    "mint": "eic7esMUGqHfANyx2GiKPAXEcUhAQWNjPTSK2pTpump",
-    "symbol": "GOYTHEFT",
-    "side": "buy",
-    "sol": 10.702,
-    "wallet": "Ab31iBnvsbZBb2pem3N4RXaN2jAd7E5ZkDh9v8Fhac8D",
-    "venue": "curve",
-    "progress_pct": 55.56,
-    "slot": 471164868
-   },
-   {
-    "t": 1795054545840,
-    "mint": "eic7esMUGqHfANyx2GiKPAXEcUhAQWNjPTSK2pTpump",
-    "symbol": "GOYTHEFT",
-    "side": "sell",
-    "sol": 18.479,
-    "wallet": "2nFbJHZXxspte1LqVbsCSrjfgwE6wmdbuTnGuFkXYM5w",
-    "venue": "curve",
-    "progress_pct": 34.66,
-    "slot": 471164868
-   },
-   {
-    "t": 1795054543298,
-    "mint": "38P44dpsTZVfV9kcoCS9be4tXDjSdUiVMjCjoQxxpump",
-    "symbol": "YAPFI",
-    "side": "sell",
-    "sol": 39.766,
-    "wallet": "HoTxngkWuh48oxpFHMEHoYwQHjDv2ctSjuiVxWZiQAnS",
-    "venue": "curve",
-    "progress_pct": 3.8,
-    "slot": 471164858
-   },
-   {
-    "t": 1795054542226,
-    "mint": "eic7esMUGqHfANyx2GiKPAXEcUhAQWNjPTSK2pTpump",
-    "symbol": "GOYTHEFT",
-    "side": "buy",
-    "sol": 10.223,
-    "wallet": "5cDV4dVQ5xgLqn93uapXinDJd9s3eoTWrrQ4tbLufbT8",
-    "venue": "curve",
-    "progress_pct": 55.04,
-    "slot": 471164853
-   },
-   {
-    "t": 1795054542226,
-    "mint": "eic7esMUGqHfANyx2GiKPAXEcUhAQWNjPTSK2pTpump",
-    "symbol": "GOYTHEFT",
-    "side": "sell",
-    "sol": 24.603,
-    "wallet": "65T6o7SGMVpnuufMKHmx1X3iDc5S65jvbF8hGrbWFXEB",
-    "venue": "curve",
-    "progress_pct": 27.34,
-    "slot": 471164853
-   },
-   {
-    "t": 1795054541339,
-    "mint": "eic7esMUGqHfANyx2GiKPAXEcUhAQWNjPTSK2pTpump",
-    "symbol": "GOYTHEFT",
-    "side": "sell",
-    "sol": 16.298,
-    "wallet": "5vA229Wi8DLcEWmFpj51dDD7C2vnkJ9SJrtUuxqUgmkE",
-    "venue": "curve",
-    "progress_pct": 37.81,
-    "slot": 471164849
-   },
-   {
-    "t": 1795054540804,
-    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
-    "symbol": "FNDR",
-    "side": "buy",
-    "sol": 19.035,
-    "wallet": "5ntucsD4HgpnP4UZvUNk2t8DakFGiAb39yrxffrPS9x9",
-    "venue": "pumpswap",
-    "progress_pct": 100,
-    "slot": 471164846
-   },
-   {
-    "t": 1795054540716,
-    "mint": "eic7esMUGqHfANyx2GiKPAXEcUhAQWNjPTSK2pTpump",
-    "symbol": "GOYTHEFT",
-    "side": "buy",
-    "sol": 10.868,
-    "wallet": "Fpcf5gzNVHpyGz5FDeVRdTi17WCyHgm2H1WpBM8AtEvU",
-    "venue": "curve",
-    "progress_pct": 57.25,
-    "slot": 471164846
-   },
-   {
-    "t": 1795054540716,
-    "mint": "eic7esMUGqHfANyx2GiKPAXEcUhAQWNjPTSK2pTpump",
-    "symbol": "GOYTHEFT",
-    "side": "sell",
-    "sol": 18.745,
-    "wallet": "2nFbJHZXxspte1LqVbsCSrjfgwE6wmdbuTnGuFkXYM5w",
-    "venue": "curve",
-    "progress_pct": 36.05,
-    "slot": 471164846
-   },
-   {
-    "t": 1795054539905,
-    "mint": "eic7esMUGqHfANyx2GiKPAXEcUhAQWNjPTSK2pTpump",
-    "symbol": "GOYTHEFT",
-    "side": "buy",
-    "sol": 24.658,
-    "wallet": "65T6o7SGMVpnuufMKHmx1X3iDc5S65jvbF8hGrbWFXEB",
-    "venue": "curve",
-    "progress_pct": 56.4,
-    "slot": 471164842
-   },
-   {
-    "t": 1795054539905,
-    "mint": "eic7esMUGqHfANyx2GiKPAXEcUhAQWNjPTSK2pTpump",
-    "symbol": "GOYTHEFT",
-    "side": "buy",
-    "sol": 13.51,
-    "wallet": "5vA229Wi8DLcEWmFpj51dDD7C2vnkJ9SJrtUuxqUgmkE",
-    "venue": "curve",
-    "progress_pct": 27.39,
-    "slot": 471164842
-   },
-   {
-    "t": 1795054529018,
-    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
-    "symbol": "FNDR",
-    "side": "sell",
-    "sol": 17.216,
-    "wallet": "ARu4n5mFdZogZAravu7CcizaojWnS6oqka37gdLT5SZn",
-    "venue": "pumpswap",
-    "progress_pct": 100,
-    "slot": 471164792
-   },
-   {
-    "t": 1795054485404,
-    "mint": "CuxpChveTRQx35VUe2y18X45Vh7dhhjB5C2jfYG2pump",
-    "symbol": null,
-    "side": "sell",
-    "sol": 11.665,
-    "wallet": "9NU5989AvQXjojAPk7r9csGwazHXE3qDm5nQxxoaB1vi",
-    "venue": "curve",
-    "progress_pct": 33.7,
-    "slot": 471164587
-   },
-   {
-    "t": 1795054485404,
-    "mint": "CuxpChveTRQx35VUe2y18X45Vh7dhhjB5C2jfYG2pump",
-    "symbol": null,
-    "side": "buy",
-    "sol": 11.763,
-    "wallet": "9NU5989AvQXjojAPk7r9csGwazHXE3qDm5nQxxoaB1vi",
-    "venue": "curve",
-    "progress_pct": 44.03,
-    "slot": 471164587
-   },
-   {
-    "t": 1795054453756,
-    "mint": "FNW3PTQgBNimrYPHdStnu7eD8WhfG95TfoUU9AtHpump",
-    "symbol": null,
-    "side": "sell",
-    "sol": 22.187,
-    "wallet": "9WzqXS6zh3AnZJSDNrDxCqjp81Td1odtoF5Mz8JSo2jr",
-    "venue": "curve",
-    "progress_pct": 1.04,
-    "slot": 471164439
-   },
-   {
-    "t": 1795054430801,
-    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
-    "symbol": "FNDR",
-    "side": "sell",
-    "sol": 10.355,
-    "wallet": "6WSomnPjzUE8amcT3SgXkYiPrTujzhVgkefqy11xRu46",
-    "venue": "pumpswap",
-    "progress_pct": 100,
-    "slot": 471164298
    }
   ],
   "grad_flags": [
+   {
+    "t": 1795055051764,
+    "mint": "2cgP9MdErNqSyBiDbu3ENzTW9nt2YvSpTpKgKMeXpump",
+    "symbol": "Solana",
+    "stage": "graduated_tradable",
+    "progress_pct": 100
+   },
+   {
+    "t": 1795054982400,
+    "mint": "5UfJsnoQPyDXtZhFjjzVFPnseY9BYGB2kmjwQr13pump",
+    "symbol": "DAMNTRAIN",
+    "stage": "graduated_tradable",
+    "progress_pct": 100
+   },
    {
     "t": 1795054719530,
     "mint": "qGcdEMHLGDATDC4pSpYJgjjYm7AGPpHS58hYo4qpump",
@@ -11059,20 +11181,6 @@
     "t": 1795050224874,
     "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
     "symbol": "FNDR",
-    "stage": "graduated_tradable",
-    "progress_pct": 100
-   },
-   {
-    "t": 1795050222304,
-    "mint": "64Uf4fkAWepSjBF8QKWdftHjtgKb2FG6gZsgmx6Fpump",
-    "symbol": "FNDR",
-    "stage": "graduating",
-    "progress_pct": 90.53
-   },
-   {
-    "t": 1795049989191,
-    "mint": "J8bXHZaudYJxRmCRowspWd9d33eTTgkUZWj4TB9tpump",
-    "symbol": "LUCKG",
     "stage": "graduated_tradable",
     "progress_pct": 100
    }
@@ -12649,8 +12757,8 @@
   "lanes": {
    "current": {
     "label": "Current six-agent strategy (pumpdesk6 v0, research book)",
-    "independent_opportunities": 385,
-    "vetoed": 382,
+    "independent_opportunities": 388,
+    "vetoed": 385,
     "passed": 3,
     "not_ordered": 0,
     "no_fills": 1,
@@ -12687,8 +12795,8 @@
    }
   },
   "current_all_time_research_book": {
-   "independent_opportunities": 507,
-   "vetoed": 500,
+   "independent_opportunities": 510,
+   "vetoed": 503,
    "passed": 7,
    "not_ordered": 1,
    "no_fills": 0,
@@ -12705,6 +12813,54 @@
    "note": "net_pnl_sol is after every modeled cost (venue fees, network+priority fees, slippage, failed-tx fees); open positions are not counted until their simulated exit completes"
   },
   "diff": [
+   {
+    "t": 1795055258246,
+    "mint": "Ag5H7Zcg8jPqrHfPmDWYHzCMRH3jhqpFwJtcuZHFpump",
+    "symbol": "NiTrump",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "creator selling: sold 100% of bought tokens; volume concentration: top-3 wallets 75% of 2-min volume"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 15.0% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: creator selling: sold 100% of bought tokens; volume concentration: top-3 wallets 75% of 2-min volume | reference NO_SIGNAL: GRAD: curve progress 15.0% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1795055202532,
+    "mint": "E5Ey9QhxzosK1jVS49XZS4AwC3JnDTejMLnBZxcepump",
+    "symbol": "BrycexD",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "volume concentration: top-3 wallets 100% of 2-min volume"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 8.2% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: volume concentration: top-3 wallets 100% of 2-min volume | reference NO_SIGNAL: GRAD: curve progress 8.2% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
+   {
+    "t": 1795054992695,
+    "mint": "92m4S52bu3dZyqzPmPStu8Krz6JcpzHdsG4D5QBqpump",
+    "symbol": "GTA Strategy ",
+    "current": {
+     "decision": "VETOED",
+     "setup": "A",
+     "reason": "creator selling: sold 100% of bought tokens; creator dev buy 25.0% of supply; wash-trading pattern: 85% of 2-min volume from wallets both buying and selling"
+    },
+    "reference": {
+     "decision": "NO_SIGNAL",
+     "reason": "GRAD: curve progress 31.0% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
+    },
+    "same_decision": false,
+    "why_different": "current VETOED: creator selling: sold 100% of bought tokens; creator dev buy 25.0% of supply | reference NO_SIGNAL: GRAD: curve progress 31.0% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
+   },
    {
     "t": 1795054832088,
     "mint": "A4jXnWk1rDRDth6HmDASi45c89n1AguTHivAQPTVpump",
@@ -14709,58 +14865,6 @@
     },
     "same_decision": false,
     "why_different": "current VETOED: launch bundle: 9 non-creator buyers in the create slot; creator dev buy 40.0% of supply | reference NO_SIGNAL: GRAD: curve progress 53.2% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s (last 17.832 SOL 91 s ago)"
-   },
-   {
-    "t": 1795042926747,
-    "mint": "9BfcFzbnDhV6s2KwHFE2QHBzM53io5W3CChZG3Bkpump",
-    "symbol": "RENEW",
-    "current": {
-     "decision": "VETOED",
-     "setup": "A",
-     "reason": "launch bundle: 13 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 31.6% of supply"
-    },
-    "reference": {
-     "decision": "NO_SIGNAL",
-     "reason": "GRAD: curve progress 45.5% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
-    },
-    "same_decision": false,
-    "why_different": "current VETOED: launch bundle: 13 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 31.6% of supply | reference NO_SIGNAL: GRAD: curve progress 45.5% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
-   },
-   {
-    "t": 1795042713467,
-    "mint": "3hdXmQqZHmm7gWWweFKGdkjnxyWQZ2SWVNt1Jty5pump",
-    "symbol": "PAPA",
-    "reference": {
-     "decision": "PASSED_NOT_ORDERED",
-     "setup": "R_post",
-     "reason": "not ordered — daily modeled loss limit 2% reached; paused until next ET day",
-     "current_lane_vetoes_not_applied": [
-      "holder concentration unverified"
-     ]
-    },
-    "current": {
-     "decision": "VETOED",
-     "setup": "B",
-     "reason": "launch bundle: create-slot buyers hold 49.5% of supply; creator dev buy 36.9% of supply"
-    },
-    "same_decision": false,
-    "why_different": "current VETOED: launch bundle: create-slot buyers hold 49.5% of supply; creator dev buy 36.9% of supply | reference PASSED_NOT_ORDERED: not ordered — daily modeled loss limit 2% reached; paused until next ET day"
-   },
-   {
-    "t": 1795042460911,
-    "mint": "4QXbBr6fNCvNzo8nhTMann5SyP1eAEApgxgXfKRNpump",
-    "symbol": "BADBOY",
-    "current": {
-     "decision": "VETOED",
-     "setup": "A",
-     "reason": "launch bundle: 5 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 33.2% of supply"
-    },
-    "reference": {
-     "decision": "NO_SIGNAL",
-     "reason": "GRAD: curve progress 20.7% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s; reference book paused: daily modeled loss limit 2% reached; paused until next ET day"
-    },
-    "same_decision": false,
-    "why_different": "current VETOED: launch bundle: 5 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 33.2% of supply | reference NO_SIGNAL: GRAD: curve progress 20.7% < 90% (not \"graduating\"); WHALES: no ≥10 SOL buy in the last 60 s"
    }
   ],
   "diff_counts": {
@@ -14925,8 +15029,8 @@
    }
   },
   "stats": {
-   "independent_opportunities": 284,
-   "vetoed": 284,
+   "independent_opportunities": 287,
+   "vetoed": 287,
    "passed": 0,
    "not_ordered": 0,
    "no_fills": 0,
@@ -14944,32 +15048,32 @@
   },
   "exit_policies": [],
   "counts": {
-   "scans": 446707,
-   "triggers": 96,
-   "independent_opportunities": 96,
-   "vetoed": 96,
+   "scans": 465111,
+   "triggers": 99,
+   "independent_opportunities": 99,
+   "vetoed": 99,
    "passed": 0,
    "by_setup": {
-    "A": 62,
+    "A": 65,
     "B": 34
    },
    "veto_reasons": {
     "launch bundle": 103,
-    "wash-trading pattern": 26,
+    "wash-trading pattern": 27,
     "creator dev buy 1.7% of supply": 3,
     "holder concentration unverified": 5,
-    "creator selling": 28,
+    "creator selling": 30,
     "creator dev buy 5.9% of supply": 1,
     "dumping": 11,
     "creator dev buy 11.3% of supply": 2,
     "creator dev buy 59.3% of supply": 3,
-    "volume concentration": 10,
+    "volume concentration": 12,
     "creator dev buy 79.3% of supply": 8,
     "creator dev buy 3.4% of supply": 2,
     "extreme spike": 2,
     "creator dev buy 2.0% of supply": 2,
     "creator dev buy 1.0% of supply": 2,
-    "creator dev buy 9.6% of supply": 5,
+    "creator dev buy 9.6% of supply": 6,
     "creator dev buy 3.0% of supply": 2,
     "creator dev buy 9.8% of supply": 2,
     "creator dev buy 6.6% of supply": 1,
@@ -14985,13 +15089,63 @@
     "creator dev buy 39.9% of supply": 1,
     "creator dev buy 1.5% of supply": 1,
     "creator dev buy 65.2% of supply": 1,
-    "creator dev buy 1.3% of supply": 1
+    "creator dev buy 1.3% of supply": 1,
+    "creator dev buy 25.0% of supply": 1
    },
    "safety_shared": 5,
    "safety_own": 0
   },
   "open": [],
   "opportunities": [
+   {
+    "id": 287,
+    "t": 1795055258246,
+    "decided_t": 1795055258246,
+    "mint": "Ag5H7Zcg8jPqrHfPmDWYHzCMRH3jhqpFwJtcuZHFpump",
+    "symbol": "NiTrump",
+    "setup": "A",
+    "phase": "PRE",
+    "vetoes": [
+     "creator selling: sold 100% of bought tokens",
+     "creator dev buy 9.6% of supply",
+     "volume concentration: top-3 wallets 75% of 2-min volume"
+    ],
+    "disposition": "VETOED",
+    "reason": "creator selling: sold 100% of bought tokens; creator dev buy 9.6% of supply; volume concentration: top-3 wallets 75% of 2-min volume",
+    "size_sol": null
+   },
+   {
+    "id": 286,
+    "t": 1795055202532,
+    "decided_t": 1795055202532,
+    "mint": "E5Ey9QhxzosK1jVS49XZS4AwC3JnDTejMLnBZxcepump",
+    "symbol": "BrycexD",
+    "setup": "A",
+    "phase": "PRE",
+    "vetoes": [
+     "volume concentration: top-3 wallets 100% of 2-min volume"
+    ],
+    "disposition": "VETOED",
+    "reason": "volume concentration: top-3 wallets 100% of 2-min volume",
+    "size_sol": null
+   },
+   {
+    "id": 285,
+    "t": 1795054992695,
+    "decided_t": 1795054992695,
+    "mint": "92m4S52bu3dZyqzPmPStu8Krz6JcpzHdsG4D5QBqpump",
+    "symbol": "GTA Strategy ",
+    "setup": "A",
+    "phase": "PRE",
+    "vetoes": [
+     "creator selling: sold 100% of bought tokens",
+     "creator dev buy 25.0% of supply",
+     "wash-trading pattern: 85% of 2-min volume from wallets both buying and selling"
+    ],
+    "disposition": "VETOED",
+    "reason": "creator selling: sold 100% of bought tokens; creator dev buy 25.0% of supply; wash-trading pattern: 85% of 2-min volume from wallets both buying and selling",
+    "size_sol": null
+   },
    {
     "id": 284,
     "t": 1795054832088,
@@ -15928,58 +16082,6 @@
     ],
     "disposition": "VETOED",
     "reason": "launch bundle: create-slot buyers hold 30.0% of supply; wash-trading pattern: 84% of 2-min volume from wallets both buying and selling",
-    "size_sol": null
-   },
-   {
-    "id": 227,
-    "t": 1795049234158,
-    "decided_t": 1795049234158,
-    "mint": "F28Qa5D56ko5n7te3Km7W52qkvKUF3XAe7X9wpvjpump",
-    "symbol": "GTA",
-    "setup": "A",
-    "phase": "PRE",
-    "vetoes": [
-     "creator dev buy 1.0% of supply",
-     "dumping: 69% below peak"
-    ],
-    "disposition": "VETOED",
-    "reason": "creator dev buy 1.0% of supply; dumping: 69% below peak",
-    "size_sol": null
-   },
-   {
-    "id": 226,
-    "t": 1795049202398,
-    "decided_t": 1795049202398,
-    "mint": "T71Zq92QSdjWVVLEEkdPnFkVu1EfsqzthdZj5L1pump",
-    "symbol": "Brycexd",
-    "setup": "A",
-    "phase": "PRE",
-    "vetoes": [
-     "creator selling: sold more than all observed buys (100%+; 200% of observed — holdings from unobserved buys/transfers)",
-     "launch bundle: 5 non-creator buyers in the create slot",
-     "launch bundle: create-slot buyers hold 15.4% of supply",
-     "creator dev buy 9.8% of supply",
-     "dumping: 79% below peak"
-    ],
-    "disposition": "VETOED",
-    "reason": "creator selling: sold more than all observed buys (100%+; 200% of observed — holdings from unobserved buys/transfers); launch bundle: 5 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 15.4% of supply; creator dev buy 9.8% of supply; dumping: 79% below peak",
-    "size_sol": null
-   },
-   {
-    "id": 225,
-    "t": 1795049189014,
-    "decided_t": 1795049189014,
-    "mint": "2wjVFTXh1YpmLqsHSSEEAd1XDqt6mkSURjbnPcNbpump",
-    "symbol": "Po",
-    "setup": "B",
-    "phase": "POST",
-    "vetoes": [
-     "launch bundle: 3 non-creator buyers in the create slot",
-     "launch bundle: create-slot buyers hold 27.5% of supply",
-     "wash-trading pattern: 50% of 2-min volume from wallets both buying and selling"
-    ],
-    "disposition": "VETOED",
-    "reason": "launch bundle: 3 non-creator buyers in the create slot; launch bundle: create-slot buyers hold 27.5% of supply; wash-trading pattern: 50% of 2-min volume from wallets both buying and selling",
     "size_sol": null
    }
   ],
